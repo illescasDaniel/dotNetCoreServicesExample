@@ -28,6 +28,9 @@ namespace myMicroservice.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+
+            // _logger.LogWarning("Test warning!");
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

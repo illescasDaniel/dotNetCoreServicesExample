@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using myMicroservice.Models;
@@ -14,14 +15,20 @@ namespace myMicroservice.Controllers
     /// <summary>
     /// GET: api/person
     /// </summary>
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PersonController : ControllerBase
     {
+
+        //
+
         // GET: api/person/{id}
         /// <summary>
         /// A Person by id
         /// </summary>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")] // this helps swagger show the correct content-type
         [HttpGet("{id}")]
         public Person GetById(int id)
@@ -33,6 +40,8 @@ namespace myMicroservice.Controllers
         /// <summary>
         /// Get person by matching name
         /// </summary>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
         [HttpGet]
         public Person GetByName(string name)
@@ -58,6 +67,7 @@ namespace myMicroservice.Controllers
         /// <remarks>This may fail due to ... bla bla</remarks>
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json", "text/plain")]
         [HttpPost]
         public ActionResult<Person> Create(Person person)

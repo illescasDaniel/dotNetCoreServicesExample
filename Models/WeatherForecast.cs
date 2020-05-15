@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace myMicroservice
 {
@@ -10,6 +11,7 @@ namespace myMicroservice
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
+        [Required] // automatically validates stuff?
         public string? Summary { get; set; }
     }
 }

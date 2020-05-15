@@ -27,6 +27,9 @@
             <returns>Created person or an error</returns>
             <remarks>This may fail due to ... bla bla</remarks>
         </member>
+        <member name="M:myMicroservice.Models.AuthenticationModel.#ctor(System.String,System.String)">
+            <summary>Constructor</summary>
+        </member>
         <member name="P:myMicroservice.Models.Person.Id">
             <summary>Unique identifier</summary>
             <example>10</example>
@@ -37,7 +40,7 @@
         <member name="P:myMicroservice.Models.Person.Age">
             <example>50</example>
         </member>
-        <member name="M:myMicroservice.Models.Person.#ctor(System.Int32,System.String,System.Nullable{System.Int32})">
+        <member name="M:myMicroservice.Models.Person.#ctor(System.Int32,System.String,System.Nullable{System.UInt16})">
             <summary>Constructor</summary>
         </member>
     </members>

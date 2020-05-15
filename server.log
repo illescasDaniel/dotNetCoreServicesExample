@@ -1,0 +1,126 @@
+2020-05-15 22:00:35.453 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-15 22:00:35.821 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-15 22:00:35.821 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-15 22:00:35.821 +02:00 [INF] Hosting environment: Development
+2020-05-15 22:00:35.821 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-15 22:00:36.034 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:00:36.194 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:00:36.246 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:00:36.248 +02:00 [WRN] Test warning!
+2020-05-15 22:00:36.251 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:00:36.279 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 29.2273ms
+2020-05-15 22:00:36.281 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:00:36.282 +02:00 [INF] Request finished in 251.1592ms 200 application/json; charset=utf-8
+2020-05-15 22:00:37.667 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:00:37.672 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:00:37.672 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:00:37.673 +02:00 [WRN] Test warning!
+2020-05-15 22:00:37.674 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:00:37.674 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 1.744ms
+2020-05-15 22:00:37.675 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:00:37.675 +02:00 [INF] Request finished in 7.649ms 200 application/json; charset=utf-8
+2020-05-15 22:00:46.468 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-15 22:00:46.469 +02:00 [INF] Request finished in 1.3229ms 302 
+2020-05-15 22:00:46.497 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-15 22:00:46.657 +02:00 [INF] Request finished in 160.2091ms 200 text/html; charset=utf-8
+2020-05-15 22:00:46.904 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-15 22:00:47.537 +02:00 [INF] Request finished in 632.6765ms 200 application/json; charset=utf-8
+2020-05-15 22:00:53.591 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast  
+2020-05-15 22:00:53.595 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:00:53.595 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:00:53.595 +02:00 [WRN] Test warning!
+2020-05-15 22:00:53.596 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:00:53.597 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 1.3442ms
+2020-05-15 22:00:53.597 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:00:53.597 +02:00 [INF] Request finished in 7.1742ms 200 application/json; charset=utf-8
+2020-05-15 22:01:06.785 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-15 22:01:07.141 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-15 22:01:07.141 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-15 22:01:07.141 +02:00 [INF] Hosting environment: Development
+2020-05-15 22:01:07.141 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-15 22:01:07.230 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:01:07.376 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:01:07.422 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:01:07.424 +02:00 [WRN] Test warning!
+2020-05-15 22:01:07.428 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:01:07.458 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 28.7387ms
+2020-05-15 22:01:07.460 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:01:07.462 +02:00 [INF] Request finished in 234.7513ms 200 application/json; charset=utf-8
+2020-05-15 22:01:08.647 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:01:08.658 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:01:08.659 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:01:08.659 +02:00 [WRN] Test warning!
+2020-05-15 22:01:08.663 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:01:08.664 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 4.4517ms
+2020-05-15 22:01:08.664 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:01:08.664 +02:00 [INF] Request finished in 16.8293ms 200 application/json; charset=utf-8
+2020-05-15 22:03:10.470 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-15 22:03:10.869 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-15 22:03:10.869 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-15 22:03:10.869 +02:00 [INF] Hosting environment: Development
+2020-05-15 22:03:10.869 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-15 22:03:10.954 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:03:11.107 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:03:11.158 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:03:11.163 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:03:11.196 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 32.3069ms
+2020-05-15 22:03:11.197 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:03:11.198 +02:00 [INF] Request finished in 247.7544ms 200 application/json; charset=utf-8
+2020-05-15 22:03:12.340 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:03:12.393 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:03:12.394 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:03:12.401 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:03:12.402 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 7.269ms
+2020-05-15 22:03:12.402 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:03:12.403 +02:00 [INF] Request finished in 63.0272ms 200 application/json; charset=utf-8
+2020-05-15 22:03:15.450 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-15 22:03:15.619 +02:00 [INF] Request finished in 168.7266ms 200 text/html; charset=utf-8
+2020-05-15 22:03:15.904 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-15 22:03:16.685 +02:00 [INF] Request finished in 781.4348ms 200 application/json; charset=utf-8
+2020-05-15 22:03:42.365 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 51
+2020-05-15 22:03:42.371 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-15 22:03:42.385 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-15 22:03:42.418 +02:00 [INF] user danie!!! will log in
+2020-05-15 22:03:42.448 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-15 22:03:42.453 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 67.7999ms
+2020-05-15 22:03:42.453 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-15 22:03:42.454 +02:00 [INF] Request finished in 89.1521ms 200 application/json; charset=utf-8
+2020-05-15 22:09:34.847 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-15 22:09:35.219 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-15 22:09:35.220 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-15 22:09:35.220 +02:00 [INF] Hosting environment: Development
+2020-05-15 22:09:35.220 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-15 22:09:35.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:09:35.398 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:09:35.451 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:09:35.456 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:09:35.488 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 29.8646ms
+2020-05-15 22:09:35.489 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:09:35.490 +02:00 [INF] Request finished in 216.6389ms 200 application/json; charset=utf-8
+2020-05-15 22:09:36.802 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-05-15 22:09:36.807 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:09:36.808 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:09:36.808 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:09:36.809 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 1.119ms
+2020-05-15 22:09:36.809 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:09:36.809 +02:00 [INF] Request finished in 7.5447ms 200 application/json; charset=utf-8
+2020-05-15 22:09:43.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-15 22:09:43.385 +02:00 [INF] Request finished in 173.2548ms 200 text/html; charset=utf-8
+2020-05-15 22:09:43.633 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-15 22:09:44.255 +02:00 [INF] Request finished in 622.2151ms 200 application/json; charset=utf-8
+2020-05-15 22:09:53.037 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 50
+2020-05-15 22:09:53.043 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-15 22:09:53.053 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-15 22:09:53.079 +02:00 [INF] user string will log in
+2020-05-15 22:09:53.109 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-15 22:09:53.113 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 59.7518ms
+2020-05-15 22:09:53.116 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-15 22:09:53.116 +02:00 [INF] Request finished in 79.7243ms 200 application/json; charset=utf-8
+2020-05-15 22:10:05.960 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast application/json 51
+2020-05-15 22:10:06.032 +02:00 [INF] Successfully validated the token.
+2020-05-15 22:10:06.034 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:10:06.043 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.WeatherForecast] Get() on controller myMicroservice.Controllers.WeatherForecastController (myMicroservice).
+2020-05-15 22:10:06.045 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.WeatherForecast[]'.
+2020-05-15 22:10:06.046 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 1.5042ms
+2020-05-15 22:10:06.046 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-15 22:10:06.046 +02:00 [INF] Request finished in 86.9644ms 200 application/json; charset=utf-8

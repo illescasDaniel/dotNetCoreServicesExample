@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace myMicroservice
 {
@@ -13,6 +14,16 @@ namespace myMicroservice
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+            .Enrich.FromLogContext()
+            .WriteTo.File(
+                path: "server.log",
+                restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information,
+                fileSizeLimitBytes: 300 * 1024 * 124,
+                rollOnFileSizeLimit: true
+            )
+            .CreateLogger();
+
             CreateHostBuilder(args).Build().Run();
         }
 
