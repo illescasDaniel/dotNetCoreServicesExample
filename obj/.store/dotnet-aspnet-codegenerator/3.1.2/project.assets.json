@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "dotnet-aspnet-codegenerator/3.1.2": {
+        "type": "package"
+      }
+    },
+    ".NETCoreApp,Version=v3.1/any": {
+      "dotnet-aspnet-codegenerator/3.1.2": {
+        "type": "package",
+        "tools": {
+          "tools/netcoreapp3.1/any/DotnetToolSettings.xml": {},
+          "tools/netcoreapp3.1/any/Microsoft.Extensions.FileProviders.Abstractions.dll": {},
+          "tools/netcoreapp3.1/any/Microsoft.Extensions.FileProviders.Physical.dll": {},
+          "tools/netcoreapp3.1/any/Microsoft.Extensions.FileSystemGlobbing.dll": {},
+          "tools/netcoreapp3.1/any/Microsoft.Extensions.Primitives.dll": {},
+          "tools/netcoreapp3.1/any/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {},
+          "tools/netcoreapp3.1/any/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.pdb": {},
+          "tools/netcoreapp3.1/any/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.xml": {},
+          "tools/netcoreapp3.1/any/Newtonsoft.Json.dll": {},
+          "tools/netcoreapp3.1/any/NuGet.Frameworks.dll": {},
+          "tools/netcoreapp3.1/any/build/microsoft.visualstudio.web.codegeneration.tools.targets": {},
+          "tools/netcoreapp3.1/any/buildMultiTargeting/microsoft.visualstudio.web.codegeneration.tools.targets": {},
+          "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.deps.json": {},
+          "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.dll": {},
+          "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.pdb": {},
+          "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.runtimeconfig.json": {},
+          "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.xml": {},
+          "tools/netcoreapp3.1/any/shims/win-x64/dotnet-aspnet-codegenerator.exe": {},
+          "tools/netcoreapp3.1/any/shims/win-x86/dotnet-aspnet-codegenerator.exe": {},
+          "tools/netcoreapp3.1/any/toolassets/net461/Microsoft.VisualStudio.Web.CodeGeneration.Msbuild.dll": {},
+          "tools/netcoreapp3.1/any/toolassets/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Msbuild.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "dotnet-aspnet-codegenerator/3.1.2": {
+      "sha512": "OTQyJikZ8XzA0nJjjfsoftPO4b9lX4UQzoHOJebNpGbEatEZR81HIgXG6jLBO+K9h2qBqCkxEVLT4pae9ZKAsA==",
+      "type": "package",
+      "path": "dotnet-aspnet-codegenerator/3.1.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "dotnet-aspnet-codegenerator.3.1.2.nupkg.sha512",
+        "dotnet-aspnet-codegenerator.nuspec",
+        "tools/netcoreapp3.1/any/DotnetToolSettings.xml",
+        "tools/netcoreapp3.1/any/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "tools/netcoreapp3.1/any/Microsoft.Extensions.FileProviders.Physical.dll",
+        "tools/netcoreapp3.1/any/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/netcoreapp3.1/any/Microsoft.Extensions.Primitives.dll",
+        "tools/netcoreapp3.1/any/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll",
+        "tools/netcoreapp3.1/any/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.pdb",
+        "tools/netcoreapp3.1/any/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.xml",
+        "tools/netcoreapp3.1/any/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.1/any/NuGet.Frameworks.dll",
+        "tools/netcoreapp3.1/any/build/microsoft.visualstudio.web.codegeneration.tools.targets",
+        "tools/netcoreapp3.1/any/buildMultiTargeting/microsoft.visualstudio.web.codegeneration.tools.targets",
+        "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.deps.json",
+        "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.dll",
+        "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.pdb",
+        "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.runtimeconfig.json",
+        "tools/netcoreapp3.1/any/dotnet-aspnet-codegenerator.xml",
+        "tools/netcoreapp3.1/any/shims/win-x64/dotnet-aspnet-codegenerator.exe",
+        "tools/netcoreapp3.1/any/shims/win-x86/dotnet-aspnet-codegenerator.exe",
+        "tools/netcoreapp3.1/any/toolassets/net461/Microsoft.VisualStudio.Web.CodeGeneration.Msbuild.dll",
+        "tools/netcoreapp3.1/any/toolassets/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Msbuild.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "dotnet-aspnet-codegenerator >= *"
+    ]
+  },
+  "packageFolders": {
+    "/Users/daniel/Projects/myMicroservice/obj/.store/.stage/qrjj234a.2vw": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/var/folders/7f/gmp1t5n97qd0q8sf0r5rn7rr0000gn/T/0ouolmz1.5df/restore.csproj",
+      "projectName": "restore",
+      "projectPath": "/var/folders/7f/gmp1t5n97qd0q8sf0r5rn7rr0000gn/T/0ouolmz1.5df/restore.csproj",
+      "packagesPath": "/Users/daniel/Projects/myMicroservice/obj/.store/.stage/qrjj234a.2vw",
+      "outputPath": "/Users/daniel/Projects/myMicroservice/obj/.store/.stage/qrjj234a.2vw/",
+      "projectStyle": "DotnetToolReference",
+      "configFilePaths": [
+        "/Users/daniel/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "dotnet-aspnet-codegenerator": {
+            "target": "Package",
+            "version": "[*, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.202/RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "any": {
+        "#import": []
+      }
+    }
+  }
+}

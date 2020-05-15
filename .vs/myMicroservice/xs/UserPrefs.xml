@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PersonController.cs">
+    <Files>
+      <File FileName="Controllers/PersonController.cs" Line="52" Column="22" />
+      <File FileName="Models/Person.cs" Line="9" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="myMicroservice" expanded="True">
+            <Node name="myMicroservice" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="PersonController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.myMicroservice PreferredExecutionTarget="/Applications/Firefox.app" />
+</Properties>

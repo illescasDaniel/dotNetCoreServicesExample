@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>myMicroservice</name>
+    </assembly>
+    <members>
+        <member name="T:myMicroservice.Controllers.PersonController">
+            <summary>
+            GET: api/person
+            </summary>
+        </member>
+        <member name="M:myMicroservice.Controllers.PersonController.GetById(System.Int32)">
+            <summary>
+            A Person by id
+            </summary>
+        </member>
+        <member name="M:myMicroservice.Controllers.PersonController.GetByName(System.String)">
+            <summary>
+            Get person by matching name
+            </summary>
+        </member>
+        <member name="M:myMicroservice.Controllers.PersonController.Create(myMicroservice.Models.Person)">
+            <summary>
+            Creates a new person
+            </summary>
+            <param name="person">A person</param>
+            <returns>Created person or an error</returns>
+            <remarks>This may fail due to ... bla bla</remarks>
+        </member>
+        <member name="P:myMicroservice.Models.Person.Id">
+            <summary>Unique identifier</summary>
+            <example>10</example>
+        </member>
+        <member name="P:myMicroservice.Models.Person.Name">
+            <example>"Pepe"</example>
+        </member>
+        <member name="P:myMicroservice.Models.Person.Age">
+            <example>50</example>
+        </member>
+        <member name="M:myMicroservice.Models.Person.#ctor(System.Int32,System.String,System.Nullable{System.Int32})">
+            <summary>Constructor</summary>
+        </member>
+    </members>
+</doc>
