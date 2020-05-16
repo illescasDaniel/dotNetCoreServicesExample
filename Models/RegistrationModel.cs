@@ -1,11 +1,10 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace myMicroservice.Models
 {
     public struct RegistrationModel
     {
-        /// <example>Daniel</example>
+        /// <example>"Daniel"</example>
         [MaxLength(40)]
         [Required]
         public string Username { get; set; }

@@ -34,6 +34,12 @@
             <param name="userId">User Id, to use it as a 'Claim' </param>
             <returns>Authentication token</returns>
         </member>
+        <member name="P:myMicroservice.Models.AuthenticationModel.Username">
+            <example>"Daniel"</example>
+        </member>
+        <member name="P:myMicroservice.Models.AuthenticationModel.Password">
+            <example>"ultra-secure-pass"</example>
+        </member>
         <member name="P:myMicroservice.Models.Person.Id">
             <summary>Unique identifier</summary>
             <example>10</example>
@@ -48,7 +54,7 @@
             <summary>Constructor</summary>
         </member>
         <member name="P:myMicroservice.Models.RegistrationModel.Username">
-            <example>Daniel</example>
+            <example>"Daniel"</example>
         </member>
         <member name="P:myMicroservice.Models.RegistrationModel.Password">
             <example>"ultra-secure-pass"</example>

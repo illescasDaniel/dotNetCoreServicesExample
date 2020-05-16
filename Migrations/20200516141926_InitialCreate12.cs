@@ -2,7 +2,7 @@
 
 namespace myMicroservice.Migrations
 {
-    public partial class InitialCreate4 : Migration
+    public partial class InitialCreate12 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,6 +20,12 @@ namespace myMicroservice.Migrations
                 {
                     table.PrimaryKey("PK_Users", x => x.UserId);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_Username",
+                table: "Users",
+                column: "Username",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

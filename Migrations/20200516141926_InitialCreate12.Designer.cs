@@ -8,8 +8,8 @@ using myMicroservice.Database;
 namespace myMicroservice.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20200516111051_InitialCreate4")]
-    partial class InitialCreate4
+    [Migration("20200516141926_InitialCreate12")]
+    partial class InitialCreate12
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,6 +38,9 @@ namespace myMicroservice.Migrations
                         .HasMaxLength(40);
 
                     b.HasKey("UserId");
+
+                    b.HasIndex("Username")
+                        .IsUnique();
 
                     b.ToTable("Users");
                 });
