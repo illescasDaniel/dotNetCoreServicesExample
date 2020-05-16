@@ -1,11 +1,7 @@
-﻿using System;
-using System.Text.Json.Serialization;
-
-namespace myMicroservice.Models
+﻿namespace myMicroservice.Models
 {
-    public struct Token
+    public struct AuthenticationOutput
     {
-        [JsonPropertyName("access_token")]
         public string AccessToken { get; set; }
 
         //[JsonPropertyName("refresh_token")]
@@ -14,19 +10,22 @@ namespace myMicroservice.Models
         //[JsonPropertyName("id_token")]
         //public string TokenId { get; set; } // TODO
 
-        [JsonPropertyName("token_type")]
+        public int UserId { get; set; }
+
         public string TokenType { get; set; }
 
-        public Token(
+        public AuthenticationOutput(
             string accessToken,
             //string refreshToken,
             //string tokenId,
+            int userId,
             string tokenType = "Bearer"
         )
         {
             AccessToken = accessToken;
             //RefreshToken = refreshToken;
             //TokenId = tokenId;
+            UserId = userId;
             TokenType = tokenType;
         }
     }

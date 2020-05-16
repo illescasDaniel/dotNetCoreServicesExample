@@ -40,7 +40,7 @@ namespace myMicroservice.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpPost("authenticate")]
-        public ActionResult<User> Authenticate(AuthenticationModel model) // todo: change output to Token
+        public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model) // todo: change output to Token
         {
 
             Database.Entities.User? userEntity;
@@ -79,8 +79,7 @@ namespace myMicroservice.Controllers
                     return Unauthorized();
                 case PasswordVerificationResult.Success:
                     var userToken = _authenticationService.Authenticate(userEntity.UserId);
-                    var user = new User(id: userEntity.UserId, email: userEntity.Email, username: userEntity.Username, token: userToken);
-                    return Ok(user);
+                    return Ok(new AuthenticationOutput(userToken, userEntity.UserId));
                 case PasswordVerificationResult.SuccessRehashNeeded: // TODO: maybe change to other thing
                     return Problem(
                         title: "Forbidden",
@@ -100,7 +99,7 @@ namespace myMicroservice.Controllers
         [HttpPost("register")]
         public ActionResult<User> Register(RegistrationModel model)
         {
-            var newUserEntity = new Database.Entities.User(model.Username, model.Password, model.Email);
+            var newUserEntity = model.MapToUserEntity();
 
             var passHasher = new PasswordHasher<Database.Entities.User>();
             var hashedPass = passHasher.HashPassword(newUserEntity, model.Password);
@@ -114,7 +113,7 @@ namespace myMicroservice.Controllers
                     db.Add(newUserEntity);
                     db.SaveChanges();
                 }
-                var user = new User(id: newUserEntity.UserId, email: newUserEntity.Email, username: newUserEntity.Username);
+                var user = new User(userEntity: newUserEntity);
                 return Created($"api/User/{newUserEntity.UserId}", user);
             } catch(Microsoft.EntityFrameworkCore.DbUpdateException updateException)
             {
@@ -167,7 +166,7 @@ namespace myMicroservice.Controllers
 
             //_logger.LogInformation(HttpContext.User.Identity.Name); // this is the Name clain we used in jwt (I think)
 
-            var user = new User(id: userEntity.UserId, email: userEntity.Email, username: userEntity.Username);
+            var user = new User(userEntity: userEntity);
             return Ok(user);
         }
     }

@@ -155,3 +155,4 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.dll.config
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/AutoMapper.dll
