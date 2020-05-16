@@ -21,6 +21,8 @@ namespace myMicroservice.Controllers
     public class PersonController : ControllerBase
     {
 
+        // HttpContext.Response looks like that if the current response
+
         //
 
         // GET: api/person/{id}

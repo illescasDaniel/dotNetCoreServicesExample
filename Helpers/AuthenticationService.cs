@@ -10,22 +10,27 @@ using myMicroservice.Properties;
 namespace myMicroservice.Helpers
 {
 
-    public interface IAuthenticationService
+    public interface IUserAuthenticationService
     {
-        User Authenticate(User user);
+        string Authenticate(int userId);
     }
 
-    public class AuthenticationService : IAuthenticationService
+    public class UserAuthenticationService : IUserAuthenticationService
     {
 
         private readonly AppSettings _appSettings;
 
-        public AuthenticationService(IOptions<AppSettings> appSettings)
+        public UserAuthenticationService(IOptions<AppSettings> appSettings)
         {
             _appSettings = appSettings.Value;
         }
 
-        public User Authenticate(User user)
+        /// <summary>
+        /// Creates a token for a given user
+        /// </summary>
+        /// <param name="userId">User Id, to use it as a 'Claim' </param>
+        /// <returns>Authentication token</returns>
+        public string Authenticate(int userId)
         {
             var secret = _appSettings.JwtSecret;
 
@@ -40,15 +45,13 @@ namespace myMicroservice.Helpers
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                    new Claim(ClaimTypes.Name, userId.ToString()) // we might need to change / add / remove these
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            user.Token = tokenHandler.WriteToken(token);
-
-            return user;
+            return tokenHandler.WriteToken(token);
         }
     }
 }

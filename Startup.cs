@@ -76,7 +76,7 @@ namespace myMicroservice
                     ValidateAudience = false
                 };
             });
-            
+
             services.AddControllers();
             services.AddSwaggerDocument(config =>
             {
@@ -102,7 +102,7 @@ namespace myMicroservice
 
             // configure DI for application services
             // services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -112,10 +112,11 @@ namespace myMicroservice
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
 
-            app.UseOpenApi();
-            app.UseSwaggerUi3();
+                // we may not want to display the whole API to everyone hehe
+                app.UseOpenApi();
+                app.UseSwaggerUi3();
+            }
 
             app.UseRouting();
             //app.UseResponseCaching();

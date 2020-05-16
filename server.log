@@ -124,3 +124,340 @@
 2020-05-15 22:10:06.046 +02:00 [INF] Executed action myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice) in 1.5042ms
 2020-05-15 22:10:06.046 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.WeatherForecastController.Get (myMicroservice)'
 2020-05-15 22:10:06.046 +02:00 [INF] Request finished in 86.9644ms 200 application/json; charset=utf-8
+2020-05-16 13:11:13.371 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:11:13.831 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:11:13.832 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:11:13.832 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:11:13.832 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:11:13.926 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:11:13.950 +02:00 [INF] Request finished in 26.3436ms 302 
+2020-05-16 13:11:13.977 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:11:14.169 +02:00 [INF] Request finished in 191.6426ms 200 text/html; charset=utf-8
+2020-05-16 13:11:15.578 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:11:15.579 +02:00 [INF] Request finished in 0.7524ms 302 
+2020-05-16 13:11:15.620 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:11:15.621 +02:00 [INF] Request finished in 1.3688ms 200 text/html; charset=utf-8
+2020-05-16 13:11:15.751 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-16 13:11:15.761 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-16 13:11:15.795 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-16 13:11:15.804 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-16 13:11:15.804 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-16 13:11:15.804 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-16 13:11:15.805 +02:00 [INF] Request finished in 44.4825ms 304 application/javascript
+2020-05-16 13:11:15.805 +02:00 [INF] Request finished in 53.917ms 304 text/css
+2020-05-16 13:11:15.805 +02:00 [INF] Request finished in 10.0186ms 304 application/javascript
+2020-05-16 13:11:16.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:11:16.717 +02:00 [INF] Request finished in 706.709ms 200 application/json; charset=utf-8
+2020-05-16 13:12:35.000 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/register application/json 79
+2020-05-16 13:12:35.137 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Register (myMicroservice)'
+2020-05-16 13:12:35.164 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Register(myMicroservice.Models.RegistrationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:12:35.801 +02:00 [INF] Inserting new user
+2020-05-16 13:12:36.602 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:12:36.616 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Register (myMicroservice) in 1445.715ms
+2020-05-16 13:12:36.617 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Register (myMicroservice)'
+2020-05-16 13:12:36.618 +02:00 [INF] Request finished in 1618.1844ms 200 application/json; charset=utf-8
+2020-05-16 13:13:55.346 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:13:55.350 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:13:55.353 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:13:55.685 +02:00 [INF] logging user Daniel
+2020-05-16 13:16:09.102 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:16:09.545 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:16:09.546 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:16:09.546 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:16:09.546 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:16:09.605 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:16:09.626 +02:00 [INF] Request finished in 24.0935ms 302 
+2020-05-16 13:16:09.664 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:16:10.066 +02:00 [INF] Request finished in 402.3366ms 200 text/html; charset=utf-8
+2020-05-16 13:16:11.390 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:16:11.390 +02:00 [INF] Request finished in 0.6584ms 302 
+2020-05-16 13:16:11.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:16:11.424 +02:00 [INF] Request finished in 0.7897ms 200 text/html; charset=utf-8
+2020-05-16 13:16:11.724 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:16:12.426 +02:00 [INF] Request finished in 701.4574ms 200 application/json; charset=utf-8
+2020-05-16 13:16:37.290 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:16:37.448 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:16:37.473 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:16:37.595 +02:00 [INF] logging user Daniel
+2020-05-16 13:16:38.443 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:16:38.458 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 978.8407ms
+2020-05-16 13:16:38.459 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:16:38.459 +02:00 [INF] Request finished in 1169.3689ms 200 application/json; charset=utf-8
+2020-05-16 13:17:26.507 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:17:26.918 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:17:26.918 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:17:26.918 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:17:26.918 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:17:27.014 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:17:27.033 +02:00 [INF] Request finished in 21.8266ms 302 
+2020-05-16 13:17:27.060 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:17:27.295 +02:00 [INF] Request finished in 235.1244ms 200 text/html; charset=utf-8
+2020-05-16 13:17:28.603 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:17:28.604 +02:00 [INF] Request finished in 1.2968ms 302 
+2020-05-16 13:17:28.636 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:17:28.638 +02:00 [INF] Request finished in 1.8725ms 200 text/html; charset=utf-8
+2020-05-16 13:17:28.923 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:17:29.639 +02:00 [INF] Request finished in 716.298ms 200 application/json; charset=utf-8
+2020-05-16 13:17:49.359 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:17:49.520 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:17:49.549 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:17:49.668 +02:00 [INF] logging user Daniel
+2020-05-16 13:18:21.171 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:18:21.599 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:18:21.599 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:18:21.599 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:18:21.599 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:18:21.687 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:18:21.705 +02:00 [INF] Request finished in 20.3929ms 302 
+2020-05-16 13:18:21.753 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:18:21.955 +02:00 [INF] Request finished in 202.6655ms 200 text/html; charset=utf-8
+2020-05-16 13:18:23.285 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:18:23.286 +02:00 [INF] Request finished in 1.9575ms 302 
+2020-05-16 13:18:23.332 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:18:23.336 +02:00 [INF] Request finished in 3.7134ms 200 text/html; charset=utf-8
+2020-05-16 13:18:23.690 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:18:24.458 +02:00 [INF] Request finished in 767.9759ms 200 application/json; charset=utf-8
+2020-05-16 13:18:47.781 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:18:47.935 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:18:47.964 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:18:48.093 +02:00 [INF] logging user Daniel
+2020-05-16 13:18:48.985 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:18:48.999 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 1028.5082ms
+2020-05-16 13:18:48.999 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:18:49.000 +02:00 [INF] Request finished in 1219.2109ms 200 application/json; charset=utf-8
+2020-05-16 13:20:59.416 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:20:59.795 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:20:59.795 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:20:59.795 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:20:59.795 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:20:59.854 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:20:59.872 +02:00 [INF] Request finished in 19.5275ms 302 
+2020-05-16 13:20:59.894 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:21:00.083 +02:00 [INF] Request finished in 188.9477ms 200 text/html; charset=utf-8
+2020-05-16 13:21:01.242 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:21:01.244 +02:00 [INF] Request finished in 1.8945ms 302 
+2020-05-16 13:21:01.295 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:21:01.298 +02:00 [INF] Request finished in 2.8229ms 200 text/html; charset=utf-8
+2020-05-16 13:21:01.794 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:21:02.419 +02:00 [INF] Request finished in 625.5695ms 200 application/json; charset=utf-8
+2020-05-16 13:21:28.571 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:21:28.728 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:21:28.754 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:21:28.865 +02:00 [INF] logging user Daniel
+2020-05-16 13:21:29.694 +02:00 [INF] hashed pass: AQAAAAEAACcQAAAAEHImVKnVcWbBlD9XWx3YYHtj8bPpZevXdmA7SZPzkkxMd/6+l7RCmyuBcgbvk6412Q==
+2020-05-16 13:21:29.694 +02:00 [INF] user pass: AQAAAAEAACcQAAAAEIlPWq9yb63zD60MbU13AONDMvBVC6N8D5iLDAWixTNzbRNH9/4UY12bW4eGJeW+MA==
+2020-05-16 13:21:29.728 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:21:29.741 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 980.6687ms
+2020-05-16 13:21:29.742 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:21:29.742 +02:00 [INF] Request finished in 1171.2725ms 200 application/json; charset=utf-8
+2020-05-16 13:29:40.646 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:29:41.029 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:29:41.030 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:29:41.030 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:29:41.030 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:29:41.083 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:29:41.101 +02:00 [INF] Request finished in 20.4269ms 302 
+2020-05-16 13:29:41.127 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:29:41.311 +02:00 [INF] Request finished in 184.5019ms 200 text/html; charset=utf-8
+2020-05-16 13:29:42.487 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:29:42.489 +02:00 [INF] Request finished in 1.9624ms 302 
+2020-05-16 13:29:42.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:29:42.575 +02:00 [INF] Request finished in 3.3771ms 200 text/html; charset=utf-8
+2020-05-16 13:29:42.978 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:29:43.704 +02:00 [INF] Request finished in 725.6782ms 200 application/json; charset=utf-8
+2020-05-16 13:29:55.879 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/User/1  
+2020-05-16 13:29:56.002 +02:00 [INF] Authorization failed.
+2020-05-16 13:29:56.012 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-16 13:29:56.014 +02:00 [INF] Request finished in 134.2415ms 401 
+2020-05-16 13:30:35.382 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:30:35.390 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:30:35.419 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:30:35.549 +02:00 [INF] logging user Daniel
+2020-05-16 13:30:36.458 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:30:36.474 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 1046.986ms
+2020-05-16 13:30:36.475 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:30:36.475 +02:00 [INF] Request finished in 1092.7173ms 200 application/json; charset=utf-8
+2020-05-16 13:33:21.049 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 49
+2020-05-16 13:33:21.051 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:33:21.051 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:33:21.056 +02:00 [INF] logging user Daniel
+2020-05-16 13:33:21.105 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-16 13:33:21.107 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 55.5398ms
+2020-05-16 13:33:21.107 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:33:21.107 +02:00 [INF] Request finished in 58.8929ms 403 application/json; charset=utf-8
+2020-05-16 13:52:39.068 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:52:39.500 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:52:39.500 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:52:39.500 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:52:39.500 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:52:39.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:52:39.571 +02:00 [INF] Request finished in 21.207ms 302 
+2020-05-16 13:52:39.595 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:52:39.802 +02:00 [INF] Request finished in 207.6487ms 200 text/html; charset=utf-8
+2020-05-16 13:52:41.177 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:52:41.178 +02:00 [INF] Request finished in 0.7615ms 302 
+2020-05-16 13:52:41.228 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:52:41.228 +02:00 [INF] Request finished in 0.8883ms 200 text/html; charset=utf-8
+2020-05-16 13:52:41.566 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:52:42.231 +02:00 [INF] Request finished in 665.9329ms 200 application/json; charset=utf-8
+2020-05-16 13:52:52.597 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 50
+2020-05-16 13:52:52.713 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:52:52.740 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:52:52.870 +02:00 [INF] logging user string
+2020-05-16 13:55:32.552 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:55:33.091 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:55:33.091 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:55:33.091 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:55:33.091 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:55:33.215 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:55:33.244 +02:00 [INF] Request finished in 32.0288ms 302 
+2020-05-16 13:55:33.272 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:55:33.469 +02:00 [INF] Request finished in 197.2256ms 200 text/html; charset=utf-8
+2020-05-16 13:55:34.692 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:55:34.694 +02:00 [INF] Request finished in 2.0094ms 302 
+2020-05-16 13:55:34.726 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:55:34.728 +02:00 [INF] Request finished in 1.7503ms 200 text/html; charset=utf-8
+2020-05-16 13:55:35.046 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:55:35.702 +02:00 [INF] Request finished in 655.5583ms 200 application/json; charset=utf-8
+2020-05-16 13:55:44.016 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 50
+2020-05-16 13:55:44.159 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:55:44.186 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:55:44.309 +02:00 [INF] logging user string
+2020-05-16 13:55:45.132 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-16 13:55:45.142 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 949.6884ms
+2020-05-16 13:55:45.143 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:55:45.144 +02:00 [INF] Request finished in 1128.0229ms 404 application/json; charset=utf-8
+2020-05-16 13:56:29.565 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 50
+2020-05-16 13:56:29.573 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:56:29.573 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:56:29.576 +02:00 [INF] logging user Daniel
+2020-05-16 13:56:29.690 +02:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2020-05-16 13:56:29.694 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2020-05-16 13:56:29.694 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 120.3587ms
+2020-05-16 13:56:29.694 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:56:29.694 +02:00 [INF] Request finished in 128.7107ms 403 
+2020-05-16 13:57:59.230 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 13:57:59.679 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 13:57:59.680 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 13:57:59.680 +02:00 [INF] Hosting environment: Development
+2020-05-16 13:57:59.680 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 13:57:59.761 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:57:59.781 +02:00 [INF] Request finished in 23.1722ms 302 
+2020-05-16 13:57:59.808 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:58:00.006 +02:00 [INF] Request finished in 198.0917ms 200 text/html; charset=utf-8
+2020-05-16 13:58:01.158 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 13:58:01.160 +02:00 [INF] Request finished in 1.2839ms 302 
+2020-05-16 13:58:01.214 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 13:58:01.216 +02:00 [INF] Request finished in 1.818ms 200 text/html; charset=utf-8
+2020-05-16 13:58:01.720 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 13:58:02.403 +02:00 [INF] Request finished in 683.5124ms 200 application/json; charset=utf-8
+2020-05-16 13:58:12.375 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 50
+2020-05-16 13:58:12.557 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:58:12.583 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:58:12.701 +02:00 [INF] logging user Daniel
+2020-05-16 13:58:13.522 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-16 13:58:13.531 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 942.7763ms
+2020-05-16 13:58:13.532 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:58:13.532 +02:00 [INF] Request finished in 1157.8308ms 401 application/json; charset=utf-8
+2020-05-16 13:58:23.400 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 13:58:23.405 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:58:23.406 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:58:23.409 +02:00 [INF] logging user Daniel
+2020-05-16 13:58:23.491 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:58:23.496 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 89.697ms
+2020-05-16 13:58:23.496 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 13:58:23.496 +02:00 [INF] Request finished in 95.8895ms 200 application/json; charset=utf-8
+2020-05-16 13:58:51.783 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/User/1 application/json 50
+2020-05-16 13:58:51.825 +02:00 [INF] Successfully validated the token.
+2020-05-16 13:58:51.829 +02:00 [INF] Authorization was successful.
+2020-05-16 13:58:51.829 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.GetById (myMicroservice)'
+2020-05-16 13:58:51.832 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] GetById(Int32) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 13:58:51.847 +02:00 [INF] System.Security.Claims.ClaimsPrincipal+<get_Claims>d__21
+2020-05-16 13:58:51.847 +02:00 [INF] System.Security.Claims.ClaimsIdentity
+2020-05-16 13:58:51.848 +02:00 [INF] 1
+2020-05-16 13:58:51.849 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 13:58:51.849 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.GetById (myMicroservice) in 17.1553ms
+2020-05-16 13:58:51.852 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.GetById (myMicroservice)'
+2020-05-16 13:58:51.853 +02:00 [INF] Request finished in 69.6493ms 200 application/json; charset=utf-8
+2020-05-16 14:08:00.549 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 14:08:00.955 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 14:08:00.955 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 14:08:00.956 +02:00 [INF] Hosting environment: Development
+2020-05-16 14:08:00.956 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 14:08:01.010 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:08:01.031 +02:00 [INF] Request finished in 23.2637ms 302 
+2020-05-16 14:08:01.060 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:08:01.248 +02:00 [INF] Request finished in 188.7128ms 200 text/html; charset=utf-8
+2020-05-16 14:08:02.470 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:08:02.471 +02:00 [INF] Request finished in 1.1672ms 302 
+2020-05-16 14:08:02.513 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:08:02.514 +02:00 [INF] Request finished in 0.9018ms 200 text/html; charset=utf-8
+2020-05-16 14:08:02.818 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 14:08:03.464 +02:00 [INF] Request finished in 647.2986ms 200 application/json; charset=utf-8
+2020-05-16 14:08:17.890 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/register application/json 68
+2020-05-16 14:08:18.007 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Register (myMicroservice)'
+2020-05-16 14:08:18.036 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Register(myMicroservice.Models.RegistrationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 14:08:18.943 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-16 14:08:18.953 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Register (myMicroservice) in 911.6522ms
+2020-05-16 14:08:18.955 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Register (myMicroservice)'
+2020-05-16 14:08:18.956 +02:00 [INF] Request finished in 1065.6128ms 409 application/json; charset=utf-8
+2020-05-16 14:09:26.368 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 14:09:26.752 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 14:09:26.752 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 14:09:26.752 +02:00 [INF] Hosting environment: Development
+2020-05-16 14:09:26.753 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 14:09:26.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:09:26.844 +02:00 [INF] Request finished in 21.1383ms 302 
+2020-05-16 14:09:26.872 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:09:27.073 +02:00 [INF] Request finished in 201.1139ms 200 text/html; charset=utf-8
+2020-05-16 14:09:28.253 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:09:28.256 +02:00 [INF] Request finished in 2.5056ms 302 
+2020-05-16 14:09:28.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:09:28.324 +02:00 [INF] Request finished in 2.2747ms 200 text/html; charset=utf-8
+2020-05-16 14:09:28.619 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 14:09:29.288 +02:00 [INF] Request finished in 669.8579ms 200 application/json; charset=utf-8
+2020-05-16 14:09:56.143 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 14:09:56.540 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 14:09:56.540 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 14:09:56.540 +02:00 [INF] Hosting environment: Development
+2020-05-16 14:09:56.540 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 14:09:56.599 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:09:56.616 +02:00 [INF] Request finished in 20.6173ms 302 
+2020-05-16 14:09:56.640 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:09:56.832 +02:00 [INF] Request finished in 192.3531ms 200 text/html; charset=utf-8
+2020-05-16 14:09:58.054 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:09:58.056 +02:00 [INF] Request finished in 1.7169ms 302 
+2020-05-16 14:09:58.096 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:09:58.099 +02:00 [INF] Request finished in 2.1111ms 200 text/html; charset=utf-8
+2020-05-16 14:09:58.431 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 14:09:59.074 +02:00 [INF] Request finished in 642.721ms 200 application/json; charset=utf-8
+2020-05-16 14:10:09.840 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/register application/json 71
+2020-05-16 14:10:09.955 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Register (myMicroservice)'
+2020-05-16 14:10:09.985 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Register(myMicroservice.Models.RegistrationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 14:10:10.890 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-16 14:10:10.901 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Register (myMicroservice) in 909.4874ms
+2020-05-16 14:10:10.902 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Register (myMicroservice)'
+2020-05-16 14:10:10.903 +02:00 [INF] Request finished in 1063.1783ms 409 application/json; charset=utf-8
+2020-05-16 14:16:05.806 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-16 14:16:06.251 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-16 14:16:06.252 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-16 14:16:06.252 +02:00 [INF] Hosting environment: Development
+2020-05-16 14:16:06.252 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-16 14:16:06.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:16:06.340 +02:00 [INF] Request finished in 22.8598ms 302 
+2020-05-16 14:16:06.367 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:16:06.600 +02:00 [INF] Request finished in 233.4973ms 200 text/html; charset=utf-8
+2020-05-16 14:16:07.878 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-16 14:16:07.880 +02:00 [INF] Request finished in 1.9059ms 302 
+2020-05-16 14:16:07.913 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-16 14:16:07.915 +02:00 [INF] Request finished in 1.8388ms 200 text/html; charset=utf-8
+2020-05-16 14:16:08.240 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-16 14:16:08.901 +02:00 [INF] Request finished in 661.4398ms 200 application/json; charset=utf-8
+2020-05-16 14:16:45.224 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/authenticate application/json 48
+2020-05-16 14:16:45.394 +02:00 [INF] Executing endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 14:16:45.427 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Models.User] Authenticate(myMicroservice.Models.AuthenticationModel) on controller myMicroservice.Controllers.UserController (myMicroservice).
+2020-05-16 14:16:45.559 +02:00 [INF] logging user Daniel
+2020-05-16 14:16:46.451 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Models.User'.
+2020-05-16 14:16:46.465 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 1032.6864ms
+2020-05-16 14:16:46.466 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-16 14:16:46.467 +02:00 [INF] Request finished in 1242.8674ms 200 application/json; charset=utf-8

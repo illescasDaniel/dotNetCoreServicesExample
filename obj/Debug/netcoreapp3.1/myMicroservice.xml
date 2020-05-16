@@ -27,8 +27,12 @@
             <returns>Created person or an error</returns>
             <remarks>This may fail due to ... bla bla</remarks>
         </member>
-        <member name="M:myMicroservice.Models.AuthenticationModel.#ctor(System.String,System.String)">
-            <summary>Constructor</summary>
+        <member name="M:myMicroservice.Helpers.UserAuthenticationService.Authenticate(System.Int32)">
+            <summary>
+            Creates a token for a given user
+            </summary>
+            <param name="userId">User Id, to use it as a 'Claim' </param>
+            <returns>Authentication token</returns>
         </member>
         <member name="P:myMicroservice.Models.Person.Id">
             <summary>Unique identifier</summary>
@@ -42,6 +46,24 @@
         </member>
         <member name="M:myMicroservice.Models.Person.#ctor(System.Int32,System.String,System.Nullable{System.UInt16})">
             <summary>Constructor</summary>
+        </member>
+        <member name="P:myMicroservice.Models.RegistrationModel.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Models.RegistrationModel.Password">
+            <example>"ultra-secure-pass"</example>
+        </member>
+        <member name="P:myMicroservice.Models.RegistrationModel.Email">
+            <example>"example@gmail.com"</example>
+        </member>
+        <member name="P:myMicroservice.Models.User.Id">
+            <example>2</example>
+        </member>
+        <member name="P:myMicroservice.Models.User.Username">
+            <example>"Daniel"</example>
+        </member>
+        <member name="P:myMicroservice.Models.User.Email">
+            <example>"example@email.com"</example>
         </member>
     </members>
 </doc>
