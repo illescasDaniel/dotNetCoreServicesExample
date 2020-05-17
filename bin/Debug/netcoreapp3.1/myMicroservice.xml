@@ -4,22 +4,82 @@
         <name>myMicroservice</name>
     </assembly>
     <members>
-        <member name="T:myMicroservice.Controllers.PersonController">
+        <member name="T:myMicroservice.Api.v1.Controllers.PersonController">
             <summary>
             GET: api/person
             </summary>
         </member>
-        <member name="M:myMicroservice.Controllers.PersonController.GetById(System.Int32)">
+        <member name="M:myMicroservice.Api.v1.Controllers.PersonController.GetById(System.Int32)">
             <summary>
             A Person by id
             </summary>
         </member>
-        <member name="M:myMicroservice.Controllers.PersonController.GetByName(System.String)">
+        <member name="M:myMicroservice.Api.v1.Controllers.PersonController.GetByName(System.String)">
             <summary>
             Get person by matching name
             </summary>
         </member>
-        <member name="M:myMicroservice.Controllers.PersonController.Create(myMicroservice.Models.Person)">
+        <member name="M:myMicroservice.Api.v1.Controllers.PersonController.Create(myMicroservice.Api.v1.Models.Person)">
+            <summary>
+            Creates a new person
+            </summary>
+            <param name="person">A person</param>
+            <returns>Created person or an error</returns>
+            <remarks>This may fail due to ... bla bla</remarks>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.AuthenticationModel.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.AuthenticationModel.Password">
+            <example>ultra-secure-pass</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.Person.Id">
+            <summary>Unique identifier</summary>
+            <example>10</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.Person.Name">
+            <example>Pepe</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.Person.Age">
+            <example>50</example>
+        </member>
+        <member name="M:myMicroservice.Api.v1.Models.Person.#ctor(System.Int32,System.String,System.Nullable{System.UInt16})">
+            <summary>Constructor</summary>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Password">
+            <example>ultra-secure-pass</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Email">
+            <example>example@gmail.com</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.User.Id">
+            <example>2</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.User.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.v1.Models.User.Email">
+            <example>example@email.com</example>
+        </member>
+        <member name="T:myMicroservice.Api.v2.Controllers.PersonController">
+            <summary>
+            GET: api/person
+            </summary>
+        </member>
+        <member name="M:myMicroservice.Api.v2.Controllers.PersonController.GetById(System.Int32)">
+            <summary>
+            A Person by id
+            </summary>
+        </member>
+        <member name="M:myMicroservice.Api.v2.Controllers.PersonController.GetByName(System.String)">
+            <summary>
+            Get person by matching name
+            </summary>
+        </member>
+        <member name="M:myMicroservice.Api.v2.Controllers.PersonController.Create(myMicroservice.Api.v1.Models.Person)">
             <summary>
             Creates a new person
             </summary>
@@ -33,43 +93,6 @@
             </summary>
             <param name="userId">User Id, to use it as a 'Claim' </param>
             <returns>Authentication token</returns>
-        </member>
-        <member name="P:myMicroservice.Models.AuthenticationModel.Username">
-            <example>"Daniel"</example>
-        </member>
-        <member name="P:myMicroservice.Models.AuthenticationModel.Password">
-            <example>"ultra-secure-pass"</example>
-        </member>
-        <member name="P:myMicroservice.Models.Person.Id">
-            <summary>Unique identifier</summary>
-            <example>10</example>
-        </member>
-        <member name="P:myMicroservice.Models.Person.Name">
-            <example>"Pepe"</example>
-        </member>
-        <member name="P:myMicroservice.Models.Person.Age">
-            <example>50</example>
-        </member>
-        <member name="M:myMicroservice.Models.Person.#ctor(System.Int32,System.String,System.Nullable{System.UInt16})">
-            <summary>Constructor</summary>
-        </member>
-        <member name="P:myMicroservice.Models.RegistrationModel.Username">
-            <example>"Daniel"</example>
-        </member>
-        <member name="P:myMicroservice.Models.RegistrationModel.Password">
-            <example>"ultra-secure-pass"</example>
-        </member>
-        <member name="P:myMicroservice.Models.RegistrationModel.Email">
-            <example>"example@gmail.com"</example>
-        </member>
-        <member name="P:myMicroservice.Models.User.Id">
-            <example>2</example>
-        </member>
-        <member name="P:myMicroservice.Models.User.Username">
-            <example>"Daniel"</example>
-        </member>
-        <member name="P:myMicroservice.Models.User.Email">
-            <example>"example@email.com"</example>
         </member>
     </members>
 </doc>

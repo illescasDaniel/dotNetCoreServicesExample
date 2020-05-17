@@ -91,16 +91,7 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.csproj.CopyComplete
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.Extensions.PlatformAbstractions.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Namotion.Reflection.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NJsonSchema.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NSwag.Annotations.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NSwag.AspNetCore.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NSwag.Core.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NSwag.Generation.dll
-/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NSwag.Generation.AspNetCore.dll
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.MvcApplicationPartsAssemblyInfo.cs
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/myMicroservice.xml
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.xml
@@ -156,3 +147,9 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.dll.config
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll

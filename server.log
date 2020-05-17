@@ -1161,3 +1161,1054 @@
 2020-05-16 17:35:56.315 +02:00 [INF] Executed action myMicroservice.Controllers.UserController.Authenticate (myMicroservice) in 33.5249ms
 2020-05-16 17:35:56.316 +02:00 [INF] Executed endpoint 'myMicroservice.Controllers.UserController.Authenticate (myMicroservice)'
 2020-05-16 17:35:56.316 +02:00 [INF] Request finished in 40.7011ms 401 application/json; charset=utf-8
+2020-05-17 11:58:30.535 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 11:58:31.031 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 11:58:31.032 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 11:58:31.032 +02:00 [INF] Hosting environment: Development
+2020-05-17 11:58:31.032 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 11:58:31.116 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 11:58:31.134 +02:00 [INF] Request finished in 22.0395ms 302 
+2020-05-17 11:58:31.159 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 11:58:31.386 +02:00 [INF] Request finished in 226.9122ms 200 text/html; charset=utf-8
+2020-05-17 11:58:32.581 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 11:58:32.583 +02:00 [INF] Request finished in 2.2874ms 302 
+2020-05-17 11:58:32.631 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 11:58:32.637 +02:00 [INF] Request finished in 3.2104ms 200 text/html; charset=utf-8
+2020-05-17 11:58:32.848 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-17 11:58:32.864 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-17 11:58:32.866 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-17 11:58:32.873 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-17 11:58:32.873 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-17 11:58:32.873 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-17 11:58:32.898 +02:00 [INF] Request finished in 25.6468ms 304 text/css
+2020-05-17 11:58:32.898 +02:00 [INF] Request finished in 9.9913ms 304 application/javascript
+2020-05-17 11:58:32.904 +02:00 [INF] Request finished in 7.5547ms 304 application/javascript
+2020-05-17 11:58:33.116 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 11:58:33.821 +02:00 [INF] Request finished in 705.6752ms 200 application/json; charset=utf-8
+2020-05-17 11:59:20.953 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/User/register application/json 80
+2020-05-17 11:59:21.131 +02:00 [INF] Executing endpoint 'myMicroservice.V1.Controllers.UserController.Register (myMicroservice)'
+2020-05-17 11:59:21.175 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.V1.Models.User] Register(myMicroservice.V1.Models.RegistrationModel) on controller myMicroservice.V1.Controllers.UserController (myMicroservice).
+2020-05-17 11:59:22.986 +02:00 [INF] Tried to insert existing user? ${}
+2020-05-17 11:59:22.986 +02:00 [INF] An error occurred while updating the entries. See the inner exception for details.
+2020-05-17 11:59:22.994 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-17 11:59:23.008 +02:00 [INF] Executed action myMicroservice.V1.Controllers.UserController.Register (myMicroservice) in 1825.7524ms
+2020-05-17 11:59:23.011 +02:00 [INF] Executed endpoint 'myMicroservice.V1.Controllers.UserController.Register (myMicroservice)'
+2020-05-17 11:59:23.012 +02:00 [INF] Request finished in 2058.7312ms 409 application/json; charset=utf-8
+2020-05-17 12:02:21.909 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:02:22.374 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:02:22.375 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:02:22.375 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:02:22.375 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:02:22.450 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:02:22.469 +02:00 [INF] Request finished in 22.0252ms 302 
+2020-05-17 12:02:22.495 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:02:22.718 +02:00 [INF] Request finished in 222.2484ms 200 text/html; charset=utf-8
+2020-05-17 12:02:23.864 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:02:23.870 +02:00 [INF] Request finished in 1.4981ms 302 
+2020-05-17 12:02:23.911 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:02:23.914 +02:00 [INF] Request finished in 2.501ms 200 text/html; charset=utf-8
+2020-05-17 12:02:24.204 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:02:24.953 +02:00 [INF] Request finished in 749.2741ms 200 application/json; charset=utf-8
+2020-05-17 12:04:53.873 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:04:54.350 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:04:54.350 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:04:54.350 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:04:54.350 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:04:54.426 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:04:54.446 +02:00 [INF] Request finished in 21.5424ms 302 
+2020-05-17 12:04:54.476 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:04:54.673 +02:00 [INF] Request finished in 196.3129ms 200 text/html; charset=utf-8
+2020-05-17 12:04:55.983 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:04:55.985 +02:00 [INF] Request finished in 2.3586ms 302 
+2020-05-17 12:04:56.015 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:04:56.018 +02:00 [INF] Request finished in 2.5467ms 200 text/html; charset=utf-8
+2020-05-17 12:04:56.364 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:04:57.084 +02:00 [INF] Request finished in 720.1418ms 200 application/json; charset=utf-8
+2020-05-17 12:06:20.377 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:06:20.814 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:06:20.814 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:06:20.814 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:06:20.814 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:06:20.881 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:06:20.900 +02:00 [INF] Request finished in 21.7911ms 302 
+2020-05-17 12:06:20.925 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:06:21.114 +02:00 [INF] Request finished in 189.3095ms 200 text/html; charset=utf-8
+2020-05-17 12:06:22.335 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:06:22.337 +02:00 [INF] Request finished in 2.0896ms 302 
+2020-05-17 12:06:22.371 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:06:22.374 +02:00 [INF] Request finished in 3.5589ms 200 text/html; charset=utf-8
+2020-05-17 12:06:22.735 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:06:23.436 +02:00 [INF] Request finished in 700.9241ms 200 application/json; charset=utf-8
+2020-05-17 12:06:50.562 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/WeatherForecast  
+2020-05-17 12:06:50.682 +02:00 [INF] Executing endpoint 'myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:06:50.701 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.V1.Models.WeatherForecast] Get() on controller myMicroservice.V1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 12:06:50.707 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.V1.Models.WeatherForecast[]'.
+2020-05-17 12:06:50.730 +02:00 [INF] Executed action myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice) in 20.9493ms
+2020-05-17 12:06:50.732 +02:00 [INF] Executed endpoint 'myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:06:50.733 +02:00 [INF] Request finished in 170.9249ms 200 application/json; charset=utf-8
+2020-05-17 12:06:57.747 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:06:57.751 +02:00 [INF] Request finished in 0.9828ms 200 application/json; charset=utf-8
+2020-05-17 12:07:03.266 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/WeatherForecast  
+2020-05-17 12:07:03.271 +02:00 [INF] Executing endpoint 'myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:07:03.272 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.V1.Models.WeatherForecast] Get() on controller myMicroservice.V1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 12:07:03.275 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.V1.Models.WeatherForecast[]'.
+2020-05-17 12:07:03.276 +02:00 [INF] Executed action myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice) in 3.9162ms
+2020-05-17 12:07:03.276 +02:00 [INF] Executed endpoint 'myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:07:03.277 +02:00 [INF] Request finished in 11.2705ms 200 application/json; charset=utf-8
+2020-05-17 12:07:06.112 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/WeatherForecast  
+2020-05-17 12:07:06.153 +02:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '2'. Candidate actions: myMicroservice.V1.Controllers.WeatherForecastController.Get (myMicroservice)
+2020-05-17 12:07:06.156 +02:00 [INF] Executing endpoint 'null'
+2020-05-17 12:07:06.159 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-17 12:07:06.163 +02:00 [INF] Executed endpoint 'null'
+2020-05-17 12:07:06.164 +02:00 [INF] Request finished in 52.1011ms 400 application/json; charset=utf-8
+2020-05-17 12:19:21.380 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:19:21.865 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:19:21.865 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:19:21.865 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:19:21.865 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:19:21.953 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:19:21.973 +02:00 [INF] Request finished in 22.7309ms 302 
+2020-05-17 12:19:22.042 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:19:22.261 +02:00 [INF] Request finished in 218.8174ms 200 text/html; charset=utf-8
+2020-05-17 12:19:23.466 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:19:23.469 +02:00 [INF] Request finished in 3.0644ms 302 
+2020-05-17 12:19:23.510 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:19:23.515 +02:00 [INF] Request finished in 4.7335ms 200 text/html; charset=utf-8
+2020-05-17 12:19:23.874 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:19:24.563 +02:00 [INF] Request finished in 689.1802ms 200 application/json; charset=utf-8
+2020-05-17 12:19:36.045 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/WeatherForecast  
+2020-05-17 12:19:36.211 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:19:36.242 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.Api.v1.Models.WeatherForecast] Get() on controller myMicroservice.Api.v1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 12:19:36.249 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.WeatherForecast[]'.
+2020-05-17 12:19:36.275 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice) in 25.3975ms
+2020-05-17 12:19:36.276 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:19:36.277 +02:00 [INF] Request finished in 232.1925ms 200 application/json; charset=utf-8
+2020-05-17 12:19:39.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/WeatherForecast  
+2020-05-17 12:19:39.306 +02:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '2'. Candidate actions: myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)
+2020-05-17 12:19:39.314 +02:00 [INF] Executing endpoint 'null'
+2020-05-17 12:19:39.317 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-17 12:19:39.321 +02:00 [INF] Executed endpoint 'null'
+2020-05-17 12:19:39.322 +02:00 [INF] Request finished in 44.5954ms 400 application/json; charset=utf-8
+2020-05-17 12:19:42.412 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1.0/WeatherForecast  
+2020-05-17 12:19:42.421 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:19:42.422 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.Api.v1.Models.WeatherForecast] Get() on controller myMicroservice.Api.v1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 12:19:42.422 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.WeatherForecast[]'.
+2020-05-17 12:19:42.424 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice) in 2.3038ms
+2020-05-17 12:19:42.425 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:19:42.425 +02:00 [INF] Request finished in 13.372ms 200 application/json; charset=utf-8
+2020-05-17 12:21:56.351 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:21:56.790 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:21:56.791 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:21:56.791 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:21:56.791 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:21:56.856 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:21:56.875 +02:00 [INF] Request finished in 21.553ms 302 
+2020-05-17 12:21:56.904 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:21:57.094 +02:00 [INF] Request finished in 189.7271ms 200 text/html; charset=utf-8
+2020-05-17 12:21:58.251 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:21:58.253 +02:00 [INF] Request finished in 1.6238ms 302 
+2020-05-17 12:21:58.301 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:21:58.304 +02:00 [INF] Request finished in 1.9725ms 200 text/html; charset=utf-8
+2020-05-17 12:21:58.612 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:21:59.087 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/api/v{version}/Person/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:21:59.153 +02:00 [INF] Request finished in 541.4172ms 500 text/plain
+2020-05-17 12:22:29.402 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:22:29.835 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:22:29.835 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:22:29.835 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:22:29.836 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:22:29.920 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:22:29.939 +02:00 [INF] Request finished in 21.3312ms 302 
+2020-05-17 12:22:29.967 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:22:30.152 +02:00 [INF] Request finished in 185.1268ms 200 text/html; charset=utf-8
+2020-05-17 12:22:31.274 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:22:31.276 +02:00 [INF] Request finished in 1.1879ms 302 
+2020-05-17 12:22:31.327 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:22:31.329 +02:00 [INF] Request finished in 2.8885ms 200 text/html; charset=utf-8
+2020-05-17 12:22:31.636 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:22:32.114 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/api/v{version}/Person/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:22:32.169 +02:00 [INF] Request finished in 533.1411ms 500 text/plain
+2020-05-17 12:35:03.264 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:35:03.786 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:35:03.787 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:35:03.787 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:35:03.787 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:35:03.845 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:35:03.865 +02:00 [INF] Request finished in 23.438ms 302 
+2020-05-17 12:35:03.891 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:35:04.103 +02:00 [INF] Request finished in 211.6473ms 200 text/html; charset=utf-8
+2020-05-17 12:35:05.237 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:35:05.237 +02:00 [INF] Request finished in 0.6807ms 302 
+2020-05-17 12:35:05.283 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:35:05.284 +02:00 [INF] Request finished in 0.8947ms 200 text/html; charset=utf-8
+2020-05-17 12:35:05.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:35:05.591 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:35:05.650 +02:00 [INF] Request finished in 79.4815ms 500 text/plain
+2020-05-17 12:35:20.627 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:35:21.155 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:35:21.155 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:35:21.155 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:35:21.155 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:35:21.238 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:35:21.258 +02:00 [INF] Request finished in 21.8787ms 302 
+2020-05-17 12:35:21.288 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:35:21.518 +02:00 [INF] Request finished in 230.0802ms 200 text/html; charset=utf-8
+2020-05-17 12:35:22.681 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:35:22.683 +02:00 [INF] Request finished in 1.4312ms 302 
+2020-05-17 12:35:22.730 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:35:22.733 +02:00 [INF] Request finished in 2.3993ms 200 text/html; charset=utf-8
+2020-05-17 12:35:23.013 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:35:23.031 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:35:23.082 +02:00 [INF] Request finished in 69.1491ms 500 text/plain
+2020-05-17 12:35:30.255 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 12:35:30.256 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:35:30.259 +02:00 [INF] Request finished in 4.1925ms 500 text/plain
+2020-05-17 12:35:32.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:35:32.255 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:35:32.256 +02:00 [INF] Request finished in 1.8128ms 500 text/plain
+2020-05-17 12:36:53.336 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:36:53.786 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:36:53.787 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:36:53.787 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:36:53.787 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:36:53.853 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:36:53.872 +02:00 [INF] Request finished in 20.9981ms 302 
+2020-05-17 12:36:53.899 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:36:54.088 +02:00 [INF] Request finished in 189.4693ms 200 text/html; charset=utf-8
+2020-05-17 12:36:55.215 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:36:55.216 +02:00 [INF] Request finished in 1.1805ms 302 
+2020-05-17 12:36:55.273 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:36:55.276 +02:00 [INF] Request finished in 3.1736ms 200 text/html; charset=utf-8
+2020-05-17 12:36:55.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:36:55.576 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:36:55.633 +02:00 [INF] Request finished in 80.9342ms 500 text/plain
+2020-05-17 12:37:17.184 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/1  
+2020-05-17 12:37:17.305 +02:00 [INF] Request finished in 120.0758ms 404 
+2020-05-17 12:37:20.014 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/2  
+2020-05-17 12:37:20.022 +02:00 [INF] Request finished in 8.0426ms 404 
+2020-05-17 12:37:52.588 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:37:53.020 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:37:53.021 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:37:53.021 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:37:53.021 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:37:53.076 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:37:53.095 +02:00 [INF] Request finished in 21.9415ms 302 
+2020-05-17 12:37:53.143 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:37:53.331 +02:00 [INF] Request finished in 187.9969ms 200 text/html; charset=utf-8
+2020-05-17 12:37:54.484 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:37:54.486 +02:00 [INF] Request finished in 1.4829ms 302 
+2020-05-17 12:37:54.532 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:37:54.533 +02:00 [INF] Request finished in 0.8678ms 200 text/html; charset=utf-8
+2020-05-17 12:37:54.805 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:37:55.294 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/api/v{version}/Person/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:37:55.346 +02:00 [INF] Request finished in 540.7051ms 500 text/plain
+2020-05-17 12:38:13.431 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/2  
+2020-05-17 12:38:13.538 +02:00 [INF] Request finished in 106.523ms 404 
+2020-05-17 12:38:17.064 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/2  
+2020-05-17 12:38:17.105 +02:00 [INF] Request finished in 36.9478ms 404 
+2020-05-17 12:38:20.128 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/1  
+2020-05-17 12:38:20.131 +02:00 [INF] Request finished in 3.3782ms 404 
+2020-05-17 12:39:04.554 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:39:05.048 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:39:05.049 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:39:05.049 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:39:05.049 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:39:05.139 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:39:05.158 +02:00 [INF] Request finished in 23.1559ms 302 
+2020-05-17 12:39:05.187 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:39:05.399 +02:00 [INF] Request finished in 212.194ms 200 text/html; charset=utf-8
+2020-05-17 12:39:06.521 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:39:06.522 +02:00 [INF] Request finished in 1.174ms 302 
+2020-05-17 12:39:06.560 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:39:06.562 +02:00 [INF] Request finished in 1.9536ms 200 text/html; charset=utf-8
+2020-05-17 12:39:06.844 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:39:07.509 +02:00 [INF] Request finished in 665.2805ms 200 application/json; charset=utf-8
+2020-05-17 12:39:21.124 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/WeatherForecast  
+2020-05-17 12:39:21.257 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:39:21.278 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.Api.v1.Models.WeatherForecast] Get() on controller myMicroservice.Api.v1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 12:39:21.284 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.WeatherForecast[]'.
+2020-05-17 12:39:21.305 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice) in 21.1104ms
+2020-05-17 12:39:21.307 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:39:21.308 +02:00 [INF] Request finished in 184.1253ms 200 application/json; charset=utf-8
+2020-05-17 12:39:41.313 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:39:41.780 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:39:41.781 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:39:41.781 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:39:41.781 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:39:41.898 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:39:41.925 +02:00 [INF] Request finished in 29.9228ms 302 
+2020-05-17 12:39:41.957 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:39:42.161 +02:00 [INF] Request finished in 204.279ms 200 text/html; charset=utf-8
+2020-05-17 12:39:43.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:39:43.323 +02:00 [INF] Request finished in 1.7688ms 302 
+2020-05-17 12:39:43.354 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:39:43.356 +02:00 [INF] Request finished in 2.0069ms 200 text/html; charset=utf-8
+2020-05-17 12:39:43.615 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:39:44.099 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/api/v{version}/Person/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:39:44.175 +02:00 [INF] Request finished in 560.0962ms 500 text/plain
+2020-05-17 12:39:51.111 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/1  
+2020-05-17 12:39:51.223 +02:00 [INF] Request finished in 112.1365ms 404 
+2020-05-17 12:40:04.879 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/1  
+2020-05-17 12:40:04.910 +02:00 [INF] Request finished in 27.1232ms 404 
+2020-05-17 12:40:11.298 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/1 application/json 50
+2020-05-17 12:40:11.369 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:40:11.371 +02:00 [INF] Request finished in 73.4959ms 404 
+2020-05-17 12:40:16.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/1 application/json 50
+2020-05-17 12:40:16.964 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:40:16.965 +02:00 [INF] Request finished in 3.1274ms 404 
+2020-05-17 12:43:28.224 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:43:28.796 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:43:28.797 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:43:28.797 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:43:28.797 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:43:28.882 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:43:28.907 +02:00 [INF] Request finished in 28.1759ms 302 
+2020-05-17 12:43:28.936 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:43:29.165 +02:00 [INF] Request finished in 229.3297ms 200 text/html; charset=utf-8
+2020-05-17 12:43:30.373 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:43:30.375 +02:00 [INF] Request finished in 2.3573ms 302 
+2020-05-17 12:43:30.414 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:43:30.417 +02:00 [INF] Request finished in 2.7133ms 200 text/html; charset=utf-8
+2020-05-17 12:43:30.777 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:43:31.325 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/api/v{version}/Person/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:43:31.395 +02:00 [INF] Request finished in 617.9258ms 500 text/plain
+2020-05-17 12:43:32.788 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Person/1 application/json 50
+2020-05-17 12:43:32.990 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:43:32.995 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:43:33.027 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 12:43:33.049 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 12:43:33.072 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 37.2244ms
+2020-05-17 12:43:33.073 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:43:33.074 +02:00 [INF] Request finished in 285.9468ms 200 application/json; charset=utf-8
+2020-05-17 12:46:27.403 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:46:27.897 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:46:27.902 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:46:27.902 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:46:27.902 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:46:27.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:46:27.980 +02:00 [INF] Request finished in 21.069ms 302 
+2020-05-17 12:46:28.007 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:46:28.226 +02:00 [INF] Request finished in 218.6383ms 200 text/html; charset=utf-8
+2020-05-17 12:46:29.434 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:46:29.436 +02:00 [INF] Request finished in 2.3847ms 302 
+2020-05-17 12:46:29.494 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:46:29.494 +02:00 [INF] Request finished in 1.0157ms 200 text/html; charset=utf-8
+2020-05-17 12:46:29.877 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:46:30.386 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/api/v{version}/Person/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:46:30.452 +02:00 [INF] Request finished in 575.6333ms 500 text/plain
+2020-05-17 12:46:32.760 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Person/1 application/json 
+2020-05-17 12:46:32.946 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:46:32.951 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:46:32.978 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 12:46:33.000 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 12:46:33.027 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 40.4672ms
+2020-05-17 12:46:33.028 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:46:33.028 +02:00 [INF] Request finished in 268.0079ms 200 application/json; charset=utf-8
+2020-05-17 12:46:42.405 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1 application/json 
+2020-05-17 12:46:42.419 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:46:42.428 +02:00 [INF] Authorization was successful.
+2020-05-17 12:46:42.428 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:46:42.477 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v1.Controllers.PersonController (myMicroservice).
+2020-05-17 12:46:42.479 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 12:46:42.479 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice) in 1.9914ms
+2020-05-17 12:46:42.480 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:46:42.480 +02:00 [INF] Request finished in 75.2855ms 200 application/json; charset=utf-8
+2020-05-17 12:46:47.929 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Person/1 application/json 
+2020-05-17 12:46:47.934 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:46:47.934 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:46:47.935 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 12:46:47.936 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 12:46:47.937 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 1.6602ms
+2020-05-17 12:46:47.937 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 12:46:47.937 +02:00 [INF] Request finished in 8.5585ms 200 application/json; charset=utf-8
+2020-05-17 12:46:54.886 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/WeatherForecast application/json 
+2020-05-17 12:46:54.889 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:46:54.890 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:46:54.895 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.Api.v1.Models.WeatherForecast] Get() on controller myMicroservice.Api.v1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 12:46:54.897 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.WeatherForecast[]'.
+2020-05-17 12:46:54.906 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice) in 10.5244ms
+2020-05-17 12:46:54.906 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 12:46:54.906 +02:00 [INF] Request finished in 20.4301ms 200 application/json; charset=utf-8
+2020-05-17 12:47:06.100 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/WeatherForecast application/json 
+2020-05-17 12:47:06.101 +02:00 [INF] Successfully validated the token.
+2020-05-17 12:47:06.102 +02:00 [INF] Request finished in 2.7875ms 404 
+2020-05-17 12:59:21.266 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 12:59:21.774 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 12:59:21.774 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 12:59:21.774 +02:00 [INF] Hosting environment: Development
+2020-05-17 12:59:21.775 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 12:59:21.841 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:59:21.861 +02:00 [INF] Request finished in 24.6173ms 302 
+2020-05-17 12:59:21.888 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:59:22.093 +02:00 [INF] Request finished in 205.0623ms 200 text/html; charset=utf-8
+2020-05-17 12:59:23.445 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 12:59:23.447 +02:00 [INF] Request finished in 2.0669ms 302 
+2020-05-17 12:59:23.490 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 12:59:23.493 +02:00 [INF] Request finished in 2.2166ms 200 text/html; charset=utf-8
+2020-05-17 12:59:23.774 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+2020-05-17 12:59:23.817 +02:00 [INF] Connection id "0HLVQA5DBVNDG", Request id "0HLVQA5DBVNDG:00000003": the application aborted the connection.
+2020-05-17 12:59:23.818 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-17 12:59:23.818 +02:00 [INF] Request finished in 45.035ms 0 image/png
+2020-05-17 12:59:23.881 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 12:59:23.909 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 12:59:23.979 +02:00 [INF] Request finished in 98.5967ms 500 text/plain
+2020-05-17 12:59:34.842 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/index.html  
+2020-05-17 12:59:34.951 +02:00 [INF] Request finished in 109.2503ms 404 
+2020-05-17 13:00:35.714 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:00:36.162 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:00:36.162 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:00:36.163 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:00:36.163 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:00:36.240 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:00:36.259 +02:00 [INF] Request finished in 21.362ms 302 
+2020-05-17 13:00:36.283 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:00:36.473 +02:00 [INF] Request finished in 189.6788ms 200 text/html; charset=utf-8
+2020-05-17 13:00:37.634 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:00:37.637 +02:00 [INF] Request finished in 2.2619ms 302 
+2020-05-17 13:00:37.678 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:00:37.680 +02:00 [INF] Request finished in 1.973ms 200 text/html; charset=utf-8
+2020-05-17 13:00:37.870 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+2020-05-17 13:00:37.900 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-17 13:00:37.901 +02:00 [INF] Request finished in 31.0924ms 200 image/png
+2020-05-17 13:00:37.957 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:00:37.976 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:00:38.023 +02:00 [INF] Request finished in 66.052ms 500 text/plain
+2020-05-17 13:01:44.959 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:01:44.960 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The OpenAPI/Swagger document 'v1' registered multiple times: Explicitly set the DocumentName property in AddSwaggerDocument() or AddOpenApiDocument().
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:01:44.962 +02:00 [INF] Request finished in 2.3703ms 500 text/plain
+2020-05-17 13:02:02.430 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/WeatherForecast application/json 
+2020-05-17 13:02:02.630 +02:00 [INF] Successfully validated the token.
+2020-05-17 13:02:02.634 +02:00 [INF] Request finished in 204.666ms 404 
+2020-05-17 13:02:08.871 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/WeatherForecast application/json 
+2020-05-17 13:02:08.940 +02:00 [INF] Successfully validated the token.
+2020-05-17 13:02:08.944 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 13:02:08.971 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myMicroservice.Api.v1.Models.WeatherForecast] Get() on controller myMicroservice.Api.v1.Controllers.WeatherForecastController (myMicroservice).
+2020-05-17 13:02:08.979 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.WeatherForecast[]'.
+2020-05-17 13:02:09.005 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice) in 28.5991ms
+2020-05-17 13:02:09.007 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.WeatherForecastController.Get (myMicroservice)'
+2020-05-17 13:02:09.007 +02:00 [INF] Request finished in 136.3856ms 200 application/json; charset=utf-8
+2020-05-17 13:03:45.129 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:03:45.626 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:03:45.626 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:03:45.626 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:03:45.626 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:03:45.673 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:03:45.693 +02:00 [INF] Request finished in 23.5777ms 302 
+2020-05-17 13:03:45.718 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:03:45.934 +02:00 [INF] Request finished in 215.8492ms 200 text/html; charset=utf-8
+2020-05-17 13:03:47.183 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:03:47.184 +02:00 [INF] Request finished in 0.6106ms 302 
+2020-05-17 13:03:47.216 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:03:47.217 +02:00 [INF] Request finished in 1.0355ms 200 text/html; charset=utf-8
+2020-05-17 13:03:47.495 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:03:48.229 +02:00 [INF] Request finished in 733.7272ms 200 application/json; charset=utf-8
+2020-05-17 13:04:06.426 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 13:04:06.587 +02:00 [INF] Authorization failed.
+2020-05-17 13:04:06.593 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 13:04:06.620 +02:00 [INF] Request finished in 194.6547ms 401 
+2020-05-17 13:04:33.184 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 13:04:33.192 +02:00 [INF] Authorization failed.
+2020-05-17 13:04:33.193 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 13:04:33.193 +02:00 [INF] Request finished in 9.0828ms 401 
+2020-05-17 13:05:07.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1 application/json 
+2020-05-17 13:05:07.715 +02:00 [INF] Successfully validated the token.
+2020-05-17 13:05:07.717 +02:00 [INF] Authorization was successful.
+2020-05-17 13:05:07.717 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 13:05:07.749 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v1.Controllers.PersonController (myMicroservice).
+2020-05-17 13:05:07.767 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 13:05:07.790 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice) in 35.4069ms
+2020-05-17 13:05:07.791 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 13:05:07.792 +02:00 [INF] Request finished in 143.9068ms 200 application/json; charset=utf-8
+2020-05-17 13:05:23.285 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 13:05:23.287 +02:00 [INF] Successfully validated the token.
+2020-05-17 13:05:23.287 +02:00 [INF] Authorization was successful.
+2020-05-17 13:05:23.288 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 13:05:23.288 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v1.Controllers.PersonController (myMicroservice).
+2020-05-17 13:05:23.291 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 13:05:23.293 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice) in 3.8338ms
+2020-05-17 13:05:23.293 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 13:05:23.293 +02:00 [INF] Request finished in 8.2221ms 200 application/json; charset=utf-8
+2020-05-17 13:06:07.932 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:06:08.365 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:06:08.365 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:06:08.365 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:06:08.365 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:06:08.420 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:06:08.438 +02:00 [INF] Request finished in 20.0187ms 302 
+2020-05-17 13:06:08.469 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:06:08.658 +02:00 [INF] Request finished in 189.3221ms 200 text/html; charset=utf-8
+2020-05-17 13:06:09.812 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:06:09.814 +02:00 [INF] Request finished in 1.753ms 302 
+2020-05-17 13:06:09.864 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:06:09.866 +02:00 [INF] Request finished in 1.9038ms 200 text/html; charset=utf-8
+2020-05-17 13:06:10.133 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:06:10.341 +02:00 [INF] Request finished in 207.4155ms 200 application/json; charset=utf-8
+2020-05-17 13:14:55.581 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:14:56.071 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:14:56.072 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:14:56.072 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:14:56.072 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:14:56.145 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:14:56.166 +02:00 [INF] Request finished in 22.5955ms 302 
+2020-05-17 13:14:56.197 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:14:56.408 +02:00 [INF] Request finished in 210.5896ms 200 text/html; charset=utf-8
+2020-05-17 13:14:57.601 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:14:57.602 +02:00 [INF] Request finished in 1.331ms 302 
+2020-05-17 13:14:57.668 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:14:57.672 +02:00 [INF] Request finished in 3.9246ms 200 text/html; charset=utf-8
+2020-05-17 13:14:58.022 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1.0.json  
+2020-05-17 13:14:58.144 +02:00 [INF] Request finished in 121.3174ms 404 
+2020-05-17 13:15:03.696 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-05-17 13:15:03.705 +02:00 [INF] Request finished in 8.0938ms 404 
+2020-05-17 13:16:41.808 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/1  
+2020-05-17 13:16:41.808 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/2  
+2020-05-17 13:16:41.812 +02:00 [INF] Request finished in 4.7599ms 404 
+2020-05-17 13:16:41.812 +02:00 [INF] Request finished in 4.3328ms 404 
+2020-05-17 13:33:34.014 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:33:34.491 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:33:34.491 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:33:34.491 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:33:34.491 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:33:34.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:33:34.603 +02:00 [INF] Request finished in 35.9639ms 301 
+2020-05-17 13:33:34.629 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:33:34.693 +02:00 [INF] Request finished in 64.1558ms 200 text/html;charset=utf-8
+2020-05-17 13:33:35.841 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:33:35.843 +02:00 [INF] Request finished in 1.9477ms 301 
+2020-05-17 13:33:35.891 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:33:35.892 +02:00 [INF] Request finished in 0.7992ms 200 text/html;charset=utf-8
+2020-05-17 13:33:36.206 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:33:36.302 +02:00 [INF] Request finished in 95.6521ms 200 application/json;charset=utf-8
+2020-05-17 13:35:01.429 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:35:01.887 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:35:01.888 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:35:01.888 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:35:01.888 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:35:01.973 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:35:02.006 +02:00 [INF] Request finished in 34.7452ms 301 
+2020-05-17 13:35:02.034 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:35:02.092 +02:00 [INF] Request finished in 57.1776ms 200 text/html;charset=utf-8
+2020-05-17 13:35:03.340 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:35:03.344 +02:00 [INF] Request finished in 5.1526ms 200 text/html;charset=utf-8
+2020-05-17 13:35:03.721 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:35:03.750 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/v{version}/Person/{id}" for actions - myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice),myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:35:03.814 +02:00 [INF] Request finished in 92.5712ms 500 text/plain
+2020-05-17 13:35:08.289 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 13:35:08.290 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/v{version}/Person/{id}" for actions - myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice),myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:35:08.294 +02:00 [INF] Request finished in 4.6551ms 500 text/plain
+2020-05-17 13:35:53.685 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:35:54.176 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:35:54.176 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:35:54.176 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:35:54.176 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:35:54.243 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:35:54.281 +02:00 [INF] Request finished in 40.4957ms 301 
+2020-05-17 13:35:54.311 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:35:54.385 +02:00 [INF] Request finished in 74.0996ms 200 text/html;charset=utf-8
+2020-05-17 13:35:55.595 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:35:55.597 +02:00 [INF] Request finished in 2.6386ms 200 text/html;charset=utf-8
+2020-05-17 13:35:55.890 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:35:55.915 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/v{version}/Person/{id}" for actions - myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice),myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:35:55.967 +02:00 [INF] Request finished in 77.416ms 500 text/plain
+2020-05-17 13:35:58.113 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 13:35:58.114 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/v{version}/Person/{id}" for actions - myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice),myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:35:58.118 +02:00 [INF] Request finished in 4.5291ms 500 text/plain
+2020-05-17 13:36:00.856 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:36:00.858 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/v{version}/Person/{id}" for actions - myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice),myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 13:36:00.861 +02:00 [INF] Request finished in 4.674ms 500 text/plain
+2020-05-17 13:52:26.610 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:52:27.129 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:52:27.130 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:52:27.130 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:52:27.130 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:52:27.216 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:52:27.339 +02:00 [ERR] Connection id "0HLVQB32M4N45", Request id "0HLVQB32M4N45:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:52:27.403 +02:00 [INF] Request finished in 189.7489ms 500 
+2020-05-17 13:52:28.650 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:52:28.664 +02:00 [ERR] Connection id "0HLVQB32M4N46", Request id "0HLVQB32M4N46:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:52:28.671 +02:00 [INF] Request finished in 20.9378ms 500 
+2020-05-17 13:52:40.893 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/index.html  
+2020-05-17 13:52:40.895 +02:00 [ERR] Connection id "0HLVQB32M4N46", Request id "0HLVQB32M4N46:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:52:40.896 +02:00 [INF] Request finished in 3.5432ms 500 
+2020-05-17 13:53:07.673 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:53:07.675 +02:00 [ERR] Connection id "0HLVQB32M4N46", Request id "0HLVQB32M4N46:00000003": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:53:07.680 +02:00 [INF] Request finished in 3.9539ms 500 
+2020-05-17 13:53:11.002 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/V1/swagger.json  
+2020-05-17 13:53:11.003 +02:00 [ERR] Connection id "0HLVQB32M4N46", Request id "0HLVQB32M4N46:00000004": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:53:11.006 +02:00 [INF] Request finished in 3.0242ms 500 
+2020-05-17 13:53:44.790 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:55:07.941 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:55:07.941 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:55:07.941 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:55:07.941 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:55:08.010 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:55:08.128 +02:00 [ERR] Connection id "0HLVQB4IJIHNL", Request id "0HLVQB4IJIHNL:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:55:08.183 +02:00 [INF] Request finished in 175.3011ms 500 
+2020-05-17 13:55:09.429 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:55:09.439 +02:00 [ERR] Connection id "0HLVQB4IJIHNM", Request id "0HLVQB4IJIHNM:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:55:09.447 +02:00 [INF] Request finished in 11.3299ms 500 
+2020-05-17 13:55:11.960 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:55:11.963 +02:00 [ERR] Connection id "0HLVQB4IJIHNM", Request id "0HLVQB4IJIHNM:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:55:11.964 +02:00 [INF] Request finished in 3.4989ms 500 
+2020-05-17 13:55:21.330 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json application/json 
+2020-05-17 13:55:21.576 +02:00 [INF] Successfully validated the token.
+2020-05-17 13:55:21.578 +02:00 [ERR] Connection id "0HLVQB4IJIHNO", Request id "0HLVQB4IJIHNO:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 13:55:21.578 +02:00 [INF] Request finished in 248.6293ms 500 
+2020-05-17 13:56:32.565 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:56:33.047 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:56:33.047 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:56:33.047 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:56:33.047 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:56:33.143 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:56:33.293 +02:00 [INF] Request finished in 152.3276ms 301 
+2020-05-17 13:56:33.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:56:33.414 +02:00 [INF] Request finished in 93.4028ms 200 text/html;charset=utf-8
+2020-05-17 13:56:34.607 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:56:34.611 +02:00 [INF] Request finished in 3.644ms 200 text/html;charset=utf-8
+2020-05-17 13:56:34.916 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:56:35.032 +02:00 [INF] Request finished in 116.0601ms 200 application/json;charset=utf-8
+2020-05-17 13:56:38.788 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 13:56:38.794 +02:00 [INF] Request finished in 5.9747ms 404 
+2020-05-17 13:56:41.067 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:56:41.089 +02:00 [INF] Request finished in 21.597ms 200 application/json;charset=utf-8
+2020-05-17 13:57:32.922 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 13:57:33.456 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 13:57:33.456 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 13:57:33.456 +02:00 [INF] Hosting environment: Development
+2020-05-17 13:57:33.456 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 13:57:33.529 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 13:57:33.674 +02:00 [INF] Request finished in 148.0605ms 301 
+2020-05-17 13:57:33.701 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:57:33.773 +02:00 [INF] Request finished in 71.284ms 200 text/html;charset=utf-8
+2020-05-17 13:57:34.935 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:57:34.940 +02:00 [INF] Request finished in 4.3155ms 200 text/html;charset=utf-8
+2020-05-17 13:57:35.280 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:57:35.387 +02:00 [INF] Request finished in 107.1727ms 200 application/json;charset=utf-8
+2020-05-17 13:57:36.524 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 13:57:36.535 +02:00 [INF] Request finished in 11.0969ms 200 application/json;charset=utf-8
+2020-05-17 13:58:15.200 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 13:58:15.203 +02:00 [INF] Request finished in 2.3011ms 200 text/html;charset=utf-8
+2020-05-17 13:58:15.316 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-17 13:58:15.331 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-17 13:58:15.331 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-17 13:58:15.435 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-17 13:58:15.435 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-17 13:58:15.435 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-17 13:58:15.438 +02:00 [INF] Request finished in 122.2737ms 200 text/css
+2020-05-17 13:58:15.438 +02:00 [INF] Request finished in 107.1426ms 200 application/javascript
+2020-05-17 13:58:15.438 +02:00 [INF] Request finished in 107.1081ms 200 application/javascript
+2020-05-17 13:58:15.625 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+2020-05-17 13:58:15.630 +02:00 [INF] Connection id "0HLVQB5TVBRQ5", Request id "0HLVQB5TVBRQ5:00000002": the application aborted the connection.
+2020-05-17 13:58:15.630 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-17 13:58:15.630 +02:00 [INF] Request finished in 5.5332ms 0 image/png
+2020-05-17 13:58:15.719 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 13:58:15.726 +02:00 [INF] Request finished in 7.8796ms 200 application/json;charset=utf-8
+2020-05-17 14:04:47.230 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:04:47.719 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:04:47.719 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:04:47.719 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:04:47.719 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:04:47.805 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:06:27.255 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:06:27.821 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:06:27.822 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:06:27.822 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:06:27.822 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:06:27.910 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:06:28.148 +02:00 [INF] Request finished in 239.3667ms 301 
+2020-05-17 14:06:28.179 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:06:28.278 +02:00 [INF] Request finished in 98.6758ms 200 text/html;charset=utf-8
+2020-05-17 14:06:29.513 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:06:29.518 +02:00 [INF] Request finished in 5.0139ms 200 text/html;charset=utf-8
+2020-05-17 14:06:29.947 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:06:30.071 +02:00 [INF] Request finished in 124.1736ms 200 application/json;charset=utf-8
+2020-05-17 14:07:38.410 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/authenticate application/json 41
+2020-05-17 14:07:38.425 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-17 14:07:38.455 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.v1.Models.AuthenticationOutput] Authenticate(myMicroservice.Api.v1.Models.AuthenticationModel) on controller myMicroservice.Api.v1.Controllers.UserController (myMicroservice).
+2020-05-17 14:07:39.563 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-17 14:07:39.577 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.UserController.Authenticate (myMicroservice) in 1115.7108ms
+2020-05-17 14:07:39.579 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-17 14:07:39.579 +02:00 [INF] Request finished in 1169.2683ms 401 application/json; charset=utf-8
+2020-05-17 14:07:45.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 14:07:45.093 +02:00 [INF] Request finished in 16.61ms 200 application/json;charset=utf-8
+2020-05-17 14:08:18.887 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:08:18.890 +02:00 [INF] Request finished in 2.4885ms 200 text/html;charset=utf-8
+2020-05-17 14:08:19.296 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:08:19.311 +02:00 [INF] Request finished in 15.52ms 200 application/json;charset=utf-8
+2020-05-17 14:11:36.751 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:11:37.206 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:11:37.206 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:11:37.207 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:11:37.207 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:11:37.275 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:11:37.431 +02:00 [INF] Request finished in 158.4812ms 301 
+2020-05-17 14:11:37.457 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:11:37.515 +02:00 [INF] Request finished in 58.3372ms 200 text/html;charset=utf-8
+2020-05-17 14:11:38.786 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:11:38.791 +02:00 [INF] Request finished in 5.1989ms 200 text/html;charset=utf-8
+2020-05-17 14:11:39.280 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:11:39.420 +02:00 [INF] Request finished in 139.5795ms 200 application/json;charset=utf-8
+2020-05-17 14:11:52.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:11:52.450 +02:00 [INF] Authorization failed.
+2020-05-17 14:11:52.457 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:11:52.457 +02:00 [INF] Request finished in 33.9017ms 401 
+2020-05-17 14:13:06.352 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:13:06.361 +02:00 [INF] Authorization failed.
+2020-05-17 14:13:06.362 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:13:06.362 +02:00 [INF] Request finished in 9.6102ms 401 
+2020-05-17 14:13:16.769 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:13:16.770 +02:00 [INF] Authorization failed.
+2020-05-17 14:13:16.771 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:13:16.771 +02:00 [INF] Request finished in 2.5867ms 401 
+2020-05-17 14:13:25.513 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json application/json 
+2020-05-17 14:13:25.759 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:13:25.771 +02:00 [INF] Request finished in 257.524ms 200 application/json;charset=utf-8
+2020-05-17 14:13:34.391 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/1 application/json 
+2020-05-17 14:13:34.393 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:13:34.396 +02:00 [INF] Request finished in 4.4135ms 404 
+2020-05-17 14:13:42.520 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/1 application/json 
+2020-05-17 14:13:42.523 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:13:42.524 +02:00 [INF] Request finished in 3.5057ms 404 
+2020-05-17 14:13:45.336 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/3 application/json 
+2020-05-17 14:13:45.338 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:13:45.339 +02:00 [INF] Request finished in 2.4624ms 404 
+2020-05-17 14:14:19.463 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/authenticate application/json 39
+2020-05-17 14:14:19.465 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-17 14:14:19.495 +02:00 [INF] Route matched with {action = "Authenticate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.v1.Models.AuthenticationOutput] Authenticate(myMicroservice.Api.v1.Models.AuthenticationModel) on controller myMicroservice.Api.v1.Controllers.UserController (myMicroservice).
+2020-05-17 14:14:20.617 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.AuthenticationOutput'.
+2020-05-17 14:14:20.631 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.UserController.Authenticate (myMicroservice) in 1129.8709ms
+2020-05-17 14:14:20.632 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.UserController.Authenticate (myMicroservice)'
+2020-05-17 14:14:20.632 +02:00 [INF] Request finished in 1169.7763ms 200 application/json; charset=utf-8
+2020-05-17 14:14:35.876 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:14:35.878 +02:00 [INF] Authorization failed.
+2020-05-17 14:14:35.878 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:14:35.879 +02:00 [INF] Request finished in 2.7945ms 401 
+2020-05-17 14:14:45.592 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:14:45.594 +02:00 [INF] Authorization failed.
+2020-05-17 14:14:45.595 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:14:45.596 +02:00 [INF] Request finished in 3.6107ms 401 
+2020-05-17 14:14:51.401 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v2/Person/3 application/json 
+2020-05-17 14:14:51.402 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:14:51.403 +02:00 [INF] Request finished in 1.7049ms 404 
+2020-05-17 14:14:58.621 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/v1/Person/1 application/json 
+2020-05-17 14:14:58.623 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:14:58.624 +02:00 [INF] Request finished in 2.4552ms 404 
+2020-05-17 14:15:01.070 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:15:01.103 +02:00 [INF] Request finished in 32.9092ms 200 application/json;charset=utf-8
+2020-05-17 14:15:11.899 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1 application/json 
+2020-05-17 14:15:11.900 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:15:11.901 +02:00 [INF] Authorization was successful.
+2020-05-17 14:15:11.901 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:15:11.909 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v1.Controllers.PersonController (myMicroservice).
+2020-05-17 14:15:11.913 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:15:11.920 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice) in 11.4933ms
+2020-05-17 14:15:11.921 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:15:11.921 +02:00 [INF] Request finished in 22.0045ms 200 application/json; charset=utf-8
+2020-05-17 14:15:54.656 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:15:54.657 +02:00 [INF] Authorization failed.
+2020-05-17 14:15:54.657 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:15:54.657 +02:00 [INF] Request finished in 1.4275ms 401 
+2020-05-17 14:17:23.722 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css.map  
+2020-05-17 14:17:23.739 +02:00 [INF] Request finished in 17.477ms 404 
+2020-05-17 14:17:26.847 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:17:26.847 +02:00 [INF] Authorization failed.
+2020-05-17 14:17:26.848 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:17:26.848 +02:00 [INF] Request finished in 0.9503ms 401 
+2020-05-17 14:23:23.462 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:23:23.986 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:23:23.987 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:23:23.987 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:23:23.987 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:23:24.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:23:24.230 +02:00 [INF] Request finished in 157.1162ms 301 
+2020-05-17 14:23:24.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:23:24.343 +02:00 [INF] Request finished in 88.8701ms 200 text/html;charset=utf-8
+2020-05-17 14:23:25.522 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:23:25.527 +02:00 [INF] Request finished in 5.1515ms 200 text/html;charset=utf-8
+2020-05-17 14:23:26.060 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:23:26.194 +02:00 [INF] Request finished in 133.4681ms 200 application/json;charset=utf-8
+2020-05-17 14:23:45.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:23:45.573 +02:00 [INF] Authorization failed.
+2020-05-17 14:23:45.577 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:23:45.577 +02:00 [INF] Request finished in 25.2692ms 401 
+2020-05-17 14:23:58.633 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1  
+2020-05-17 14:23:58.869 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:23:58.871 +02:00 [INF] Authorization was successful.
+2020-05-17 14:23:58.871 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:23:58.905 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v1.Controllers.PersonController (myMicroservice).
+2020-05-17 14:23:58.924 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:23:58.946 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice) in 34.5427ms
+2020-05-17 14:23:58.947 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:23:58.948 +02:00 [INF] Request finished in 314.5181ms 200 application/json; charset=utf-8
+2020-05-17 14:28:26.458 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:28:26.869 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:28:26.869 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:28:26.869 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:28:26.869 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:28:26.926 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:28:27.068 +02:00 [INF] Request finished in 144.8386ms 301 
+2020-05-17 14:28:27.092 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:28:27.151 +02:00 [INF] Request finished in 58.16ms 200 text/html;charset=utf-8
+2020-05-17 14:28:28.360 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:28:28.364 +02:00 [INF] Request finished in 4.1569ms 200 text/html;charset=utf-8
+2020-05-17 14:28:28.657 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:28:28.782 +02:00 [INF] Request finished in 124.7747ms 200 application/json;charset=utf-8
+2020-05-17 14:29:46.239 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1  
+2020-05-17 14:29:46.469 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:29:46.476 +02:00 [INF] Authorization was successful.
+2020-05-17 14:29:46.477 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.UserController.GetById (myMicroservice)'
+2020-05-17 14:29:46.503 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.v1.Models.User] GetById(Int32) on controller myMicroservice.Api.v1.Controllers.UserController (myMicroservice).
+2020-05-17 14:29:47.602 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.User'.
+2020-05-17 14:29:47.616 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.UserController.GetById (myMicroservice) in 1108.9991ms
+2020-05-17 14:29:47.618 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.UserController.GetById (myMicroservice)'
+2020-05-17 14:29:47.618 +02:00 [INF] Request finished in 1379.7695ms 200 application/json; charset=utf-8
+2020-05-17 14:31:00.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 14:31:00.858 +02:00 [INF] Request finished in 20.8884ms 200 application/json;charset=utf-8
+2020-05-17 14:31:01.924 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 14:31:01.935 +02:00 [INF] Request finished in 10.6532ms 200 application/json;charset=utf-8
+2020-05-17 14:32:02.775 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:32:03.186 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:32:03.186 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:32:03.186 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:32:03.186 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:32:03.231 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:32:03.376 +02:00 [INF] Request finished in 148.1488ms 301 
+2020-05-17 14:32:03.402 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:32:03.465 +02:00 [INF] Request finished in 62.6676ms 200 text/html;charset=utf-8
+2020-05-17 14:32:04.695 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:32:04.700 +02:00 [INF] Request finished in 4.3156ms 200 text/html;charset=utf-8
+2020-05-17 14:32:05.056 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:32:05.192 +02:00 [INF] Request finished in 136.4188ms 200 application/json;charset=utf-8
+2020-05-17 14:32:12.746 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 14:32:12.762 +02:00 [INF] Request finished in 15.5607ms 200 application/json;charset=utf-8
+2020-05-17 14:32:18.070 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-17 14:32:18.080 +02:00 [INF] Request finished in 10.1844ms 200 application/json;charset=utf-8
+2020-05-17 14:32:32.410 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Person/1  
+2020-05-17 14:32:32.433 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:32:32.462 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 14:32:32.480 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:32:32.495 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 27.9937ms
+2020-05-17 14:32:32.496 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:32:32.496 +02:00 [INF] Request finished in 85.947ms 200 application/json; charset=utf-8
+2020-05-17 14:32:39.251 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Person/2  
+2020-05-17 14:32:39.254 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:32:39.255 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 14:32:39.256 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:32:39.260 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 5.0752ms
+2020-05-17 14:32:39.261 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:32:39.261 +02:00 [INF] Request finished in 10.022ms 200 application/json; charset=utf-8
+2020-05-17 14:32:50.103 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:32:50.113 +02:00 [INF] Request finished in 9.4885ms 200 application/json;charset=utf-8
+2020-05-17 14:32:55.718 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1  
+2020-05-17 14:32:55.728 +02:00 [INF] Authorization failed.
+2020-05-17 14:32:55.732 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-17 14:32:55.733 +02:00 [INF] Request finished in 14.5211ms 401 
