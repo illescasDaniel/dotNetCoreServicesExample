@@ -87,6 +87,18 @@
             <returns>Created person or an error</returns>
             <remarks>This may fail due to ... bla bla</remarks>
         </member>
+        <member name="P:myMicroservice.Database.Entities.UserEntity.UserId">
+            <example>1</example>
+        </member>
+        <member name="P:myMicroservice.Database.Entities.UserEntity.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Database.Entities.UserEntity.HashedPassword">
+            <example>xxxxxxxx</example>
+        </member>
+        <member name="P:myMicroservice.Database.Entities.UserEntity.Email">
+            <example>example@gmail.com</example>
+        </member>
         <member name="M:myMicroservice.Database.Odata.Configurations.UserModelConfiguration.Apply(Microsoft.AspNet.OData.Builder.ODataModelBuilder,Microsoft.AspNetCore.Mvc.ApiVersion)">
             <summary>
             Applies model configurations using the provided builder for the specified API version.

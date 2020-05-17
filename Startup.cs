@@ -104,7 +104,7 @@ namespace myMicroservice
                 // if a service has a route that doesn't specify a version, assume that is v2 by default [the latest]
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ApiVersionSelector = new CurrentImplementationApiVersionSelector(options); // latest version
-                //options.DefaultApiVersion = new ApiVersion(2,0); // Default version
+                //options.DefaultApiVersion = new ApiVersion(1,0); // Default version
 
                 //options.ApiVersionReader = new UrlSegmentApiVersionReader();
                 // if you want to specify the version via query string: options.ApiVersionReader = new QueryStringApiVersionReader();
@@ -118,6 +118,8 @@ namespace myMicroservice
             services.AddODataApiExplorer(
                 options =>
                 {
+                    //options.DefaultApiVersion = new ApiVersion(1, 0);
+                    //options.ApiVersionParameterSource = new UrlSegmentApiVersionReader();
                     // add the versioned api explorer, which also adds IApiVersionDescriptionProvider service
                     // note: the specified format code will format the version as "'v'major[.minor][-status]"
                     options.GroupNameFormat = "'v'VVV";
@@ -262,6 +264,7 @@ namespace myMicroservice
 
             // configure DI for application services
             services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+            services.AddScoped<Database.DatabaseContext>();
         }
 
         // Odata - no api versioning

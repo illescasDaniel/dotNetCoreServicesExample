@@ -19,15 +19,15 @@ namespace myMicroservice.Api.v1.Models
         [Required]
         public string Email { get; set; }
 
-        public Database.Entities.User MapToUserEntity() // might not be used, should't be used when updating for example, we might use another entity instead
+        public Database.Entities.UserEntity MapToUserEntity() // might not be used, should't be used when updating for example, we might use another entity instead
         {
             var mapperConfig = new MapperConfiguration(config =>
-                config.CreateMap<RegistrationModel, Database.Entities.User>()
+                config.CreateMap<RegistrationModel, Database.Entities.UserEntity>()
                 .ForMember(dest => dest.HashedPassword, opt => opt.MapFrom(src => src.Password))
                 .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => 0))
             );
             var mapper = new Mapper(mapperConfig);
-            return mapper.Map<Database.Entities.User>(this);
+            return mapper.Map<Database.Entities.UserEntity>(this);
         }
     }
 }

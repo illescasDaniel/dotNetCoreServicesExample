@@ -16,7 +16,7 @@ namespace myMicroservice.Database.Odata.Configurations
 
             if (apiVersion > new ApiVersion(2, 0)) { return; }
 
-            var user = builder.EntitySet<Entities.User>("Users").EntityType
+            var user = builder.EntitySet<Entities.UserEntity>("Users").EntityType
                 .HasKey(u => u.UserId)
                 .Select().Expand().Count().Filter().OrderBy();
 

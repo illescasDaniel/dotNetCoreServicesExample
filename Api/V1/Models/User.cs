@@ -24,22 +24,22 @@ namespace myMicroservice.Api.v1.Models
 
         // Methods
 
-        public Database.Entities.User MapToUserEntity() // might not be used, should't be used when updating for example, we might use another entity instead
+        public Database.Entities.UserEntity MapToUserEntity() // might not be used, should't be used when updating for example, we might use another entity instead
         {
             var mapperConfig = new MapperConfiguration(config =>
-                config.CreateMap<User, Database.Entities.User>()
+                config.CreateMap<User, Database.Entities.UserEntity>()
                 .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.Id))
             );
             var mapper = new Mapper(mapperConfig);
-            return mapper.Map<Database.Entities.User>(this);
+            return mapper.Map<Database.Entities.UserEntity>(this);
         }
 
         // Initializers
 
-        public User(Database.Entities.User userEntity)
+        public User(Database.Entities.UserEntity userEntity)
         {
             var mapperConfig = new MapperConfiguration(config =>
-                config.CreateMap<Database.Entities.User, User>()
+                config.CreateMap<Database.Entities.UserEntity, User>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.UserId))
             );
             var mapper = new Mapper(mapperConfig);

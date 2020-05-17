@@ -20,10 +20,11 @@ namespace myMicroservice.Api.v1.Controllers
 
         private IUserAuthenticationService _authenticationService;
         private readonly ILogger<UserController> _logger;
-        //private readonly DatabaseContext _context = new DatabaseContext();
+        private readonly DatabaseContext _dbContext;
 
-        public UserController(IUserAuthenticationService authenticationService, ILogger<UserController> logger)
+        public UserController(DatabaseContext dbContext, IUserAuthenticationService authenticationService, ILogger<UserController> logger)
         {
+            _dbContext = dbContext;
             _authenticationService = authenticationService;
             _logger = logger;
         }
@@ -38,14 +39,11 @@ namespace myMicroservice.Api.v1.Controllers
         public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model)
         {
 
-            Database.Entities.User? userEntity;
+            Database.Entities.UserEntity? userEntity;
             try
             {
-                using (var db = new DatabaseContext())
-                {
-                    userEntity = db.Users
-                     .FirstOrDefault(User => User.Username == model.Username);
-                } 
+                userEntity = _dbContext.Users
+                .FirstOrDefault(User => User.Username == model.Username);
             }
             catch (Exception e)
             {
@@ -61,7 +59,7 @@ namespace myMicroservice.Api.v1.Controllers
                 return NotFound();
             }
 
-            var passHasher = new PasswordHasher<Database.Entities.User>();
+            var passHasher = new PasswordHasher<Database.Entities.UserEntity>();
             var verificationResult = passHasher.VerifyHashedPassword(
                 userEntity,
                 hashedPassword: userEntity.HashedPassword,
@@ -96,18 +94,15 @@ namespace myMicroservice.Api.v1.Controllers
         {
             var newUserEntity = model.MapToUserEntity();
 
-            var passHasher = new PasswordHasher<Database.Entities.User>();
+            var passHasher = new PasswordHasher<Database.Entities.UserEntity>();
             var hashedPass = passHasher.HashPassword(newUserEntity, model.Password);
 
             newUserEntity.HashedPassword = hashedPass;
 
             try
             {
-                using (var db = new DatabaseContext())
-                {
-                    db.Add(newUserEntity);
-                    db.SaveChanges();
-                }
+                _dbContext.Add(newUserEntity);
+                _dbContext.SaveChanges();
                 var user = new User(userEntity: newUserEntity);
                 return Created($"api/User/{newUserEntity.UserId}", user);
             } catch(Microsoft.EntityFrameworkCore.DbUpdateException updateException)
@@ -136,14 +131,11 @@ namespace myMicroservice.Api.v1.Controllers
         public ActionResult<User> GetById(int id)
         {
 
-            Database.Entities.User? userEntity;
+            Database.Entities.UserEntity? userEntity;
             try
             {
-                using (var db = new DatabaseContext())
-                {
-                    userEntity = db.Users
-                     .FirstOrDefault(User => User.UserId == id);
-                }
+                userEntity = _dbContext.Users
+                .FirstOrDefault(User => User.UserId == id);
             }
             catch (Exception e)
             {

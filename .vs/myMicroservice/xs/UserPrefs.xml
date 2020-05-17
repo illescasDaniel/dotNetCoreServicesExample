@@ -1,20 +1,31 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Database/Odata/UsersController.cs">
     <Files>
-      <File FileName="Startup.cs" Line="150" Column="14" />
+      <File FileName="Database/Odata/UsersController.cs" Line="14" Column="5" />
+      <File FileName="Startup.cs" Line="298" Column="1" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="17" Column="38" />
+      <File FileName="Database/Odata/Configurations/UserModelConfiguration.cs" Line="1" Column="1" />
+      <File FileName="Database/Entities/UserEntity.cs" Line="1" Column="1" />
+      <File FileName="Api/V1/Models/User.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
-              <Node name="Api" expanded="True" />
-              <Node name="Database" expanded="True">
-                <Node name="Odata" expanded="True">
-                  <Node name="Configurations" expanded="True" />
+              <Node name="Api" expanded="True">
+                <Node name="V1" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True" />
                 </Node>
               </Node>
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Database" expanded="True">
+                <Node name="Entities" expanded="True" />
+                <Node name="Odata" expanded="True">
+                  <Node name="Configurations" expanded="True" />
+                  <Node name="UsersController.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
