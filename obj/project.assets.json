@@ -254,6 +254,46 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.OData/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OData.Core": "[7.6.1, 8.0.0)",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.OData.Versioning/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.1.1",
+          "Microsoft.AspNetCore.OData": "[7.3.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.OData.Versioning.ApiExplorer/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "4.1.1",
+          "Microsoft.AspNetCore.OData.Versioning": "4.1.1",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -997,6 +1037,28 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.OData.Core/7.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OData.Edm": "[7.6.1]",
+          "Microsoft.Spatial": "[7.6.1]"
+        },
+        "compile": {
+          "lib/netstandard1.1/Microsoft.OData.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Microsoft.OData.Core.dll": {}
+        }
+      },
+      "Microsoft.OData.Edm/7.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/Microsoft.OData.Edm.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Microsoft.OData.Edm.dll": {}
+        }
+      },
       "Microsoft.OpenApi/1.1.4": {
         "type": "package",
         "compile": {
@@ -1004,6 +1066,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
+      "Microsoft.Spatial/7.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/Microsoft.Spatial.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Microsoft.Spatial.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration/3.1.2": {
@@ -2927,6 +2998,53 @@
         "microsoft.aspnetcore.mvc.versioning.apiexplorer.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.OData/7.4.0": {
+      "sha512": "gt7kCYR78rgpv3XuQ1M5ZkZFvOsBQJuf8Qb+h3ztqWVC36XAkSapjfIgzASC8R49YrzxsfrXqp9FVExqZQSX6w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.odata/7.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.OData.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.OData.xml",
+        "microsoft.aspnetcore.odata.7.4.0.nupkg.sha512",
+        "microsoft.aspnetcore.odata.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OData.Versioning/4.1.1": {
+      "sha512": "GNkXb3KzYRpSyTW25xfjDcuRByJjyw7sl0we54QfP9ANxVhgHiJ9RGWVY9NVAPznOh0ZU8KeSIu+LtYLrkf+IQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.odata.versioning/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.pdb",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.xml",
+        "microsoft.aspnetcore.odata.versioning.4.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.odata.versioning.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OData.Versioning.ApiExplorer/4.1.1": {
+      "sha512": "O/nKHcQi5FjaevOv3jCqGOx09fbHnUmndS/jjRn/U24VYZFmXttY+5rYvadUZeh2GF90wMFibXAeZ7yWeRbtPw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.odata.versioning.apiexplorer/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.pdb",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.xml",
+        "microsoft.aspnetcore.odata.versioning.apiexplorer.4.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.odata.versioning.apiexplorer.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Razor/2.2.0": {
       "sha512": "V54PIyDCFl8COnTp9gezNHpUNHk7F9UnerGeZy3UfbnwYvfzbo+ipqQmSgeoESH8e0JvKhRTyQyZquW2EPtCmg==",
       "type": "package",
@@ -3858,6 +3976,36 @@
         "runtime.json"
       ]
     },
+    "Microsoft.OData.Core/7.6.1": {
+      "sha512": "dm4dAbgDehOv3sgxzlZW+FUtnn93irsv15uDJRNXKk5LUiA5ejZFhCp5hUd/JcUr5Hb0T0SAlhXxlPEKPEeavg==",
+      "type": "package",
+      "path": "microsoft.odata.core/7.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Microsoft.OData.Core.dll",
+        "lib/netstandard1.1/Microsoft.OData.Core.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.OData.Core.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.OData.Core.xml",
+        "microsoft.odata.core.7.6.1.nupkg.sha512",
+        "microsoft.odata.core.nuspec"
+      ]
+    },
+    "Microsoft.OData.Edm/7.6.1": {
+      "sha512": "bi1IM0Uctpp34YnVJGy7afsTViArP/sQjFGWyg2p+z/16xumNUmG0H4y8xnjM57fJjGZHyC7Oe6WHbnJDcM1Pw==",
+      "type": "package",
+      "path": "microsoft.odata.edm/7.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Microsoft.OData.Edm.dll",
+        "lib/netstandard1.1/Microsoft.OData.Edm.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.OData.Edm.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.OData.Edm.xml",
+        "microsoft.odata.edm.7.6.1.nupkg.sha512",
+        "microsoft.odata.edm.nuspec"
+      ]
+    },
     "Microsoft.OpenApi/1.1.4": {
       "sha512": "6SW0tpbJslc8LAY1XniRfLVcJa7bJUbbwvo2/ZRqfkMbJrsqIj9045vg3STtZhDhYRKhpYgjqGU11eeW4Pzyrg==",
       "type": "package",
@@ -3873,6 +4021,21 @@
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
         "microsoft.openapi.1.1.4.nupkg.sha512",
         "microsoft.openapi.nuspec"
+      ]
+    },
+    "Microsoft.Spatial/7.6.1": {
+      "sha512": "3gZZwLABqkyRHRuVHTHUUbEsyasSX/bD1c/UBQpoFPC0yElszBYdv80/awaaPjzeeQkfFLyGoxNySNkLTbHKOA==",
+      "type": "package",
+      "path": "microsoft.spatial/7.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Microsoft.Spatial.dll",
+        "lib/netstandard1.1/Microsoft.Spatial.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.Spatial.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.Spatial.xml",
+        "microsoft.spatial.7.6.1.nupkg.sha512",
+        "microsoft.spatial.nuspec"
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/3.1.2": {
@@ -8235,6 +8398,9 @@
       "Microsoft.AspNetCore.Mvc.ApiExplorer >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 4.1.1",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 4.1.1",
+      "Microsoft.AspNetCore.OData >= 7.4.0",
+      "Microsoft.AspNetCore.OData.Versioning >= 4.1.1",
+      "Microsoft.AspNetCore.OData.Versioning.ApiExplorer >= 4.1.1",
       "Microsoft.EntityFrameworkCore >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.4",
@@ -8302,6 +8468,18 @@
             "version": "[4.1.1, )"
           },
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+            "target": "Package",
+            "version": "[4.1.1, )"
+          },
+          "Microsoft.AspNetCore.OData": {
+            "target": "Package",
+            "version": "[7.4.0, )"
+          },
+          "Microsoft.AspNetCore.OData.Versioning": {
+            "target": "Package",
+            "version": "[4.1.1, )"
+          },
+          "Microsoft.AspNetCore.OData.Versioning.ApiExplorer": {
             "target": "Package",
             "version": "[4.1.1, )"
           },

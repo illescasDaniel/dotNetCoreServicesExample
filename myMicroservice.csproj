@@ -29,6 +29,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.4.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OData.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OData.Versioning.ApiExplorer" Version="4.1.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
@@ -39,6 +42,8 @@
     <Folder Include="Api\V2\" />
     <Folder Include="Api\V2\Controllers\" />
     <Folder Include="Api\V2\Models\" />
+    <Folder Include="Database\Odata\" />
+    <Folder Include="Database\Odata\Configurations\" />
   </ItemGroup>    
   <ItemGroup>
     <Compile Remove="Entities\UserEntity.cs" />

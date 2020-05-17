@@ -10,6 +10,7 @@ namespace myMicroservice.Api.v1.Controllers
     /// </summary>
     [ApiController]
     [Authorize]
+    [Route("api/[controller]")] // This enables this path to be visible without v number, and the one picked is defined in Startup.cs (the latest)
     [Route("api/v{version:apiVersion}/[controller]")]
     public class PersonController : ControllerBase
     {

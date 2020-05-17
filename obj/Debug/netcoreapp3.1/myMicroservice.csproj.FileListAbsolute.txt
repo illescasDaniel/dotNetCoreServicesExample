@@ -153,3 +153,9 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.OData.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.OData.Core.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.OData.Edm.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.Spatial.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.dll

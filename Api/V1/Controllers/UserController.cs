@@ -12,6 +12,7 @@ using myMicroservice.Database;
 namespace myMicroservice.Api.v1.Controllers
 {
     [ApiController]
+    [ApiVersionNeutral]
     [Authorize]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class UserController : ControllerBase
@@ -19,6 +20,7 @@ namespace myMicroservice.Api.v1.Controllers
 
         private IUserAuthenticationService _authenticationService;
         private readonly ILogger<UserController> _logger;
+        //private readonly DatabaseContext _context = new DatabaseContext();
 
         public UserController(IUserAuthenticationService authenticationService, ILogger<UserController> logger)
         {
@@ -130,7 +132,7 @@ namespace myMicroservice.Api.v1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public ActionResult<User> GetById(int id)
         {
 

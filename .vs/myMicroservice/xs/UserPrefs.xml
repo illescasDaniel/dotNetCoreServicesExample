@@ -1,27 +1,20 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V2/Controllers/PersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Startup.cs" Line="66" Column="99" />
-      <File FileName="Api/V1/Models/User.cs" Line="60" Column="27" />
-      <File FileName="Api/V1/Controllers/UserController.cs" Line="153" Column="14" />
-      <File FileName="Api/V2/Controllers/PersonController.cs" Line="10" Column="19" />
+      <File FileName="Startup.cs" Line="150" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Api" expanded="True">
-                <Node name="V2" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="PersonController.cs" selected="True" />
-                  </Node>
+              <Node name="Api" expanded="True" />
+              <Node name="Database" expanded="True">
+                <Node name="Odata" expanded="True">
+                  <Node name="Configurations" expanded="True" />
                 </Node>
               </Node>
-              <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
