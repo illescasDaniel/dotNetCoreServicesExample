@@ -26,8 +26,9 @@ namespace myMicroservice.Database.Odata
 
         [ODataRoute]
         [EnableQuery]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(typeof(ODataValue<IEnumerable<Entities.UserEntity>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(ODataValue<IQueryable<Entities.UserEntity>>), StatusCodes.Status200OK)]
         [Produces("application/json")]
         // [EnableQuery( MaxTop = 100, AllowedQueryOptions = Select | Top | Skip | Count )]
         public IQueryable<Entities.UserEntity> Get() // api-version from query
@@ -39,21 +40,35 @@ namespace myMicroservice.Database.Odata
         [ODataRoute("({id})")]
         [EnableQuery]
         [ProducesResponseType(typeof(ODataValue<Entities.UserEntity>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         public ActionResult<Entities.UserEntity> Get([FromODataUri][Required] int id)
         {
             var user = _dbContext.Users.Where(u => u.UserId == id).FirstOrDefault();
             if (user == null)
             {
-                return Problem(
-                    title: "Not found",
-                    statusCode: StatusCodes.Status204NoContent
-                );
+                return NotFound();
             }
             return Ok(user);
         }
+
+        //[ODataRoute("({id})/Username")]
+        //[EnableQuery]
+        //[ProducesResponseType(typeof(ODataValue<Entities.UserEntity>), StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //[Produces("application/json")]
+        //public ActionResult<string> GetUsernameFromUser([FromODataUri][Required] int id)
+        //{
+        //    var user = _dbContext.Users.Where(u => u.UserId == id).FirstOrDefault();
+        //    if (user == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(user.Username);
+        //}
     }
 }

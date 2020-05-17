@@ -6536,3 +6536,116 @@ Microsoft.OData.ODataException: A type named 'Microsoft.AspNetCore.Mvc.ProblemDe
 2020-05-17 20:22:02.309 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectSome`1[[myMicroservice.Database.Entities.UserEntity, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2020-05-17 20:22:02.311 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 9.6288ms
 2020-05-17 20:22:02.311 +02:00 [INF] Request finished in 16.4215ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-17 20:27:17.911 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 20:27:19.196 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 20:27:19.197 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 20:27:19.197 +02:00 [INF] Hosting environment: Development
+2020-05-17 20:27:19.197 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 20:27:19.270 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 20:27:19.403 +02:00 [INF] Request finished in 135.7705ms 301 
+2020-05-17 20:27:19.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:27:19.476 +02:00 [INF] Request finished in 36.1738ms 200 text/html;charset=utf-8
+2020-05-17 20:27:20.838 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:27:20.843 +02:00 [INF] Request finished in 4.5615ms 200 text/html;charset=utf-8
+2020-05-17 20:27:21.167 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 20:27:21.412 +02:00 [INF] Request finished in 244.9518ms 200 application/json;charset=utf-8
+2020-05-17 20:27:24.059 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3?api-version=1.0&$select=Username  
+2020-05-17 20:27:24.225 +02:00 [INF] Successfully validated the token.
+2020-05-17 20:27:24.349 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.UserEntity] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-17 20:27:24.356 +02:00 [INF] Authorization was successful.
+2020-05-17 20:27:25.378 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectSome`1[[myMicroservice.Database.Entities.UserEntity, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-17 20:27:25.574 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1218.6945ms
+2020-05-17 20:27:25.579 +02:00 [INF] Request finished in 1519.6317ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-17 20:27:32.064 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3/username?api-version=1.0  
+2020-05-17 20:27:32.066 +02:00 [INF] Successfully validated the token.
+2020-05-17 20:27:32.089 +02:00 [INF] Request finished in 25.2082ms 404 
+2020-05-17 20:27:50.445 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3/Username?api-version=1.0  
+2020-05-17 20:27:50.447 +02:00 [INF] Successfully validated the token.
+2020-05-17 20:27:50.479 +02:00 [INF] Request finished in 34.0385ms 404 
+2020-05-17 20:28:29.493 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3/Username/$value?api-version=1.0  
+2020-05-17 20:28:29.496 +02:00 [INF] Successfully validated the token.
+2020-05-17 20:28:29.503 +02:00 [INF] Request finished in 10.0194ms 404 
+2020-05-17 20:32:30.861 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 20:32:32.235 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 20:32:32.235 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 20:32:32.236 +02:00 [INF] Hosting environment: Development
+2020-05-17 20:32:32.236 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 20:32:32.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 20:32:32.456 +02:00 [INF] Request finished in 137.3761ms 301 
+2020-05-17 20:32:32.472 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:32:32.506 +02:00 [INF] Request finished in 33.9576ms 200 text/html;charset=utf-8
+2020-05-17 20:32:33.927 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:32:33.934 +02:00 [INF] Request finished in 7.7325ms 200 text/html;charset=utf-8
+2020-05-17 20:32:34.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 20:32:34.550 +02:00 [INF] Request finished in 273.5711ms 200 application/json;charset=utf-8
+2020-05-17 20:32:55.083 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3/Username/$value?api-version=1.0  
+2020-05-17 20:32:55.218 +02:00 [INF] Successfully validated the token.
+2020-05-17 20:32:55.340 +02:00 [INF] Request finished in 256.3594ms 404 
+2020-05-17 20:32:58.014 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3/Username?api-version=1.0  
+2020-05-17 20:32:58.017 +02:00 [INF] Successfully validated the token.
+2020-05-17 20:32:58.075 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-17 20:32:58.080 +02:00 [INF] Authorization was successful.
+2020-05-17 20:32:58.900 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-17 20:32:59.032 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 951.3677ms
+2020-05-17 20:32:59.036 +02:00 [INF] Request finished in 1022.0066ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-17 20:33:43.913 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 20:33:45.049 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 20:33:45.049 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 20:33:45.049 +02:00 [INF] Hosting environment: Development
+2020-05-17 20:33:45.049 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 20:33:45.108 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 20:33:45.237 +02:00 [INF] Request finished in 131.4947ms 301 
+2020-05-17 20:33:45.253 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:33:45.280 +02:00 [INF] Request finished in 26.6322ms 200 text/html;charset=utf-8
+2020-05-17 20:33:46.573 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:33:46.577 +02:00 [INF] Request finished in 4.2143ms 200 text/html;charset=utf-8
+2020-05-17 20:33:46.904 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 20:33:47.094 +02:00 [ERR] Connection id "0HLVQI3AESQDK", Request id "0HLVQI3AESQDK:00000002": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "GET odata/Users" for actions - myMicroservice.Database.Odata.UsersController.Get (myMicroservice),myMicroservice.Database.Odata.UsersController.Get (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 20:33:47.142 +02:00 [INF] Request finished in 238.5114ms 500 
+2020-05-17 20:35:05.668 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 20:35:06.829 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 20:35:06.830 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 20:35:06.830 +02:00 [INF] Hosting environment: Development
+2020-05-17 20:35:06.830 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 20:35:06.905 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 20:35:07.031 +02:00 [INF] Request finished in 128.1589ms 301 
+2020-05-17 20:35:07.046 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:35:07.075 +02:00 [INF] Request finished in 29.1375ms 200 text/html;charset=utf-8
+2020-05-17 20:35:08.310 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:35:08.318 +02:00 [INF] Request finished in 8.3935ms 200 text/html;charset=utf-8
+2020-05-17 20:35:08.671 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 20:35:08.851 +02:00 [ERR] Connection id "0HLVQI42QVM5I", Request id "0HLVQI42QVM5I:00000002": An unhandled exception was thrown by the application.
+System.NotSupportedException: Conflicting method/path combination "GET odata/Users" for actions - myMicroservice.Database.Odata.UsersController.Get (myMicroservice),myMicroservice.Database.Odata.UsersController.Get (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-17 20:35:08.894 +02:00 [INF] Request finished in 222.2114ms 500 
+2020-05-17 20:39:25.174 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 20:39:26.362 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 20:39:26.362 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 20:39:26.362 +02:00 [INF] Hosting environment: Development
+2020-05-17 20:39:26.362 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 20:39:26.423 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 20:39:26.556 +02:00 [INF] Request finished in 135.3665ms 301 
+2020-05-17 20:39:26.570 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:39:26.600 +02:00 [INF] Request finished in 29.6695ms 200 text/html;charset=utf-8
+2020-05-17 20:39:27.790 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 20:39:27.795 +02:00 [INF] Request finished in 4.7586ms 200 text/html;charset=utf-8
+2020-05-17 20:39:28.099 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 20:39:28.318 +02:00 [INF] Request finished in 218.7965ms 200 application/json;charset=utf-8

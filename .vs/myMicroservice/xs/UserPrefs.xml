@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Database/Odata/UsersController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="server.log">
     <Files>
-      <File FileName="Database/Odata/UsersController.cs" Line="14" Column="5" />
-      <File FileName="Startup.cs" Line="298" Column="1" />
+      <File FileName="Database/Odata/UsersController.cs" Line="40" Column="11" />
+      <File FileName="Startup.cs" Line="121" Column="23" />
       <File FileName="Api/V1/Controllers/UserController.cs" Line="17" Column="38" />
-      <File FileName="Database/Odata/Configurations/UserModelConfiguration.cs" Line="1" Column="1" />
+      <File FileName="Database/Odata/Configurations/UserModelConfiguration.cs" Line="19" Column="64" />
       <File FileName="Database/Entities/UserEntity.cs" Line="1" Column="1" />
       <File FileName="Api/V1/Models/User.cs" Line="1" Column="1" />
+      <File FileName="server.log" Line="6615" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,9 +24,9 @@
                 <Node name="Entities" expanded="True" />
                 <Node name="Odata" expanded="True">
                   <Node name="Configurations" expanded="True" />
-                  <Node name="UsersController.cs" selected="True" />
                 </Node>
               </Node>
+              <Node name="server.log" selected="True" />
             </Node>
           </Node>
         </State>
