@@ -61,9 +61,11 @@ namespace myMicroservice
                 options.ReportApiVersions = true;
                 options.Conventions.Add(new VersionByNamespaceConvention());
 
+                // if a service isn't in the V1 or V2 folders, assume that is v2 by default [the latest]
                 options.AssumeDefaultVersionWhenUnspecified = true;
-                options.ApiVersionReader = new UrlSegmentApiVersionReader(); // not sure what it is
-                options.DefaultApiVersion = new ApiVersion(2,0); // should probably be the latest
+                options.ApiVersionSelector = new CurrentImplementationApiVersionSelector(options); // latest version
+                //options.DefaultApiVersion = new ApiVersion(2,0); // Default version
+                options.ApiVersionReader = new UrlSegmentApiVersionReader(); // not sure what it is                
             });
 
             // Map config section stuff to classes

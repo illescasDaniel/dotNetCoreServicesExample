@@ -2212,3 +2212,79 @@ System.InvalidOperationException: Unable to resolve service for type 'Swashbuckl
 2020-05-17 14:32:55.728 +02:00 [INF] Authorization failed.
 2020-05-17 14:32:55.732 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
 2020-05-17 14:32:55.733 +02:00 [INF] Request finished in 14.5211ms 401 
+2020-05-17 14:39:42.278 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:39:42.702 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:39:42.702 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:39:42.702 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:39:42.702 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:39:42.770 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:39:42.917 +02:00 [INF] Request finished in 150.2835ms 301 
+2020-05-17 14:39:42.943 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:39:43.023 +02:00 [INF] Request finished in 80.3582ms 200 text/html;charset=utf-8
+2020-05-17 14:39:44.285 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:39:44.289 +02:00 [INF] Request finished in 4.3776ms 200 text/html;charset=utf-8
+2020-05-17 14:39:44.652 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:39:44.779 +02:00 [INF] Request finished in 126.4452ms 200 application/json;charset=utf-8
+2020-05-17 14:39:49.668 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Person/1 application/json 
+2020-05-17 14:39:49.879 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:39:49.881 +02:00 [INF] Request finished in 213.6209ms 404 
+2020-05-17 14:40:16.244 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Person/1 application/json 
+2020-05-17 14:40:16.256 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:40:16.258 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:40:16.298 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 14:40:16.316 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:40:16.331 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 26.2562ms
+2020-05-17 14:40:16.332 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:40:16.332 +02:00 [INF] Request finished in 88.7711ms 200 application/json; charset=utf-8
+2020-05-17 14:40:23.141 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Person/1 application/json 
+2020-05-17 14:40:23.144 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:40:23.146 +02:00 [INF] Request finished in 4.1828ms 404 
+2020-05-17 14:40:27.667 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Person/1 application/json 
+2020-05-17 14:40:27.668 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:40:27.670 +02:00 [INF] Request finished in 2.5211ms 404 
+2020-05-17 14:43:23.074 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:43:23.492 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:43:23.492 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:43:23.492 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:43:23.492 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:43:23.573 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:43:23.716 +02:00 [INF] Request finished in 144.9811ms 301 
+2020-05-17 14:43:23.742 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:43:23.826 +02:00 [INF] Request finished in 84.3937ms 200 text/html;charset=utf-8
+2020-05-17 14:43:25.004 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:43:25.009 +02:00 [INF] Request finished in 5.4108ms 200 text/html;charset=utf-8
+2020-05-17 14:43:25.284 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:43:25.414 +02:00 [INF] Request finished in 130.5742ms 200 application/json;charset=utf-8
+2020-05-17 14:43:51.754 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Person/1 application/json 
+2020-05-17 14:43:51.959 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:43:51.961 +02:00 [INF] Request finished in 207.8805ms 404 
+2020-05-17 14:43:56.391 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Person/1 application/json 
+2020-05-17 14:43:56.406 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:43:56.416 +02:00 [INF] Authorization was successful.
+2020-05-17 14:43:56.418 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:43:56.446 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v1.Controllers.PersonController (myMicroservice).
+2020-05-17 14:43:56.462 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:43:56.476 +02:00 [INF] Executed action myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice) in 24.0561ms
+2020-05-17 14:43:56.477 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v1.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:43:56.477 +02:00 [INF] Request finished in 86.2248ms 200 application/json; charset=utf-8
+2020-05-17 14:44:28.007 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-17 14:44:28.437 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 14:44:28.437 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 14:44:28.437 +02:00 [INF] Hosting environment: Development
+2020-05-17 14:44:28.437 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-17 14:44:28.523 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+2020-05-17 14:44:28.672 +02:00 [INF] Request finished in 151.3374ms 301 
+2020-05-17 14:44:28.698 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:44:28.783 +02:00 [INF] Request finished in 85.0954ms 200 text/html;charset=utf-8
+2020-05-17 14:44:30.051 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-17 14:44:30.057 +02:00 [INF] Request finished in 6.174ms 200 text/html;charset=utf-8
+2020-05-17 14:44:30.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-17 14:44:30.544 +02:00 [INF] Request finished in 125.5625ms 200 application/json;charset=utf-8
+2020-05-17 14:44:50.262 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Person/1 application/json 
+2020-05-17 14:44:50.484 +02:00 [INF] Successfully validated the token.
+2020-05-17 14:44:50.487 +02:00 [INF] Executing endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:44:50.511 +02:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature myMicroservice.Api.v1.Models.Person GetById(Int32) on controller myMicroservice.Api.v2.Controllers.PersonController (myMicroservice).
+2020-05-17 14:44:50.525 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.v1.Models.Person'.
+2020-05-17 14:44:50.538 +02:00 [INF] Executed action myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice) in 22.2858ms
+2020-05-17 14:44:50.539 +02:00 [INF] Executed endpoint 'myMicroservice.Api.v2.Controllers.PersonController.GetById (myMicroservice)'
+2020-05-17 14:44:50.539 +02:00 [INF] Request finished in 277.6782ms 200 application/json; charset=utf-8

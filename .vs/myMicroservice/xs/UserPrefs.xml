@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V1/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V2/Controllers/PersonController.cs">
     <Files>
-      <File FileName="Startup.cs" Line="180" Column="22" />
+      <File FileName="Startup.cs" Line="66" Column="99" />
       <File FileName="Api/V1/Models/User.cs" Line="60" Column="27" />
       <File FileName="Api/V1/Controllers/UserController.cs" Line="153" Column="14" />
+      <File FileName="Api/V2/Controllers/PersonController.cs" Line="10" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,14 +15,10 @@
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Api" expanded="True">
-                <Node name="V1" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="UserController.cs" selected="True" />
-                  </Node>
-                  <Node name="Models" expanded="True" />
-                </Node>
                 <Node name="V2" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="PersonController.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Properties" expanded="True" />

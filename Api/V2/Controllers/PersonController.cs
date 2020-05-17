@@ -8,9 +8,9 @@ namespace myMicroservice.Api.v2.Controllers
     /// <summary>
     /// GET: api/person
     /// </summary>
-    //[ApiVersion("2.0")]
     [ApiController]
     //[Authorize]
+    [Route("api/[controller]")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class PersonController : ControllerBase
     {
