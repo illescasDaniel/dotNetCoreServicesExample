@@ -7,12 +7,8 @@ namespace myMicroservice.Api.V1.Models.AutoMapperProfiles
     {
         public DeviceProfile()
         {
-            CreateMap<User, UserDto>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.UserId));
-
-            CreateMap<RegistrationModel, User>()
-                .ForMember(dest => dest.HashedPassword, opt => opt.MapFrom(src => src.Password))
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => 0));
+            CreateMap<Device, DeviceDto>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.DeviceId));
         }
     }
 }

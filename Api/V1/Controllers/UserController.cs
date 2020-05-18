@@ -41,30 +41,20 @@ namespace myMicroservice.Api.V1.Controllers
             _mapper = mapper;
         }
 
+        //
+
         [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpPost("authenticate")]
         public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model)
         {
             User? userEntity;
-            try
-            {
-                userEntity = _dbContext.Users
-                    .AsNoTracking()
-                    .FirstOrDefault(User => User.Username == model.Username);
-            }
-            catch (Exception e)
-            {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
-            }
+            userEntity = _dbContext.Users
+                .AsNoTracking()
+                .FirstOrDefault(User => User.Username == model.Username);
 
             if (userEntity == null)
             {
@@ -99,7 +89,6 @@ namespace myMicroservice.Api.V1.Controllers
         [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpPost("register")]
         public ActionResult<UserDto> Register(RegistrationModel model)
@@ -111,35 +100,29 @@ namespace myMicroservice.Api.V1.Controllers
 
             newUserEntity.HashedPassword = hashedPass;
 
-            try
-            {
-                _dbContext.Add(newUserEntity);
-                _dbContext.SaveChanges();
-                var user = _mapper.Map<UserDto>(newUserEntity);
-                return Created($"api/User/{newUserEntity.UserId}", user);
-            } catch(DbUpdateException updateException)
-            {
-                _logger.LogInformation("Tried to insert existing user? ${}");
-                _logger.LogInformation(updateException.Message);
-                //throw new ArgumentException(updateException.Message);
-                return Problem(
-                    statusCode: StatusCodes.Status409Conflict,
-                    detail: $"Error adding user. One with the same username might exists"
-                );
-            } catch (Exception e)
-            {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
-            }
+            _dbContext.Add(newUserEntity);
+            _dbContext.SaveChanges();
+            var user = _mapper.Map<UserDto>(newUserEntity);
+            return Created($"api/User/{newUserEntity.UserId}", user);
+        }
+
+        //
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [Produces("application/json")]
+        [HttpGet]
+        public ActionResult<IQueryable<UserDto>> Get([FromQuery] int limit = 10)
+        {
+            var users = _dbContext.Users
+                            .Take(limit)
+                            .ProjectTo<UserDto>(_mapper.ConfigurationProvider);
+            return Ok(users);
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpGet("{id:int}")]
         public ActionResult<UserDto> GetById(int id)
@@ -155,85 +138,68 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpPost("{ownerUserId:int}/devices")]
         public ActionResult<DeviceDto> AddDevice([FromBody]NewDeviceDto newDevice, [FromRoute]int ownerUserId)
         {
-            try
-            {
-                var user = _dbContext.Users
-                    .Include(User => User.Devices)
-                    .FirstOrDefault(User => User.UserId == ownerUserId);
+            var user = _dbContext.Users
+                .Include(User => User.Devices)
+                .FirstOrDefault(User => User.UserId == ownerUserId);
 
-                if (user == null)
-                {
-                    return NotFound();
-                }
-
-                var device = newDevice.MapToDeviceEntity();
-                user.Devices.Add(device);
-                _dbContext.SaveChanges();
-
-                var createdDeviceDto = _mapper.Map<DeviceDto>(device);//new DeviceDto(device: device);
-                return Created($"api/Device/{device.DeviceId}", createdDeviceDto);
-            }
-            catch (DbUpdateException updateException)
+            if (user == null)
             {
-                return Problem(
-                    statusCode: StatusCodes.Status409Conflict,
-                    detail: $"Error adding user device: {updateException.Message}"
-                );
+                return NotFound();
             }
-            catch (Exception e)
-            {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
-            }
+
+            var device = newDevice.MapToDeviceEntity();
+            user.Devices.Add(device);
+            _dbContext.SaveChanges();
+
+            var createdDeviceDto = _mapper.Map<DeviceDto>(device);//new DeviceDto(device: device);
+            return Created($"api/Device/{device.DeviceId}", createdDeviceDto);
         }
-
-        // TODO: create device repo ??
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpGet("{ownerUserId:int}/devices")]
         public ActionResult<List<DeviceDto>> GetDevices(int ownerUserId)
         {
-            try
-            {
-                var devices = _dbContext.Users
-                    .Include(User => User.Devices)
-                    .FirstOrDefault(User => User.UserId == ownerUserId)?
-                    .Devices;
+            var devices = _dbContext.Users
+                .Include(User => User.Devices)
+                .FirstOrDefault(User => User.UserId == ownerUserId)?
+                .Devices;
 
-                if (devices == null)
-                {
-                    return NotFound();
-                }
-                var devicesDto = _mapper.Map<List<DeviceDto>>(devices);
-                return Ok(devicesDto);
-            }
-            catch (DbUpdateException updateException)
+            if (devices == null)
             {
-                return Problem(
-                    statusCode: StatusCodes.Status409Conflict,
-                    detail: $"Error adding user device: {updateException.Message}"
-                );
+                return NotFound();
             }
-            catch (Exception e)
+            var devicesDto = _mapper.Map<List<DeviceDto>>(devices);
+            return Ok(devicesDto);
+        }
+
+        // patch
+
+        // update
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        [HttpDelete("{id}")]
+        public IActionResult DeleteById(int id)
+        {
+            User? user = _dbContext.Users.Find(id);
+            if (user == null)
             {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
+                return NotFound();
             }
+            // automatically deletes devices asociated with it
+            _dbContext.Remove(user);
+            _dbContext.SaveChanges();
+
+            return Ok();
         }
     }
 }

@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Serilog;
 
 namespace myMicroservice
@@ -19,6 +13,12 @@ namespace myMicroservice
             .WriteTo.File(
                 path: "server.log",
                 restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information,
+                fileSizeLimitBytes: 300 * 1024 * 124,
+                rollOnFileSizeLimit: true
+            )
+            .WriteTo.File(
+                path: "server-errors.log",
+                restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Error,
                 fileSizeLimitBytes: 300 * 1024 * 124,
                 rollOnFileSizeLimit: true
             )

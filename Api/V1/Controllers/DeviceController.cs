@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using myMicroservice.Api.V1.Models;
 using System.Collections.Generic;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using myMicroservice.Database.Entities;
 
 namespace myMicroservice.Api.V1.Controllers
@@ -39,10 +40,23 @@ namespace myMicroservice.Api.V1.Controllers
             _mapper = mapper;
         }
 
+        //
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [Produces("application/json")]
+        [HttpGet]
+        public ActionResult<IQueryable<DeviceDto>> Get([FromQuery] int limit = 10)
+        {
+            var devices = _dbContext.Devices
+                            .Take(limit)
+                            .ProjectTo<DeviceDto>(_mapper.ConfigurationProvider);
+            return Ok(devices);
+        }
+
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpGet("{id:int}")]
         public ActionResult<DeviceDto> GetById(int id)
@@ -58,7 +72,6 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpPatch("{id:int}")]
         public ActionResult<DeviceDto> PatchById([FromRoute]int id, [FromBody]UpdatedDeviceDto updatedDevice)
@@ -70,23 +83,68 @@ namespace myMicroservice.Api.V1.Controllers
             }
             device.Name = updatedDevice.Name;
             device.Version = updatedDevice.Version;
-            _dbContext.Entry(device).State = EntityState.Modified;
-
-            try
-            {
-                _dbContext.SaveChanges();
-            }
-            catch (Exception e)
-            {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
-            }
+            _dbContext.Update(device);//Entry(device).State = EntityState.Modified;
+            _dbContext.SaveChanges();
 
             var deviceDto = _mapper.Map<DeviceDto>(device);
             return Ok(deviceDto);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        [HttpPut]
+        public ActionResult<DeviceDto> Update(DeviceDto updatedDevice)
+        {
+            Device? device = _dbContext.Devices.Find(updatedDevice.Id);
+            if (device == null)
+            {
+                return NotFound();
+            }
+            if (_dbContext.Users.Find(updatedDevice.OwnerUserId) == null)
+            {
+                return Problem(
+                    statusCode: StatusCodes.Status404NotFound,
+                    detail: $"Cannot update device because new user Id doesn't exist: {updatedDevice.OwnerUserId}"
+                );
+            }
+
+            if (device.Name != updatedDevice.Name)
+            {
+                device.Name = updatedDevice.Name;
+            }
+            if (device.Version != updatedDevice.Version)
+            {
+                device.Version = updatedDevice.Version;
+            }
+            if (device.OwnerUserId != updatedDevice.OwnerUserId)
+            {
+                device.OwnerUserId = updatedDevice.OwnerUserId;
+            }
+
+            _dbContext.SaveChanges();
+            
+            var deviceDto = _mapper.Map<DeviceDto>(device);
+            return Ok(deviceDto);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        [HttpDelete("{id}")]
+        public IActionResult DeleteById(int id)
+        {
+            Device? device = _dbContext.Devices.Find(id);
+            if (device == null)
+            {
+                return NotFound();
+            }
+            _dbContext.Remove(device);
+            _dbContext.SaveChanges();
+
+            return Ok();
         }
     }
 }

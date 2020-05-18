@@ -51,8 +51,6 @@ namespace myMicroservice
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddSingleton<ILoggerFactory>(services => new SerilogLoggerFactory(Log.Logger, false));
-
             //services.AddLogging();
             //services.AddMemoryCache();
 
@@ -282,6 +280,7 @@ namespace myMicroservice
             //    };
             //});
 
+            services.AddSingleton<ILoggerFactory>(services => new SerilogLoggerFactory(Log.Logger, false));
             services.AddAutoMapper(
                 typeof(Api.V1.Models.AutoMapperProfiles.UserProfile),
                 typeof(Api.V1.Models.AutoMapperProfiles.DeviceProfile)
@@ -347,21 +346,16 @@ namespace myMicroservice
             //{
             //    app.UseExceptionHandler("/error");
             //}
-            app.UseExceptionHandler("/error");
+            //app.UseStatusCodePagesWithReExecute("/errors/{0}");  // I use this version
+
+            // Exception handling logging below
+            //app.UseExceptionHandler("/errors/{0}");
             //app.UseStatusCodePagesWithReExecute("/ErrorController/error");
 
             //app.UseDeveloperExceptionPage();
             //app.UseHsts(); // Strict transport security header
 
-            //var optsx = new ExceptionHandlerOptions
-            //{
-            //    ExceptionHandler = async context =>
-            //    {
-            //        context.Response.ContentType = "text/plain";
-            //        return new ProblemDetails();
-            //        //await context.Response.Body.WriteAsync("xxxx");
-            //    }
-            //};
+            
             //app.UseExceptionHandler(
             //    optsx
             //);
@@ -370,6 +364,8 @@ namespace myMicroservice
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
 
             app.UseMvc(routeBuilder =>
             {
