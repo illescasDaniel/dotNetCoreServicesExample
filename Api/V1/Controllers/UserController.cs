@@ -1,11 +1,9 @@
-using System;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using myMicroservice.Helpers;
-using Microsoft.AspNetCore.Identity;
 using myMicroservice.Database;
 using myMicroservice.Database.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +11,7 @@ using myMicroservice.Api.V1.Models;
 using System.Collections.Generic;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Morcatko.AspNetCore.JsonMergePatch;
 
 namespace myMicroservice.Api.V1.Controllers
 {
@@ -22,12 +21,14 @@ namespace myMicroservice.Api.V1.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class UserController : ControllerBase
     {
-        // DI
+        #region Properties
         private readonly DatabaseContext _dbContext;
         private readonly IUserAuthenticationService _authenticationService;
         private readonly ILogger<UserController> _logger;
         private readonly IMapper _mapper;
+        #endregion
 
+        #region Initializers
         public UserController(
             DatabaseContext dbContext,
             IUserAuthenticationService authenticationService,
@@ -40,74 +41,9 @@ namespace myMicroservice.Api.V1.Controllers
             _logger = logger;
             _mapper = mapper;
         }
+        #endregion
 
-        //
-
-        [AllowAnonymous]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
-        [HttpPost("authenticate")]
-        public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model)
-        {
-            User? userEntity;
-            userEntity = _dbContext.Users
-                .AsNoTracking()
-                .FirstOrDefault(User => User.Username == model.Username);
-
-            if (userEntity == null)
-            {
-                return NotFound();
-            }
-
-            var passHasher = new PasswordHasher<User>();
-            var verificationResult = passHasher.VerifyHashedPassword(
-                userEntity,
-                hashedPassword: userEntity.HashedPassword,
-                providedPassword: model.Password
-            );
-
-            switch (verificationResult)
-            {
-                case PasswordVerificationResult.Failed:
-                    return Unauthorized();
-                case PasswordVerificationResult.Success:
-                    var userToken = _authenticationService.Authenticate(userEntity.UserId);
-                    return Ok(new AuthenticationOutput(userToken, userEntity.UserId));
-                case PasswordVerificationResult.SuccessRehashNeeded: // TODO: maybe change to other thing
-                    return Problem(
-                        title: "Forbidden",
-                        detail: $"Correct password, rehash needed (TODO, WIP) for user {model.Username}",
-                        statusCode: StatusCodes.Status403Forbidden
-                    );
-                default:
-                    return null!;
-            }
-        }
-
-        [AllowAnonymous]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Produces("application/json")]
-        [HttpPost("register")]
-        public ActionResult<UserDto> Register(RegistrationModel model)
-        {
-            var newUserEntity = _mapper.Map<User>(model);
-
-            var passHasher = new PasswordHasher<User>();
-            var hashedPass = passHasher.HashPassword(newUserEntity, model.Password);
-
-            newUserEntity.HashedPassword = hashedPass;
-
-            _dbContext.Add(newUserEntity);
-            _dbContext.SaveChanges();
-            var user = _mapper.Map<UserDto>(newUserEntity);
-            return Created($"api/User/{newUserEntity.UserId}", user);
-        }
-
-        //
-
+        #region Actions
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
@@ -135,12 +71,200 @@ namespace myMicroservice.Api.V1.Controllers
             return Ok(_mapper.Map<UserDto>(user));
         }
 
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        [HttpGet("{username}")]
+        public ActionResult<UserDto> GetByUsername([FromRoute]string username)
+        {
+            User? user = _dbContext.Users
+                .Where(u => u.Username == username)
+                .FirstOrDefault();
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var userDto = _mapper.Map<UserDto>(user);
+            return Ok(userDto);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
+        [Produces("application/json")]
+        [HttpPatch("{id:int}")]
+        [Consumes(JsonMergePatchDocument.ContentType)]
+        public ActionResult<UserDto> PathById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedUserDto> updatedUserPatch)
+        {
+            var hasChanges = false;
+            User? user = _dbContext.Users.Find(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var userDto = _mapper.Map<UserDto>(user);
+
+            if (updatedUserPatch.Operations.ToArray().Length == 0)
+            {
+                return Ok(userDto);
+            }
+
+            var updatedUserDto = _mapper.Map<UpdatedUserDto>(user);
+            updatedUserPatch.ApplyTo(updatedUserDto);
+
+            if (user.Name != updatedUserDto.Name)
+            {
+                user.Name = updatedUserDto.Name;
+                hasChanges = true;
+            }
+            if (user.Surname != updatedUserDto.Surname)
+            {
+                user.Surname = updatedUserDto.Surname;
+                hasChanges = true;
+            }
+            if (user.Email != updatedUserDto.Email)
+            {
+                user.Email = updatedUserDto.Email;
+                hasChanges = true;
+            }
+
+            if (!hasChanges)
+            {
+                return Ok(userDto);
+            }
+
+            var userDtoAfterChanges = _mapper.Map<UserDto>(user);
+
+            _dbContext.SaveChanges();
+
+            return Ok(userDtoAfterChanges);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
+        [Produces("application/json")]
+        [HttpPut]
+        public ActionResult<UserDto> Update(UserDto updatedUserDto)
+        {
+            var hasChanges = false;
+            User? user = _dbContext.Users.Find(updatedUserDto.Id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            if (user.Username != updatedUserDto.Username)
+            {
+                user.Username = updatedUserDto.Username;
+                hasChanges = true;
+            }
+            if (user.Name != updatedUserDto.Name)
+            {
+                user.Name = updatedUserDto.Name;
+                hasChanges = true;
+            }
+            if (user.Surname != updatedUserDto.Surname)
+            {
+                user.Surname = updatedUserDto.Surname;
+                hasChanges = true;
+            }
+            if (user.Email != updatedUserDto.Email)
+            {
+                user.Email = updatedUserDto.Email;
+                hasChanges = true;
+            }
+
+            if (!hasChanges)
+            {
+                return Ok(updatedUserDto);
+            }
+
+            _dbContext.SaveChanges();
+
+            var deviceDto = _mapper.Map<UserDto>(user);
+            return Ok(deviceDto);
+        }
+
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //[ProducesResponseType(StatusCodes.Status409Conflict)]
+        //[Produces("application/json")]
+        //[HttpPut]
+        //public ActionResult<UserDto> Update(UserDto updatedUserDto)
+        //{
+        //    var hasChanges = false;
+        //    User? user = _dbContext.Users.Find(updatedUserDto.Id);
+        //    if (user == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    if (user.Username != updatedUserDto.Username)
+        //    {
+        //        user.Username = updatedUserDto.Username;
+        //        hasChanges = true;
+        //    }
+        //    if (user.Name != updatedUserDto.Name)
+        //    {
+        //        user.Name = updatedUserDto.Name;
+        //        hasChanges = true;
+        //    }
+        //    if (user.Surname != updatedUserDto.Surname)
+        //    {
+        //        user.Surname = updatedUserDto.Surname;
+        //        hasChanges = true;
+        //    }
+        //    if (user.Email != updatedUserDto.Email)
+        //    {
+        //        user.Email = updatedUserDto.Email;
+        //        hasChanges = true;
+        //    }
+
+        //    if (!hasChanges)
+        //    {
+        //        return Ok(updatedUserDto);
+        //    }
+
+        //    _dbContext.SaveChanges();
+
+        //    var deviceDto = _mapper.Map<UserDto>(user);
+        //    return Ok(deviceDto);
+        //}
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteById(int id)
+        {
+            User? user = _dbContext.Users.Find(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            // automatically deletes devices asociated with it
+            // if not, we can use _dbContext.Entry(user).Collections(u => u.Devices).Load() to load devices before deleting them
+            _dbContext.Remove(user);
+            _dbContext.SaveChanges();
+
+            return Ok();
+        }
+
+        #region User devices Actions
+
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpPost("{ownerUserId:int}/devices")]
-        public ActionResult<DeviceDto> AddDevice([FromBody]NewDeviceDto newDevice, [FromRoute]int ownerUserId)
+        public ActionResult<DeviceDto> AddDevice([FromRoute]int ownerUserId, [FromBody]NewDeviceDto newDevice)
         {
             var user = _dbContext.Users
                 .Include(User => User.Devices)
@@ -155,7 +279,7 @@ namespace myMicroservice.Api.V1.Controllers
             user.Devices.Add(device);
             _dbContext.SaveChanges();
 
-            var createdDeviceDto = _mapper.Map<DeviceDto>(device);//new DeviceDto(device: device);
+            var createdDeviceDto = _mapper.Map<DeviceDto>(device);
             return Created($"api/Device/{device.DeviceId}", createdDeviceDto);
         }
 
@@ -164,7 +288,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{ownerUserId:int}/devices")]
-        public ActionResult<List<DeviceDto>> GetDevices(int ownerUserId)
+        public ActionResult<ICollection<DeviceDto>> GetDevices(int ownerUserId)
         {
             var devices = _dbContext.Users
                 .Include(User => User.Devices)
@@ -178,28 +302,7 @@ namespace myMicroservice.Api.V1.Controllers
             var devicesDto = _mapper.Map<List<DeviceDto>>(devices);
             return Ok(devicesDto);
         }
-
-        // patch
-
-        // update
-
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
-        [HttpDelete("{id}")]
-        public IActionResult DeleteById(int id)
-        {
-            User? user = _dbContext.Users.Find(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            // automatically deletes devices asociated with it
-            _dbContext.Remove(user);
-            _dbContext.SaveChanges();
-
-            return Ok();
-        }
+        #endregion
+        #endregion
     }
 }

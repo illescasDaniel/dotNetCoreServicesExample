@@ -9,6 +9,8 @@ namespace myMicroservice.Api.V1.Models.AutoMapperProfiles
         {
             CreateMap<Device, DeviceDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.DeviceId));
+
+            CreateMap<Device, UpdatedDeviceDto>();
         }
     }
 }

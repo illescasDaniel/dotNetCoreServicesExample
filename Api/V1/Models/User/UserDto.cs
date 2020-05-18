@@ -5,7 +5,7 @@ namespace myMicroservice.Api.V1.Models
     public struct UserDto
     {
 
-        // Properties
+        #region Properties
 
         /// <example>2</example>
         [Required]
@@ -31,7 +31,9 @@ namespace myMicroservice.Api.V1.Models
         [Required]
         public string Email { get; set; }
 
-        // Initializers
+        #endregion
+
+        #region Initializers
 
         public UserDto(string email, string username, string name, string surname)
         {
@@ -41,5 +43,7 @@ namespace myMicroservice.Api.V1.Models
             Name = name;
             Surname = surname;
         }
+
+        #endregion
     }
 }

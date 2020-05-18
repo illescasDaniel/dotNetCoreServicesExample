@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Database/Entities/User.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V1/Controllers/UserController.cs">
     <Files>
-      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="144" Column="37" />
-      <File FileName="Api/V1/Controllers/UserController.cs" Line="201" Column="13" />
-      <File FileName="Api/V1/Models/AutoMapperProfiles/UserProfile.cs" Line="1" Column="1" />
-      <File FileName="Database/Entities/User.cs" Line="40" Column="16" />
-      <File FileName="Database/Entities/Device.cs" Line="1" Column="1" />
+      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="123" Column="13" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="106" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,16 +11,18 @@
             <Node name="myMicroservice" expanded="True">
               <Node name="Api" expanded="True">
                 <Node name="V1" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
                   <Node name="Models" expanded="True">
                     <Node name="AutoMapperProfiles" expanded="True" />
+                    <Node name="Device" expanded="True" />
+                    <Node name="User" expanded="True" />
                   </Node>
                 </Node>
               </Node>
               <Node name="Database" expanded="True">
-                <Node name="Entities" expanded="True">
-                  <Node name="User.cs" selected="True" />
-                </Node>
+                <Node name="Entities" expanded="True" />
                 <Node name="Odata" expanded="True">
                   <Node name="Configurations" expanded="True" />
                 </Node>

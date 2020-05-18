@@ -38,6 +38,7 @@
           "Microsoft.EntityFrameworkCore.Proxies": "3.1.4",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
+          "Morcatko.AspNetCore.JsonMergePatch.SystemText": "3.0.1",
           "Serilog.Extensions.Logging": "3.0.1",
           "Serilog.Sinks.File": "4.1.0",
           "Swashbuckle.AspNetCore.Swagger": "5.4.1",
@@ -458,6 +459,21 @@
           "Microsoft.Extensions.Primitives": "3.1.4"
         }
       },
+      "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.46502"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
@@ -516,7 +532,7 @@
       "Microsoft.AspNetCore.OData/7.4.0": {
         "dependencies": {
           "Microsoft.OData.Core": "7.6.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.OData.dll": {
@@ -1182,7 +1198,7 @@
       "Microsoft.IdentityModel.JsonWebTokens/5.5.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -1223,7 +1239,7 @@
       "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.5.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.IdentityModel.Tokens.Jwt": "5.5.0"
         },
         "runtime": {
@@ -1239,7 +1255,7 @@
       "Microsoft.IdentityModel.Tokens/5.5.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.5.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "runtime": {
@@ -1325,7 +1341,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/3.1.2": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {
@@ -1341,7 +1357,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "3.1.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "3.1.2",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
@@ -1403,7 +1419,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.3.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "3.1.2",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "NuGet.Frameworks": "4.7.0"
         },
         "runtime": {
@@ -1435,6 +1451,34 @@
           "Microsoft.NETCore.Platforms": "2.1.2",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "Morcatko.AspNetCore.JsonMergePatch.Document/3.0.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "3.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Morcatko.AspNetCore.JsonMergePatch.Document.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Morcatko.AspNetCore.JsonMergePatch.Document.dll": {}
+        }
+      },
+      "Morcatko.AspNetCore.JsonMergePatch.SystemText/3.0.1": {
+        "dependencies": {
+          "Morcatko.AspNetCore.JsonMergePatch.Document": "3.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Morcatko.AspNetCore.JsonMergePatch.SystemTextJson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Morcatko.AspNetCore.JsonMergePatch.SystemTextJson.dll": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -1485,11 +1529,11 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.2.21924"
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
           }
         },
         "compile": {
@@ -2075,7 +2119,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "5.5.0",
           "Microsoft.IdentityModel.Tokens": "5.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
@@ -4285,6 +4329,13 @@
       "path": "microsoft.aspnetcore.http.features/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LQVXEPxV4jIUiVHHUgBzZxOePSdD7wxV1ndtjg1a76JMqoK3siFka2pVfJXwRq0G4hxbYVWxvamqO733wUhQiA==",
+      "path": "microsoft.aspnetcore.jsonpatch/3.0.0",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4775,6 +4826,20 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
+    "Morcatko.AspNetCore.JsonMergePatch.Document/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eKiesBfG0XAzHW0wz2jq7XMt28HxzEHF4oOSjfDtmJw6FfjgmKxHLpr5D8Rp4HA34Bgz1dcOfp+OzOGO34zxvQ==",
+      "path": "morcatko.aspnetcore.jsonmergepatch.document/3.0.1",
+      "hashPath": "morcatko.aspnetcore.jsonmergepatch.document.3.0.1.nupkg.sha512"
+    },
+    "Morcatko.AspNetCore.JsonMergePatch.SystemText/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wLIIW/KX02k1mVVfZ8tMCnVJCcb2eereAF4gTktDo/p3fmbu+Y0QjKg5DIEsuBw1+u2Yb5j3lkxyezeCYJ5Fgg==",
+      "path": "morcatko.aspnetcore.jsonmergepatch.systemtext/3.0.1",
+      "hashPath": "morcatko.aspnetcore.jsonmergepatch.systemtext.3.0.1.nupkg.sha512"
+    },
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -4782,12 +4847,12 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.2": {
+    "Newtonsoft.Json/12.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

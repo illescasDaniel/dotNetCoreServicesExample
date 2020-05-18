@@ -10,8 +10,7 @@ namespace myMicroservice.Api.V1.Models.AutoMapperProfiles
             CreateMap<User, UserDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.UserId));
 
-            CreateMap<UserDto, User>()
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.Id));
+            CreateMap<User, UpdatedUserDto>();
 
             CreateMap<RegistrationModel, User>()
                 .ForMember(dest => dest.HashedPassword, opt => opt.MapFrom(src => src.Password))

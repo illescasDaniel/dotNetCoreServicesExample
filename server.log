@@ -9924,3 +9924,819 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
 2020-05-18 17:27:08.876 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2020-05-18 17:27:08.889 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.Get (myMicroservice) in 108.1848ms
 2020-05-18 17:27:08.890 +02:00 [INF] Request finished in 116.2507ms 200 application/json; charset=utf-8
+2020-05-18 17:39:51.784 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 17:39:53.114 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 17:39:53.115 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 17:39:53.115 +02:00 [INF] Hosting environment: Development
+2020-05-18 17:39:53.115 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 17:40:02.010 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 17:40:02.209 +02:00 [INF] Request finished in 200.7413ms 200 text/html;charset=utf-8
+2020-05-18 17:40:02.361 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 17:40:02.361 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 17:40:02.362 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 17:40:02.381 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 17:40:02.381 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 17:40:02.381 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 17:40:02.381 +02:00 [INF] Request finished in 43.4965ms 304 application/javascript
+2020-05-18 17:40:02.381 +02:00 [INF] Request finished in 19.7887ms 304 text/css
+2020-05-18 17:40:02.381 +02:00 [INF] Request finished in 20.2052ms 304 application/javascript
+2020-05-18 17:40:02.600 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 17:40:02.854 +02:00 [INF] Request finished in 253.7148ms 200 application/json;charset=utf-8
+2020-05-18 17:40:36.372 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/register application/json;odata.metadata=minimal;odata.streaming=true 107
+2020-05-18 17:40:36.430 +02:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Register(myMicroservice.Api.V1.Models.RegistrationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-18 17:40:37.818 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-18 17:40:37.830 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Register (myMicroservice) in 1394.9153ms
+2020-05-18 17:40:37.835 +02:00 [INF] Request finished in 1463.3761ms 201 application/json; charset=utf-8
+2020-05-18 17:52:14.325 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 17:52:15.522 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 17:52:15.523 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 17:52:15.523 +02:00 [INF] Hosting environment: Development
+2020-05-18 17:52:15.523 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 17:52:24.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 17:52:24.851 +02:00 [INF] Request finished in 168.8221ms 200 text/html;charset=utf-8
+2020-05-18 17:52:25.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 17:52:25.504 +02:00 [INF] Request finished in 289.4421ms 200 application/json;charset=utf-8
+2020-05-18 17:52:51.249 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/User application/json;odata.metadata=minimal;odata.streaming=true 94
+2020-05-18 17:52:51.274 +02:00 [INF] Authorization failed.
+2020-05-18 17:52:51.280 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-18 17:52:51.281 +02:00 [INF] Request finished in 32.2907ms 401 
+2020-05-18 17:53:03.380 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/User application/json;odata.metadata=minimal;odata.streaming=true 94
+2020-05-18 17:53:03.529 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:53:03.533 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:03.573 +02:00 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Update(myMicroservice.Api.V1.Models.UserDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:53:03.576 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:05.074 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-18 17:53:05.083 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Update (myMicroservice) in 1504.5765ms
+2020-05-18 17:53:05.089 +02:00 [INF] Request finished in 1708.9586ms 200 application/json; charset=utf-8
+2020-05-18 17:53:11.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User?limit=10  
+2020-05-18 17:53:11.120 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:53:11.121 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:11.132 +02:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.UserDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:53:11.133 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:11.239 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.UserDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 17:53:11.241 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Get (myMicroservice) in 108.4577ms
+2020-05-18 17:53:11.241 +02:00 [INF] Request finished in 123.337ms 200 application/json; charset=utf-8
+2020-05-18 17:53:28.286 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/User application/json;odata.metadata=minimal;odata.streaming=true 92
+2020-05-18 17:53:28.289 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:53:28.290 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:28.292 +02:00 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Update(myMicroservice.Api.V1.Models.UserDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:53:28.293 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:28.330 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-18 17:53:28.331 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Update (myMicroservice) in 38.1573ms
+2020-05-18 17:53:28.331 +02:00 [INF] Request finished in 44.854ms 200 application/json; charset=utf-8
+2020-05-18 17:53:41.296 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User?limit=10  
+2020-05-18 17:53:41.297 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:53:41.298 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:41.299 +02:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.UserDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:53:41.300 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:41.306 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.UserDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 17:53:41.307 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Get (myMicroservice) in 7.2675ms
+2020-05-18 17:53:41.307 +02:00 [INF] Request finished in 11.6002ms 200 application/json; charset=utf-8
+2020-05-18 17:53:52.275 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/User application/json;odata.metadata=minimal;odata.streaming=true 97
+2020-05-18 17:53:52.276 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:53:52.276 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:52.277 +02:00 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Update(myMicroservice.Api.V1.Models.UserDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:53:52.277 +02:00 [INF] Authorization was successful.
+2020-05-18 17:53:57.167 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Update (myMicroservice) in 4890.0012ms
+2020-05-18 17:53:57.277 +02:00 [ERR] 0HLVR8DQLNLVD:00000008
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Username'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at myMicroservice.Api.V1.Controllers.UserController.Update(UserDto updatedUserDto) in /Users/daniel/Projects/myMicroservice/Api/V1/Controllers/UserController.cs:line 147
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 17:53:57.286 +02:00 [INF] Request finished in 5011.7336ms 200 application/json
+2020-05-18 17:54:45.253 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 17:54:46.474 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 17:54:46.475 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 17:54:46.475 +02:00 [INF] Hosting environment: Development
+2020-05-18 17:54:46.475 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 17:54:55.842 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/User application/json;odata.metadata=minimal;odata.streaming=true 97
+2020-05-18 17:54:56.076 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:54:56.082 +02:00 [INF] Authorization was successful.
+2020-05-18 17:54:56.138 +02:00 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Update(myMicroservice.Api.V1.Models.UserDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:54:56.139 +02:00 [INF] Authorization was successful.
+2020-05-18 17:55:01.989 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Update (myMicroservice) in 5846.9671ms
+2020-05-18 17:55:02.124 +02:00 [ERR] 0HLVR8F7NAAU1:00000001
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.Username'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at myMicroservice.Api.V1.Controllers.UserController.Update(UserDto updatedUserDto) in /Users/daniel/Projects/myMicroservice/Api/V1/Controllers/UserController.cs:line 147
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 17:55:02.139 +02:00 [INF] Request finished in 6301.5667ms 409 application/json
+2020-05-18 17:59:03.646 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 17:59:04.904 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 17:59:04.905 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 17:59:04.905 +02:00 [INF] Hosting environment: Development
+2020-05-18 17:59:04.905 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 17:59:09.510 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/devices  
+2020-05-18 17:59:09.753 +02:00 [INF] Successfully validated the token.
+2020-05-18 17:59:09.760 +02:00 [INF] Authorization was successful.
+2020-05-18 17:59:09.822 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.ICollection`1[myMicroservice.Api.V1.Models.DeviceDto]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 17:59:09.824 +02:00 [INF] Authorization was successful.
+2020-05-18 17:59:11.262 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 17:59:11.282 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 1453.8196ms
+2020-05-18 17:59:11.289 +02:00 [INF] Request finished in 1781.166ms 200 application/json; charset=utf-8
+2020-05-18 18:13:55.727 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 18:13:57.002 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 18:13:57.002 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 18:13:57.002 +02:00 [INF] Hosting environment: Development
+2020-05-18 18:13:57.002 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 18:14:17.225 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device?limit=10  
+2020-05-18 18:14:17.463 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:14:17.469 +02:00 [INF] Authorization was successful.
+2020-05-18 18:14:17.536 +02:00 [INF] Route matched with {action = "Get", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.DeviceDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:14:17.539 +02:00 [INF] Authorization was successful.
+2020-05-18 18:14:18.904 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 18:14:18.923 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.Get (myMicroservice) in 1382.0873ms
+2020-05-18 18:14:18.930 +02:00 [INF] Request finished in 1708.3105ms 200 application/json; charset=utf-8
+2020-05-18 18:14:45.907 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/Device application/json;odata.metadata=minimal;odata.streaming=true 57
+2020-05-18 18:14:45.965 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:14:45.966 +02:00 [INF] Authorization was successful.
+2020-05-18 18:14:45.969 +02:00 [INF] Route matched with {action = "Update", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] Update(myMicroservice.Api.V1.Models.DeviceDto) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:14:45.969 +02:00 [INF] Authorization was successful.
+2020-05-18 18:14:46.258 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:14:46.259 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.Update (myMicroservice) in 289.4113ms
+2020-05-18 18:14:46.259 +02:00 [INF] Request finished in 352.3793ms 200 application/json; charset=utf-8
+2020-05-18 18:14:55.512 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device?limit=10  
+2020-05-18 18:14:55.514 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:14:55.515 +02:00 [INF] Authorization was successful.
+2020-05-18 18:14:55.516 +02:00 [INF] Route matched with {action = "Get", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.DeviceDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:14:55.516 +02:00 [INF] Authorization was successful.
+2020-05-18 18:14:55.533 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 18:14:55.533 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.Get (myMicroservice) in 17.5702ms
+2020-05-18 18:14:55.534 +02:00 [INF] Request finished in 22.3563ms 200 application/json; charset=utf-8
+2020-05-18 18:15:01.903 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/Device application/json;odata.metadata=minimal;odata.streaming=true 57
+2020-05-18 18:15:01.905 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:15:01.906 +02:00 [INF] Authorization was successful.
+2020-05-18 18:15:01.907 +02:00 [INF] Route matched with {action = "Update", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] Update(myMicroservice.Api.V1.Models.DeviceDto) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:15:01.907 +02:00 [INF] Authorization was successful.
+2020-05-18 18:15:01.917 +02:00 [INF] Doesn't have changes
+2020-05-18 18:15:01.918 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:15:01.918 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.Update (myMicroservice) in 11.3918ms
+2020-05-18 18:15:01.919 +02:00 [INF] Request finished in 15.8713ms 200 application/json; charset=utf-8
+2020-05-18 18:15:37.716 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/1 application/json;odata.metadata=minimal;odata.streaming=true 33
+2020-05-18 18:15:37.719 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:15:37.719 +02:00 [INF] Authorization was successful.
+2020-05-18 18:15:37.722 +02:00 [INF] Route matched with {action = "PatchById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PatchById(Int32, myMicroservice.Api.V1.Models.UpdatedDeviceDto) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:15:37.722 +02:00 [INF] Authorization was successful.
+2020-05-18 18:15:37.736 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:15:37.736 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PatchById (myMicroservice) in 14.0736ms
+2020-05-18 18:15:37.736 +02:00 [INF] Request finished in 20.8952ms 200 application/json; charset=utf-8
+2020-05-18 18:15:45.171 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/1 application/json;odata.metadata=minimal;odata.streaming=true 33
+2020-05-18 18:15:45.172 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:15:45.174 +02:00 [INF] Authorization was successful.
+2020-05-18 18:15:45.175 +02:00 [INF] Route matched with {action = "PatchById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PatchById(Int32, myMicroservice.Api.V1.Models.UpdatedDeviceDto) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:15:45.176 +02:00 [INF] Authorization was successful.
+2020-05-18 18:15:45.188 +02:00 [INF] Doesn't have changes (patch)
+2020-05-18 18:15:45.189 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UpdatedDeviceDto'.
+2020-05-18 18:15:45.191 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PatchById (myMicroservice) in 14.959ms
+2020-05-18 18:15:45.191 +02:00 [INF] Request finished in 20.8165ms 200 application/json; charset=utf-8
+2020-05-18 18:27:00.028 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 18:27:01.225 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 18:27:01.226 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 18:27:01.226 +02:00 [INF] Hosting environment: Development
+2020-05-18 18:27:01.226 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 18:27:02.939 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/1/devices application/json;odata.metadata=minimal;odata.streaming=true 33
+2020-05-18 18:27:03.153 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:27:03.160 +02:00 [INF] Authorization was successful.
+2020-05-18 18:27:03.217 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] AddDevice(Int32, myMicroservice.Api.V1.Models.NewDeviceDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 18:27:03.219 +02:00 [INF] Authorization was successful.
+2020-05-18 18:27:04.795 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:27:04.815 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.AddDevice (myMicroservice) in 1592.8645ms
+2020-05-18 18:27:05.302 +02:00 [ERR] 0HLVR9161HT4D:00000001
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 18:27:05.358 +02:00 [INF] Request finished in 2422.0557ms 500 application/json
+2020-05-18 18:27:48.390 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/1/devices application/json;odata.metadata=minimal;odata.streaming=true 33
+2020-05-18 18:27:48.446 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:27:48.447 +02:00 [INF] Authorization was successful.
+2020-05-18 18:27:48.449 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] AddDevice(Int32, myMicroservice.Api.V1.Models.NewDeviceDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 18:27:48.449 +02:00 [INF] Authorization was successful.
+2020-05-18 18:29:14.833 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:29:14.839 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.AddDevice (myMicroservice) in 86393.1008ms
+2020-05-18 18:29:14.944 +02:00 [ERR] 0HLVR9161HT4D:00000002
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 18:29:14.945 +02:00 [INF] Request finished in 86558.3795ms 500 application/json
+2020-05-18 18:29:35.999 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 18:29:37.198 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 18:29:37.199 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 18:29:37.199 +02:00 [INF] Hosting environment: Development
+2020-05-18 18:29:37.199 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 18:29:43.435 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/1/devices application/json;odata.metadata=minimal;odata.streaming=true 33
+2020-05-18 18:29:43.656 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:29:43.662 +02:00 [INF] Authorization was successful.
+2020-05-18 18:29:43.717 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] AddDevice(Int32, myMicroservice.Api.V1.Models.NewDeviceDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 18:29:43.719 +02:00 [INF] Authorization was successful.
+2020-05-18 18:29:45.298 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:29:45.310 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.AddDevice (myMicroservice) in 1587.7091ms
+2020-05-18 18:29:45.736 +02:00 [ERR] 0HLVR92LS5HTV:00000001
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 18:29:45.795 +02:00 [INF] Request finished in 2362.0574ms 500 application/json
+2020-05-18 18:34:33.635 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 18:34:34.854 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 18:34:34.855 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 18:34:34.855 +02:00 [INF] Hosting environment: Development
+2020-05-18 18:34:34.855 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 18:34:59.163 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 18:35:00.384 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 18:35:00.384 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 18:35:00.385 +02:00 [INF] Hosting environment: Development
+2020-05-18 18:35:00.385 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 18:35:15.392 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 18:35:15.565 +02:00 [INF] Request finished in 174.5334ms 200 text/html;charset=utf-8
+2020-05-18 18:35:15.733 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 18:35:15.733 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 18:35:15.765 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 18:35:15.785 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 18:35:15.785 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 18:35:15.785 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 18:35:15.786 +02:00 [INF] Request finished in 52.902ms 304 application/javascript
+2020-05-18 18:35:15.786 +02:00 [INF] Request finished in 52.8997ms 304 application/javascript
+2020-05-18 18:35:15.786 +02:00 [INF] Request finished in 20.387ms 304 text/css
+2020-05-18 18:35:16.005 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 18:35:16.241 +02:00 [INF] Request finished in 236.7006ms 200 application/json;charset=utf-8
+2020-05-18 18:35:42.652 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/Device?ownerUserId=1 application/json;odata.metadata=minimal;odata.streaming=true 34
+2020-05-18 18:35:42.820 +02:00 [INF] Successfully validated the token.
+2020-05-18 18:35:42.826 +02:00 [INF] Authorization was successful.
+2020-05-18 18:35:42.862 +02:00 [INF] Route matched with {action = "AddDevice", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] AddDevice(Int32, myMicroservice.Api.V1.Models.NewDeviceDto) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 18:35:42.864 +02:00 [INF] Authorization was successful.
+2020-05-18 18:35:44.432 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 18:35:44.454 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.AddDevice (myMicroservice) in 1583.3683ms
+2020-05-18 18:35:44.829 +02:00 [ERR] 0HLVR95OPV0LS:00000003
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 18:35:44.882 +02:00 [INF] Request finished in 2229.599ms 500 application/json
+2020-05-18 19:34:00.435 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:34:01.719 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:34:01.719 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:34:01.720 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:34:01.720 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:34:07.338 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:34:07.529 +02:00 [INF] Request finished in 193.6807ms 200 text/html;charset=utf-8
+2020-05-18 19:34:07.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:34:07.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:34:07.687 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:34:07.704 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:34:07.704 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:34:07.704 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:34:07.705 +02:00 [INF] Request finished in 18.1584ms 304 text/css
+2020-05-18 19:34:07.705 +02:00 [INF] Request finished in 20.0384ms 304 application/javascript
+2020-05-18 19:34:07.705 +02:00 [INF] Request finished in 20.0377ms 304 application/javascript
+2020-05-18 19:34:07.924 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:34:08.373 +02:00 [ERR] 0HLVRA6LD64B9:00000002
+System.NotSupportedException: Conflicting method/path combination "GET api/v1/User" for actions - myMicroservice.Api.V1.Controllers.UserController.Get (myMicroservice),myMicroservice.Api.V1.Controllers.UserController.GetByUsername (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-18 19:34:08.433 +02:00 [INF] Request finished in 509.6085ms 500 application/json
+2020-05-18 19:35:45.854 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:35:47.064 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:35:47.064 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:35:47.064 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:35:47.064 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:35:54.334 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:35:54.373 +02:00 [ERR] Connection id "0HLVRA7L99OER", Request id "0HLVRA7L99OER:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.<AddNode>g__Transition|19_0(DfaNode next, <>c__DisplayClass19_0& )
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-18 19:35:54.425 +02:00 [INF] Request finished in 93.3281ms 500 
+2020-05-18 19:36:01.764 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-18 19:36:01.767 +02:00 [ERR] Connection id "0HLVRA7L99OER", Request id "0HLVRA7L99OER:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.<AddNode>g__Transition|19_0(DfaNode next, <>c__DisplayClass19_0& )
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-18 19:36:01.768 +02:00 [INF] Request finished in 3.5974ms 500 
+2020-05-18 19:36:06.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-18 19:36:06.655 +02:00 [ERR] Connection id "0HLVRA7L99OER", Request id "0HLVRA7L99OER:00000003": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.<AddNode>g__Transition|19_0(DfaNode next, <>c__DisplayClass19_0& )
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-18 19:36:06.658 +02:00 [INF] Request finished in 10.3263ms 500 
+2020-05-18 19:36:43.101 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:36:44.320 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:36:44.320 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:36:44.320 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:36:44.320 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:36:48.139 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-18 19:36:48.322 +02:00 [INF] Request finished in 185.0151ms 200 text/html;charset=utf-8
+2020-05-18 19:36:48.530 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:36:48.530 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:36:48.533 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:36:48.552 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:36:48.552 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:36:48.552 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:36:48.553 +02:00 [INF] Request finished in 22.5129ms 304 application/javascript
+2020-05-18 19:36:48.553 +02:00 [INF] Request finished in 22.5129ms 304 application/javascript
+2020-05-18 19:36:48.553 +02:00 [INF] Request finished in 19.6959ms 304 text/css
+2020-05-18 19:36:48.757 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-18 19:36:48.966 +02:00 [INF] Request finished in 209.4465ms 200 application/json;charset=utf-8
+2020-05-18 19:36:51.630 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:36:51.682 +02:00 [INF] Request finished in 51.2956ms 200 application/json;charset=utf-8
+2020-05-18 19:41:08.314 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:41:09.608 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:41:09.609 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:41:09.609 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:41:09.609 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:42:56.114 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:42:57.387 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:42:57.388 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:42:57.388 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:42:57.388 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:43:02.248 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:43:02.435 +02:00 [INF] Request finished in 189.8376ms 200 text/html;charset=utf-8
+2020-05-18 19:43:02.549 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:43:02.549 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:43:02.550 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:43:02.564 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:43:02.564 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:43:02.564 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:43:02.568 +02:00 [INF] Request finished in 14.9636ms 304 text/css
+2020-05-18 19:43:02.568 +02:00 [INF] Request finished in 16.1595ms 304 application/javascript
+2020-05-18 19:43:02.568 +02:00 [INF] Request finished in 16.1605ms 304 application/javascript
+2020-05-18 19:43:02.770 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:44:13.726 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:44:15.004 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:44:15.005 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:44:15.005 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:44:15.005 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:44:24.858 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:44:25.040 +02:00 [INF] Request finished in 183.8837ms 200 text/html;charset=utf-8
+2020-05-18 19:44:25.164 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:44:25.164 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:44:25.166 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:44:25.180 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:44:25.180 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:44:25.180 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:44:25.181 +02:00 [INF] Request finished in 16.616ms 304 application/javascript
+2020-05-18 19:44:25.181 +02:00 [INF] Request finished in 16.6198ms 304 application/javascript
+2020-05-18 19:44:25.181 +02:00 [INF] Request finished in 15.3712ms 304 text/css
+2020-05-18 19:44:25.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:44:25.972 +02:00 [INF] Request finished in 572.7929ms 200 application/json;charset=utf-8
+2020-05-18 19:45:28.116 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:45:29.381 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:45:29.382 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:45:29.382 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:45:29.382 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:45:37.701 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:45:37.883 +02:00 [INF] Request finished in 185.2554ms 200 text/html;charset=utf-8
+2020-05-18 19:45:38.008 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:45:38.008 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:45:38.009 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:45:38.026 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:45:38.026 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:45:38.026 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:45:38.027 +02:00 [INF] Request finished in 17.7996ms 304 text/css
+2020-05-18 19:45:38.027 +02:00 [INF] Request finished in 19.1273ms 304 application/javascript
+2020-05-18 19:45:38.027 +02:00 [INF] Request finished in 19.1297ms 304 application/javascript
+2020-05-18 19:45:38.209 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:45:38.852 +02:00 [INF] Request finished in 642.9939ms 200 application/json;charset=utf-8
+2020-05-18 19:45:53.554 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User?limit=10  
+2020-05-18 19:45:53.730 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:45:53.737 +02:00 [INF] Authorization was successful.
+2020-05-18 19:45:53.779 +02:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.UserDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 19:45:55.435 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.UserDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 19:45:55.453 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Get (myMicroservice) in 1668.293ms
+2020-05-18 19:45:55.458 +02:00 [INF] Request finished in 1904.5033ms 200 application/json; charset=utf-8
+2020-05-18 19:46:24.647 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 17
+2020-05-18 19:46:24.651 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:46:24.652 +02:00 [INF] Authorization was successful.
+2020-05-18 19:46:24.655 +02:00 [INF] Route matched with {action = "PathById", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 19:46:24.987 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-18 19:46:24.988 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PathById (myMicroservice) in 332.3284ms
+2020-05-18 19:46:24.988 +02:00 [INF] Request finished in 341.5041ms 200 application/json; charset=utf-8
+2020-05-18 19:46:49.373 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 23
+2020-05-18 19:46:49.377 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:46:49.378 +02:00 [INF] Authorization was successful.
+2020-05-18 19:46:49.382 +02:00 [INF] Route matched with {action = "PathById", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 19:46:49.413 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-18 19:46:49.414 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PathById (myMicroservice) in 31.7763ms
+2020-05-18 19:46:49.414 +02:00 [INF] Request finished in 41.7191ms 200 application/json; charset=utf-8
+2020-05-18 19:49:16.963 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:49:18.140 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:49:18.140 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:49:18.140 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:49:18.140 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:49:58.016 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:49:59.238 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:49:59.238 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:49:59.239 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:49:59.239 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:51:24.927 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:51:25.104 +02:00 [INF] Request finished in 179.7651ms 200 text/html;charset=utf-8
+2020-05-18 19:51:25.272 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:51:25.272 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:51:25.272 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:51:25.294 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:51:25.294 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:51:25.294 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:51:25.295 +02:00 [INF] Request finished in 22.9859ms 304 text/css
+2020-05-18 19:51:25.295 +02:00 [INF] Request finished in 23.1557ms 304 application/javascript
+2020-05-18 19:51:25.295 +02:00 [INF] Request finished in 23.1584ms 304 application/javascript
+2020-05-18 19:51:25.518 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:51:26.074 +02:00 [INF] Request finished in 555.9092ms 200 application/json;charset=utf-8
+2020-05-18 19:51:41.339 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/Daniel  
+2020-05-18 19:51:41.517 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:51:41.523 +02:00 [INF] Authorization was successful.
+2020-05-18 19:51:41.556 +02:00 [INF] Route matched with {action = "GetByUsername", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] GetByUsername(System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 19:51:42.971 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-18 19:51:42.980 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByUsername (myMicroservice) in 1418.2256ms
+2020-05-18 19:51:42.986 +02:00 [INF] Request finished in 1647.3132ms 404 application/json; charset=utf-8
+2020-05-18 19:51:49.725 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User?limit=10  
+2020-05-18 19:51:49.731 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:51:49.738 +02:00 [INF] Authorization was successful.
+2020-05-18 19:51:49.774 +02:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.UserDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 19:51:49.905 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.UserDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 19:51:49.912 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Get (myMicroservice) in 137.9999ms
+2020-05-18 19:51:49.912 +02:00 [INF] Request finished in 187.8805ms 200 application/json; charset=utf-8
+2020-05-18 19:51:58.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/Juan  
+2020-05-18 19:51:58.019 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:51:58.021 +02:00 [INF] Authorization was successful.
+2020-05-18 19:51:58.023 +02:00 [INF] Route matched with {action = "GetByUsername", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] GetByUsername(System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-18 19:51:58.116 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-18 19:51:58.117 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByUsername (myMicroservice) in 94.2991ms
+2020-05-18 19:51:58.118 +02:00 [INF] Request finished in 109.2797ms 200 application/json; charset=utf-8
+2020-05-18 19:58:13.735 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 19:58:14.935 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 19:58:14.936 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 19:58:14.936 +02:00 [INF] Hosting environment: Development
+2020-05-18 19:58:14.936 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 19:58:17.280 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-18 19:58:17.451 +02:00 [INF] Request finished in 173.3219ms 200 text/html;charset=utf-8
+2020-05-18 19:58:17.600 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-18 19:58:17.600 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-18 19:58:17.625 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-18 19:58:17.641 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-18 19:58:17.641 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-18 19:58:17.641 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-18 19:58:17.642 +02:00 [INF] Request finished in 41.3073ms 304 application/javascript
+2020-05-18 19:58:17.642 +02:00 [INF] Request finished in 16.9261ms 304 text/css
+2020-05-18 19:58:17.642 +02:00 [INF] Request finished in 41.3004ms 304 application/javascript
+2020-05-18 19:58:17.868 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-18 19:58:18.557 +02:00 [INF] Request finished in 688.5996ms 200 application/json;charset=utf-8
+2020-05-18 19:58:38.579 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device?limit=10  
+2020-05-18 19:58:38.748 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:58:38.755 +02:00 [INF] Authorization was successful.
+2020-05-18 19:58:38.790 +02:00 [INF] Route matched with {action = "Get", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[myMicroservice.Api.V1.Models.DeviceDto]] Get(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 19:58:40.123 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-18 19:58:40.137 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.Get (myMicroservice) in 1340.0165ms
+2020-05-18 19:58:40.141 +02:00 [INF] Request finished in 1562.7482ms 200 application/json; charset=utf-8
+2020-05-18 19:59:18.694 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 15
+2020-05-18 19:59:18.696 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:59:18.697 +02:00 [INF] Authorization was successful.
+2020-05-18 19:59:18.701 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 19:59:19.012 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 19:59:19.013 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 311.6633ms
+2020-05-18 19:59:19.013 +02:00 [INF] Request finished in 319.5391ms 200 application/json; charset=utf-8
+2020-05-18 19:59:30.957 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/10  
+2020-05-18 19:59:30.961 +02:00 [INF] Successfully validated the token.
+2020-05-18 19:59:30.963 +02:00 [INF] Authorization was successful.
+2020-05-18 19:59:30.972 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 19:59:30.991 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 19:59:30.992 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 19.141ms
+2020-05-18 19:59:30.992 +02:00 [INF] Request finished in 35.8396ms 200 application/json; charset=utf-8
+2020-05-18 20:01:13.134 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 20:01:14.386 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 20:01:14.387 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 20:01:14.387 +02:00 [INF] Hosting environment: Development
+2020-05-18 20:01:14.387 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 20:01:19.161 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 15
+2020-05-18 20:01:19.391 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:01:19.397 +02:00 [INF] Authorization was successful.
+2020-05-18 20:01:19.453 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:01:20.897 +02:00 [INF] 1
+2020-05-18 20:01:20.940 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:01:20.954 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 1495.8504ms
+2020-05-18 20:01:20.960 +02:00 [INF] Request finished in 1801.6468ms 200 application/json; charset=utf-8
+2020-05-18 20:01:37.178 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 
+2020-05-18 20:01:37.193 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:01:37.193 +02:00 [INF] Authorization was successful.
+2020-05-18 20:01:37.195 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:01:37.206 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-05-18 20:01:37.208 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 13.243ms
+2020-05-18 20:01:37.208 +02:00 [INF] Request finished in 30.2685ms 400 application/json; charset=utf-8
+2020-05-18 20:01:49.670 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 2
+2020-05-18 20:01:49.674 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:01:49.675 +02:00 [INF] Authorization was successful.
+2020-05-18 20:01:49.677 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:01:49.723 +02:00 [INF] 0
+2020-05-18 20:01:49.725 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:01:49.726 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 48.4533ms
+2020-05-18 20:01:49.726 +02:00 [INF] Request finished in 56.2334ms 200 application/json; charset=utf-8
+2020-05-18 20:04:00.679 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 20:04:01.838 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 20:04:01.839 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 20:04:01.839 +02:00 [INF] Hosting environment: Development
+2020-05-18 20:04:01.839 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 20:04:08.685 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 2
+2020-05-18 20:04:08.917 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:04:08.924 +02:00 [INF] Authorization was successful.
+2020-05-18 20:04:08.983 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:04:10.434 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:04:10.450 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 1460.0625ms
+2020-05-18 20:04:10.457 +02:00 [INF] Request finished in 1774.5448ms 200 application/json; charset=utf-8
+2020-05-18 20:04:33.009 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 18
+2020-05-18 20:04:33.061 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:04:33.062 +02:00 [INF] Authorization was successful.
+2020-05-18 20:04:33.064 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:04:33.226 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:04:33.227 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 162.071ms
+2020-05-18 20:04:33.227 +02:00 [INF] Request finished in 218.562ms 200 application/json; charset=utf-8
+2020-05-18 20:04:45.061 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 18
+2020-05-18 20:04:45.065 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:04:45.067 +02:00 [INF] Authorization was successful.
+2020-05-18 20:04:45.068 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:04:45.089 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:04:45.090 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 21.5243ms
+2020-05-18 20:04:45.091 +02:00 [INF] Request finished in 30.514ms 200 application/json; charset=utf-8
+2020-05-18 20:04:52.605 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 2
+2020-05-18 20:04:52.607 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:04:52.607 +02:00 [INF] Authorization was successful.
+2020-05-18 20:04:52.608 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:04:52.618 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:04:52.620 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 10.9692ms
+2020-05-18 20:04:52.620 +02:00 [INF] Request finished in 15.3017ms 200 application/json; charset=utf-8
+2020-05-18 20:05:01.473 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 16
+2020-05-18 20:05:01.474 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:05:01.475 +02:00 [INF] Authorization was successful.
+2020-05-18 20:05:01.476 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:05:01.490 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:05:01.491 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 15.3187ms
+2020-05-18 20:05:01.493 +02:00 [INF] Request finished in 19.5987ms 200 application/json; charset=utf-8
+2020-05-18 20:05:05.571 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 16
+2020-05-18 20:05:05.572 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:05:05.573 +02:00 [INF] Authorization was successful.
+2020-05-18 20:05:05.574 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:05:05.581 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:05:05.582 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 8.0625ms
+2020-05-18 20:05:05.583 +02:00 [INF] Request finished in 12.213ms 200 application/json; charset=utf-8
+2020-05-18 20:05:11.651 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 16
+2020-05-18 20:05:11.652 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:05:11.652 +02:00 [INF] Authorization was successful.
+2020-05-18 20:05:11.653 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:05:11.661 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:05:11.662 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 9.0092ms
+2020-05-18 20:05:11.662 +02:00 [INF] Request finished in 11.3784ms 200 application/json; charset=utf-8
+2020-05-18 20:05:31.173 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/10  
+2020-05-18 20:05:31.176 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:05:31.177 +02:00 [INF] Authorization was successful.
+2020-05-18 20:05:31.179 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:05:31.184 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:05:31.184 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 4.4553ms
+2020-05-18 20:05:31.190 +02:00 [INF] Request finished in 17.2675ms 200 application/json; charset=utf-8
+2020-05-18 20:06:37.170 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 20:07:04.387 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-18 20:07:05.609 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-18 20:07:05.610 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-18 20:07:05.610 +02:00 [INF] Hosting environment: Development
+2020-05-18 20:07:05.610 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-18 20:07:09.099 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 17
+2020-05-18 20:07:09.324 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:07:09.331 +02:00 [INF] Authorization was successful.
+2020-05-18 20:07:09.388 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:07:10.922 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:07:10.935 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 1541.3279ms
+2020-05-18 20:07:10.942 +02:00 [INF] Request finished in 1846.3204ms 200 application/json; charset=utf-8
+2020-05-18 20:07:19.539 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 2
+2020-05-18 20:07:19.544 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:07:19.545 +02:00 [INF] Authorization was successful.
+2020-05-18 20:07:19.546 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:07:19.584 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:07:19.585 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 38.3738ms
+2020-05-18 20:07:19.585 +02:00 [INF] Request finished in 46.019ms 200 application/json; charset=utf-8
+2020-05-18 20:07:23.440 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 2
+2020-05-18 20:07:23.443 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:07:23.444 +02:00 [INF] Authorization was successful.
+2020-05-18 20:07:23.445 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:07:23.465 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:07:23.466 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 20.5177ms
+2020-05-18 20:07:23.467 +02:00 [INF] Request finished in 27.8996ms 200 application/json; charset=utf-8
+2020-05-18 20:07:30.419 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/10 application/merge-patch+json 15
+2020-05-18 20:07:30.421 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:07:30.422 +02:00 [INF] Authorization was successful.
+2020-05-18 20:07:30.423 +02:00 [INF] Route matched with {action = "PathById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:07:30.446 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:07:30.447 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PathById (myMicroservice) in 23.3842ms
+2020-05-18 20:07:30.451 +02:00 [INF] Request finished in 32.4071ms 200 application/json; charset=utf-8
+2020-05-18 20:07:48.104 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/10  
+2020-05-18 20:07:48.107 +02:00 [INF] Successfully validated the token.
+2020-05-18 20:07:48.108 +02:00 [INF] Authorization was successful.
+2020-05-18 20:07:48.112 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-18 20:07:48.119 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-18 20:07:48.119 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 6.7722ms
+2020-05-18 20:07:48.125 +02:00 [INF] Request finished in 21.1394ms 200 application/json; charset=utf-8

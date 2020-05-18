@@ -1,18 +1,15 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using myMicroservice.Helpers;
-using Microsoft.AspNetCore.Identity;
 using myMicroservice.Database;
-using Microsoft.EntityFrameworkCore;
 using myMicroservice.Api.V1.Models;
-using System.Collections.Generic;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using myMicroservice.Database.Entities;
+using Morcatko.AspNetCore.JsonMergePatch;
 
 namespace myMicroservice.Api.V1.Controllers
 {
@@ -69,25 +66,89 @@ namespace myMicroservice.Api.V1.Controllers
             return Ok(_mapper.Map<DeviceDto>(device));
         }
 
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //[Produces("application/json")]
+        //[HttpPatch("{id:int}")]
+        //public ActionResult<DeviceDto> PatchById([FromRoute]int id, [FromBody]UpdatedDeviceDto updatedDevice)
+        //{
+        //    bool hasChanges = false;
+        //    Device? device = _dbContext.Devices.Find(id);
+        //    if (device == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    if (device.Name != updatedDevice.Name)
+        //    {
+        //        device.Name = updatedDevice.Name;
+        //        hasChanges = true;
+        //    }
+        //    if (device.Version != updatedDevice.Version)
+        //    {
+        //        device.Version = updatedDevice.Version;
+        //        hasChanges = true;
+        //    }
+
+        //    if (!hasChanges)
+        //    {
+        //        return Ok(updatedDevice);
+        //    }
+
+        //    _dbContext.SaveChanges();
+
+        //    var deviceDto = _mapper.Map<DeviceDto>(device);
+        //    return Ok(deviceDto);
+        //}
+
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
         [Produces("application/json")]
         [HttpPatch("{id:int}")]
-        public ActionResult<DeviceDto> PatchById([FromRoute]int id, [FromBody]UpdatedDeviceDto updatedDevice)
+        [Consumes(JsonMergePatchDocument.ContentType)]
+        public ActionResult<DeviceDto> PathById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch)
         {
+            var hasChanges = false;
             Device? device = _dbContext.Devices.Find(id);
             if (device == null)
             {
                 return NotFound();
             }
-            device.Name = updatedDevice.Name;
-            device.Version = updatedDevice.Version;
-            _dbContext.Update(device);//Entry(device).State = EntityState.Modified;
-            _dbContext.SaveChanges();
 
             var deviceDto = _mapper.Map<DeviceDto>(device);
-            return Ok(deviceDto);
+
+            if (updatedDevicePatch.Operations.ToArray().Length == 0)
+            {
+                return Ok(deviceDto);
+            }
+
+            var updatedDeviceDto = _mapper.Map<UpdatedDeviceDto>(device);
+            updatedDevicePatch.ApplyTo(updatedDeviceDto);
+
+            if (device.Name != updatedDeviceDto.Name)
+            {
+                device.Name = updatedDeviceDto.Name;
+                hasChanges = true;
+            }
+            if (device.Version != updatedDeviceDto.Version)
+            {
+                device.Version = updatedDeviceDto.Version;
+                hasChanges = true;
+            }
+
+            if (!hasChanges)
+            {
+                return Ok(deviceDto);
+            }
+
+            var deviceDtoAfterChanges = _mapper.Map<DeviceDto>(device);
+
+            _dbContext.SaveChanges();
+            
+            return Ok(deviceDtoAfterChanges);
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -95,32 +156,41 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpPut]
-        public ActionResult<DeviceDto> Update(DeviceDto updatedDevice)
+        public ActionResult<DeviceDto> Update(DeviceDto updatedDeviceDto)
         {
-            Device? device = _dbContext.Devices.Find(updatedDevice.Id);
+            bool hasChanges = false;
+            Device? device = _dbContext.Devices.Find(updatedDeviceDto.Id);
             if (device == null)
             {
                 return NotFound();
             }
-            if (_dbContext.Users.Find(updatedDevice.OwnerUserId) == null)
+            if (_dbContext.Users.Find(updatedDeviceDto.OwnerUserId) == null)
             {
                 return Problem(
                     statusCode: StatusCodes.Status404NotFound,
-                    detail: $"Cannot update device because new user Id doesn't exist: {updatedDevice.OwnerUserId}"
+                    detail: $"Cannot update device because new user Id doesn't exist: {updatedDeviceDto.OwnerUserId}"
                 );
             }
+            
+            if (device.Name != updatedDeviceDto.Name)
+            {
+                device.Name = updatedDeviceDto.Name;
+                hasChanges = true;
+            }
+            if (device.Version != updatedDeviceDto.Version)
+            {
+                device.Version = updatedDeviceDto.Version;
+                hasChanges = true;
+            }
+            if (device.OwnerUserId != updatedDeviceDto.OwnerUserId)
+            {
+                device.OwnerUserId = updatedDeviceDto.OwnerUserId;
+                hasChanges = true;
+            }
 
-            if (device.Name != updatedDevice.Name)
+            if (!hasChanges)
             {
-                device.Name = updatedDevice.Name;
-            }
-            if (device.Version != updatedDevice.Version)
-            {
-                device.Version = updatedDevice.Version;
-            }
-            if (device.OwnerUserId != updatedDevice.OwnerUserId)
-            {
-                device.OwnerUserId = updatedDevice.OwnerUserId;
+                return Ok(updatedDeviceDto);
             }
 
             _dbContext.SaveChanges();
@@ -133,7 +203,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public IActionResult DeleteById(int id)
         {
             Device? device = _dbContext.Devices.Find(id);

@@ -2,17 +2,19 @@
 
 namespace myMicroservice.Api.V1.Models
 {
-    public struct UpdatedDeviceDto
+    public class UpdatedDeviceDto
     {
         /// <example>iOS</example>
         [MaxLength(40)]
-        [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <example>13.4.1</example>
         [MaxLength(50)]
-        [Required]
-        public string Version { get; set; }
+        public string Version { get; set; } = null!;
+
+        public UpdatedDeviceDto()
+        {
+        }
 
         public UpdatedDeviceDto(string name, string version)
         {

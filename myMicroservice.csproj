@@ -34,6 +34,7 @@
     <PackageReference Include="Microsoft.AspNetCore.OData.Versioning.ApiExplorer" Version="4.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.4" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Morcatko.AspNetCore.JsonMergePatch.SystemText" Version="3.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
@@ -48,6 +49,8 @@
     <Folder Include="Database\Odata\Configurations\" />
     <Folder Include="Api\V1\Models\AutoMapperProfiles\" />
     <Folder Include="Api\Other\" />
+    <Folder Include="Api\V1\Models\User\" />
+    <Folder Include="Api\V1\Models\Device\" />
   </ItemGroup>    
   <ItemGroup>
     <Compile Remove="Entities\UserEntity.cs" />

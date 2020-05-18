@@ -65,6 +65,7 @@ namespace myMicroservice.Helpers
 
             var result = JsonSerializer.Serialize(problem, serializeOptions);
             context.Response.ContentType = "application/json";
+            context.Response.StatusCode = rawCode;
 
             _logger.LogError(ex, context.TraceIdentifier);
 

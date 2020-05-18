@@ -45,6 +45,12 @@
         <member name="P:myMicroservice.Api.V1.Models.NewDeviceDto.Version">
             <example>13.4.1</example>
         </member>
+        <member name="P:myMicroservice.Api.V1.Models.UpdatedDeviceDto.Name">
+            <example>iOS</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.UpdatedDeviceDto.Version">
+            <example>13.4.1</example>
+        </member>
         <member name="P:myMicroservice.Api.V1.Models.PersonDto.Id">
             <summary>Unique identifier</summary>
             <example>10</example>
@@ -73,11 +79,14 @@
         <member name="P:myMicroservice.Api.V1.Models.RegistrationModel.Email">
             <example>example@gmail.com</example>
         </member>
-        <member name="P:myMicroservice.Api.V1.Models.UpdatedDeviceDto.Name">
-            <example>iOS</example>
+        <member name="P:myMicroservice.Api.V1.Models.UpdatedUserDto.Name">
+            <example>Daniel</example>
         </member>
-        <member name="P:myMicroservice.Api.V1.Models.UpdatedDeviceDto.Version">
-            <example>13.4.1</example>
+        <member name="P:myMicroservice.Api.V1.Models.UpdatedUserDto.Surname">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.UpdatedUserDto.Email">
+            <example>example@email.com</example>
         </member>
         <member name="P:myMicroservice.Api.V1.Models.UserDto.Id">
             <example>2</example>

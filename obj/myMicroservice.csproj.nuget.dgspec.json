@@ -97,6 +97,10 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
+            "Morcatko.AspNetCore.JsonMergePatch.SystemText": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Serilog.Extensions.Logging": {
               "target": "Package",
               "version": "[3.0.1, )"

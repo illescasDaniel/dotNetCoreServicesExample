@@ -35,6 +35,7 @@ using Microsoft.AspNet.OData.Formatter;
 using Microsoft.Net.Http.Headers;
 using AutoMapper;
 using myMicroservice.Api;
+using Morcatko.AspNetCore.JsonMergePatch;
 
 namespace myMicroservice
 {
@@ -111,7 +112,9 @@ namespace myMicroservice
             });
 
             #region OData + api versioning
-            services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Latest);
+            //services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Latest);
+            services.AddMvcCore(options => options.EnableEndpointRouting = false)
+                .AddSystemTextJsonMergePatch();
 
             services.AddOData().EnableApiVersioning();
 
@@ -164,7 +167,7 @@ namespace myMicroservice
 
             services.AddSwaggerGen(config =>
             {
-
+                config.OperationFilter<JsonMergePatchDocumentOperationFilter>();
                 config.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
