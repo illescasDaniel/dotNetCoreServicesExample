@@ -71,17 +71,6 @@ namespace myMicroservice.Database.Odata
                 .Where(u => u.UserId == id)
                 .Select(u => u.Username)
             );
-            //var userName = _dbContext.Users
-            //    .AsNoTracking()
-            //    .Where(u => u.UserId == id)
-            //    .Select(u => u.Username)
-            //    .FirstOrDefault();
-            //;
-            //if (userName == null)
-            //{
-            //    return NotFound();
-            //}
-            //return Ok(userName);
         }
     }
 }
