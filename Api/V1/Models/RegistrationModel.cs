@@ -14,20 +14,29 @@ namespace myMicroservice.Api.v1.Models
         [Required]
         public string Password { get; set; }
 
+        /// <example>Daniel</example>
+        [MaxLength(40)]
+        [Required]
+        public string Name { get; set; }
+
+        /// <example>Illescas</example>
+        [Required]
+        public string Surname { get; set; }
+
         /// <example>example@gmail.com</example>
         [MaxLength(50)]
         [Required]
         public string Email { get; set; }
 
-        public Database.Entities.UserEntity MapToUserEntity() // might not be used, should't be used when updating for example, we might use another entity instead
+        public Database.Entities.User MapToUserEntity()
         {
             var mapperConfig = new MapperConfiguration(config =>
-                config.CreateMap<RegistrationModel, Database.Entities.UserEntity>()
+                config.CreateMap<RegistrationModel, Database.Entities.User>()
                 .ForMember(dest => dest.HashedPassword, opt => opt.MapFrom(src => src.Password))
                 .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => 0))
             );
             var mapper = new Mapper(mapperConfig);
-            return mapper.Map<Database.Entities.UserEntity>(this);
+            return mapper.Map<Database.Entities.User>(this);
         }
     }
 }

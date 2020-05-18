@@ -159,3 +159,5 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.Spatial.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.OData.Versioning.ApiExplorer.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Proxies.dll

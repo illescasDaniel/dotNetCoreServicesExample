@@ -28,9 +28,9 @@ namespace myMicroservice.Api.v2.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")] // this helps swagger show the correct content-type
         [HttpGet("{id}")]
-        public Person GetById(int id)
+        public PersonDto GetById(int id)
         {
-            return new Person(id: id, name: "juanitooo!!", age: 23);
+            return new PersonDto(id: id, name: "juanitooo!!", age: 23);
         }
 
         // GET: api/person?name="XXXX"
@@ -41,9 +41,9 @@ namespace myMicroservice.Api.v2.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
         [HttpGet]
-        public Person GetByName(string name)
+        public PersonDto GetByName(string name)
         {
-            return new Person(id: 15, name: name, age: 23);
+            return new PersonDto(id: 15, name: name, age: 23);
         }
 
         // returning null causes a 204 error
@@ -67,7 +67,7 @@ namespace myMicroservice.Api.v2.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json", "text/plain")]
         [HttpPost]
-        public ActionResult<Person> Create(Person person)
+        public ActionResult<PersonDto> Create(PersonDto person)
         {
             if (person.Name == "Daniel")
             {
@@ -81,7 +81,7 @@ namespace myMicroservice.Api.v2.Controllers
                 //return BadRequest("Cannot create person with name Daniel");
                 //return new StatusCodeResult(StatusCodes.Status406NotAcceptable);
             }
-            return Created("api/person/100", new Person(id: 100, name: person.Name, age: person.Age));
+            return Created("api/person/100", new PersonDto(id: 100, name: person.Name, age: person.Age));
             // also:
             // Ok(...) //200
         }

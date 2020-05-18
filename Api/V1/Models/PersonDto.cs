@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace myMicroservice.Api.v1.Models
 {
-    public struct Person
+    public struct PersonDto
     {
         /// <summary>Unique identifier</summary>
         /// <example>10</example>
@@ -27,7 +27,7 @@ namespace myMicroservice.Api.v1.Models
         //}
 
         /// <summary>Constructor</summary>
-        public Person(int id, string name, UInt16? age)
+        public PersonDto(int id, string name, UInt16? age)
         {
             Id = id;
             Name = name;

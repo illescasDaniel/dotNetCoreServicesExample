@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace myMicroservice.Api.v1.Models
 {
-    public class WeatherForecast
+    public class WeatherForecastDto
     {
         [Required]
         public DateTime Date { get; set; }

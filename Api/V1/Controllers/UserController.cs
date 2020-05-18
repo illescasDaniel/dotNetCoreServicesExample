@@ -8,6 +8,9 @@ using myMicroservice.Api.v1.Models;
 using myMicroservice.Helpers;
 using Microsoft.AspNetCore.Identity;
 using myMicroservice.Database;
+using Microsoft.EntityFrameworkCore;
+using myMicroservice.Api.V1.Models;
+using System.Collections.Generic;
 
 namespace myMicroservice.Api.v1.Controllers
 {
@@ -17,7 +20,6 @@ namespace myMicroservice.Api.v1.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class UserController : ControllerBase
     {
-
         private IUserAuthenticationService _authenticationService;
         private readonly ILogger<UserController> _logger;
         private readonly DatabaseContext _dbContext;
@@ -38,12 +40,12 @@ namespace myMicroservice.Api.v1.Controllers
         [HttpPost("authenticate")]
         public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model)
         {
-
-            Database.Entities.UserEntity? userEntity;
+            Database.Entities.User? userEntity;
             try
             {
                 userEntity = _dbContext.Users
-                .FirstOrDefault(User => User.Username == model.Username);
+                    .AsNoTracking()
+                    .FirstOrDefault(User => User.Username == model.Username);
             }
             catch (Exception e)
             {
@@ -59,7 +61,7 @@ namespace myMicroservice.Api.v1.Controllers
                 return NotFound();
             }
 
-            var passHasher = new PasswordHasher<Database.Entities.UserEntity>();
+            var passHasher = new PasswordHasher<Database.Entities.User>();
             var verificationResult = passHasher.VerifyHashedPassword(
                 userEntity,
                 hashedPassword: userEntity.HashedPassword,
@@ -90,11 +92,11 @@ namespace myMicroservice.Api.v1.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
         [HttpPost("register")]
-        public ActionResult<User> Register(RegistrationModel model)
+        public ActionResult<UserDto> Register(RegistrationModel model)
         {
             var newUserEntity = model.MapToUserEntity();
 
-            var passHasher = new PasswordHasher<Database.Entities.UserEntity>();
+            var passHasher = new PasswordHasher<Database.Entities.User>();
             var hashedPass = passHasher.HashPassword(newUserEntity, model.Password);
 
             newUserEntity.HashedPassword = hashedPass;
@@ -103,9 +105,9 @@ namespace myMicroservice.Api.v1.Controllers
             {
                 _dbContext.Add(newUserEntity);
                 _dbContext.SaveChanges();
-                var user = new User(userEntity: newUserEntity);
+                var user = new UserDto(userEntity: newUserEntity);
                 return Created($"api/User/{newUserEntity.UserId}", user);
-            } catch(Microsoft.EntityFrameworkCore.DbUpdateException updateException)
+            } catch(DbUpdateException updateException)
             {
                 _logger.LogInformation("Tried to insert existing user? ${}");
                 _logger.LogInformation(updateException.Message);
@@ -128,14 +130,15 @@ namespace myMicroservice.Api.v1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{id:int}")]
-        public ActionResult<User> GetById(int id)
+        public ActionResult<UserDto> GetById(int id)
         {
 
-            Database.Entities.UserEntity? userEntity;
+            Database.Entities.User? userEntity;
             try
             {
                 userEntity = _dbContext.Users
-                .FirstOrDefault(User => User.UserId == id);
+                    .AsNoTracking()
+                    .FirstOrDefault(User => User.UserId == id);
             }
             catch (Exception e)
             {
@@ -153,8 +156,89 @@ namespace myMicroservice.Api.v1.Controllers
 
             //_logger.LogInformation(HttpContext.User.Identity.Name); // this is the Name clain we used in jwt (I think)
 
-            var user = new User(userEntity: userEntity);
+            var user = new UserDto(userEntity: userEntity);
             return Ok(user);
+        }
+
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost("{ownerUserId:int}/devices")]
+        public ActionResult<DeviceDto> AddDevice([FromBody]NewDeviceDto device, [FromRoute]int ownerUserId)
+        {
+            try
+            {
+                var user = _dbContext.Users
+                    .Include(User => User.Devices)
+                    .FirstOrDefault(User => User.UserId == ownerUserId);
+
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                var deviceEntity = device.MapToDeviceEntity();
+                user.Devices.Add(deviceEntity);
+                _dbContext.SaveChanges();
+
+                var createdDevice = new DeviceDto(deviceEntity: deviceEntity);
+                return Created($"api/Device/{deviceEntity.DeviceId}", createdDevice);
+            }
+            catch (DbUpdateException updateException)
+            {
+                return Problem(
+                    statusCode: StatusCodes.Status409Conflict,
+                    detail: $"Error adding user device: {updateException.Message}"
+                );
+            }
+            catch (Exception e)
+            {
+                return Problem(
+                    title: "An internal server error ocurred",
+                    detail: e.Message,
+                    statusCode: StatusCodes.Status500InternalServerError
+                );
+            }
+        }
+
+        // TODO: create device repo ??
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("{ownerUserId:int}/devices")]
+        public ActionResult<List<DeviceDto>> GetDevices(int ownerUserId)
+        {
+            try
+            {
+                var devices = _dbContext.Users
+                    .Include(User => User.Devices)
+                    .FirstOrDefault(User => User.UserId == ownerUserId)?
+                    .Devices;
+
+                if (devices == null)
+                {
+                    return NotFound();
+                }
+                return Ok(DeviceDto.DevicesFromEntity(devices));
+            }
+            catch (DbUpdateException updateException)
+            {
+                return Problem(
+                    statusCode: StatusCodes.Status409Conflict,
+                    detail: $"Error adding user device: {updateException.Message}"
+                );
+            }
+            catch (Exception e)
+            {
+                return Problem(
+                    title: "An internal server error ocurred",
+                    detail: e.Message,
+                    statusCode: StatusCodes.Status500InternalServerError
+                );
+            }
         }
     }
 }

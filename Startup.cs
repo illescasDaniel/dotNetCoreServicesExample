@@ -149,7 +149,7 @@ namespace myMicroservice
             });
             #endregion
 
-            services.AddHealthChecks(); // not sure w
+            services.AddHealthChecks(); // not sure
 
             services.AddVersionedApiExplorer(options =>
             {
@@ -168,6 +168,24 @@ namespace myMicroservice
                 config.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
+                    Title = "My API",
+                    Description = "A simple example ASP.NET Core Web API",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Daniel Illescas Romero",
+                        Email = "illescas.daniel@protonmail.com",
+                        Url = new Uri("https://github.com/illescasDaniel"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Use under MPL 2.0",
+                        Url = new Uri("https://www.mozilla.org/en-US/MPL/2.0/"),
+                    }
+                });
+                config.SwaggerDoc("v1-odata", new OpenApiInfo
+                {
+                    Version = "v1-odata",
                     Title = "My API",
                     Description = "A simple example ASP.NET Core Web API",
                     TermsOfService = new Uri("https://example.com/terms"),
@@ -287,15 +305,15 @@ namespace myMicroservice
             {
                 routeBuilder.ServiceProvider.GetRequiredService<ODataOptions>().UrlKeyDelimiter = ODataUrlKeyDelimiter.Slash;
 
-                routeBuilder.Count();
-
                 app.UseODataBatching();
 
-                routeBuilder.EnableDependencyInjection();
+                // This should enable "odata" and normal "rest api" for the same controllers
+                //routeBuilder.EnableDependencyInjection();
 
                 // this enables all these operations for all types
                 //routeBuilder.Select().Expand().Count().Filter().OrderBy().MaxTop(100).SkipToken().Build();
 
+                // maps model configured on "Database.Odata.Configurations"
                 routeBuilder.MapVersionedODataRoutes("odata", "odata", modelBuilder.GetEdmModels());
             });
 

@@ -24,13 +24,13 @@ namespace myMicroservice.Api.v1.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecastDto> Get()
         {
 
             // _logger.LogWarning("Test warning!");
 
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecastDto
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
@@ -46,9 +46,9 @@ namespace myMicroservice.Api.v1.Controllers
         }
 
         [HttpGet("something")]
-        public Person Something()
+        public PersonDto Something()
         {
-            return new Person(id: 0, name: "Daniel", age: 23);
+            return new PersonDto(id: 0, name: "Daniel", age: 23);
         }
     }
 }
