@@ -66,42 +66,6 @@ namespace myMicroservice.Api.V1.Controllers
             return Ok(_mapper.Map<DeviceDto>(device));
         }
 
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        //[ProducesResponseType(StatusCodes.Status404NotFound)]
-        //[Produces("application/json")]
-        //[HttpPatch("{id:int}")]
-        //public ActionResult<DeviceDto> PatchById([FromRoute]int id, [FromBody]UpdatedDeviceDto updatedDevice)
-        //{
-        //    bool hasChanges = false;
-        //    Device? device = _dbContext.Devices.Find(id);
-        //    if (device == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    if (device.Name != updatedDevice.Name)
-        //    {
-        //        device.Name = updatedDevice.Name;
-        //        hasChanges = true;
-        //    }
-        //    if (device.Version != updatedDevice.Version)
-        //    {
-        //        device.Version = updatedDevice.Version;
-        //        hasChanges = true;
-        //    }
-
-        //    if (!hasChanges)
-        //    {
-        //        return Ok(updatedDevice);
-        //    }
-
-        //    _dbContext.SaveChanges();
-
-        //    var deviceDto = _mapper.Map<DeviceDto>(device);
-        //    return Ok(deviceDto);
-        //}
-
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
