@@ -347,8 +347,9 @@ namespace myMicroservice
             //{
             //    app.UseExceptionHandler("/error");
             //}
-            app.UseExceptionHandler("/ErrorController/error");
+            app.UseExceptionHandler("/error");
             //app.UseStatusCodePagesWithReExecute("/ErrorController/error");
+
             //app.UseDeveloperExceptionPage();
             //app.UseHsts(); // Strict transport security header
 

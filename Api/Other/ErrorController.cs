@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace myMicroservice.Api.Other.Controllers
 {
     [ApiController]
-    [Route("/ErrorController")]
     public class ErrorController : ControllerBase
     {
         //[HttpGet]
@@ -30,8 +29,8 @@ namespace myMicroservice.Api.Other.Controllers
         //    );
         //}
 
-        [HttpGet("error")]
-        [HttpPost("error")]
+        //[HttpGet("error")]
+        //[HttpPost("error")]
         //[HttpDelete]
         //[HttpPut]
         //[HttpHead]
@@ -39,7 +38,7 @@ namespace myMicroservice.Api.Other.Controllers
         //[HttpPatch]
         //[AllowAnonymous]
         [ApiExplorerSettings(IgnoreApi = true)]
-        //[Route("/Error")]
+        [Route("/error")]
         public IActionResult Error()
         {
             Console.WriteLine("error!");

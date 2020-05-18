@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V1/Controllers/UserController.cs">
     <Files>
-      <File FileName="Api/V1/Controllers/UserController.cs" Line="117" Column="1" />
-      <File FileName="Startup.cs" Line="358" Column="22" />
-      <File FileName="Api/Other/ErrorController.cs" Line="40" Column="11" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="128" Column="19" />
+      <File FileName="Startup.cs" Line="352" Column="1" />
+      <File FileName="Api/Other/ErrorController.cs" Line="32" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +13,9 @@
               <Node name="Api" expanded="True">
                 <Node name="Other" expanded="True" />
                 <Node name="V1" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
                   <Node name="Models" expanded="True" />
                 </Node>
                 <Node name="V2" expanded="True">
@@ -27,7 +29,6 @@
                 </Node>
               </Node>
               <Node name="Properties" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
