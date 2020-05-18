@@ -4,15 +4,16 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using myMicroservice.Api.v1.Models;
 using myMicroservice.Helpers;
 using Microsoft.AspNetCore.Identity;
 using myMicroservice.Database;
 using Microsoft.EntityFrameworkCore;
 using myMicroservice.Api.V1.Models;
 using System.Collections.Generic;
+using AutoMapper;
+using myMicroservice.Database.Entities;
 
-namespace myMicroservice.Api.v1.Controllers
+namespace myMicroservice.Api.V1.Controllers
 {
     [ApiController]
     [ApiVersionNeutral]
@@ -20,75 +21,59 @@ namespace myMicroservice.Api.v1.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class DeviceController : ControllerBase
     {
-        private IUserAuthenticationService _authenticationService;
-        private readonly ILogger<UserController> _logger;
         private readonly DatabaseContext _dbContext;
+        private readonly IUserAuthenticationService _authenticationService;
+        private readonly ILogger<UserController> _logger;
+        private readonly IMapper _mapper;
 
         public DeviceController(
             DatabaseContext dbContext,
             IUserAuthenticationService authenticationService,
-            ILogger<UserController> logger
+            ILogger<UserController> logger,
+            IMapper mapper
         )
         {
             _dbContext = dbContext;
             _authenticationService = authenticationService;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Produces("application/json")]
         [HttpGet("{id:int}")]
         public ActionResult<DeviceDto> GetById(int id)
         {
-
-            Database.Entities.Device? deviceEntity;
-            try
-            {
-                deviceEntity = _dbContext.Devices
-                    .AsNoTracking()
-                    .FirstOrDefault(d => d.DeviceId == id);
-            }
-            catch (Exception e)
-            {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
-            }
-
-            if (deviceEntity == null)
+            Device? device = _dbContext.Devices.Find(id);
+            if (device == null)
             {
                 return NotFound();
             }
-
-            var user = new DeviceDto(deviceEntity: deviceEntity);
-            return Ok(user);
+            return Ok(_mapper.Map<DeviceDto>(device));
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPut("{id:int}")]
-        public ActionResult<DeviceDto> UpdateById([FromRoute]int id, [FromBody]UpdatedDeviceDto updatedDevice)
+        [Produces("application/json")]
+        [HttpPatch("{id:int}")]
+        public ActionResult<DeviceDto> PatchById([FromRoute]int id, [FromBody]UpdatedDeviceDto updatedDevice)
         {
+            Device? device = _dbContext.Devices.Find(id);
+            if (device == null)
+            {
+                return NotFound();
+            }
+            device.Name = updatedDevice.Name;
+            device.Version = updatedDevice.Version;
+            _dbContext.Entry(device).State = EntityState.Modified;
 
-            Database.Entities.Device? deviceEntity;
             try
             {
-                deviceEntity = _dbContext.Devices
-                    .FirstOrDefault(d => d.DeviceId == id);
-
-                if (deviceEntity == null)
-                {
-                    return NotFound();
-                }
-
-                deviceEntity.Name = updatedDevice.Name;
-                deviceEntity.Version = updatedDevice.Version;
                 _dbContext.SaveChanges();
             }
             catch (Exception e)
@@ -100,8 +85,8 @@ namespace myMicroservice.Api.v1.Controllers
                 );
             }
 
-            var user = new DeviceDto(deviceEntity: deviceEntity);
-            return Ok(user);
+            var deviceDto = _mapper.Map<DeviceDto>(device);
+            return Ok(deviceDto);
         }
     }
 }

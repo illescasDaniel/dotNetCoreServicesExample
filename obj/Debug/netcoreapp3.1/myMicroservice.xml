@@ -4,22 +4,22 @@
         <name>myMicroservice</name>
     </assembly>
     <members>
-        <member name="T:myMicroservice.Api.v1.Controllers.PersonController">
+        <member name="T:myMicroservice.Api.V1.Controllers.PersonController">
             <summary>
             GET: api/person
             </summary>
         </member>
-        <member name="M:myMicroservice.Api.v1.Controllers.PersonController.GetById(System.Int32)">
+        <member name="M:myMicroservice.Api.V1.Controllers.PersonController.GetById(System.Int32)">
             <summary>
             A Person by id
             </summary>
         </member>
-        <member name="M:myMicroservice.Api.v1.Controllers.PersonController.GetByName(System.String)">
+        <member name="M:myMicroservice.Api.V1.Controllers.PersonController.GetByName(System.String)">
             <summary>
             Get person by matching name
             </summary>
         </member>
-        <member name="M:myMicroservice.Api.v1.Controllers.PersonController.Create(myMicroservice.Api.v1.Models.PersonDto)">
+        <member name="M:myMicroservice.Api.V1.Controllers.PersonController.Create(myMicroservice.Api.V1.Models.PersonDto)">
             <summary>
             Creates a new person
             </summary>
@@ -27,54 +27,11 @@
             <returns>Created person or an error</returns>
             <remarks>This may fail due to ... bla bla</remarks>
         </member>
-        <member name="P:myMicroservice.Api.v1.Models.AuthenticationModel.Username">
+        <member name="P:myMicroservice.Api.V1.Models.AuthenticationModel.Username">
             <example>Daniel</example>
         </member>
-        <member name="P:myMicroservice.Api.v1.Models.AuthenticationModel.Password">
+        <member name="P:myMicroservice.Api.V1.Models.AuthenticationModel.Password">
             <example>ultra-secure-pass</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.PersonDto.Id">
-            <summary>Unique identifier</summary>
-            <example>10</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.PersonDto.Name">
-            <example>Pepe</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.PersonDto.Age">
-            <example>50</example>
-        </member>
-        <member name="M:myMicroservice.Api.v1.Models.PersonDto.#ctor(System.Int32,System.String,System.Nullable{System.UInt16})">
-            <summary>Constructor</summary>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Username">
-            <example>Daniel</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Password">
-            <example>ultra-secure-pass</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Name">
-            <example>Daniel</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Surname">
-            <example>Illescas</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.RegistrationModel.Email">
-            <example>example@gmail.com</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.UserDto.Id">
-            <example>2</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.UserDto.Username">
-            <example>Daniel</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.UserDto.Name">
-            <example>Daniel</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.UserDto.Surname">
-            <example>Daniel</example>
-        </member>
-        <member name="P:myMicroservice.Api.v1.Models.UserDto.Email">
-            <example>example@email.com</example>
         </member>
         <member name="P:myMicroservice.Api.V1.Models.DeviceDto.Name">
             <example>iOS</example>
@@ -88,28 +45,71 @@
         <member name="P:myMicroservice.Api.V1.Models.NewDeviceDto.Version">
             <example>13.4.1</example>
         </member>
+        <member name="P:myMicroservice.Api.V1.Models.PersonDto.Id">
+            <summary>Unique identifier</summary>
+            <example>10</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.PersonDto.Name">
+            <example>Pepe</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.PersonDto.Age">
+            <example>50</example>
+        </member>
+        <member name="M:myMicroservice.Api.V1.Models.PersonDto.#ctor(System.Int32,System.String,System.Nullable{System.UInt16})">
+            <summary>Constructor</summary>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.RegistrationModel.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.RegistrationModel.Password">
+            <example>ultra-secure-pass</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.RegistrationModel.Name">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.RegistrationModel.Surname">
+            <example>Illescas</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.RegistrationModel.Email">
+            <example>example@gmail.com</example>
+        </member>
         <member name="P:myMicroservice.Api.V1.Models.UpdatedDeviceDto.Name">
             <example>iOS</example>
         </member>
         <member name="P:myMicroservice.Api.V1.Models.UpdatedDeviceDto.Version">
             <example>13.4.1</example>
         </member>
-        <member name="T:myMicroservice.Api.v2.Controllers.PersonController">
+        <member name="P:myMicroservice.Api.V1.Models.UserDto.Id">
+            <example>2</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.UserDto.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.UserDto.Name">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.UserDto.Surname">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V1.Models.UserDto.Email">
+            <example>example@email.com</example>
+        </member>
+        <member name="T:myMicroservice.Api.V2.Controllers.PersonController">
             <summary>
             GET: api/person
             </summary>
         </member>
-        <member name="M:myMicroservice.Api.v2.Controllers.PersonController.GetById(System.Int32)">
+        <member name="M:myMicroservice.Api.V2.Controllers.PersonController.GetById(System.Int32)">
             <summary>
             A Person by id
             </summary>
         </member>
-        <member name="M:myMicroservice.Api.v2.Controllers.PersonController.GetByName(System.String)">
+        <member name="M:myMicroservice.Api.V2.Controllers.PersonController.GetByName(System.String)">
             <summary>
             Get person by matching name
             </summary>
         </member>
-        <member name="M:myMicroservice.Api.v2.Controllers.PersonController.Create(myMicroservice.Api.v1.Models.PersonDto)">
+        <member name="M:myMicroservice.Api.V2.Controllers.PersonController.Create(myMicroservice.Api.V1.Models.PersonDto)">
             <summary>
             Creates a new person
             </summary>

@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using AutoMapper;
 
-namespace myMicroservice.Api.v1.Models
+namespace myMicroservice.Api.V1.Models
 {
     public struct UserDto
     {
@@ -33,16 +32,6 @@ namespace myMicroservice.Api.v1.Models
         public string Email { get; set; }
 
         // Initializers
-
-        public UserDto(Database.Entities.User userEntity)
-        {
-            var mapperConfig = new MapperConfiguration(config =>
-                config.CreateMap<Database.Entities.User, UserDto>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.UserId))
-            );
-            var mapper = new Mapper(mapperConfig);
-            this = mapper.Map<UserDto>(userEntity);
-        }
 
         public UserDto(string email, string username, string name, string surname)
         {

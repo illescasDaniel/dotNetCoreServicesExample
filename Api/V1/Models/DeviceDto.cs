@@ -22,24 +22,24 @@ namespace myMicroservice.Api.V1.Models
 
         public int OwnerUserId { get; set; }
 
-        private static MapperConfiguration MapperConfig() => new MapperConfiguration(config =>
-            config.CreateMap<Database.Entities.Device, DeviceDto>()
-            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.DeviceId))
-        );
+        //private static MapperConfiguration MapperConfig() => new MapperConfiguration(config =>
+        //    config.CreateMap<Database.Entities.Device, DeviceDto>()
+        //    .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.DeviceId))
+        //);
 
         // Initializers
 
-        public DeviceDto(Database.Entities.Device deviceEntity)
-        {
-            var mapper = new Mapper(MapperConfig());
-            this = mapper.Map<DeviceDto>(deviceEntity);
-        }
+        //public DeviceDto(Database.Entities.Device deviceEntity)
+        //{
+        //    var mapper = new Mapper(MapperConfig());
+        //    this = mapper.Map<DeviceDto>(deviceEntity);
+        //}
 
-        public static List<DeviceDto> DevicesFromEntity(ICollection<Database.Entities.Device> devices)
-        {
-            var mapper = new Mapper(MapperConfig());
-            return mapper.Map<List<DeviceDto>>(devices);
-        }
+        //public static List<DeviceDto> DevicesFromEntity(ICollection<Database.Entities.Device> devices)
+        //{
+        //    var mapper = new Mapper(MapperConfig());
+        //    return mapper.Map<List<DeviceDto>>(devices);
+        //}
 
         public DeviceDto(string name, string version, int ownerUserId)
         {

@@ -1,18 +1,9 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Database/Odata/UsersController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Api/V1/Models/NewDevice.cs" Line="12" Column="1" />
-      <File FileName="Api/V1/Models/PersonDto.cs" Line="8" Column="48" />
-      <File FileName="Api/V1/Models/DeviceDto.cs" Line="1" Column="1" />
-      <File FileName="Api/V1/Models/RegistrationModel.cs" Line="1" Column="1" />
-      <File FileName="Api/V1/Models/UpdatedDeviceDto.cs" Line="6" Column="35" />
-      <File FileName="Api/V1/Models/UserDto.cs" Line="6" Column="26" />
-      <File FileName="Api/V1/Models/WeatherForecastDto.cs" Line="6" Column="36" />
-      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="84" Column="1" />
-      <File FileName="Database/Odata/UsersController.cs" Line="73" Column="15" />
-      <File FileName="appsettings.json" Line="1" Column="1" />
-      <File FileName="Properties/launchSettings.json" Line="22" Column="29" />
-      <File FileName="Api/V1/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="117" Column="1" />
+      <File FileName="Startup.cs" Line="358" Column="22" />
+      <File FileName="Api/Other/ErrorController.cs" Line="40" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,19 +11,23 @@
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
               <Node name="Api" expanded="True">
+                <Node name="Other" expanded="True" />
                 <Node name="V1" expanded="True">
                   <Node name="Controllers" expanded="True" />
                   <Node name="Models" expanded="True" />
+                </Node>
+                <Node name="V2" expanded="True">
+                  <Node name="Controllers" expanded="True" />
                 </Node>
               </Node>
               <Node name="Database" expanded="True">
                 <Node name="Entities" expanded="True" />
                 <Node name="Odata" expanded="True">
                   <Node name="Configurations" expanded="True" />
-                  <Node name="UsersController.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -45,7 +40,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/daniel/Projects/myMicroservice/Api/Other/ErrorController.cs" relfile="Api/Other/ErrorController.cs" line="44" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.myMicroservice PreferredExecutionTarget="/Applications/Firefox.app" />

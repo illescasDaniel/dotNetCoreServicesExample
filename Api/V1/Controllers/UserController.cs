@@ -4,15 +4,17 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using myMicroservice.Api.v1.Models;
 using myMicroservice.Helpers;
 using Microsoft.AspNetCore.Identity;
 using myMicroservice.Database;
+using myMicroservice.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 using myMicroservice.Api.V1.Models;
 using System.Collections.Generic;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 
-namespace myMicroservice.Api.v1.Controllers
+namespace myMicroservice.Api.V1.Controllers
 {
     [ApiController]
     [ApiVersionNeutral]
@@ -20,15 +22,23 @@ namespace myMicroservice.Api.v1.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class UserController : ControllerBase
     {
-        private IUserAuthenticationService _authenticationService;
-        private readonly ILogger<UserController> _logger;
+        // DI
         private readonly DatabaseContext _dbContext;
+        private readonly IUserAuthenticationService _authenticationService;
+        private readonly ILogger<UserController> _logger;
+        private readonly IMapper _mapper;
 
-        public UserController(DatabaseContext dbContext, IUserAuthenticationService authenticationService, ILogger<UserController> logger)
+        public UserController(
+            DatabaseContext dbContext,
+            IUserAuthenticationService authenticationService,
+            ILogger<UserController> logger,
+            IMapper mapper
+        )
         {
             _dbContext = dbContext;
             _authenticationService = authenticationService;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [AllowAnonymous]
@@ -40,7 +50,7 @@ namespace myMicroservice.Api.v1.Controllers
         [HttpPost("authenticate")]
         public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model)
         {
-            Database.Entities.User? userEntity;
+            User? userEntity;
             try
             {
                 userEntity = _dbContext.Users
@@ -61,7 +71,7 @@ namespace myMicroservice.Api.v1.Controllers
                 return NotFound();
             }
 
-            var passHasher = new PasswordHasher<Database.Entities.User>();
+            var passHasher = new PasswordHasher<User>();
             var verificationResult = passHasher.VerifyHashedPassword(
                 userEntity,
                 hashedPassword: userEntity.HashedPassword,
@@ -94,9 +104,9 @@ namespace myMicroservice.Api.v1.Controllers
         [HttpPost("register")]
         public ActionResult<UserDto> Register(RegistrationModel model)
         {
-            var newUserEntity = model.MapToUserEntity();
+            var newUserEntity = _mapper.Map<User>(model);
 
-            var passHasher = new PasswordHasher<Database.Entities.User>();
+            var passHasher = new PasswordHasher<User>();
             var hashedPass = passHasher.HashPassword(newUserEntity, model.Password);
 
             newUserEntity.HashedPassword = hashedPass;
@@ -105,12 +115,13 @@ namespace myMicroservice.Api.v1.Controllers
             {
                 _dbContext.Add(newUserEntity);
                 _dbContext.SaveChanges();
-                var user = new UserDto(userEntity: newUserEntity);
+                var user = _mapper.Map<UserDto>(newUserEntity);
                 return Created($"api/User/{newUserEntity.UserId}", user);
             } catch(DbUpdateException updateException)
             {
                 _logger.LogInformation("Tried to insert existing user? ${}");
                 _logger.LogInformation(updateException.Message);
+                //throw new ArgumentException(updateException.Message);
                 return Problem(
                     statusCode: StatusCodes.Status409Conflict,
                     detail: $"Error adding user. One with the same username might exists"
@@ -129,43 +140,25 @@ namespace myMicroservice.Api.v1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Produces("application/json")]
         [HttpGet("{id:int}")]
         public ActionResult<UserDto> GetById(int id)
         {
-
-            Database.Entities.User? userEntity;
-            try
-            {
-                userEntity = _dbContext.Users
-                    .AsNoTracking()
-                    .FirstOrDefault(User => User.UserId == id);
-            }
-            catch (Exception e)
-            {
-                return Problem(
-                    title: "An internal server error ocurred",
-                    detail: e.Message,
-                    statusCode: StatusCodes.Status500InternalServerError
-                );
-            }
-
-            if (userEntity == null)
+            User? user = _dbContext.Users.Find(id);
+            if (user == null)
             {
                 return NotFound();
             }
-
-            //_logger.LogInformation(HttpContext.User.Identity.Name); // this is the Name clain we used in jwt (I think)
-
-            var user = new UserDto(userEntity: userEntity);
-            return Ok(user);
+            return Ok(_mapper.Map<UserDto>(user));
         }
 
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Produces("application/json")]
         [HttpPost("{ownerUserId:int}/devices")]
-        public ActionResult<DeviceDto> AddDevice([FromBody]NewDeviceDto device, [FromRoute]int ownerUserId)
+        public ActionResult<DeviceDto> AddDevice([FromBody]NewDeviceDto newDevice, [FromRoute]int ownerUserId)
         {
             try
             {
@@ -178,12 +171,12 @@ namespace myMicroservice.Api.v1.Controllers
                     return NotFound();
                 }
 
-                var deviceEntity = device.MapToDeviceEntity();
-                user.Devices.Add(deviceEntity);
+                var device = newDevice.MapToDeviceEntity();
+                user.Devices.Add(device);
                 _dbContext.SaveChanges();
 
-                var createdDevice = new DeviceDto(deviceEntity: deviceEntity);
-                return Created($"api/Device/{deviceEntity.DeviceId}", createdDevice);
+                var createdDeviceDto = _mapper.Map<DeviceDto>(device);//new DeviceDto(device: device);
+                return Created($"api/Device/{device.DeviceId}", createdDeviceDto);
             }
             catch (DbUpdateException updateException)
             {
@@ -208,6 +201,7 @@ namespace myMicroservice.Api.v1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Produces("application/json")]
         [HttpGet("{ownerUserId:int}/devices")]
         public ActionResult<List<DeviceDto>> GetDevices(int ownerUserId)
         {
@@ -222,7 +216,8 @@ namespace myMicroservice.Api.v1.Controllers
                 {
                     return NotFound();
                 }
-                return Ok(DeviceDto.DevicesFromEntity(devices));
+                var devicesDto = _mapper.Map<List<DeviceDto>>(devices);
+                return Ok(devicesDto);
             }
             catch (DbUpdateException updateException)
             {

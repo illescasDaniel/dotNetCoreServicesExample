@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace myMicroservice.Api.v1.Models
+namespace myMicroservice.Api.V1.Models
 {
     public struct PersonDto
     {

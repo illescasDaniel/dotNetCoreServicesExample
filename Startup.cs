@@ -33,6 +33,8 @@ using Microsoft.AspNet.OData;
 using Microsoft.OData;
 using Microsoft.AspNet.OData.Formatter;
 using Microsoft.Net.Http.Headers;
+using AutoMapper;
+using myMicroservice.Api;
 
 namespace myMicroservice
 {
@@ -280,6 +282,10 @@ namespace myMicroservice
             //    };
             //});
 
+            services.AddAutoMapper(
+                typeof(Api.V1.Models.AutoMapperProfiles.UserProfile),
+                typeof(Api.V1.Models.AutoMapperProfiles.DeviceProfile)
+            );
             // configure DI for application services
             services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
             services.AddScoped<Database.DatabaseContext>();
@@ -294,8 +300,71 @@ namespace myMicroservice
         //}
 
         #region Odata + versioning
-        public void Configure(IApplicationBuilder app, VersionedODataModelBuilder modelBuilder, IApiVersionDescriptionProvider provider)
+        //public void Configure(IApplicationBuilder app, VersionedODataModelBuilder modelBuilder, IApiVersionDescriptionProvider provider)
+        //{
+        //    app.UseRouting();
+
+        //    app.UseAuthentication();
+        //    app.UseAuthorization();
+
+        //    app.UseMvc(routeBuilder =>
+        //    {
+        //        routeBuilder.ServiceProvider.GetRequiredService<ODataOptions>().UrlKeyDelimiter = ODataUrlKeyDelimiter.Slash;
+
+        //        app.UseODataBatching();
+
+        //        // This should enable "odata" and normal "rest api" for the same controllers
+        //        //routeBuilder.EnableDependencyInjection();
+
+        //        // this enables all these operations for all types
+        //        //routeBuilder.Select().Expand().Count().Filter().OrderBy().MaxTop(100).SkipToken().Build();
+
+        //        // maps model configured on "Database.Odata.Configurations"
+        //        routeBuilder.MapVersionedODataRoutes("odata", "odata", modelBuilder.GetEdmModels());
+        //    });
+
+        //    app.UseEndpoints(builder => builder.MapControllers());
+
+        //    app.UseSwagger();
+        //    app.UseSwaggerUI(options =>
+        //    {
+        //        // build a swagger endpoint for each discovered API version
+        //        foreach (var description in provider.ApiVersionDescriptions)
+        //        {
+        //            options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+        //        }
+        //    });
+        //}
+        #endregion
+
+        public void Configure(IApplicationBuilder app, VersionedODataModelBuilder modelBuilder, IApiVersionDescriptionProvider provider, IWebHostEnvironment env)
         {
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseExceptionHandler("/error-local-development");
+            //}
+            //else
+            //{
+            //    app.UseExceptionHandler("/error");
+            //}
+            app.UseExceptionHandler("/ErrorController/error");
+            //app.UseStatusCodePagesWithReExecute("/ErrorController/error");
+            //app.UseDeveloperExceptionPage();
+            //app.UseHsts(); // Strict transport security header
+
+            //var optsx = new ExceptionHandlerOptions
+            //{
+            //    ExceptionHandler = async context =>
+            //    {
+            //        context.Response.ContentType = "text/plain";
+            //        return new ProblemDetails();
+            //        //await context.Response.Body.WriteAsync("xxxx");
+            //    }
+            //};
+            //app.UseExceptionHandler(
+            //    optsx
+            //);
+
             app.UseRouting();
 
             app.UseAuthentication();
@@ -329,7 +398,6 @@ namespace myMicroservice
                 }
             });
         }
-        #endregion
 
         //public void Configure(IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         //{

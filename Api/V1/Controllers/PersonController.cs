@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using myMicroservice.Api.v1.Models;
+using myMicroservice.Api.V1.Models;
 
-namespace myMicroservice.Api.v1.Controllers
+namespace myMicroservice.Api.V1.Controllers
 {
     /// <summary>
     /// GET: api/person
@@ -84,5 +84,9 @@ namespace myMicroservice.Api.v1.Controllers
             // also:
             // Ok(...) //200
         }
+
+        // to return lists you can use
+        // IEnumerable if it's a list
+        // IQueryable if its from a query
     }
 }

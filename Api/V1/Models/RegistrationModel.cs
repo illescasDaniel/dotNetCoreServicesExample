@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using AutoMapper;
 
-namespace myMicroservice.Api.v1.Models
+namespace myMicroservice.Api.V1.Models
 {
     public struct RegistrationModel
     {

@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using AutoMapper;
 
 namespace myMicroservice.Api.V1.Models
 {

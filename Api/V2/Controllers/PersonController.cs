@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using myMicroservice.Api.v1.Models;
+using myMicroservice.Api.V1.Models;
 
-namespace myMicroservice.Api.v2.Controllers
+namespace myMicroservice.Api.V2.Controllers
 {
     /// <summary>
     /// GET: api/person
