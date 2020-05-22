@@ -11020,3 +11020,1290 @@ System.Collections.Generic.ICollection`1[[myMicroservice.Database.Entities.Devic
 2020-05-22 16:06:36.573 +02:00 [INF] Request finished in 11.8937ms 200 application/json; charset=utf-8
 2020-05-22 16:08:15.182 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
 2020-05-22 16:08:15.527 +02:00 [INF] Request finished in 344.4338ms 200 application/json;charset=utf-8
+2020-05-22 18:30:27.624 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 18:30:29.164 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 18:30:29.165 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 18:30:29.165 +02:00 [INF] Hosting environment: Development
+2020-05-22 18:30:29.165 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 18:30:31.298 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 18:30:31.727 +02:00 [INF] Request finished in 431.095ms 200 application/json;charset=utf-8
+2020-05-22 18:30:44.304 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/3/Username?api-version=1.0-odata  
+2020-05-22 18:30:44.564 +02:00 [INF] Successfully validated the token.
+2020-05-22 18:30:44.676 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:30:46.006 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 18:30:46.014 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 1330.4321ms
+2020-05-22 18:30:46.020 +02:00 [INF] Request finished in 1716.5974ms 404 
+2020-05-22 18:30:50.729 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Username?api-version=1.0-odata  
+2020-05-22 18:30:50.732 +02:00 [INF] Successfully validated the token.
+2020-05-22 18:30:50.737 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:30:50.806 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 18:30:50.967 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 229.7465ms
+2020-05-22 18:30:50.968 +02:00 [INF] Request finished in 239.2172ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 18:31:26.314 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 18:31:26.317 +02:00 [INF] Successfully validated the token.
+2020-05-22 18:31:26.328 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:31:26.389 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 18:31:26.464 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 135.7029ms
+2020-05-22 18:31:26.469 +02:00 [INF] Request finished in 155.5124ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 18:31:53.463 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users/1?api-version=1.0-odata application/json 21
+2020-05-22 18:31:53.465 +02:00 [INF] Successfully validated the token.
+2020-05-22 18:31:53.534 +02:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '1.0-odata'. Candidate actions: myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+2020-05-22 18:31:53.540 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-22 18:31:53.565 +02:00 [INF] Request finished in 102.3953ms 405 application/json; charset=utf-8
+2020-05-22 18:43:55.600 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 18:43:56.993 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 18:43:56.994 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 18:43:56.994 +02:00 [INF] Hosting environment: Development
+2020-05-22 18:43:56.994 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 18:44:05.555 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 18:44:05.742 +02:00 [INF] Request finished in 189.9049ms 200 text/html;charset=utf-8
+2020-05-22 18:44:05.859 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 18:44:05.859 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 18:44:05.914 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 18:44:05.933 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 18:44:05.933 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 18:44:05.933 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 18:44:05.934 +02:00 [INF] Request finished in 75.5875ms 304 application/javascript
+2020-05-22 18:44:05.934 +02:00 [INF] Request finished in 20.2036ms 304 text/css
+2020-05-22 18:44:05.934 +02:00 [INF] Request finished in 75.5801ms 304 application/javascript
+2020-05-22 18:44:06.100 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 18:44:06.322 +02:00 [INF] Request finished in 222.0347ms 200 application/json;charset=utf-8
+2020-05-22 18:44:42.136 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0 application/json;odata.metadata=minimal;odata.streaming=true 23
+2020-05-22 18:44:42.236 +02:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '1.0'. Candidate actions: myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+myMicroservice.Database.Odata.UsersController.Patch (myMicroservice)
+2020-05-22 18:44:42.256 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-22 18:44:42.260 +02:00 [INF] Request finished in 124.9512ms 400 application/json; charset=utf-8
+2020-05-22 18:44:49.512 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 23
+2020-05-22 18:44:49.553 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:44:51.380 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-05-22 18:44:51.387 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 1828.3711ms
+2020-05-22 18:44:51.391 +02:00 [INF] Request finished in 1880.5639ms 204 
+2020-05-22 18:45:18.101 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)?api-version=1.0-odata  
+2020-05-22 18:45:18.107 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:45:18.218 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 18:45:18.344 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 236.797ms
+2020-05-22 18:45:18.344 +02:00 [INF] Request finished in 243.2785ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 18:47:40.650 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 18:47:40.654 +02:00 [INF] Request finished in 3.7598ms 200 text/html;charset=utf-8
+2020-05-22 18:47:40.758 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 18:47:40.760 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 18:47:40.761 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 18:47:40.762 +02:00 [INF] Request finished in 3.6959ms 304 text/css
+2020-05-22 18:47:40.767 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 18:47:40.768 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 18:47:40.770 +02:00 [INF] Request finished in 8.2962ms 304 application/javascript
+2020-05-22 18:47:40.770 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 18:47:40.771 +02:00 [INF] Request finished in 4.2756ms 304 application/javascript
+2020-05-22 18:47:40.963 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 18:47:40.973 +02:00 [INF] Request finished in 9.6319ms 200 application/json;charset=utf-8
+2020-05-22 18:47:49.423 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)?%24expand=Devices  
+2020-05-22 18:47:49.493 +02:00 [INF] Request did not specify a service API version, but multiple candidate actions were found. Candidate actions: myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+2020-05-22 18:47:49.494 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-22 18:47:49.495 +02:00 [INF] Request finished in 72.1897ms 400 application/json; charset=utf-8
+2020-05-22 18:47:56.317 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)?api-version=1.0-odata&%24expand=Devices  
+2020-05-22 18:47:56.319 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:47:56.509 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 18:47:56.548 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 228.6733ms
+2020-05-22 18:47:56.549 +02:00 [INF] Request finished in 231.8258ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 18:48:43.307 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 82
+2020-05-22 18:48:43.310 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:48:43.344 +02:00 [WRN] No output formatter was found for content types '["application/json;odata.metadata=minimal","application/json;odata.metadata=minimal"]' to write the response.
+2020-05-22 18:48:43.346 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 35.1197ms
+2020-05-22 18:48:43.346 +02:00 [INF] Request finished in 39.655ms 406 
+2020-05-22 18:48:54.681 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 25
+2020-05-22 18:48:54.686 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:48:54.765 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-05-22 18:48:54.765 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 78.8837ms
+2020-05-22 18:48:54.766 +02:00 [INF] Request finished in 84.8563ms 204 
+2020-05-22 18:49:44.932 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 18:49:46.218 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 18:49:46.218 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 18:49:46.218 +02:00 [INF] Hosting environment: Development
+2020-05-22 18:49:46.218 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 18:50:18.699 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 18:50:19.641 +02:00 [INF] Request finished in 944.6829ms 200 application/json;charset=utf-8
+2020-05-22 18:50:37.935 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2  
+2020-05-22 18:50:37.968 +02:00 [INF] Authorization failed.
+2020-05-22 18:50:37.973 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-22 18:50:37.973 +02:00 [INF] Request finished in 38.3967ms 401 
+2020-05-22 18:50:43.550 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2  
+2020-05-22 18:50:43.714 +02:00 [INF] Successfully validated the token.
+2020-05-22 18:50:43.715 +02:00 [INF] Authorization was successful.
+2020-05-22 18:50:43.759 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 18:50:45.184 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 18:50:45.196 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetById (myMicroservice) in 1431.6223ms
+2020-05-22 18:50:45.201 +02:00 [INF] Request finished in 1651.242ms 200 application/json; charset=utf-8
+2020-05-22 18:54:31.789 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 18:54:31.883 +02:00 [INF] Request finished in 95.2504ms 200 application/json;charset=utf-8
+2020-05-22 18:55:17.852 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 82
+2020-05-22 18:55:17.951 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:55:18.132 +02:00 [WRN] No output formatter was found for content types '["application/json;odata.metadata=minimal","application/json;odata.metadata=minimal"]' to write the response.
+2020-05-22 18:55:18.134 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 183.5182ms
+2020-05-22 18:55:18.136 +02:00 [INF] Request finished in 284.785ms 406 
+2020-05-22 18:58:49.539 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 18:58:50.813 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 18:58:50.813 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 18:58:50.814 +02:00 [INF] Hosting environment: Development
+2020-05-22 18:58:50.814 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 18:58:53.791 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 18:58:53.965 +02:00 [INF] Request finished in 176.6295ms 200 text/html;charset=utf-8
+2020-05-22 18:58:54.106 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 18:58:54.106 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 18:58:54.108 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 18:58:54.124 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 18:58:54.124 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 18:58:54.124 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 18:58:54.125 +02:00 [INF] Request finished in 16.7396ms 304 text/css
+2020-05-22 18:58:54.125 +02:00 [INF] Request finished in 18.6249ms 304 application/javascript
+2020-05-22 18:58:54.125 +02:00 [INF] Request finished in 18.6271ms 304 application/javascript
+2020-05-22 18:58:54.307 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 18:58:54.525 +02:00 [INF] Request finished in 219.0014ms 200 application/json;charset=utf-8
+2020-05-22 18:59:00.826 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 18:59:01.349 +02:00 [INF] Request finished in 523.1098ms 200 application/json;charset=utf-8
+2020-05-22 18:59:08.086 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 18:59:08.118 +02:00 [INF] Request finished in 31.7109ms 200 application/json;charset=utf-8
+2020-05-22 18:59:57.998 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 203
+2020-05-22 18:59:58.085 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 18:59:59.720 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 1630.2022ms
+2020-05-22 18:59:59.834 +02:00 [ERR] 0HLVUE5KB9IE0:00000005
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.UserId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at myMicroservice.Database.Odata.UsersController.Create(User user) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 18:59:59.902 +02:00 [INF] Request finished in 1904.107ms 409 application/json
+2020-05-22 19:00:10.227 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 204
+2020-05-22 19:00:10.243 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:00:10.453 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 210.0831ms
+2020-05-22 19:00:10.574 +02:00 [ERR] 0HLVUE5KB9IE0:00000006
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Devices.DeviceId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at myMicroservice.Database.Odata.UsersController.Create(User user) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 19:00:10.581 +02:00 [INF] Request finished in 353.3341ms 409 application/json
+2020-05-22 19:00:33.551 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 209
+2020-05-22 19:00:33.556 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:00:33.731 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 174.9904ms
+2020-05-22 19:00:33.837 +02:00 [ERR] 0HLVUE5KB9IE0:00000007
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Devices.DeviceId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at myMicroservice.Database.Odata.UsersController.Create(User user) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 19:00:33.843 +02:00 [INF] Request finished in 288.9284ms 409 application/json
+2020-05-22 19:00:56.276 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 134
+2020-05-22 19:00:56.280 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:00:56.325 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Database.Entities.User'.
+2020-05-22 19:00:56.433 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 152.2856ms
+2020-05-22 19:00:56.433 +02:00 [INF] Request finished in 157.0162ms 201 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:01:10.647 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(100)?api-version=1.0-odata  
+2020-05-22 19:01:10.679 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:01:10.950 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:01:10.956 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 276.6465ms
+2020-05-22 19:01:10.956 +02:00 [INF] Request finished in 309.4697ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:02:14.500 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(100)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 15
+2020-05-22 19:02:14.509 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:02:14.668 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-05-22 19:02:14.668 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 159.0779ms
+2020-05-22 19:02:14.669 +02:00 [INF] Request finished in 168.4581ms 204 
+2020-05-22 19:02:21.342 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(100)?api-version=1.0-odata  
+2020-05-22 19:02:21.346 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:02:21.355 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:02:21.357 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 10.3672ms
+2020-05-22 19:02:21.357 +02:00 [INF] Request finished in 15.2216ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:03:01.283 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(100)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 92
+2020-05-22 19:03:01.285 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:03:01.290 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 19:03:01.307 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 21.0655ms
+2020-05-22 19:03:01.307 +02:00 [INF] Request finished in 23.4551ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:04:09.805 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&%24top=3  
+2020-05-22 19:04:09.812 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Linq.IQueryable`1[myMicroservice.Database.Entities.User] Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:04:09.830 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 19:04:09.836 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 23.3365ms
+2020-05-22 19:04:09.836 +02:00 [INF] Request finished in 31.3523ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:06:35.091 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 19:06:35.092 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Linq.IQueryable`1[myMicroservice.Database.Entities.User] Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:06:35.104 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:06:35.126 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 33.5558ms
+2020-05-22 19:06:35.126 +02:00 [INF] Request finished in 35.7229ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:06:57.580 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(100)?api-version=1.0-odata  
+2020-05-22 19:06:57.582 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:06:57.586 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:06:57.590 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 8.1647ms
+2020-05-22 19:06:57.593 +02:00 [INF] Request finished in 12.5498ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:07:11.154 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(100)?api-version=1.0-odata&%24expand=Devices  
+2020-05-22 19:07:11.156 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:07:11.303 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:07:11.326 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 170.082ms
+2020-05-22 19:07:11.326 +02:00 [INF] Request finished in 172.5235ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:09:18.392 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:09:19.751 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:09:19.751 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:09:19.752 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:09:19.752 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:09:22.882 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 19:09:23.059 +02:00 [INF] Request finished in 179.0883ms 200 text/html;charset=utf-8
+2020-05-22 19:09:23.166 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 19:09:23.166 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 19:09:23.225 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 19:09:23.242 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 19:09:23.242 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 19:09:23.242 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 19:09:23.243 +02:00 [INF] Request finished in 17.7842ms 304 text/css
+2020-05-22 19:09:23.243 +02:00 [INF] Request finished in 76.6057ms 304 application/javascript
+2020-05-22 19:09:23.243 +02:00 [INF] Request finished in 76.5986ms 304 application/javascript
+2020-05-22 19:09:23.416 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 19:09:23.638 +02:00 [INF] Request finished in 222.1082ms 200 application/json;charset=utf-8
+2020-05-22 19:09:35.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 19:09:35.784 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Linq.IQueryable`1[myMicroservice.Database.Entities.User] Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:09:36.993 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:09:37.214 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1424.421ms
+2020-05-22 19:09:37.219 +02:00 [INF] Request finished in 1525.1816ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:09:50.836 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css.map  
+2020-05-22 19:09:50.839 +02:00 [INF] Request finished in 2.8503ms 404 
+2020-05-22 19:10:18.737 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users  
+2020-05-22 19:10:18.810 +02:00 [INF] Request did not specify a service API version, but multiple candidate actions were found. Candidate actions: myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+2020-05-22 19:10:18.832 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-22 19:10:18.837 +02:00 [INF] Request finished in 99.8908ms 400 application/json; charset=utf-8
+2020-05-22 19:10:26.883 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 19:10:26.897 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Linq.IQueryable`1[myMicroservice.Database.Entities.User] Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:10:26.953 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:10:26.959 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 60.7667ms
+2020-05-22 19:10:26.959 +02:00 [INF] Request finished in 76.2713ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:10:30.777 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 19:10:30.822 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:10:31.008 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:10:31.013 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 191.2874ms
+2020-05-22 19:10:31.014 +02:00 [INF] Request finished in 237.0545ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:10:42.546 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata&$expand=Devices  
+2020-05-22 19:10:42.550 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:10:42.723 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[Castle.Proxies.UserProxy, DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:10:42.754 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 203.6053ms
+2020-05-22 19:10:42.755 +02:00 [INF] Request finished in 209.1768ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:11:26.205 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1345678?api-version=1.0-odata&$expand=Devices  
+2020-05-22 19:11:26.209 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:11:26.219 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2020-05-22 19:11:26.226 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 17.1718ms
+2020-05-22 19:11:26.771 +02:00 [ERR] Connection id "0HLVUEBFQL5V1", Request id "0HLVUEBFQL5V1:00000005": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.HandleExceptionAsync(HttpContext context, Exception ex) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 71
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-22 19:11:26.836 +02:00 [INF] Request finished in 631.6505ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:17:35.980 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 19:17:36.006 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:17:36.024 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 19:17:36.035 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 28.2886ms
+2020-05-22 19:17:36.035 +02:00 [INF] Request finished in 55.4125ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:18:42.578 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 26
+2020-05-22 19:18:42.588 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:18:42.831 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-05-22 19:18:42.832 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 243.3695ms
+2020-05-22 19:18:42.832 +02:00 [INF] Request finished in 254.8ms 204 
+2020-05-22 19:18:47.697 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 27
+2020-05-22 19:18:47.701 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:18:48.110 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 408.2678ms
+2020-05-22 19:18:48.242 +02:00 [ERR] 0HLVUEBFQL5V2:00000003
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at myMicroservice.Database.Odata.UsersController.Patch(Int32 id, Delta`1 delta) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 120
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 19:18:48.251 +02:00 [INF] Request finished in 554.2237ms 500 application/json
+2020-05-22 19:19:04.541 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:19:05.871 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:19:05.872 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:19:05.872 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:19:05.872 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:19:06.555 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 27
+2020-05-22 19:19:06.792 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:19:06.978 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 19:19:07.020 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 222.6087ms
+2020-05-22 19:19:07.023 +02:00 [INF] Request finished in 470.6218ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:19:11.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 19:19:12.185 +02:00 [INF] Request finished in 785.482ms 200 application/json;charset=utf-8
+2020-05-22 19:19:17.586 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/all?limit=10  
+2020-05-22 19:19:17.617 +02:00 [INF] Authorization failed.
+2020-05-22 19:19:17.621 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-22 19:19:17.621 +02:00 [INF] Request finished in 36.4684ms 401 
+2020-05-22 19:19:40.344 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/1 application/merge-patch+json 21
+2020-05-22 19:19:40.488 +02:00 [INF] Successfully validated the token.
+2020-05-22 19:19:40.493 +02:00 [INF] Authorization was successful.
+2020-05-22 19:19:40.499 +02:00 [INF] Route matched with {action = "PatchById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 19:19:40.676 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-05-22 19:19:40.680 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PatchById (myMicroservice) in 180.8473ms
+2020-05-22 19:19:40.680 +02:00 [INF] Request finished in 335.9113ms 400 application/json; charset=utf-8
+2020-05-22 19:20:03.629 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Person?api-version=1.0 application/json;odata.metadata=minimal;odata.streaming=true 16
+2020-05-22 19:20:03.632 +02:00 [INF] Successfully validated the token.
+2020-05-22 19:20:03.633 +02:00 [INF] Authorization was successful.
+2020-05-22 19:20:03.641 +02:00 [INF] Route matched with {action = "Create", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.PersonDto] Create(myMicroservice.Api.V1.Models.PersonDto) on controller myMicroservice.Api.V1.Controllers.PersonController (myMicroservice).
+2020-05-22 19:20:03.654 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.PersonDto'.
+2020-05-22 19:20:03.656 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.PersonController.Create (myMicroservice) in 14.3695ms
+2020-05-22 19:20:03.660 +02:00 [INF] Request finished in 30.7896ms 201 application/json; charset=utf-8
+2020-05-22 19:20:31.894 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:20:33.363 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:20:33.364 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:20:33.364 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:20:33.364 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:20:38.876 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Person?api-version=1.0 application/json;odata.metadata=minimal;odata.streaming=true 16
+2020-05-22 19:20:39.119 +02:00 [INF] Successfully validated the token.
+2020-05-22 19:20:39.126 +02:00 [INF] Authorization was successful.
+2020-05-22 19:20:39.182 +02:00 [INF] Route matched with {action = "Create", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.PersonDto] Create(myMicroservice.Api.V1.Models.PersonDto) on controller myMicroservice.Api.V1.Controllers.PersonController (myMicroservice).
+2020-05-22 19:20:39.210 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.PersonDto'.
+2020-05-22 19:20:39.223 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.PersonController.Create (myMicroservice) in 36.3883ms
+2020-05-22 19:20:39.226 +02:00 [INF] Request finished in 352.1684ms 201 application/json; charset=utf-8
+2020-05-22 19:21:26.106 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/Person application/json;odata.metadata=minimal;odata.streaming=true 16
+2020-05-22 19:21:26.126 +02:00 [INF] Successfully validated the token.
+2020-05-22 19:21:26.127 +02:00 [INF] Authorization was successful.
+2020-05-22 19:21:26.130 +02:00 [INF] Route matched with {action = "Create", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.PersonDto] Create(myMicroservice.Api.V1.Models.PersonDto) on controller myMicroservice.Api.V1.Controllers.PersonController (myMicroservice).
+2020-05-22 19:21:26.133 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.PersonDto'.
+2020-05-22 19:21:26.133 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.PersonController.Create (myMicroservice) in 3.6338ms
+2020-05-22 19:21:26.136 +02:00 [INF] Request finished in 30.3827ms 201 application/json; charset=utf-8
+2020-05-22 19:22:07.814 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:22:09.202 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:22:09.203 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:22:09.203 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:22:09.203 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:22:11.064 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/Person application/json;odata.metadata=minimal;odata.streaming=true 16
+2020-05-22 19:22:11.298 +02:00 [INF] Successfully validated the token.
+2020-05-22 19:22:11.304 +02:00 [INF] Authorization was successful.
+2020-05-22 19:22:11.359 +02:00 [INF] Route matched with {action = "Create", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.PersonDto] Create(myMicroservice.Api.V1.Models.PersonDto) on controller myMicroservice.Api.V1.Controllers.PersonController (myMicroservice).
+2020-05-22 19:22:11.387 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.PersonDto'.
+2020-05-22 19:22:11.402 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.PersonController.Create (myMicroservice) in 38.0931ms
+2020-05-22 19:22:11.404 +02:00 [INF] Request finished in 342.7347ms 201 application/json; charset=utf-8
+2020-05-22 19:22:43.229 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1  
+2020-05-22 19:22:43.373 +02:00 [INF] Request did not specify a service API version, but multiple candidate actions were found. Candidate actions: myMicroservice.Database.Odata.UsersController.Get (myMicroservice)
+2020-05-22 19:22:43.383 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2020-05-22 19:22:43.386 +02:00 [INF] Request finished in 157.7599ms 400 application/json; charset=utf-8
+2020-05-22 19:22:48.707 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 19:22:48.741 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:22:50.047 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:22:50.245 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1504.4438ms
+2020-05-22 19:22:50.249 +02:00 [INF] Request finished in 1543.1716ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:22:54.895 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 19:22:54.905 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:22:54.959 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:22:54.965 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 59.5859ms
+2020-05-22 19:22:54.965 +02:00 [INF] Request finished in 70.6834ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:22:56.024 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 19:22:56.029 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:22:56.053 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:22:56.060 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 31.1683ms
+2020-05-22 19:22:56.060 +02:00 [INF] Request finished in 37.1356ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:22:57.217 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 19:22:57.220 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:22:57.227 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:22:57.231 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 10.5554ms
+2020-05-22 19:22:57.232 +02:00 [INF] Request finished in 15.5482ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:22:58.488 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 19:22:58.494 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:22:58.506 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:22:58.511 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 17.0964ms
+2020-05-22 19:22:58.512 +02:00 [INF] Request finished in 23.6282ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:02.741 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/2?api-version=1.0-odata  
+2020-05-22 19:23:02.744 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:02.752 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:23:02.760 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 15.6385ms
+2020-05-22 19:23:02.762 +02:00 [INF] Request finished in 20.3247ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:03.686 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/2?api-version=1.0-odata  
+2020-05-22 19:23:03.689 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:03.694 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:23:03.697 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 7.6452ms
+2020-05-22 19:23:03.697 +02:00 [INF] Request finished in 10.8055ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:19.675 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/2?api-version=1.0-odata&$expand=Devices  
+2020-05-22 19:23:19.678 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:19.850 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[Castle.Proxies.UserProxy, DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:23:19.887 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 208.8482ms
+2020-05-22 19:23:19.887 +02:00 [INF] Request finished in 212.0572ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:22.193 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/2?api-version=1.0-odata&$expand=Devices  
+2020-05-22 19:23:22.197 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:22.235 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[Castle.Proxies.UserProxy, DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:23:22.239 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 41.672ms
+2020-05-22 19:23:22.240 +02:00 [INF] Request finished in 46.2917ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:22.934 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/2?api-version=1.0-odata&$expand=Devices  
+2020-05-22 19:23:22.936 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:22.954 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[Castle.Proxies.UserProxy, DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:23:22.959 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 22.5116ms
+2020-05-22 19:23:22.960 +02:00 [INF] Request finished in 25.8654ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:35.517 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$expand=Devices  
+2020-05-22 19:23:35.520 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:35.592 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectAllAndExpand`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=7.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2020-05-22 19:23:35.600 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 80.2415ms
+2020-05-22 19:23:35.601 +02:00 [INF] Request finished in 83.9318ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:23:44.651 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 19:23:44.653 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:23:44.668 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:23:44.670 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 16.9979ms
+2020-05-22 19:23:44.671 +02:00 [INF] Request finished in 19.4295ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:24:20.998 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$top=2  
+2020-05-22 19:24:21.000 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:24:21.055 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:24:21.057 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 57.1326ms
+2020-05-22 19:24:21.058 +02:00 [INF] Request finished in 60.1148ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:33:29.429 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$top=2  
+2020-05-22 19:33:29.431 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:33:29.441 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:33:29.444 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 12.9772ms
+2020-05-22 19:33:29.444 +02:00 [INF] Request finished in 15.3852ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:33:31.003 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$top=2  
+2020-05-22 19:33:31.005 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:33:31.011 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:33:31.014 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 8.2983ms
+2020-05-22 19:33:31.014 +02:00 [INF] Request finished in 11.0569ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:33:44.876 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$top=2&$select=Username  
+2020-05-22 19:33:44.877 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:33:44.921 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNet.OData.Query.Expressions.SelectExpandBinder+SelectSome`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=7.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2020-05-22 19:33:44.929 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 51.1235ms
+2020-05-22 19:33:44.929 +02:00 [INF] Request finished in 53.4112ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:39:52.754 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1345678?api-version=1.0-odata  
+2020-05-22 19:39:52.756 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Database.Entities.User]] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:39:52.761 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2020-05-22 19:39:52.761 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 5.0121ms
+2020-05-22 19:39:52.761 +02:00 [INF] Request finished in 7.9687ms 204 
+2020-05-22 19:49:21.652 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:49:23.003 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:49:23.004 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:49:23.004 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:49:23.004 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:49:25.362 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1345678?api-version=1.0-odata  
+2020-05-22 19:49:25.573 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:49:26.730 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 19:49:26.737 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1158.0815ms
+2020-05-22 19:49:26.746 +02:00 [INF] Request finished in 1387.6308ms 404 
+2020-05-22 19:49:28.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1345678?api-version=1.0-odata  
+2020-05-22 19:49:28.219 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:49:28.262 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 19:49:28.262 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 43.4706ms
+2020-05-22 19:49:28.263 +02:00 [INF] Request finished in 51.014ms 404 
+2020-05-22 19:49:31.750 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/13456738?api-version=1.0-odata  
+2020-05-22 19:49:31.761 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:49:31.781 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 19:49:31.782 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 20.0406ms
+2020-05-22 19:49:31.783 +02:00 [INF] Request finished in 32.6176ms 404 
+2020-05-22 19:49:36.406 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/13438?api-version=1.0-odata  
+2020-05-22 19:49:36.411 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:49:36.419 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 19:49:36.419 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 7.4422ms
+2020-05-22 19:49:36.420 +02:00 [INF] Request finished in 14.417ms 404 
+2020-05-22 19:49:42.230 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/100?api-version=1.0-odata  
+2020-05-22 19:49:42.235 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:49:42.270 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 19:49:42.434 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 198.6008ms
+2020-05-22 19:49:42.434 +02:00 [INF] Request finished in 203.7463ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:50:38.502 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 19:50:38.780 +02:00 [INF] Request finished in 274.9818ms 200 application/json;charset=utf-8
+2020-05-22 19:51:52.904 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:51:54.241 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:51:54.242 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:51:54.242 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:51:54.242 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:51:56.251 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 19:51:56.434 +02:00 [INF] Request finished in 185.9025ms 200 text/html;charset=utf-8
+2020-05-22 19:51:56.595 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 19:51:56.595 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 19:51:56.627 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 19:51:56.644 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 19:51:56.644 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 19:51:56.644 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 19:51:56.644 +02:00 [INF] Request finished in 49.3627ms 304 application/javascript
+2020-05-22 19:51:56.644 +02:00 [INF] Request finished in 49.3651ms 304 application/javascript
+2020-05-22 19:51:56.644 +02:00 [INF] Request finished in 16.8324ms 304 text/css
+2020-05-22 19:51:56.835 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 19:51:57.055 +02:00 [INF] Request finished in 220.0048ms 200 application/json;charset=utf-8
+2020-05-22 19:52:04.273 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 19:52:04.354 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:52:05.758 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:52:05.969 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1609.0526ms
+2020-05-22 19:52:05.973 +02:00 [INF] Request finished in 1700.3575ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:52:19.102 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/odata/Users(100)?api-version=1.0-odata  
+2020-05-22 19:52:19.171 +02:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:52:19.574 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-05-22 19:52:19.575 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Delete (myMicroservice) in 403.3625ms
+2020-05-22 19:52:19.576 +02:00 [INF] Request finished in 473.746ms 200 
+2020-05-22 19:52:29.858 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 19:52:29.865 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:52:29.883 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 19:52:29.887 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 22.1274ms
+2020-05-22 19:52:29.888 +02:00 [INF] Request finished in 29.7628ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:55:11.018 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 203
+2020-05-22 19:55:11.027 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:55:11.813 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 785.4565ms
+2020-05-22 19:55:11.952 +02:00 [ERR] 0HLVUF38PBFR2:00000001
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Devices.DeviceId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at myMicroservice.Database.Odata.UsersController.Create(User user) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 19:55:12.047 +02:00 [INF] Request finished in 1029.059ms 409 application/json
+2020-05-22 19:55:35.433 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 204
+2020-05-22 19:55:35.443 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:55:35.749 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 304.6707ms
+2020-05-22 19:55:35.956 +02:00 [ERR] 0HLVUF38PBFR2:00000002
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Devices.DeviceId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at myMicroservice.Database.Odata.UsersController.Create(User user) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 19:55:35.964 +02:00 [INF] Request finished in 530.2972ms 409 application/json
+2020-05-22 19:55:46.432 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 129
+2020-05-22 19:55:46.438 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:55:46.469 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Database.Entities.User'.
+2020-05-22 19:55:46.475 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 33.2453ms
+2020-05-22 19:55:46.476 +02:00 [INF] Request finished in 43.9542ms 201 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:56:25.599 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 129
+2020-05-22 19:56:25.601 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:56:25.785 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 183.9629ms
+2020-05-22 19:56:25.896 +02:00 [ERR] 0HLVUF38PBFR2:00000004
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Users.UserId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at myMicroservice.Database.Odata.UsersController.Create(User user) in /Users/daniel/Projects/myMicroservice/Odata/UsersController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 19:56:25.901 +02:00 [INF] Request finished in 302.6691ms 409 application/json
+2020-05-22 19:56:38.687 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 138
+2020-05-22 19:56:38.691 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:56:38.708 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 19:56:38.718 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 26.4385ms
+2020-05-22 19:56:38.718 +02:00 [INF] Request finished in 31.4082ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 19:57:09.843 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/odata/Users(1)?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 26
+2020-05-22 19:57:09.856 +02:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Patch(Int32, Microsoft.AspNet.OData.Delta`1[myMicroservice.Database.Entities.User]) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:57:09.943 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-05-22 19:57:09.944 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Patch (myMicroservice) in 86.9781ms
+2020-05-22 19:57:09.949 +02:00 [INF] Request finished in 101.459ms 204 
+2020-05-22 19:57:32.689 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 19:57:33.944 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 19:57:33.945 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 19:57:33.945 +02:00 [INF] Hosting environment: Development
+2020-05-22 19:57:33.945 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 19:57:35.596 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 19:57:35.773 +02:00 [INF] Request finished in 179.3035ms 200 text/html;charset=utf-8
+2020-05-22 19:57:35.900 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 19:57:35.900 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 19:57:35.904 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 19:57:35.921 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 19:57:35.921 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 19:57:35.921 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 19:57:35.922 +02:00 [INF] Request finished in 21.7931ms 304 application/javascript
+2020-05-22 19:57:35.924 +02:00 [INF] Request finished in 21.7744ms 304 application/javascript
+2020-05-22 19:57:35.924 +02:00 [INF] Request finished in 17.338ms 304 text/css
+2020-05-22 19:57:36.070 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 19:57:36.302 +02:00 [INF] Request finished in 232.3143ms 200 application/json;charset=utf-8
+2020-05-22 19:58:34.810 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/odata/Users(5)?api-version=1.0-odata  
+2020-05-22 19:58:34.927 +02:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:58:36.459 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-05-22 19:58:36.465 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Delete (myMicroservice) in 1532.7851ms
+2020-05-22 19:58:36.470 +02:00 [INF] Request finished in 1660.3463ms 200 
+2020-05-22 19:58:43.147 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/odata/Users(5123123)?api-version=1.0-odata  
+2020-05-22 19:58:43.191 +02:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:58:43.224 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 19:58:43.224 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Delete (myMicroservice) in 32.4859ms
+2020-05-22 19:58:43.225 +02:00 [INF] Request finished in 81.9794ms 404 
+2020-05-22 19:59:35.892 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/odata/Users?api-version=1.0-odata application/json;odata.metadata=minimal;odata.streaming=true 18
+2020-05-22 19:59:35.901 +02:00 [INF] Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(myMicroservice.Database.Entities.User) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 19:59:36.032 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 19:59:36.113 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Create (myMicroservice) in 212.0076ms
+2020-05-22 19:59:36.113 +02:00 [INF] Request finished in 221.5047ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:02:21.983 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 20:02:21.990 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:02:22.061 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:02:22.152 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 161.4843ms
+2020-05-22 20:02:22.152 +02:00 [INF] Request finished in 169.6374ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:02:35.873 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)?api-version=1.0-odata  
+2020-05-22 20:02:35.880 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:02:35.916 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 20:02:35.927 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 47.5451ms
+2020-05-22 20:02:35.928 +02:00 [INF] Request finished in 55.1608ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:03:02.391 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(12312312312)?api-version=1.0-odata  
+2020-05-22 20:03:02.465 +02:00 [INF] Request finished in 74.6463ms 404 
+2020-05-22 20:07:51.579 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:08:26.634 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:08:28.018 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:08:28.019 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:08:28.019 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:08:28.019 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:08:29.512 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 20:08:29.691 +02:00 [INF] Request finished in 181.6556ms 200 text/html;charset=utf-8
+2020-05-22 20:08:29.814 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 20:08:29.814 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 20:08:29.841 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 20:08:29.858 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 20:08:29.858 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 20:08:29.858 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 20:08:29.859 +02:00 [INF] Request finished in 44.7592ms 304 application/javascript
+2020-05-22 20:08:29.859 +02:00 [INF] Request finished in 17.9396ms 304 text/css
+2020-05-22 20:08:29.859 +02:00 [INF] Request finished in 44.7578ms 304 application/javascript
+2020-05-22 20:08:30.032 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 20:08:30.252 +02:00 [INF] Request finished in 219.828ms 200 application/json;charset=utf-8
+2020-05-22 20:08:45.254 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:08:46.470 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:08:46.470 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:08:46.470 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:08:46.470 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:08:47.019 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 20:08:47.194 +02:00 [INF] Request finished in 177.6865ms 200 text/html;charset=utf-8
+2020-05-22 20:08:47.340 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 20:08:47.340 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 20:08:47.367 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 20:08:47.384 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 20:08:47.384 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 20:08:47.384 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 20:08:47.385 +02:00 [INF] Request finished in 44.6615ms 304 application/javascript
+2020-05-22 20:08:47.385 +02:00 [INF] Request finished in 44.6612ms 304 application/javascript
+2020-05-22 20:08:47.385 +02:00 [INF] Request finished in 18.0967ms 304 text/css
+2020-05-22 20:08:47.570 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 20:08:47.788 +02:00 [INF] Request finished in 217.9447ms 200 application/json;charset=utf-8
+2020-05-22 20:08:59.002 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 20:08:59.094 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:09:00.362 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:09:00.581 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1480.4794ms
+2020-05-22 20:09:00.587 +02:00 [INF] Request finished in 1585.4992ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:15:44.077 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:16:35.391 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:17:56.331 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:18:46.082 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:20:54.014 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:21:49.518 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:21:50.783 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:21:50.783 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:21:50.784 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:21:50.784 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:22:03.013 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 20:22:03.190 +02:00 [INF] Request finished in 179.3259ms 200 text/html;charset=utf-8
+2020-05-22 20:22:03.313 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 20:22:03.313 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 20:22:03.345 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 20:22:03.362 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 20:22:03.362 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 20:22:03.362 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 20:22:03.363 +02:00 [INF] Request finished in 50.0011ms 304 application/javascript
+2020-05-22 20:22:03.363 +02:00 [INF] Request finished in 18.2704ms 304 text/css
+2020-05-22 20:22:03.363 +02:00 [INF] Request finished in 50.0011ms 304 application/javascript
+2020-05-22 20:22:03.542 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 20:22:03.769 +02:00 [INF] Request finished in 227.8281ms 200 application/json;charset=utf-8
+2020-05-22 20:23:17.809 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 20:23:17.903 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:23:19.221 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:23:19.390 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 1481.2333ms
+2020-05-22 20:23:19.394 +02:00 [INF] Request finished in 1585.5442ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:24:59.245 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:25:00.596 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:25:00.597 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:25:00.597 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:25:00.597 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:25:26.305 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 20:25:26.483 +02:00 [INF] Request finished in 181.2941ms 200 text/html;charset=utf-8
+2020-05-22 20:25:26.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 20:25:26.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 20:25:26.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 20:25:26.714 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 20:25:26.714 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 20:25:26.714 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 20:25:26.740 +02:00 [INF] Request finished in 20.6892ms 304 application/javascript
+2020-05-22 20:25:26.740 +02:00 [INF] Request finished in 20.4524ms 304 text/css
+2020-05-22 20:25:26.740 +02:00 [INF] Request finished in 20.6904ms 304 application/javascript
+2020-05-22 20:25:26.890 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 20:25:27.113 +02:00 [INF] Request finished in 222.9195ms 200 application/json;charset=utf-8
+2020-05-22 20:25:34.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 20:25:34.932 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:25:36.292 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:25:36.500 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 1559.5777ms
+2020-05-22 20:25:36.506 +02:00 [INF] Request finished in 1681.6722ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:25:59.371 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&%24top=10  
+2020-05-22 20:25:59.410 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:25:59.463 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:25:59.467 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 57.2853ms
+2020-05-22 20:25:59.467 +02:00 [INF] Request finished in 96.85ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:26:07.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&%24top=1  
+2020-05-22 20:26:07.325 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:26:07.344 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:26:07.347 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 21.8115ms
+2020-05-22 20:26:07.347 +02:00 [INF] Request finished in 26.5546ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:26:12.754 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 20:26:12.757 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:26:12.765 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:26:12.773 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 15.6569ms
+2020-05-22 20:26:12.774 +02:00 [INF] Request finished in 20.43ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:26:45.514 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/100?api-version=1.0-odata  
+2020-05-22 20:26:45.556 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:26:45.616 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-05-22 20:26:45.617 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 60.7581ms
+2020-05-22 20:26:45.617 +02:00 [INF] Request finished in 102.9611ms 404 
+2020-05-22 20:26:51.573 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 20:26:51.578 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:26:51.591 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 20:26:51.595 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 16.7217ms
+2020-05-22 20:26:51.595 +02:00 [INF] Request finished in 22.6155ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:27:05.219 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$inlinecount=true  
+2020-05-22 20:27:05.221 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:27:05.285 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 20:27:05.298 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 76.2774ms
+2020-05-22 20:27:05.298 +02:00 [INF] Request finished in 79.4709ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:27:37.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata&$inlinecount=allpages  
+2020-05-22 20:27:37.422 +02:00 [INF] Route matched with {action = "GetByPage", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByPage() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:27:37.424 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-05-22 20:27:37.426 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetByPage (myMicroservice) in 4.0956ms
+2020-05-22 20:27:37.427 +02:00 [INF] Request finished in 7.426ms 400 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:29:31.341 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:31:17.377 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:32:45.684 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:33:09.044 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:33:10.270 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:33:10.270 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:33:10.270 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:33:10.270 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:34:31.026 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:34:32.296 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:34:32.297 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:34:32.297 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:34:32.297 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:34:39.939 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 20:34:40.116 +02:00 [INF] Request finished in 179.1703ms 200 text/html;charset=utf-8
+2020-05-22 20:34:40.253 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 20:34:40.253 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 20:34:40.303 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 20:34:40.322 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 20:34:40.322 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 20:34:40.322 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 20:34:40.323 +02:00 [INF] Request finished in 70.248ms 304 application/javascript
+2020-05-22 20:34:40.323 +02:00 [INF] Request finished in 20.3026ms 304 text/css
+2020-05-22 20:34:40.323 +02:00 [INF] Request finished in 70.2511ms 304 application/javascript
+2020-05-22 20:34:40.524 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 20:34:40.741 +02:00 [INF] Request finished in 217.0625ms 200 application/json;charset=utf-8
+2020-05-22 20:34:55.080 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1  
+2020-05-22 20:34:55.186 +02:00 [INF] Request finished in 105.8337ms 404 
+2020-05-22 20:35:04.057 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 20:35:04.126 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:35:05.386 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 20:35:05.560 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1428.5246ms
+2020-05-22 20:35:05.567 +02:00 [INF] Request finished in 1510.8993ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:35:11.434 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/username?api-version=1.0-odata  
+2020-05-22 20:35:11.462 +02:00 [INF] Request finished in 30.6883ms 404 
+2020-05-22 20:35:13.946 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Username?api-version=1.0-odata  
+2020-05-22 20:35:13.952 +02:00 [INF] Request finished in 6.3634ms 404 
+2020-05-22 20:37:30.485 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:37:31.904 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:37:31.904 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:37:31.905 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:37:31.905 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:37:38.813 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Username?api-version=1.0-odata  
+2020-05-22 20:37:39.041 +02:00 [INF] Request finished in 231.6204ms 404 
+2020-05-22 20:37:42.598 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1?api-version=1.0-odata  
+2020-05-22 20:37:42.657 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[myMicroservice.Database.Entities.User] Get(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 20:37:43.840 +02:00 [INF] Executing ObjectResult, writing value of type 'Castle.Proxies.UserProxy'.
+2020-05-22 20:37:43.998 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1336.0648ms
+2020-05-22 20:37:44.004 +02:00 [INF] Request finished in 1405.7074ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 20:38:25.967 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 20:38:26.035 +02:00 [INF] Request finished in 67.8039ms 200 text/html;charset=utf-8
+2020-05-22 20:38:26.132 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 20:38:26.143 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 20:38:26.143 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 20:38:26.143 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 20:38:26.144 +02:00 [INF] Request finished in 11.7485ms 304 text/css
+2020-05-22 20:38:26.144 +02:00 [INF] Request finished in 1.0924ms 304 application/javascript
+2020-05-22 20:38:26.145 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 20:38:26.145 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 20:38:26.146 +02:00 [INF] Request finished in 0.3687ms 304 application/javascript
+2020-05-22 20:38:26.333 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 20:38:26.582 +02:00 [INF] Request finished in 250.0746ms 200 application/json;charset=utf-8
+2020-05-22 20:48:34.590 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:49:52.115 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:50:15.649 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:50:47.076 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:50:57.670 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:52:02.589 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:53:04.551 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:57:42.601 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 20:57:43.889 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 20:57:43.889 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 20:57:43.889 +02:00 [INF] Hosting environment: Development
+2020-05-22 20:57:43.890 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 20:57:50.485 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 20:57:50.738 +02:00 [INF] Request finished in 257.156ms 404 
+2020-05-22 20:58:22.022 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Devices?api-version=1.0-odata  
+2020-05-22 20:58:22.073 +02:00 [INF] Request finished in 50.8719ms 404 
+2020-05-22 20:58:27.009 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username/$value?api-version=1.0-odata  
+2020-05-22 20:58:27.028 +02:00 [INF] Request finished in 19.4764ms 404 
+2020-05-22 20:58:27.335 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username/$value?api-version=1.0-odata  
+2020-05-22 20:58:27.339 +02:00 [INF] Request finished in 4.0424ms 404 
+2020-05-22 21:00:15.027 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username/$value?api-version=1.0-odata  
+2020-05-22 21:00:15.040 +02:00 [INF] Request finished in 10.1286ms 404 
+2020-05-22 21:01:27.179 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:01:28.480 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:01:28.481 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:01:28.481 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:01:28.481 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:01:32.017 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 21:01:32.196 +02:00 [INF] Request finished in 181.1901ms 200 text/html;charset=utf-8
+2020-05-22 21:01:32.355 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:01:32.355 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:01:32.360 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:01:32.379 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:01:32.379 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:01:32.379 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:01:32.379 +02:00 [INF] Request finished in 24.0534ms 304 application/javascript
+2020-05-22 21:01:32.379 +02:00 [INF] Request finished in 19.1895ms 304 text/css
+2020-05-22 21:01:32.379 +02:00 [INF] Request finished in 24.0522ms 304 application/javascript
+2020-05-22 21:01:32.561 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:01:32.834 +02:00 [INF] Request finished in 272.4093ms 200 application/json;charset=utf-8
+2020-05-22 21:05:19.263 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:05:50.385 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:06:13.495 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:07:21.521 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:07:22.934 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:07:22.934 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:07:22.934 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:07:22.934 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:07:44.056 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 21:07:44.256 +02:00 [INF] Request finished in 202.8735ms 200 text/html;charset=utf-8
+2020-05-22 21:07:44.447 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:07:44.447 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:07:44.476 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:07:44.493 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:07:44.493 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:07:44.493 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:07:44.493 +02:00 [INF] Request finished in 46.7986ms 304 application/javascript
+2020-05-22 21:07:44.493 +02:00 [INF] Request finished in 46.8132ms 304 application/javascript
+2020-05-22 21:07:44.493 +02:00 [INF] Request finished in 17.3041ms 304 text/css
+2020-05-22 21:07:44.665 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:07:44.901 +02:00 [INF] Request finished in 236.1305ms 200 application/json;charset=utf-8
+2020-05-22 21:07:50.775 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username  
+2020-05-22 21:07:50.860 +02:00 [INF] Request finished in 85.0493ms 404 
+2020-05-22 21:08:04.186 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:08:04.243 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:08:05.671 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:08:05.816 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 1567.5235ms
+2020-05-22 21:08:05.821 +02:00 [INF] Request finished in 1635.5029ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:08:39.657 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:08:40.992 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:08:40.993 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:08:40.993 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:08:40.993 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:08:46.476 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 21:08:47.470 +02:00 [INF] Request finished in 996.8142ms 200 application/json;charset=utf-8
+2020-05-22 21:09:21.185 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/property/Username  
+2020-05-22 21:09:21.388 +02:00 [INF] Successfully validated the token.
+2020-05-22 21:09:21.394 +02:00 [INF] Authorization was successful.
+2020-05-22 21:09:21.429 +02:00 [INF] Route matched with {action = "GetByPropertyName", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Object] GetByPropertyName(Int32, System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 21:09:22.850 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:09:22.858 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByPropertyName (myMicroservice) in 1422.9426ms
+2020-05-22 21:09:22.864 +02:00 [INF] Request finished in 1678.8943ms 200 application/json; charset=utf-8
+2020-05-22 21:09:35.486 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/property/Username2  
+2020-05-22 21:09:35.492 +02:00 [INF] Successfully validated the token.
+2020-05-22 21:09:35.493 +02:00 [INF] Authorization was successful.
+2020-05-22 21:09:35.495 +02:00 [INF] Route matched with {action = "GetByPropertyName", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Object] GetByPropertyName(Int32, System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 21:09:35.532 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2020-05-22 21:09:35.533 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByPropertyName (myMicroservice) in 37.8989ms
+2020-05-22 21:09:35.533 +02:00 [INF] Request finished in 47.4336ms 204 
+2020-05-22 21:10:41.409 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:10:42.824 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:10:42.824 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:10:42.824 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:10:42.824 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:11:07.373 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:11:08.736 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:11:08.737 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:11:08.737 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:11:08.737 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:11:25.013 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:11:26.282 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:11:26.283 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:11:26.283 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:11:26.283 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:11:27.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-22 21:11:27.197 +02:00 [INF] Request finished in 189.2285ms 200 text/html;charset=utf-8
+2020-05-22 21:11:27.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:11:27.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:11:27.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:11:27.339 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:11:27.339 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:11:27.339 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:11:27.340 +02:00 [INF] Request finished in 17.8747ms 304 text/css
+2020-05-22 21:11:27.340 +02:00 [INF] Request finished in 19.0655ms 304 application/javascript
+2020-05-22 21:11:27.340 +02:00 [INF] Request finished in 19.0674ms 304 application/javascript
+2020-05-22 21:11:27.526 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 21:11:28.274 +02:00 [INF] Request finished in 748.1542ms 200 application/json;charset=utf-8
+2020-05-22 21:11:55.503 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/property/Name  
+2020-05-22 21:11:55.537 +02:00 [INF] Authorization failed.
+2020-05-22 21:11:55.541 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-22 21:11:55.541 +02:00 [INF] Request finished in 38.3884ms 401 
+2020-05-22 21:12:08.099 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/property/Name  
+2020-05-22 21:12:08.278 +02:00 [INF] Successfully validated the token.
+2020-05-22 21:12:08.280 +02:00 [INF] Authorization was successful.
+2020-05-22 21:12:08.327 +02:00 [INF] Route matched with {action = "GetByPropertyName", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Object] GetByPropertyName(Int32, System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 21:12:09.993 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:12:10.003 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByPropertyName (myMicroservice) in 1667.5268ms
+2020-05-22 21:12:10.009 +02:00 [INF] Request finished in 1910.4321ms 200 application/json; charset=utf-8
+2020-05-22 21:12:21.879 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/property/Name3  
+2020-05-22 21:12:21.881 +02:00 [INF] Successfully validated the token.
+2020-05-22 21:12:21.882 +02:00 [INF] Authorization was successful.
+2020-05-22 21:12:21.884 +02:00 [INF] Route matched with {action = "GetByPropertyName", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Object] GetByPropertyName(Int32, System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 21:12:21.929 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-22 21:12:21.931 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByPropertyName (myMicroservice) in 46.8974ms
+2020-05-22 21:12:21.932 +02:00 [INF] Request finished in 52.4436ms 404 application/json; charset=utf-8
+2020-05-22 21:12:29.952 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/11231231/property/Name  
+2020-05-22 21:12:29.954 +02:00 [INF] Successfully validated the token.
+2020-05-22 21:12:29.954 +02:00 [INF] Authorization was successful.
+2020-05-22 21:12:29.955 +02:00 [INF] Route matched with {action = "GetByPropertyName", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Object] GetByPropertyName(Int32, System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 21:12:29.981 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-22 21:12:29.982 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByPropertyName (myMicroservice) in 26.9583ms
+2020-05-22 21:12:29.983 +02:00 [INF] Request finished in 30.8851ms 404 application/json; charset=utf-8
+2020-05-22 21:13:40.311 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:13:40.333 +02:00 [INF] Request finished in 22.7578ms 200 application/json;charset=utf-8
+2020-05-22 21:14:07.249 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:14:07.323 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:14:07.384 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:14:07.520 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 196.8731ms
+2020-05-22 21:14:07.521 +02:00 [INF] Request finished in 272.034ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:14:11.345 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Username?api-version=1.0-odata  
+2020-05-22 21:14:11.352 +02:00 [INF] Route matched with {action = "GetUsernameFromUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsernameFromUser(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:14:11.362 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:14:11.366 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsernameFromUser (myMicroservice) in 13.21ms
+2020-05-22 21:14:11.366 +02:00 [INF] Request finished in 21.4855ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:16:50.690 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:16:52.162 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:16:52.162 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:16:52.162 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:16:52.162 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:16:59.338 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 21:16:59.517 +02:00 [INF] Request finished in 181.3171ms 200 text/html;charset=utf-8
+2020-05-22 21:16:59.636 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:16:59.636 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:16:59.637 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:16:59.652 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:16:59.652 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:16:59.652 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:16:59.653 +02:00 [INF] Request finished in 15.6573ms 304 text/css
+2020-05-22 21:16:59.653 +02:00 [INF] Request finished in 16.872ms 304 application/javascript
+2020-05-22 21:16:59.653 +02:00 [INF] Request finished in 16.868ms 304 application/javascript
+2020-05-22 21:16:59.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:17:00.283 +02:00 [ERR] 0HLVUGIPK7N0D:00000002
+System.NotSupportedException: Conflicting method/path combination "GET odata/Users({id})/Username" for actions - myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice),myMicroservice.Database.Odata.UsersController.GetSurname (myMicroservice),myMicroservice.Database.Odata.UsersController.GetEmail (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 21:17:00.356 +02:00 [INF] Request finished in 516.4076ms 500 application/json
+2020-05-22 21:17:57.280 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:17:58.710 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:17:58.711 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:17:58.711 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:17:58.711 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:18:00.410 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 21:18:00.587 +02:00 [INF] Request finished in 179.5338ms 200 text/html;charset=utf-8
+2020-05-22 21:18:00.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:18:00.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:18:00.709 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:18:00.715 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:18:00.715 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:18:00.715 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:18:00.716 +02:00 [INF] Request finished in 19.4278ms 304 application/javascript
+2020-05-22 21:18:00.716 +02:00 [INF] Request finished in 19.4284ms 304 application/javascript
+2020-05-22 21:18:00.716 +02:00 [INF] Request finished in 7.2304ms 304 text/css
+2020-05-22 21:18:00.898 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:18:01.122 +02:00 [INF] Request finished in 224.6367ms 200 application/json;charset=utf-8
+2020-05-22 21:18:09.591 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Surname?api-version=1.0-odata  
+2020-05-22 21:18:09.697 +02:00 [INF] Route matched with {action = "GetSurname", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetSurname(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:18:11.166 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:18:11.315 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetSurname (myMicroservice) in 1611.448ms
+2020-05-22 21:18:11.322 +02:00 [INF] Request finished in 1731.689ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:18:54.944 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:18:56.191 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:18:56.191 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:18:56.191 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:18:56.191 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:18:59.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Username?api-version=1.0-odata  
+2020-05-22 21:18:59.414 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:19:00.562 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:19:00.671 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 1251.6946ms
+2020-05-22 21:19:00.678 +02:00 [INF] Request finished in 1468.6639ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:19:05.493 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:19:05.527 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:19:05.563 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:19:05.565 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 38.2643ms
+2020-05-22 21:19:05.566 +02:00 [INF] Request finished in 73.1058ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:19:09.996 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 21:19:10.064 +02:00 [INF] Request finished in 67.7434ms 200 text/html;charset=utf-8
+2020-05-22 21:19:10.148 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:19:10.210 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:19:10.210 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:19:10.216 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:19:10.216 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:19:10.216 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:19:10.216 +02:00 [INF] Request finished in 6.6842ms 304 application/javascript
+2020-05-22 21:19:10.216 +02:00 [INF] Request finished in 68.2722ms 304 text/css
+2020-05-22 21:19:10.216 +02:00 [INF] Request finished in 6.7111ms 304 application/javascript
+2020-05-22 21:19:10.389 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:19:10.631 +02:00 [INF] Request finished in 241.7105ms 200 application/json;charset=utf-8
+2020-05-22 21:19:18.789 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Email  
+2020-05-22 21:19:18.800 +02:00 [INF] Request finished in 11.1982ms 404 
+2020-05-22 21:19:24.671 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users/1/Email?api-version=1.0-odata  
+2020-05-22 21:19:24.688 +02:00 [INF] Route matched with {action = "GetEmail", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetEmail(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:19:24.720 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:19:24.722 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetEmail (myMicroservice) in 33.4015ms
+2020-05-22 21:19:24.723 +02:00 [INF] Request finished in 51.667ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:19:56.556 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:20:33.309 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:21:13.202 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:21:47.763 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:21:49.515 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:21:49.516 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:21:49.516 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:21:49.516 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:23:51.910 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:23:53.210 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:23:53.211 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:23:53.211 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:23:53.211 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:23:53.710 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-22 21:23:53.914 +02:00 [INF] Request finished in 205.2149ms 200 text/html;charset=utf-8
+2020-05-22 21:23:54.103 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 21:23:54.103 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 21:23:54.130 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 21:23:54.152 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 21:23:54.152 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 21:23:54.152 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 21:23:54.153 +02:00 [INF] Request finished in 23.1934ms 304 text/css
+2020-05-22 21:23:54.153 +02:00 [INF] Request finished in 50.1511ms 304 application/javascript
+2020-05-22 21:23:54.153 +02:00 [INF] Request finished in 50.1746ms 304 application/javascript
+2020-05-22 21:23:54.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-22 21:23:54.613 +02:00 [INF] Request finished in 291.5832ms 200 application/json;charset=utf-8
+2020-05-22 21:24:03.670 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 21:24:03.763 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:24:05.217 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 21:24:05.447 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 1679.0527ms
+2020-05-22 21:24:05.452 +02:00 [INF] Request finished in 1782.7068ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:29:51.638 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:29:52.933 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:29:52.934 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:29:52.934 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:29:52.934 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:29:59.616 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:29:59.845 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:30:00.992 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:30:01.106 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 1255.7567ms
+2020-05-22 21:30:01.114 +02:00 [INF] Request finished in 1501.6649ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:30:06.682 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users?api-version=1.0-odata  
+2020-05-22 21:30:06.691 +02:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:30:06.921 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.EnumerableQuery`1[[myMicroservice.Database.Entities.User, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 21:30:07.010 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.Get (myMicroservice) in 319.3263ms
+2020-05-22 21:30:07.011 +02:00 [INF] Request finished in 329.1398ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:31:16.828 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:31:18.118 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:31:18.118 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:31:18.118 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:31:18.119 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:31:23.437 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:31:23.665 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:31:24.874 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:31:24.995 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 1323.7302ms
+2020-05-22 21:31:25.003 +02:00 [INF] Request finished in 1568.4164ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:31:38.163 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:31:39.434 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:31:39.434 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:31:39.434 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:31:39.434 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:31:43.179 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:31:43.482 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:31:44.652 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:31:44.768 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 1280.8167ms
+2020-05-22 21:31:44.774 +02:00 [INF] Request finished in 1603.1498ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:33:14.069 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 21:33:15.409 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 21:33:15.409 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 21:33:15.410 +02:00 [INF] Hosting environment: Development
+2020-05-22 21:33:15.410 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 21:33:19.234 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:33:19.475 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:33:20.700 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:33:20.811 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 1330.15ms
+2020-05-22 21:33:20.817 +02:00 [INF] Request finished in 1587.5588ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:33:28.297 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Users(1)/Username?api-version=1.0-odata  
+2020-05-22 21:33:28.307 +02:00 [INF] Route matched with {action = "GetUsername", controller = "Users"}. Executing controller action with signature Microsoft.AspNet.OData.SingleResult`1[System.String] GetUsername(Int32) on controller myMicroservice.Database.Odata.UsersController (myMicroservice).
+2020-05-22 21:33:28.341 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-22 21:33:28.346 +02:00 [INF] Executed action myMicroservice.Database.Odata.UsersController.GetUsername (myMicroservice) in 38.349ms
+2020-05-22 21:33:28.347 +02:00 [INF] Request finished in 50.0875ms 200 application/json; odata.metadata=minimal; odata.streaming=true
+2020-05-22 21:34:53.833 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 21:34:54.916 +02:00 [INF] Request finished in 1083.1604ms 200 application/json;charset=utf-8
+2020-05-22 21:35:16.038 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 17
+2020-05-22 21:35:16.208 +02:00 [INF] Successfully validated the token.
+2020-05-22 21:35:16.220 +02:00 [INF] Authorization was successful.
+2020-05-22 21:35:16.231 +02:00 [INF] Route matched with {action = "PatchById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 21:35:16.768 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 21:35:16.777 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PatchById (myMicroservice) in 545.5017ms
+2020-05-22 21:35:16.777 +02:00 [INF] Request finished in 739.8145ms 200 application/json; charset=utf-8

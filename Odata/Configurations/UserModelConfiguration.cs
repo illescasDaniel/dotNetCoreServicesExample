@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNet.OData.Builder;
 using Microsoft.AspNetCore.Mvc;
+using myMicroservice.Database.Entities;
 
 namespace myMicroservice.Database.Odata.Configurations
 {
@@ -16,9 +17,14 @@ namespace myMicroservice.Database.Odata.Configurations
 
             if (apiVersion > new ApiVersion(2, 0)) { return; }
 
-            var user = builder.EntitySet<Entities.User>("Users").EntityType
-                .HasKey(u => u.UserId)
-                .Select().Expand().Count().Filter().OrderBy();
+            //userCompleConfig.ComplexProperty(user => c.P2);
+            //userCompleConfig.ComplexProperty(user => c.P2);
+
+            var userEntityConfig = builder.EntitySet<User>("Users").EntityType;
+            userEntityConfig.HasKey(u => u.UserId)
+                            .HasMany(user => user.Devices);
+
+            userEntityConfig.Select().Expand().Count().Filter().OrderBy().Page();
 
             //person.HasKey(p => p.Id);
             //person.Select().OrderBy("firstName", "lastName");

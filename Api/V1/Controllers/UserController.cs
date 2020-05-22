@@ -100,6 +100,26 @@ namespace myMicroservice.Api.V1.Controllers
             return Ok(userDto);
         }
 
+        [HttpGet("{id}/property/{propertyName}")]
+        [ProducesResponseType(typeof(object), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        public ActionResult<object?> GetByPropertyName(
+           [FromRoute] int id,
+           [FromRoute] string propertyName
+        )
+        {
+            User? user = _dbContext.Users.Find(id);
+            var property = user?.GetType().GetProperty(propertyName);
+            if (property == null)
+            {
+                return NotFound();
+            }
+            return Ok(property.GetValue(user, null));
+        }
+
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

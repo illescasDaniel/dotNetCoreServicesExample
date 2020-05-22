@@ -113,11 +113,13 @@ namespace myMicroservice
 
             #region OData + api versioning
             //services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Latest);
-            services.AddMvcCore(options => options.EnableEndpointRouting = false)
-                .SetCompatibilityVersion(CompatibilityVersion.Latest)
-                .AddSystemTextJsonMergePatch();
 
             services.AddOData().EnableApiVersioning();
+            //services.AddODataQueryFilter();
+
+            //services.AddMvcCore(options => options.EnableEndpointRouting = false)
+            //    .SetCompatibilityVersion(CompatibilityVersion.Latest)
+            //    .AddSystemTextJsonMergePatch();
 
             services.AddODataApiExplorer(
                 options =>
@@ -142,6 +144,9 @@ namespace myMicroservice
 
             services.AddMvcCore(options =>
             {
+                options.EnableEndpointRouting = false;
+
+                // enable other extensions
                 foreach (var outputFormatter in options.OutputFormatters.OfType<ODataOutputFormatter>().Where(_ => _.SupportedMediaTypes.Count == 0))
                 {
                     outputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
@@ -150,7 +155,9 @@ namespace myMicroservice
                 {
                     inputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
                 }
-            });
+            })
+            .SetCompatibilityVersion(CompatibilityVersion.Latest)
+            .AddSystemTextJsonMergePatch(); ;
             #endregion
 
             services.AddHealthChecks(); // not sure

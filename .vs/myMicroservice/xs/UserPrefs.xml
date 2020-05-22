@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V1/Controllers/DeviceController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="server-errors.log">
     <Files>
-      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="140" Column="59" />
-      <File FileName="Api/V1/Controllers/UserController.cs" Line="160" Column="9" />
-      <File FileName="Helpers/ErrorHandlingMiddleware.cs" Line="57" Column="34" />
-      <File FileName="Api/V1/Models/User/UserDto.cs" Line="5" Column="19" />
-      <File FileName="Database/Entities/User.cs" Line="30" Column="1" />
-      <File FileName="Api/V1/Models/AutoMapperProfiles/UserProfile.cs" Line="11" Column="84" />
-      <File FileName="Api/V1/Models/AutoMapperProfiles/DeviceProfile.cs" Line="1" Column="1" />
-      <File FileName="Api/V1/Models/User/UpdatedUserDto.cs" Line="1" Column="1" />
-      <File FileName="Api/V1/Models/Device/DeviceDto.cs" Line="1" Column="1" />
+      <File FileName="Api/Odata/UsersController.cs" Line="19" Column="41" />
+      <File FileName="Odata/Configurations/UserModelConfiguration.cs" Line="27" Column="82" />
+      <File FileName="Startup.cs" Line="249" Column="36" />
+      <File FileName="Database/Entities/User.cs" Line="1" Column="1" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="104" Column="45" />
+      <File FileName="Api/V1/Controllers/PersonController.cs" Line="1" Column="1" />
+      <File FileName="server-errors.log" Line="595" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,20 +16,16 @@
             <Node name="myMicroservice" expanded="True">
               <Node name="Api" expanded="True">
                 <Node name="V1" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="DeviceController.cs" selected="True" />
-                  </Node>
-                  <Node name="Models" expanded="True">
-                    <Node name="AutoMapperProfiles" expanded="True" />
-                    <Node name="Device" expanded="True" />
-                    <Node name="User" expanded="True" />
-                  </Node>
+                  <Node name="Controllers" expanded="True" />
                 </Node>
               </Node>
               <Node name="Database" expanded="True">
                 <Node name="Entities" expanded="True" />
               </Node>
-              <Node name="Helpers" expanded="True" />
+              <Node name="Odata" expanded="True">
+                <Node name="Configurations" expanded="True" />
+              </Node>
+              <Node name="server-errors.log" selected="True" />
             </Node>
           </Node>
         </State>

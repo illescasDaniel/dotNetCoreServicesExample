@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -66,7 +67,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json", "text/plain")]
         [HttpPost]
-        public ActionResult<PersonDto> Create(PersonDto person)
+        public ActionResult<PersonDto> Create([FromBody][Required] PersonDto person)
         {
             if (person.Name == "Daniel")
             {
