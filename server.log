@@ -10885,3 +10885,138 @@ System.InvalidOperationException: The constraint reference 'string' could not be
 2020-05-22 15:11:21.300 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
 2020-05-22 15:11:21.301 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PatchById (myMicroservice) in 14.6063ms
 2020-05-22 15:11:21.307 +02:00 [INF] Request finished in 22.8461ms 200 application/json; charset=utf-8
+2020-05-22 15:49:42.269 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 15:49:43.744 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 15:49:43.745 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 15:49:43.745 +02:00 [INF] Hosting environment: Development
+2020-05-22 15:49:43.745 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 15:49:47.994 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-22 15:49:48.183 +02:00 [INF] Request finished in 191.682ms 200 text/html;charset=utf-8
+2020-05-22 15:49:48.299 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 15:49:48.299 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 15:49:48.301 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 15:49:48.319 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 15:49:48.319 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 15:49:48.319 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 15:49:48.320 +02:00 [INF] Request finished in 20.3747ms 304 application/javascript
+2020-05-22 15:49:48.320 +02:00 [INF] Request finished in 19.0264ms 304 text/css
+2020-05-22 15:49:48.340 +02:00 [INF] Request finished in 20.3692ms 304 application/javascript
+2020-05-22 15:49:48.509 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 15:49:49.213 +02:00 [INF] Request finished in 704.2647ms 200 application/json;charset=utf-8
+2020-05-22 15:50:03.805 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/all  
+2020-05-22 15:50:03.826 +02:00 [INF] Authorization failed.
+2020-05-22 15:50:03.830 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-22 15:50:03.830 +02:00 [INF] Request finished in 25.7713ms 401 
+2020-05-22 15:50:14.633 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/all  
+2020-05-22 15:50:14.976 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:50:15.003 +02:00 [INF] Authorization was successful.
+2020-05-22 15:50:15.100 +02:00 [INF] Route matched with {action = "GetAll", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetAll(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:50:16.651 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 15:50:16.665 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetAll (myMicroservice) in 1559.3358ms
+2020-05-22 15:50:16.670 +02:00 [INF] Request finished in 2038.1173ms 200 application/json; charset=utf-8
+2020-05-22 15:50:50.969 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/1  
+2020-05-22 15:50:50.975 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:50:50.977 +02:00 [INF] Authorization was successful.
+2020-05-22 15:50:51.013 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:50:51.185 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-22 15:50:51.185 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 172.1952ms
+2020-05-22 15:50:51.186 +02:00 [INF] Request finished in 217.4666ms 200 application/json; charset=utf-8
+2020-05-22 15:51:57.649 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/devices  
+2020-05-22 15:51:57.652 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:51:57.653 +02:00 [INF] Authorization was successful.
+2020-05-22 15:51:57.665 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 15:51:58.241 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 573.8593ms
+2020-05-22 15:51:58.514 +02:00 [ERR] 0HLVUARV1ALQJ:00000006
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Collections.Generic.ICollection`1[[myMicroservice.Database.Entities.Device, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> DeviceDto
+System.Collections.Generic.ICollection`1[[myMicroservice.Database.Entities.Device, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> myMicroservice.Api.V1.Models.DeviceDto
+   at lambda_method(Closure , ICollection`1 , DeviceDto , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at myMicroservice.Api.V1.Controllers.UserController.GetDevices(Int32 ownerUserId) in /Users/daniel/Projects/myMicroservice/Api/V1/Controllers/UserController.cs:line 273
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-22 15:51:59.173 +02:00 [INF] Request finished in 1523.3059ms 500 application/json
+2020-05-22 15:52:28.272 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/1/devices application/json;odata.metadata=minimal;odata.streaming=true 37
+2020-05-22 15:52:28.275 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:52:28.276 +02:00 [INF] Authorization was successful.
+2020-05-22 15:52:28.283 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V1.Models.NewDeviceDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 15:52:28.522 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-22 15:52:28.522 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.AddDevice (myMicroservice) in 239.6246ms
+2020-05-22 15:52:28.525 +02:00 [INF] Request finished in 253.4653ms 201 application/json; charset=utf-8
+2020-05-22 15:52:37.594 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/all  
+2020-05-22 15:52:37.596 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:52:37.597 +02:00 [INF] Authorization was successful.
+2020-05-22 15:52:37.597 +02:00 [INF] Route matched with {action = "GetAll", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetAll(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:52:37.609 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 15:52:37.613 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetAll (myMicroservice) in 15.1737ms
+2020-05-22 15:52:37.613 +02:00 [INF] Request finished in 18.6424ms 200 application/json; charset=utf-8
+2020-05-22 16:04:29.232 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 16:04:30.535 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 16:04:30.536 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 16:04:30.537 +02:00 [INF] Hosting environment: Development
+2020-05-22 16:04:30.537 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 16:04:45.363 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-22 16:04:45.556 +02:00 [INF] Request finished in 195.9302ms 200 text/html;charset=utf-8
+2020-05-22 16:04:45.705 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 16:04:45.780 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 16:04:45.781 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 16:04:45.820 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 16:04:45.820 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 16:04:45.820 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 16:04:45.821 +02:00 [INF] Request finished in 115.8736ms 304 application/javascript
+2020-05-22 16:04:45.821 +02:00 [INF] Request finished in 40.7022ms 304 text/css
+2020-05-22 16:04:45.821 +02:00 [INF] Request finished in 66.4136ms 304 application/javascript
+2020-05-22 16:04:46.015 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 16:04:46.861 +02:00 [INF] Request finished in 847.0713ms 200 application/json;charset=utf-8
+2020-05-22 16:06:11.256 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1/devices  
+2020-05-22 16:06:11.431 +02:00 [INF] Successfully validated the token.
+2020-05-22 16:06:11.437 +02:00 [INF] Authorization was successful.
+2020-05-22 16:06:11.490 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 16:06:12.958 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 16:06:12.970 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 1475.0019ms
+2020-05-22 16:06:12.975 +02:00 [INF] Request finished in 1719.4132ms 200 application/json; charset=utf-8
+2020-05-22 16:06:23.692 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2/devices  
+2020-05-22 16:06:23.694 +02:00 [INF] Successfully validated the token.
+2020-05-22 16:06:23.695 +02:00 [INF] Authorization was successful.
+2020-05-22 16:06:23.697 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 16:06:23.738 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 16:06:23.739 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 42.0173ms
+2020-05-22 16:06:23.739 +02:00 [INF] Request finished in 47.4768ms 200 application/json; charset=utf-8
+2020-05-22 16:06:32.185 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/User/2/devices application/json;odata.metadata=minimal;odata.streaming=true 33
+2020-05-22 16:06:32.187 +02:00 [INF] Successfully validated the token.
+2020-05-22 16:06:32.188 +02:00 [INF] Authorization was successful.
+2020-05-22 16:06:32.193 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V1.Models.NewDeviceDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 16:06:32.501 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-22 16:06:32.502 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.AddDevice (myMicroservice) in 309.2816ms
+2020-05-22 16:06:32.502 +02:00 [INF] Request finished in 317.6028ms 201 application/json; charset=utf-8
+2020-05-22 16:06:36.561 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2/devices  
+2020-05-22 16:06:36.563 +02:00 [INF] Successfully validated the token.
+2020-05-22 16:06:36.564 +02:00 [INF] Authorization was successful.
+2020-05-22 16:06:36.565 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 16:06:36.571 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 16:06:36.572 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 7.4173ms
+2020-05-22 16:06:36.573 +02:00 [INF] Request finished in 11.8937ms 200 application/json; charset=utf-8
+2020-05-22 16:08:15.182 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-22 16:08:15.527 +02:00 [INF] Request finished in 344.4338ms 200 application/json;charset=utf-8

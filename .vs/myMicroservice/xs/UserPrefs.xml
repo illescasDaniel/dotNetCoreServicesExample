@@ -1,21 +1,29 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="myMicroservice.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/ErrorHandlingMiddleware.cs">
     <Files>
-      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="91" Column="54" />
-      <File FileName="Api/V1/Controllers/UserController.cs" Line="117" Column="48" />
-      <File FileName="Startup.cs" Line="117" Column="70" />
-      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/6.10.0/lib/mono/msbuild/Current/bin/Microsoft.Common.CurrentVersion.targets" Line="2101" Column="5" />
-      <File FileName="myMicroservice.csproj" Line="1" Column="1" />
+      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="67" Column="72" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="255" Column="9" />
+      <File FileName="Helpers/ErrorHandlingMiddleware.cs" Line="50" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="myMicroservice" expanded="True">
-            <Node name="myMicroservice" expanded="True" selected="True">
+            <Node name="myMicroservice" expanded="True">
               <Node name="Api" expanded="True">
                 <Node name="V1" expanded="True">
                   <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True">
+                    <Node name="AutoMapperProfiles" expanded="True" />
+                    <Node name="Device" expanded="True" />
+                  </Node>
                 </Node>
+              </Node>
+              <Node name="Database" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Helpers" expanded="True">
+                <Node name="ErrorHandlingMiddleware.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -26,9 +34,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/daniel/Projects/myMicroservice/Api/V1/Controllers/UserController.cs" relfile="Api/V1/Controllers/UserController.cs" line="116" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.myMicroservice PreferredExecutionTarget="/Applications/Firefox.app" />

@@ -14,7 +14,7 @@ namespace myMicroservice.Api.V1.Models.AutoMapperProfiles
 
             CreateMap<RegistrationModel, User>()
                 .ForMember(dest => dest.HashedPassword, opt => opt.MapFrom(src => src.Password))
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => 0));
+                .ForMember(dest => dest.UserId, opt => opt.Ignore());
         }
     }
 }

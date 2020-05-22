@@ -17,8 +17,8 @@ using System.Threading.Tasks;
 namespace myMicroservice.Api.V1.Controllers
 {
     [ApiController]
-    [ApiVersionNeutral]
     [Authorize]
+    [ApiVersionNeutral]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class UserController : ControllerBase
     {
@@ -49,12 +49,16 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
         [HttpGet("all")]
-        public async Task<ActionResult<IReadOnlyCollection<UserDto>>> GetAll([FromQuery] int limit = 10)
+        public async Task<ActionResult<IReadOnlyCollection<UserDto>>> GetAll(
+            [FromQuery] int limit = 10
+        )
         {
             var users = await _dbContext.Users
+                            .AsNoTracking()
                             .Take(limit)
                             .ProjectTo<UserDto>(_mapper.ConfigurationProvider)
                             .ToListAsync();
+
             return Ok(users);
         }
 
@@ -63,7 +67,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<UserDto>> GetById(int id)
+        public async Task<ActionResult<UserDto>> GetById([FromRoute] int id)
         {
             User? user = await _dbContext.Users.FindAsync(id);
             if (user == null)
@@ -78,11 +82,15 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{username}")]
-        public async Task<ActionResult<UserDto>> GetByUsername([FromRoute]string username)
+        public async Task<ActionResult<UserDto>> GetByUsername(
+            [FromRoute] string username
+        )
         {
             User? user = await _dbContext.Users
+                .AsNoTracking()
                 .Where(u => u.Username == username)
                 .FirstOrDefaultAsync();
+
             if (user == null)
             {
                 return NotFound();
@@ -95,10 +103,13 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Produces("application/json")]
-        [HttpPatch("{id:int}")]
         [Consumes(JsonMergePatchDocument.ContentType)]
-        public async Task<ActionResult<UserDto>> PatchById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedUserDto> updatedUserPatch)
+        [Produces("application/json")]        
+        [HttpPatch("{id:int}")]
+        public async Task<ActionResult<UserDto>> PatchById(
+            [FromRoute] int id,
+            [FromBody] JsonMergePatchDocument<UpdatedUserDto> updatedUserPatch
+        )
         {
             var hasChanges = false;
             User? user = await _dbContext.Users.FindAsync(id);
@@ -148,9 +159,12 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
+        [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPut]
-        public async Task<ActionResult<UserDto>> Update(UserDto updatedUserDto)
+        public async Task<ActionResult<UserDto>> Update(
+            [FromBody] UserDto updatedUserDto
+        )
         {
             var hasChanges = false;
             User? user = await _dbContext.Users.FindAsync(updatedUserDto.Id);
@@ -191,61 +205,14 @@ namespace myMicroservice.Api.V1.Controllers
             return Ok(deviceDto);
         }
 
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        //[ProducesResponseType(StatusCodes.Status404NotFound)]
-        //[ProducesResponseType(StatusCodes.Status409Conflict)]
-        //[Produces("application/json")]
-        //[HttpPut]
-        //public ActionResult<UserDto> Update(UserDto updatedUserDto)
-        //{
-        //    var hasChanges = false;
-        //    User? user = _dbContext.Users.Find(updatedUserDto.Id);
-        //    if (user == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    if (user.Username != updatedUserDto.Username)
-        //    {
-        //        user.Username = updatedUserDto.Username;
-        //        hasChanges = true;
-        //    }
-        //    if (user.Name != updatedUserDto.Name)
-        //    {
-        //        user.Name = updatedUserDto.Name;
-        //        hasChanges = true;
-        //    }
-        //    if (user.Surname != updatedUserDto.Surname)
-        //    {
-        //        user.Surname = updatedUserDto.Surname;
-        //        hasChanges = true;
-        //    }
-        //    if (user.Email != updatedUserDto.Email)
-        //    {
-        //        user.Email = updatedUserDto.Email;
-        //        hasChanges = true;
-        //    }
-
-        //    if (!hasChanges)
-        //    {
-        //        return Ok(updatedUserDto);
-        //    }
-
-        //    _dbContext.SaveChanges();
-
-        //    var deviceDto = _mapper.Map<UserDto>(user);
-        //    return Ok(deviceDto);
-        //}
-
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeleteById(int id)
+        public async Task<IActionResult> DeleteById([FromRoute] int id)
         {
-            User? user = _dbContext.Users.Find(id);
+            User? user = await _dbContext.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -263,22 +230,28 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("{ownerUserId:int}/devices")]
-        public ActionResult<DeviceDto> AddDevice([FromRoute]int ownerUserId, [FromBody]NewDeviceDto newDevice)
+        public async Task<ActionResult<DeviceDto>> AddDevice(
+            [FromRoute] int ownerUserId,
+            [FromBody] NewDeviceDto newDeviceDto
+        )
         {
-            var user = _dbContext.Users
+            var user = await _dbContext.Users
                 .Include(User => User.Devices)
-                .FirstOrDefault(User => User.UserId == ownerUserId);
+                .FirstOrDefaultAsync(User => User.UserId == ownerUserId);
 
             if (user == null)
             {
                 return NotFound();
             }
 
-            var device = newDevice.MapToDeviceEntity();
+            var device = _mapper.Map<Device>(newDeviceDto);
+            device.OwnerUserId = ownerUserId;
+
             user.Devices.Add(device);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
 
             var createdDeviceDto = _mapper.Map<DeviceDto>(device);
             return Created($"api/Device/{device.DeviceId}", createdDeviceDto);
@@ -289,12 +262,15 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{ownerUserId:int}/devices")]
-        public ActionResult<ICollection<DeviceDto>> GetDevices(int ownerUserId)
+        public async Task<ActionResult<IReadOnlyCollection<DeviceDto>>> GetDevices([FromRoute] int ownerUserId)
         {
-            var devices = _dbContext.Users
-                .Include(User => User.Devices)
-                .FirstOrDefault(User => User.UserId == ownerUserId)?
-                .Devices;
+            var devices = await _dbContext.Users
+                .AsNoTracking()
+                .Include(user => user.Devices)
+                .Where(user => user.UserId == ownerUserId)
+                .Take(1)
+                .SelectMany(user => user.Devices)
+                .ToListAsync();
 
             if (devices == null)
             {

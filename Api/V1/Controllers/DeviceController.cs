@@ -46,12 +46,16 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
         [HttpGet("all")]
-        public async Task<ActionResult<IReadOnlyCollection<DeviceDto>>> GetAll([FromQuery] int limit = 10)
+        public async Task<ActionResult<IReadOnlyCollection<DeviceDto>>> GetAll(
+            [FromQuery] int limit = 10
+        )
         {
             var devices = await _dbContext.Devices
+                            .AsNoTracking()
                             .Take(limit)
                             .ProjectTo<DeviceDto>(_mapper.ConfigurationProvider)
                             .ToListAsync();
+
             return Ok(devices);
         }
 
@@ -60,7 +64,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<DeviceDto>> GetById(int id)
+        public async Task<ActionResult<DeviceDto>> GetById([FromRoute] int id)
         {
             Device? device = await _dbContext.Devices.FindAsync(id);
             if (device == null)
@@ -77,7 +81,10 @@ namespace myMicroservice.Api.V1.Controllers
         [Produces("application/json")]
         [HttpPatch("{id:int}")]
         [Consumes(JsonMergePatchDocument.ContentType)]
-        public async Task<ActionResult<DeviceDto>> PatchById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch)
+        public async Task<ActionResult<DeviceDto>> PatchById(
+            [FromRoute]int id,
+            [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch
+        )
         {
             var hasChanges = false;
             Device? device = await _dbContext.Devices.FindAsync(id);
@@ -124,7 +131,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpPut]
-        public async Task<ActionResult<DeviceDto>> Update(DeviceDto updatedDeviceDto)
+        public async Task<ActionResult<DeviceDto>> Update([FromBody] DeviceDto updatedDeviceDto)
         {
             bool hasChanges = false;
             Device? device = await _dbContext.Devices.FindAsync(updatedDeviceDto.Id);

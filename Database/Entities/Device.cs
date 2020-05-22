@@ -20,11 +20,13 @@ namespace myMicroservice.Database.Entities
         public string Version { get; set; } = null!;
 
         public int OwnerUserId { get; set; }
+
         [Required] // in this case, we always want to have an owner, so we delete devices on cascade when deleting its owner
         public virtual User Owner { get; set; } = null!;
 
         public Device()
-        { }
+        {
+        }
 
         public Device(int deviceId, string name, string version)
         {

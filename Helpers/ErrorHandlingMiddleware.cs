@@ -47,11 +47,15 @@ namespace myMicroservice.Helpers
             
             var rawCode = (int)code;
 
+            var detailMessage = "";
+            #if DEBUG
+            detailMessage = ex.Message;
+            #endif
             var problem = new ProblemDetails
             {
                 Title = code.ToString(),
                 Status = rawCode,
-                Detail = ex.Message,
+                Detail = detailMessage,
                 Type = "https://httpstatuses.com/" + rawCode,
                 Instance = context.TraceIdentifier
             };

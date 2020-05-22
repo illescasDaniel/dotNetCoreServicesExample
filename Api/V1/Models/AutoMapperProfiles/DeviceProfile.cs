@@ -11,6 +11,11 @@ namespace myMicroservice.Api.V1.Models.AutoMapperProfiles
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.DeviceId));
 
             CreateMap<Device, UpdatedDeviceDto>();
+
+            CreateMap<NewDeviceDto, Device>()
+                .ForMember(dest => dest.DeviceId, opt => opt.Ignore())
+                .ForMember(dest => dest.Owner, opt => opt.Ignore())
+                .ForMember(dest => dest.OwnerUserId, opt => opt.Ignore());
         }
     }
 }
