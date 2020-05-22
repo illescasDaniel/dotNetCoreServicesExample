@@ -17,16 +17,20 @@ using Microsoft.EntityFrameworkCore;
 namespace myMicroservice.Api.V1.Controllers
 {
     [ApiController]
-    [ApiVersionNeutral]
     [Authorize]
+    [ApiVersionNeutral]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class DeviceController : ControllerBase
     {
+
+        #region Properties
         private readonly DatabaseContext _dbContext;
         private readonly IUserAuthenticationService _authenticationService;
         private readonly ILogger<UserController> _logger;
         private readonly IMapper _mapper;
+        #endregion
 
+        #region Initializers
         public DeviceController(
             DatabaseContext dbContext,
             IUserAuthenticationService authenticationService,
@@ -39,8 +43,9 @@ namespace myMicroservice.Api.V1.Controllers
             _logger = logger;
             _mapper = mapper;
         }
+        #endregion
 
-        //
+        #region Actions
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -78,9 +83,9 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Produces("application/json")]
-        [HttpPatch("{id:int}")]
         [Consumes(JsonMergePatchDocument.ContentType)]
+        [Produces("application/json")]        
+        [HttpPatch("{id:int}")]
         public async Task<ActionResult<DeviceDto>> PatchById(
             [FromRoute]int id,
             [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch
@@ -129,6 +134,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPut]
         public async Task<ActionResult<DeviceDto>> Update([FromBody] DeviceDto updatedDeviceDto)
@@ -192,5 +198,7 @@ namespace myMicroservice.Api.V1.Controllers
 
             return Ok();
         }
+
+        #endregion
     }
 }

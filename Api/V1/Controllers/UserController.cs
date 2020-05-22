@@ -13,6 +13,7 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Morcatko.AspNetCore.JsonMergePatch;
 using System.Threading.Tasks;
+using System;
 
 namespace myMicroservice.Api.V1.Controllers
 {
@@ -118,9 +119,9 @@ namespace myMicroservice.Api.V1.Controllers
                 return NotFound();
             }
 
-            var userDto = _mapper.Map<UserDto>(user);
             if (updatedUserPatch.Operations.Count() == 0)
             {
+                var userDto = _mapper.Map<UserDto>(user);
                 return Ok(userDto);
             }
 
@@ -145,6 +146,7 @@ namespace myMicroservice.Api.V1.Controllers
 
             if (!hasChanges)
             {
+                var userDto = _mapper.Map<UserDto>(user);
                 return Ok(userDto);
             }
 
