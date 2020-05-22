@@ -10,6 +10,9 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using myMicroservice.Database.Entities;
 using Morcatko.AspNetCore.JsonMergePatch;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace myMicroservice.Api.V1.Controllers
 {
@@ -42,12 +45,13 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
-        [HttpGet]
-        public ActionResult<IQueryable<DeviceDto>> Get([FromQuery] int limit = 10)
+        [HttpGet("all")]
+        public async Task<ActionResult<IReadOnlyCollection<DeviceDto>>> GetAll([FromQuery] int limit = 10)
         {
-            var devices = _dbContext.Devices
+            var devices = await _dbContext.Devices
                             .Take(limit)
-                            .ProjectTo<DeviceDto>(_mapper.ConfigurationProvider);
+                            .ProjectTo<DeviceDto>(_mapper.ConfigurationProvider)
+                            .ToListAsync();
             return Ok(devices);
         }
 
@@ -56,9 +60,9 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{id:int}")]
-        public ActionResult<DeviceDto> GetById(int id)
+        public async Task<ActionResult<DeviceDto>> GetById(int id)
         {
-            Device? device = _dbContext.Devices.Find(id);
+            Device? device = await _dbContext.Devices.FindAsync(id);
             if (device == null)
             {
                 return NotFound();
@@ -73,10 +77,10 @@ namespace myMicroservice.Api.V1.Controllers
         [Produces("application/json")]
         [HttpPatch("{id:int}")]
         [Consumes(JsonMergePatchDocument.ContentType)]
-        public ActionResult<DeviceDto> PathById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch)
+        public async Task<ActionResult<DeviceDto>> PatchById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch)
         {
             var hasChanges = false;
-            Device? device = _dbContext.Devices.Find(id);
+            Device? device = await _dbContext.Devices.FindAsync(id);
             if (device == null)
             {
                 return NotFound();
@@ -84,7 +88,7 @@ namespace myMicroservice.Api.V1.Controllers
 
             var deviceDto = _mapper.Map<DeviceDto>(device);
 
-            if (updatedDevicePatch.Operations.ToArray().Length == 0)
+            if (updatedDevicePatch.Operations.Count() == 0)
             {
                 return Ok(deviceDto);
             }
@@ -110,7 +114,7 @@ namespace myMicroservice.Api.V1.Controllers
 
             var deviceDtoAfterChanges = _mapper.Map<DeviceDto>(device);
 
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
             
             return Ok(deviceDtoAfterChanges);
         }
@@ -120,15 +124,16 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpPut]
-        public ActionResult<DeviceDto> Update(DeviceDto updatedDeviceDto)
+        public async Task<ActionResult<DeviceDto>> Update(DeviceDto updatedDeviceDto)
         {
             bool hasChanges = false;
-            Device? device = _dbContext.Devices.Find(updatedDeviceDto.Id);
+            Device? device = await _dbContext.Devices.FindAsync(updatedDeviceDto.Id);
             if (device == null)
             {
                 return NotFound();
             }
-            if (_dbContext.Users.Find(updatedDeviceDto.OwnerUserId) == null)
+            User? owner = await _dbContext.Users.FindAsync(updatedDeviceDto.OwnerUserId);
+            if (owner == null)
             {
                 return Problem(
                     statusCode: StatusCodes.Status404NotFound,
@@ -157,7 +162,7 @@ namespace myMicroservice.Api.V1.Controllers
                 return Ok(updatedDeviceDto);
             }
 
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
             
             var deviceDto = _mapper.Map<DeviceDto>(device);
             return Ok(deviceDto);
@@ -168,15 +173,15 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpDelete("{id:int}")]
-        public IActionResult DeleteById(int id)
+        public async Task<IActionResult> DeleteById(int id)
         {
-            Device? device = _dbContext.Devices.Find(id);
+            Device? device = await _dbContext.Devices.FindAsync(id);
             if (device == null)
             {
                 return NotFound();
             }
             _dbContext.Remove(device);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
 
             return Ok();
         }

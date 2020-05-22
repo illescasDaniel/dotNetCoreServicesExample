@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Morcatko.AspNetCore.JsonMergePatch;
+using System.Threading.Tasks;
 
 namespace myMicroservice.Api.V1.Controllers
 {
@@ -47,12 +48,13 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [Produces("application/json")]
-        [HttpGet]
-        public ActionResult<IQueryable<UserDto>> Get([FromQuery] int limit = 10)
+        [HttpGet("all")]
+        public async Task<ActionResult<IReadOnlyCollection<UserDto>>> GetAll([FromQuery] int limit = 10)
         {
-            var users = _dbContext.Users
+            var users = await _dbContext.Users
                             .Take(limit)
-                            .ProjectTo<UserDto>(_mapper.ConfigurationProvider);
+                            .ProjectTo<UserDto>(_mapper.ConfigurationProvider)
+                            .ToListAsync();
             return Ok(users);
         }
 
@@ -61,9 +63,9 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{id:int}")]
-        public ActionResult<UserDto> GetById(int id)
+        public async Task<ActionResult<UserDto>> GetById(int id)
         {
-            User? user = _dbContext.Users.Find(id);
+            User? user = await _dbContext.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -76,11 +78,11 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpGet("{username}")]
-        public ActionResult<UserDto> GetByUsername([FromRoute]string username)
+        public async Task<ActionResult<UserDto>> GetByUsername([FromRoute]string username)
         {
-            User? user = _dbContext.Users
+            User? user = await _dbContext.Users
                 .Where(u => u.Username == username)
-                .FirstOrDefault();
+                .FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound();
@@ -96,18 +98,17 @@ namespace myMicroservice.Api.V1.Controllers
         [Produces("application/json")]
         [HttpPatch("{id:int}")]
         [Consumes(JsonMergePatchDocument.ContentType)]
-        public ActionResult<UserDto> PathById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedUserDto> updatedUserPatch)
+        public async Task<ActionResult<UserDto>> PatchById([FromRoute]int id, [FromBody] JsonMergePatchDocument<UpdatedUserDto> updatedUserPatch)
         {
             var hasChanges = false;
-            User? user = _dbContext.Users.Find(id);
+            User? user = await _dbContext.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
 
             var userDto = _mapper.Map<UserDto>(user);
-
-            if (updatedUserPatch.Operations.ToArray().Length == 0)
+            if (updatedUserPatch.Operations.Count() == 0)
             {
                 return Ok(userDto);
             }
@@ -138,7 +139,7 @@ namespace myMicroservice.Api.V1.Controllers
 
             var userDtoAfterChanges = _mapper.Map<UserDto>(user);
 
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
 
             return Ok(userDtoAfterChanges);
         }
@@ -149,10 +150,10 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [Produces("application/json")]
         [HttpPut]
-        public ActionResult<UserDto> Update(UserDto updatedUserDto)
+        public async Task<ActionResult<UserDto>> Update(UserDto updatedUserDto)
         {
             var hasChanges = false;
-            User? user = _dbContext.Users.Find(updatedUserDto.Id);
+            User? user = await _dbContext.Users.FindAsync(updatedUserDto.Id);
             if (user == null)
             {
                 return NotFound();
@@ -184,7 +185,7 @@ namespace myMicroservice.Api.V1.Controllers
                 return Ok(updatedUserDto);
             }
 
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
 
             var deviceDto = _mapper.Map<UserDto>(user);
             return Ok(deviceDto);
@@ -242,7 +243,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
         [HttpDelete("{id:int}")]
-        public IActionResult DeleteById(int id)
+        public async Task<IActionResult> DeleteById(int id)
         {
             User? user = _dbContext.Users.Find(id);
             if (user == null)
@@ -252,7 +253,7 @@ namespace myMicroservice.Api.V1.Controllers
             // automatically deletes devices asociated with it
             // if not, we can use _dbContext.Entry(user).Collections(u => u.Devices).Load() to load devices before deleting them
             _dbContext.Remove(user);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
 
             return Ok();
         }

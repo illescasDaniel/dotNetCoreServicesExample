@@ -114,6 +114,7 @@ namespace myMicroservice
             #region OData + api versioning
             //services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Latest);
             services.AddMvcCore(options => options.EnableEndpointRouting = false)
+                .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .AddSystemTextJsonMergePatch();
 
             services.AddOData().EnableApiVersioning();

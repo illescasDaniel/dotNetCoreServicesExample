@@ -10740,3 +10740,148 @@ System.InvalidOperationException: The constraint reference 'string' could not be
 2020-05-18 20:07:48.119 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
 2020-05-18 20:07:48.119 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 6.7722ms
 2020-05-18 20:07:48.125 +02:00 [INF] Request finished in 21.1394ms 200 application/json; charset=utf-8
+2020-05-19 08:43:53.440 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-19 08:43:54.781 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-19 08:43:54.782 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-19 08:43:54.782 +02:00 [INF] Hosting environment: Development
+2020-05-19 08:43:54.782 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-19 08:44:03.058 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-19 08:44:03.268 +02:00 [INF] Request finished in 212.6477ms 200 text/html;charset=utf-8
+2020-05-19 08:44:03.855 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-19 08:44:03.855 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-19 08:44:03.855 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-19 08:44:03.879 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-19 08:44:03.879 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-19 08:44:03.879 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-19 08:44:03.881 +02:00 [INF] Request finished in 25.6786ms 304 application/javascript
+2020-05-19 08:44:03.881 +02:00 [INF] Request finished in 25.2604ms 304 application/javascript
+2020-05-19 08:44:03.881 +02:00 [INF] Request finished in 25.0903ms 304 text/css
+2020-05-19 08:44:04.128 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-19 08:44:04.865 +02:00 [INF] Request finished in 736.8887ms 200 application/json;charset=utf-8
+2020-05-19 08:44:15.293 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/1  
+2020-05-19 08:44:15.315 +02:00 [INF] Authorization failed.
+2020-05-19 08:44:15.321 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-19 08:44:15.321 +02:00 [INF] Request finished in 28.8156ms 401 
+2020-05-19 08:44:34.463 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/1  
+2020-05-19 08:44:34.627 +02:00 [INF] Successfully validated the token.
+2020-05-19 08:44:34.632 +02:00 [INF] Authorization was successful.
+2020-05-19 08:44:34.680 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-19 08:44:36.330 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-19 08:44:36.342 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 1656.9048ms
+2020-05-19 08:44:36.347 +02:00 [INF] Request finished in 1884.0159ms 200 application/json; charset=utf-8
+2020-05-22 14:28:12.174 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 14:28:15.462 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 14:28:15.463 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 14:28:15.463 +02:00 [INF] Hosting environment: Development
+2020-05-22 14:28:15.463 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 14:29:37.556 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-22 14:29:38.252 +02:00 [INF] Request finished in 698.106ms 200 text/html;charset=utf-8
+2020-05-22 14:29:38.471 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-22 14:29:38.471 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-22 14:29:38.574 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-22 14:29:38.750 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-22 14:29:38.750 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-22 14:29:38.750 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-22 14:29:38.751 +02:00 [INF] Request finished in 280.1565ms 304 application/javascript
+2020-05-22 14:29:38.751 +02:00 [INF] Request finished in 176.5471ms 304 text/css
+2020-05-22 14:29:38.751 +02:00 [INF] Request finished in 280.1591ms 304 application/javascript
+2020-05-22 14:29:39.003 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 14:29:39.771 +02:00 [INF] Request finished in 768.3958ms 200 application/json;charset=utf-8
+2020-05-22 14:30:13.663 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1  
+2020-05-22 14:30:13.855 +02:00 [INF] Successfully validated the token.
+2020-05-22 14:30:13.864 +02:00 [INF] Authorization was successful.
+2020-05-22 14:30:13.909 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 14:30:15.889 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 14:30:15.901 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetById (myMicroservice) in 1986.3669ms
+2020-05-22 14:30:15.907 +02:00 [INF] Request finished in 2243.8621ms 200 application/json; charset=utf-8
+2020-05-22 14:30:57.820 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 22
+2020-05-22 14:30:57.825 +02:00 [INF] Successfully validated the token.
+2020-05-22 14:30:57.828 +02:00 [INF] Authorization was successful.
+2020-05-22 14:30:57.836 +02:00 [INF] Route matched with {action = "PathById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] PathById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 14:30:58.060 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 14:30:58.061 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PathById (myMicroservice) in 224.9183ms
+2020-05-22 14:30:58.061 +02:00 [INF] Request finished in 241.5782ms 200 application/json; charset=utf-8
+2020-05-22 14:31:10.505 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/User application/json;odata.metadata=minimal;odata.streaming=true 92
+2020-05-22 14:31:10.508 +02:00 [INF] Successfully validated the token.
+2020-05-22 14:31:10.510 +02:00 [INF] Authorization was successful.
+2020-05-22 14:31:10.518 +02:00 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] Update(myMicroservice.Api.V1.Models.UserDto) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 14:31:10.554 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 14:31:10.554 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.Update (myMicroservice) in 36.3435ms
+2020-05-22 14:31:10.555 +02:00 [INF] Request finished in 50.1619ms 200 application/json; charset=utf-8
+2020-05-22 14:31:18.315 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/Daniel!  
+2020-05-22 14:31:18.316 +02:00 [INF] Successfully validated the token.
+2020-05-22 14:31:18.317 +02:00 [INF] Authorization was successful.
+2020-05-22 14:31:18.321 +02:00 [INF] Route matched with {action = "GetByUsername", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] GetByUsername(System.String) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 14:31:18.348 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 14:31:18.349 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetByUsername (myMicroservice) in 27.361ms
+2020-05-22 14:31:18.349 +02:00 [INF] Request finished in 34.415ms 200 application/json; charset=utf-8
+2020-05-22 15:01:38.591 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 15:01:39.858 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 15:01:39.859 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 15:01:39.859 +02:00 [INF] Hosting environment: Development
+2020-05-22 15:01:39.859 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 15:07:27.139 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-22 15:07:28.497 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 15:07:28.498 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 15:07:28.498 +02:00 [INF] Hosting environment: Development
+2020-05-22 15:07:28.498 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-22 15:08:07.839 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-22 15:08:08.041 +02:00 [INF] Request finished in 203.566ms 200 text/html;charset=utf-8
+2020-05-22 15:08:08.394 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-22 15:08:09.139 +02:00 [INF] Request finished in 745.015ms 200 application/json;charset=utf-8
+2020-05-22 15:08:25.481 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/all?limit=10  
+2020-05-22 15:08:25.651 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:08:25.659 +02:00 [INF] Authorization was successful.
+2020-05-22 15:08:25.717 +02:00 [INF] Route matched with {action = "GetAll", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetAll(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:08:27.494 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-22 15:08:27.509 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetAll (myMicroservice) in 1786.4627ms
+2020-05-22 15:08:27.515 +02:00 [INF] Request finished in 2034.8171ms 200 application/json; charset=utf-8
+2020-05-22 15:09:13.453 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/1 application/merge-patch+json 31
+2020-05-22 15:09:13.458 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:09:13.459 +02:00 [INF] Authorization was successful.
+2020-05-22 15:09:13.469 +02:00 [INF] Route matched with {action = "PatchById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:09:13.791 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-22 15:09:13.792 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PatchById (myMicroservice) in 322.812ms
+2020-05-22 15:09:13.793 +02:00 [INF] Request finished in 340.0731ms 200 application/json; charset=utf-8
+2020-05-22 15:09:20.582 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/Device/1 application/merge-patch+json 20
+2020-05-22 15:09:20.586 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:09:20.589 +02:00 [INF] Authorization was successful.
+2020-05-22 15:09:20.593 +02:00 [INF] Route matched with {action = "PatchById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedDeviceDto]) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:09:20.617 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-22 15:09:20.618 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.PatchById (myMicroservice) in 25.2141ms
+2020-05-22 15:09:20.618 +02:00 [INF] Request finished in 36.4409ms 200 application/json; charset=utf-8
+2020-05-22 15:09:29.258 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/1  
+2020-05-22 15:09:29.260 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:09:29.261 +02:00 [INF] Authorization was successful.
+2020-05-22 15:09:29.271 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-22 15:09:29.280 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-22 15:09:29.280 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 8.8725ms
+2020-05-22 15:09:29.281 +02:00 [INF] Request finished in 22.6555ms 200 application/json; charset=utf-8
+2020-05-22 15:09:43.882 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 17
+2020-05-22 15:09:43.885 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:09:43.886 +02:00 [INF] Authorization was successful.
+2020-05-22 15:09:43.894 +02:00 [INF] Route matched with {action = "PatchById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 15:09:59.867 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 15:09:59.874 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PatchById (myMicroservice) in 15980.5742ms
+2020-05-22 15:09:59.875 +02:00 [INF] Request finished in 15993.9088ms 200 application/json; charset=utf-8
+2020-05-22 15:10:07.564 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 17
+2020-05-22 15:10:07.567 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:10:07.567 +02:00 [INF] Authorization was successful.
+2020-05-22 15:10:07.569 +02:00 [INF] Route matched with {action = "PatchById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 15:10:50.020 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 15:10:50.021 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PatchById (myMicroservice) in 42453.3387ms
+2020-05-22 15:10:50.022 +02:00 [INF] Request finished in 42459.2053ms 200 application/json; charset=utf-8
+2020-05-22 15:10:55.198 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 2
+2020-05-22 15:10:55.199 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:10:55.199 +02:00 [INF] Authorization was successful.
+2020-05-22 15:10:55.200 +02:00 [INF] Route matched with {action = "PatchById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 15:10:55.211 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 15:10:55.212 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PatchById (myMicroservice) in 12.2752ms
+2020-05-22 15:10:55.213 +02:00 [INF] Request finished in 15.8781ms 200 application/json; charset=utf-8
+2020-05-22 15:11:21.284 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5000/api/v1/User/1 application/merge-patch+json 17
+2020-05-22 15:11:21.285 +02:00 [INF] Successfully validated the token.
+2020-05-22 15:11:21.286 +02:00 [INF] Authorization was successful.
+2020-05-22 15:11:21.286 +02:00 [INF] Route matched with {action = "PatchById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] PatchById(Int32, Morcatko.AspNetCore.JsonMergePatch.JsonMergePatchDocument`1[myMicroservice.Api.V1.Models.UpdatedUserDto]) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-22 15:11:21.300 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-22 15:11:21.301 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.PatchById (myMicroservice) in 14.6063ms
+2020-05-22 15:11:21.307 +02:00 [INF] Request finished in 22.8461ms 200 application/json; charset=utf-8
