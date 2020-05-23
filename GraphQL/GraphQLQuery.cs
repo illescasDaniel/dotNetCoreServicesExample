@@ -1,15 +1,18 @@
 ﻿using System.Linq;
+using System.Security.Claims;
+using GraphQL;
 using GraphQL.Types;
 using Microsoft.EntityFrameworkCore;
 using myMicroservice.Database;
 using myMicroservice.GraphQL.Types;
+using myMicroservice.Helpers;
 
 namespace myMicroservice.GraphQL
 {
     public class GraphQLQuery : ObjectGraphType
     {
 
-        public GraphQLQuery(DatabaseContext dbContext)
+        public GraphQLQuery(DatabaseContext dbContext, IUserAuthenticationService authenticationService)
         {
             // User by id
             FieldAsync<UserType>(
@@ -19,6 +22,8 @@ namespace myMicroservice.GraphQL
                 ),
                 resolve: async context =>
                 {
+                    CheckAuthentication(context, authenticationService);
+
                     var id = context.GetArgument<int>("id");
                     var user = await dbContext.Users.FindAsync(id);
                     return user;
@@ -33,6 +38,8 @@ namespace myMicroservice.GraphQL
                 ),
                 resolve: async context =>
                 {
+                    CheckAuthentication(context, authenticationService);
+
                     var limit = context.GetArgument<int>("limit", defaultValue: 10);
                     var user = await dbContext.Users
                                 //.Include(u => u.Devices) // looks like we don't need to
@@ -52,6 +59,8 @@ namespace myMicroservice.GraphQL
                 ),
                 resolve: async context =>
                 {
+                    CheckAuthentication(context, authenticationService);
+
                     var id = context.GetArgument<int>("id");
                     var user = await dbContext.Devices.FindAsync(id);
                     return user;
@@ -66,6 +75,8 @@ namespace myMicroservice.GraphQL
                 ),
                 resolve: async context =>
                 {
+                    CheckAuthentication(context, authenticationService);
+
                     var limit = context.GetArgument<int>("limit", defaultValue: 10);
                     var user = await dbContext.Devices
                                 //.Include(u => u.Devices) // looks like we don't need to
@@ -76,6 +87,16 @@ namespace myMicroservice.GraphQL
                     return user;
                 }
             );
+        }
+
+        //
+
+        private void CheckAuthentication(ResolveFieldContext<object> context, IUserAuthenticationService authenticationService)
+        {
+            if (!authenticationService.IsAuthenticated((ClaimsPrincipal)context.UserContext))
+            {
+                throw new ExecutionError("User not authenticated");
+            }
         }
     }
 }

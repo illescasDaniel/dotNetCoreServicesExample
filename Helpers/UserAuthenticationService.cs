@@ -12,6 +12,7 @@ namespace myMicroservice.Helpers
     public interface IUserAuthenticationService
     {
         string Authenticate(int userId);
+        bool IsAuthenticated(ClaimsPrincipal claims);
     }
 
     public class UserAuthenticationService : IUserAuthenticationService
@@ -52,6 +53,11 @@ namespace myMicroservice.Helpers
             
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+        public bool IsAuthenticated(ClaimsPrincipal claims)
+        {
+            return claims.Identity.IsAuthenticated;
         }
     }
 }

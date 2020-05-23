@@ -14736,3 +14736,132 @@ System.InvalidOperationException: Unable to resolve service for type 'myMicroser
 2020-05-23 12:29:25.134 +02:00 [INF] Request finished in 21.8112ms 200 application/json
 2020-05-23 12:29:49.478 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/graphql?query=%7B%20users%20%7B%20name,%20surname,%20devices%20%7B%20version%20%7D%20%7D%20%7D  
 2020-05-23 12:29:49.505 +02:00 [INF] Request finished in 26.8927ms 200 application/json
+2020-05-23 12:33:28.186 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 12:33:29.620 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 12:33:29.621 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 12:33:29.621 +02:00 [INF] Hosting environment: Development
+2020-05-23 12:33:29.621 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 12:35:14.057 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/graphql?query=%7B%20users%20%7B%20name,%20surname,%20devices%20%7B%20version%20%7D%20%7D%20%7D  
+2020-05-23 12:35:15.974 +02:00 [INF] Request finished in 1921.1763ms 200 application/json
+2020-05-23 12:36:52.900 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 12:36:54.385 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 12:36:54.386 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 12:36:54.386 +02:00 [INF] Hosting environment: Development
+2020-05-23 12:36:54.386 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 12:37:00.260 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 12:37:00.901 +02:00 [INF] Request finished in 644.4793ms 200 application/json
+2020-05-23 12:37:02.952 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 12:37:02.969 +02:00 [INF] Request finished in 16.3063ms 200 application/json
+2020-05-23 12:37:05.002 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 12:37:05.023 +02:00 [INF] Request finished in 20.8831ms 200 application/json
+2020-05-23 12:37:07.042 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 12:37:07.073 +02:00 [INF] Request finished in 31.0868ms 200 application/json
+2020-05-23 12:37:09.099 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 12:37:09.111 +02:00 [INF] Request finished in 11.6388ms 200 application/json
+2020-05-23 12:37:10.090 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 99
+2020-05-23 12:37:11.149 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 12:37:11.157 +02:00 [INF] Request finished in 7.7606ms 200 application/json
+2020-05-23 12:37:11.293 +02:00 [INF] Request finished in 1203.4185ms 200 application/json
+2020-05-23 12:37:31.455 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/graphql?query=%7B%20users%20%7B%20name,%20surname,%20devices%20%7B%20version%20%7D%20%7D%20%7D  
+2020-05-23 12:37:31.519 +02:00 [INF] Successfully validated the token.
+2020-05-23 12:37:31.654 +02:00 [INF] Request finished in 199.6234ms 200 application/json
+2020-05-23 12:37:49.365 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 129
+2020-05-23 12:37:49.367 +02:00 [INF] Successfully validated the token.
+2020-05-23 12:37:49.414 +02:00 [INF] Request finished in 49.0283ms 200 application/json
+2020-05-23 12:38:19.231 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 12:38:19.232 +02:00 [INF] Successfully validated the token.
+2020-05-23 12:38:19.248 +02:00 [INF] Request finished in 16.7434ms 200 application/json
+2020-05-23 12:43:47.430 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 12:43:48.919 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 12:43:48.920 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 12:43:48.920 +02:00 [INF] Hosting environment: Development
+2020-05-23 12:43:48.920 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 12:43:57.991 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 12:43:58.264 +02:00 [INF] Successfully validated the token.
+2020-05-23 12:43:59.963 +02:00 [INF] Request finished in 1975.3616ms 200 application/json
+2020-05-23 12:44:02.387 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 68
+2020-05-23 12:44:02.390 +02:00 [INF] Successfully validated the token.
+2020-05-23 12:44:02.435 +02:00 [INF] Request finished in 47.7499ms 200 application/json
+2020-05-23 12:46:29.169 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 68
+2020-05-23 12:46:29.190 +02:00 [INF] Request finished in 17.6792ms 200 application/json
+2020-05-23 12:46:34.165 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 12:46:34.193 +02:00 [INF] Request finished in 27.4481ms 200 application/json
+2020-05-23 12:46:41.118 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 12:46:41.121 +02:00 [INF] Successfully validated the token.
+2020-05-23 12:46:41.144 +02:00 [INF] Request finished in 26.2432ms 200 application/json
+2020-05-23 13:01:56.983 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 13:01:58.348 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 13:01:58.349 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 13:01:58.350 +02:00 [INF] Hosting environment: Development
+2020-05-23 13:01:58.350 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 13:02:02.300 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:02.915 +02:00 [INF] Request finished in 618.1954ms 200 application/json
+2020-05-23 13:02:04.879 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 13:02:04.968 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:02:05.286 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:05.306 +02:00 [INF] Request finished in 19.9526ms 200 application/json
+2020-05-23 13:02:06.344 +02:00 [INF] Request finished in 1465.2862ms 200 application/json
+2020-05-23 13:02:07.331 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:07.360 +02:00 [INF] Request finished in 28.8721ms 200 application/json
+2020-05-23 13:02:10.381 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:10.394 +02:00 [INF] Request finished in 12.8049ms 200 application/json
+2020-05-23 13:02:10.548 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 13:02:11.287 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: User not authenticated\n   at myMicroservice.GraphQL.GraphQLQuery.CheckAuthentication(ResolveFieldContext`1 context, IUserAuthenticationService authenticationService) in /Users/daniel/Projects/myMicroservice/GraphQL/GraphQLQuery.cs:line 100\n   at myMicroservice.GraphQL.GraphQLQuery.<>c__DisplayClass0_0.<<-ctor>b__0>d.MoveNext() in /Users/daniel/Projects/myMicroservice/GraphQL/GraphQLQuery.cs:line 25\n--- End of stack trace from previous location where exception was thrown ---\n   at GraphQL.Instrumentation.MiddlewareResolver.Resolve(ResolveFieldContext context)\n   at GraphQL.Execution.ExecutionStrategy.ExecuteNodeAsync(ExecutionContext context, ExecutionNode node)"]
+2020-05-23 13:02:11.299 +02:00 [INF] Request finished in 750.6915ms 200 application/json
+2020-05-23 13:02:12.418 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:12.427 +02:00 [INF] Request finished in 8.5427ms 200 application/json
+2020-05-23 13:02:14.453 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:14.461 +02:00 [INF] Request finished in 8.0311ms 200 application/json
+2020-05-23 13:02:16.490 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:16.498 +02:00 [INF] Request finished in 7.8284ms 200 application/json
+2020-05-23 13:02:19.516 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:19.524 +02:00 [INF] Request finished in 7.1776ms 200 application/json
+2020-05-23 13:02:21.548 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:21.555 +02:00 [INF] Request finished in 7.1178ms 200 application/json
+2020-05-23 13:02:23.582 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:23.589 +02:00 [INF] Request finished in 6.7075ms 200 application/json
+2020-05-23 13:02:26.608 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:26.615 +02:00 [INF] Request finished in 6.9206ms 200 application/json
+2020-05-23 13:02:28.638 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:28.645 +02:00 [INF] Request finished in 7.0016ms 200 application/json
+2020-05-23 13:02:30.666 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:30.673 +02:00 [INF] Request finished in 6.7408ms 200 application/json
+2020-05-23 13:02:32.696 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:32.703 +02:00 [INF] Request finished in 6.5913ms 200 application/json
+2020-05-23 13:02:34.732 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:34.740 +02:00 [INF] Request finished in 8.12ms 200 application/json
+2020-05-23 13:02:36.763 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:36.771 +02:00 [INF] Request finished in 7.9855ms 200 application/json
+2020-05-23 13:02:38.793 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:38.800 +02:00 [INF] Request finished in 7.2892ms 200 application/json
+2020-05-23 13:02:40.823 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:40.830 +02:00 [INF] Request finished in 6.4769ms 200 application/json
+2020-05-23 13:02:42.852 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:42.859 +02:00 [INF] Request finished in 7.3168ms 200 application/json
+2020-05-23 13:02:44.879 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:44.886 +02:00 [INF] Request finished in 6.9906ms 200 application/json
+2020-05-23 13:02:46.906 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:46.913 +02:00 [INF] Request finished in 7.1951ms 200 application/json
+2020-05-23 13:02:48.935 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:48.942 +02:00 [INF] Request finished in 7.2281ms 200 application/json
+2020-05-23 13:02:50.964 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:50.971 +02:00 [INF] Request finished in 7.0964ms 200 application/json
+2020-05-23 13:02:52.992 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:52.999 +02:00 [INF] Request finished in 7.2311ms 200 application/json
+2020-05-23 13:02:55.028 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:55.035 +02:00 [INF] Request finished in 6.8698ms 200 application/json
+2020-05-23 13:02:57.059 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:57.067 +02:00 [INF] Request finished in 7.2704ms 200 application/json
+2020-05-23 13:02:59.088 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:02:59.096 +02:00 [INF] Request finished in 7.4629ms 200 application/json
+2020-05-23 13:03:01.849 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 62
+2020-05-23 13:03:01.850 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:03:01.898 +02:00 [INF] Request finished in 48.5206ms 200 application/json
+2020-05-23 13:03:02.114 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:03:02.122 +02:00 [INF] Request finished in 7.7754ms 200 application/json
+2020-05-23 13:03:04.144 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:03:04.152 +02:00 [INF] Request finished in 7.3052ms 200 application/json
+2020-05-23 13:03:06.175 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:03:06.182 +02:00 [INF] Request finished in 6.465ms 200 application/json
+2020-05-23 13:03:08.201 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:03:08.208 +02:00 [INF] Request finished in 6.778ms 200 application/json

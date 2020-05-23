@@ -119,7 +119,8 @@ namespace myMicroservice
             #region OData + api versioning
             //services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Latest);
 
-            services.AddOData().EnableApiVersioning();
+            services.AddOData()
+                .EnableApiVersioning();
             //services.AddODataQueryFilter();
 
             //services.AddMvcCore(options => options.EnableEndpointRouting = false)
@@ -319,7 +320,9 @@ namespace myMicroservice
                 options.ExposeExceptions = true;
                 #endif
             })
-            .AddGraphTypes(Microsoft.Extensions.DependencyInjection.ServiceLifetime.Scoped);
+            .AddGraphTypes(Microsoft.Extensions.DependencyInjection.ServiceLifetime.Scoped)
+            .AddUserContextBuilder(httpContext => httpContext.User)
+            .AddDataLoader();
         }
 
         // Odata - no api versioning

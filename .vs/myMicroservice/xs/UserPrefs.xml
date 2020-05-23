@@ -1,17 +1,26 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/ErrorHandlingMiddleware.cs">
     <Files>
-      <File FileName="Startup.cs" Line="433" Column="54" />
+      <File FileName="Startup.cs" Line="124" Column="46" />
       <File FileName="GraphQL/Schemas/UserSchema.cs" Line="2" Column="21" />
-      <File FileName="GraphQL/Queries/UserQuery.cs" Line="5" Column="36" />
+      <File FileName="GraphQL/Queries/UserQuery.cs" Line="29" Column="95" />
+      <File FileName="Helpers/UserAuthenticationService.cs" Line="15" Column="9" />
+      <File FileName="Helpers/ErrorHandlingMiddleware.cs" Line="54" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
+              <Node name="Api" expanded="True">
+                <Node name="V1" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                </Node>
+              </Node>
               <Node name="GraphQL" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="ErrorHandlingMiddleware.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
