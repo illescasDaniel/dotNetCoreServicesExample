@@ -106,12 +106,12 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        public ActionResult<object?> GetByPropertyName(
+        public async Task<ActionResult<object?>> GetByPropertyName(
            [FromRoute] int id,
            [FromRoute] string propertyName
         )
         {
-            User? user = _dbContext.Users.Find(id);
+            User? user = await _dbContext.Users.FindAsync(id);
             var property = user?.GetType().GetProperty(propertyName);
             if (property == null)
             {

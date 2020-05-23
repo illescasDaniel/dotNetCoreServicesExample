@@ -36,6 +36,11 @@ using Microsoft.Net.Http.Headers;
 using AutoMapper;
 using myMicroservice.Api;
 using Morcatko.AspNetCore.JsonMergePatch;
+using GraphQL;
+using GraphQL.Server;
+using GraphQL.Server.Ui.Playground;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using myMicroservice.GraphQL;
 
 namespace myMicroservice
 {
@@ -291,6 +296,11 @@ namespace myMicroservice
             //    };
             //});
 
+            services.Configure<KestrelServerOptions>(options =>
+            {
+                options.AllowSynchronousIO = true;
+            });
+
             services.AddSingleton<ILoggerFactory>(services => new SerilogLoggerFactory(Log.Logger, false));
             services.AddAutoMapper(
                 typeof(Api.V1.Models.AutoMapperProfiles.UserProfile),
@@ -299,6 +309,17 @@ namespace myMicroservice
             // configure DI for application services
             services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
             services.AddScoped<Database.DatabaseContext>();
+
+            // GraphQL
+            services.AddScoped<IDependencyResolver>(factory => new FuncDependencyResolver(factory.GetRequiredService));
+            services.AddScoped<GraphQLSchema>();
+            services.AddGraphQL(options =>
+            {
+                #if DEBUG
+                options.ExposeExceptions = true;
+                #endif
+            })
+            .AddGraphTypes(Microsoft.Extensions.DependencyInjection.ServiceLifetime.Scoped);
         }
 
         // Odata - no api versioning
@@ -347,7 +368,7 @@ namespace myMicroservice
         //}
         #endregion
 
-        public void Configure(IApplicationBuilder app, VersionedODataModelBuilder modelBuilder, IApiVersionDescriptionProvider provider, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, VersionedODataModelBuilder modelBuilder, IApiVersionDescriptionProvider provider)//, IWebHostEnvironment env)
         {
             //if (env.IsDevelopment())
             //{
@@ -405,6 +426,13 @@ namespace myMicroservice
                     options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
             });
+
+            // GraphQL
+
+            // http://localhost:5000/graphql
+            app.UseGraphQL<GraphQLSchema>();
+            // http://localhost:5000/ui/playground
+            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
         }
 
         //public void Configure(IApplicationBuilder app, IApiVersionDescriptionProvider provider)

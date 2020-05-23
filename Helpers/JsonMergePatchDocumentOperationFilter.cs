@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace myMicroservice.Helpers
 {
-class JsonMergePatchDocumentOperationFilter : IOperationFilter
+    class JsonMergePatchDocumentOperationFilter : IOperationFilter
 	{
 		private static bool IsJsonMergePatchDocumentType(Type t) => (t != null) && t.IsGenericType && (t.GetGenericTypeDefinition() == typeof(JsonMergePatchDocument<>));
 

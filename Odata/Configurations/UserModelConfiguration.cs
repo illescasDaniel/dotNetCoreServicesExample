@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNet.OData.Builder;
+﻿using Microsoft.AspNet.OData.Builder;
 using Microsoft.AspNetCore.Mvc;
 using myMicroservice.Database.Entities;
 
