@@ -11,26 +11,28 @@ using myMicroservice.Database.Entities;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using myMicroservice.Helpers;
 
 namespace myMicroservice.Database.Odata
 {
     [ApiVersion("1.0-odata")]
     [ODataRoutePrefix("Users")]
     // [Authorize(Policy = "ODataServiceApiPolicy", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    [Authorize] // doesn't seem to work!
+    //[Authorize] // doesn't seem to work!
     public class UsersController : ODataController
     {
         #region Properties
         private readonly ILogger<UsersController> _logger;
         private readonly DatabaseContext _dbContext;
+        private readonly IUserAuthenticationService _authenticationService;
         #endregion
 
         #region Initializers
-        public UsersController(DatabaseContext dbContext, ILogger<UsersController> logger)
+        public UsersController(DatabaseContext dbContext, ILogger<UsersController> logger, IUserAuthenticationService authenticationService)
         {
             _dbContext = dbContext;
             _logger = logger;
+            _authenticationService = authenticationService;
         }
         #endregion
 
@@ -47,6 +49,10 @@ namespace myMicroservice.Database.Odata
         [Produces("application/json")]
         public IActionResult Get() // api-version from query
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             return Ok(_dbContext.Users.AsQueryable());
         }
 
@@ -58,8 +64,12 @@ namespace myMicroservice.Database.Odata
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        public SingleResult<User> GetById([FromODataUri][Required] int id)
+        public ActionResult<SingleResult<User>> GetById([FromODataUri][Required] int id)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             return SingleResult.Create(
                 _dbContext.Users
                 .AsNoTracking()
@@ -76,8 +86,12 @@ namespace myMicroservice.Database.Odata
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        public SingleResult<string> GetUsername([FromODataUri][Required] int id)
+        public ActionResult<SingleResult<string>> GetUsername([FromODataUri][Required] int id)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             return SingleResult.Create(
                 _dbContext.Users
                 .AsNoTracking()
@@ -93,8 +107,12 @@ namespace myMicroservice.Database.Odata
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        public SingleResult<string> GetName([FromODataUri][Required] int id)
+        public ActionResult<SingleResult<string>> GetName([FromODataUri][Required] int id)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             return SingleResult.Create(
                 _dbContext.Users
                 .AsNoTracking()
@@ -110,8 +128,12 @@ namespace myMicroservice.Database.Odata
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        public SingleResult<string> GetSurname([FromODataUri][Required] int id)
+        public ActionResult<SingleResult<string>> GetSurname([FromODataUri][Required] int id)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             return SingleResult.Create(
                 _dbContext.Users
                 .AsNoTracking()
@@ -127,8 +149,12 @@ namespace myMicroservice.Database.Odata
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Produces("application/json")]
-        public SingleResult<string> GetEmail([FromODataUri][Required] int id)
+        public ActionResult<SingleResult<string>> GetEmail([FromODataUri][Required] int id)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             return SingleResult.Create(
                 _dbContext.Users
                 .AsNoTracking()
@@ -148,6 +174,10 @@ namespace myMicroservice.Database.Odata
         [Produces("application/json")]
         public async Task<IActionResult> Create([FromBody] User user)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -170,6 +200,10 @@ namespace myMicroservice.Database.Odata
             [FromBody] Delta<User> delta
         )
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -212,6 +246,10 @@ namespace myMicroservice.Database.Odata
         [Produces("application/json")]
         public async Task<IActionResult> Delete([FromODataUri] int id)
         {
+            if (!this.IsAuthenticated())
+            {
+                return Unauthorized();
+            }
             User? user = await _dbContext.Users.FindAsync(id);
             if (user == null)
             {
