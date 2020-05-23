@@ -4,10 +4,10 @@ using GraphQL;
 using GraphQL.Types;
 using Microsoft.EntityFrameworkCore;
 using myMicroservice.Database;
-using myMicroservice.GraphQL.Types;
+using myMicroservice.GraphQLApi.Types;
 using myMicroservice.Helpers;
 
-namespace myMicroservice.GraphQL
+namespace myMicroservice.GraphQLApi.Schema
 {
     public class GraphQLQuery : ObjectGraphType
     {

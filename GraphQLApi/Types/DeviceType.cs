@@ -1,13 +1,14 @@
-﻿using System;
-using GraphQL.Types;
+﻿using myMicroservice.GraphQLApi.Types;
 using myMicroservice.Database.Entities;
+using GraphQL.Types;
 
-namespace myMicroservice.GraphQL.Types
+namespace myMicroservice.GraphQLApi.Types
 {
     public class DeviceType : ObjectGraphType<Device>
     {
         public DeviceType()
         {
+            Name = "Device";
             Field(d => d.DeviceId);
             Field(d => d.Name);
             Field(d => d.Version);

@@ -53,9 +53,9 @@
     <Folder Include="Api\Other\" />
     <Folder Include="Api\V1\Models\User\" />
     <Folder Include="Api\V1\Models\Device\" />
-    <Folder Include="GraphQL\" />
-    <Folder Include="GraphQL\Types\" />
-    <Folder Include="GraphQL\Queries\" />
+    <Folder Include="GraphQLApi\" />
+    <Folder Include="GraphQLApi\Types\" />
+    <Folder Include="GraphQLApi\Schema\" />
   </ItemGroup>    
   <ItemGroup>
     <Compile Remove="Entities\UserEntity.cs" />

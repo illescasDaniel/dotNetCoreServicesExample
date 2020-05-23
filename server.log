@@ -14865,3 +14865,354 @@ System.InvalidOperationException: Unable to resolve service for type 'myMicroser
 2020-05-23 13:03:06.182 +02:00 [INF] Request finished in 6.465ms 200 application/json
 2020-05-23 13:03:08.201 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
 2020-05-23 13:03:08.208 +02:00 [INF] Request finished in 6.778ms 200 application/json
+2020-05-23 13:30:44.678 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 13:30:46.128 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 13:30:46.129 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 13:30:46.129 +02:00 [INF] Hosting environment: Development
+2020-05-23 13:30:46.130 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 13:30:48.766 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:30:49.366 +02:00 [INF] Request finished in 602.8612ms 200 application/json
+2020-05-23 13:30:51.744 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:30:51.762 +02:00 [INF] Request finished in 18.4463ms 200 application/json
+2020-05-23 13:30:54.794 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:30:54.829 +02:00 [INF] Request finished in 34.9457ms 200 application/json
+2020-05-23 13:30:56.854 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:30:56.865 +02:00 [INF] Request finished in 11.0413ms 200 application/json
+2020-05-23 13:30:58.890 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:30:58.902 +02:00 [INF] Request finished in 12.5356ms 200 application/json
+2020-05-23 13:31:01.919 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:01.943 +02:00 [INF] Request finished in 23.4251ms 200 application/json
+2020-05-23 13:31:03.963 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:03.972 +02:00 [INF] Request finished in 9.5531ms 200 application/json
+2020-05-23 13:31:06.238 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ui/playground  
+2020-05-23 13:31:06.241 +02:00 [INF] Request finished in 2.8187ms 200 text/html
+2020-05-23 13:31:07.275 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:07.285 +02:00 [INF] Request finished in 9.5839ms 200 application/json
+2020-05-23 13:31:07.344 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:07.357 +02:00 [INF] Request finished in 13.5565ms 200 application/json
+2020-05-23 13:31:08.721 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:08.730 +02:00 [INF] Request finished in 8.7332ms 200 application/json
+2020-05-23 13:31:10.761 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:10.772 +02:00 [INF] Request finished in 10.5857ms 200 application/json
+2020-05-23 13:31:12.797 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:12.805 +02:00 [INF] Request finished in 8.7635ms 200 application/json
+2020-05-23 13:31:14.846 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:14.854 +02:00 [INF] Request finished in 7.8678ms 200 application/json
+2020-05-23 13:31:16.886 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:16.894 +02:00 [INF] Request finished in 8.3651ms 200 application/json
+2020-05-23 13:31:18.916 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:18.923 +02:00 [INF] Request finished in 7.6071ms 200 application/json
+2020-05-23 13:31:20.944 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:20.952 +02:00 [INF] Request finished in 8.2747ms 200 application/json
+2020-05-23 13:31:22.972 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:22.981 +02:00 [INF] Request finished in 8.3966ms 200 application/json
+2020-05-23 13:31:25.008 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:25.016 +02:00 [INF] Request finished in 8.5361ms 200 application/json
+2020-05-23 13:31:27.042 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:27.050 +02:00 [INF] Request finished in 8.0992ms 200 application/json
+2020-05-23 13:31:29.094 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:29.103 +02:00 [INF] Request finished in 8.3273ms 200 application/json
+2020-05-23 13:31:31.145 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:31.154 +02:00 [INF] Request finished in 9.2773ms 200 application/json
+2020-05-23 13:31:33.172 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:33.180 +02:00 [INF] Request finished in 8.0495ms 200 application/json
+2020-05-23 13:31:35.202 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:35.210 +02:00 [INF] Request finished in 7.9559ms 200 application/json
+2020-05-23 13:31:37.230 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:37.237 +02:00 [INF] Request finished in 7.4111ms 200 application/json
+2020-05-23 13:31:39.256 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:39.264 +02:00 [INF] Request finished in 7.3395ms 200 application/json
+2020-05-23 13:31:41.284 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:41.291 +02:00 [INF] Request finished in 7.6736ms 200 application/json
+2020-05-23 13:31:43.316 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:43.324 +02:00 [INF] Request finished in 7.4499ms 200 application/json
+2020-05-23 13:31:45.351 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:45.359 +02:00 [INF] Request finished in 7.9582ms 200 application/json
+2020-05-23 13:31:59.033 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:31:59.041 +02:00 [INF] Request finished in 8.486ms 200 application/json
+2020-05-23 13:32:01.060 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:01.068 +02:00 [INF] Request finished in 8.3397ms 200 application/json
+2020-05-23 13:32:03.085 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:03.095 +02:00 [INF] Request finished in 9.2137ms 200 application/json
+2020-05-23 13:32:05.115 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:05.122 +02:00 [INF] Request finished in 7.207ms 200 application/json
+2020-05-23 13:32:07.143 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:07.149 +02:00 [INF] Request finished in 7.0135ms 200 application/json
+2020-05-23 13:32:09.169 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:09.175 +02:00 [INF] Request finished in 6.5988ms 200 application/json
+2020-05-23 13:32:11.195 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:11.203 +02:00 [INF] Request finished in 7.4212ms 200 application/json
+2020-05-23 13:32:13.226 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:13.233 +02:00 [INF] Request finished in 6.854ms 200 application/json
+2020-05-23 13:32:15.270 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:15.277 +02:00 [INF] Request finished in 6.9603ms 200 application/json
+2020-05-23 13:32:17.310 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:17.317 +02:00 [INF] Request finished in 6.7737ms 200 application/json
+2020-05-23 13:32:19.345 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:19.352 +02:00 [INF] Request finished in 7.3878ms 200 application/json
+2020-05-23 13:32:21.375 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:21.382 +02:00 [INF] Request finished in 7.0053ms 200 application/json
+2020-05-23 13:32:23.406 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:23.413 +02:00 [INF] Request finished in 7.1445ms 200 application/json
+2020-05-23 13:32:25.434 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:25.441 +02:00 [INF] Request finished in 7.0351ms 200 application/json
+2020-05-23 13:32:27.462 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:27.469 +02:00 [INF] Request finished in 6.8886ms 200 application/json
+2020-05-23 13:32:29.490 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:29.498 +02:00 [INF] Request finished in 7.6288ms 200 application/json
+2020-05-23 13:32:31.517 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:31.525 +02:00 [INF] Request finished in 7.1538ms 200 application/json
+2020-05-23 13:32:33.545 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:33.553 +02:00 [INF] Request finished in 7.847ms 200 application/json
+2020-05-23 13:32:35.576 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:35.583 +02:00 [INF] Request finished in 7.0396ms 200 application/json
+2020-05-23 13:32:37.604 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:37.611 +02:00 [INF] Request finished in 6.9515ms 200 application/json
+2020-05-23 13:32:39.632 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:39.639 +02:00 [INF] Request finished in 7.1384ms 200 application/json
+2020-05-23 13:32:41.658 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:41.665 +02:00 [INF] Request finished in 7.4529ms 200 application/json
+2020-05-23 13:32:43.687 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:43.697 +02:00 [INF] Request finished in 10.4442ms 200 application/json
+2020-05-23 13:32:45.726 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:45.733 +02:00 [INF] Request finished in 7.0491ms 200 application/json
+2020-05-23 13:32:47.754 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:47.773 +02:00 [INF] Request finished in 18.1833ms 200 application/json
+2020-05-23 13:32:49.797 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:49.803 +02:00 [INF] Request finished in 6.8455ms 200 application/json
+2020-05-23 13:32:51.824 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:51.830 +02:00 [INF] Request finished in 5.5564ms 200 application/json
+2020-05-23 13:32:53.849 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:53.855 +02:00 [INF] Request finished in 6.7025ms 200 application/json
+2020-05-23 13:32:55.875 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:55.881 +02:00 [INF] Request finished in 6.0648ms 200 application/json
+2020-05-23 13:32:57.902 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:57.908 +02:00 [INF] Request finished in 6.2113ms 200 application/json
+2020-05-23 13:32:59.933 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:32:59.939 +02:00 [INF] Request finished in 6.0173ms 200 application/json
+2020-05-23 13:33:01.957 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:01.964 +02:00 [INF] Request finished in 6.5213ms 200 application/json
+2020-05-23 13:33:03.984 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:03.989 +02:00 [INF] Request finished in 5.5736ms 200 application/json
+2020-05-23 13:33:06.005 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:06.011 +02:00 [INF] Request finished in 5.8134ms 200 application/json
+2020-05-23 13:33:08.028 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:08.035 +02:00 [INF] Request finished in 6.6394ms 200 application/json
+2020-05-23 13:33:10.052 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:10.058 +02:00 [INF] Request finished in 5.8005ms 200 application/json
+2020-05-23 13:33:12.082 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:12.088 +02:00 [INF] Request finished in 6.1089ms 200 application/json
+2020-05-23 13:33:14.105 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:14.112 +02:00 [INF] Request finished in 6.9266ms 200 application/json
+2020-05-23 13:33:16.135 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:16.146 +02:00 [INF] Request finished in 11.4523ms 200 application/json
+2020-05-23 13:33:18.167 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:18.174 +02:00 [INF] Request finished in 6.4355ms 200 application/json
+2020-05-23 13:33:20.210 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:20.216 +02:00 [INF] Request finished in 5.6422ms 200 application/json
+2020-05-23 13:33:22.246 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:22.252 +02:00 [INF] Request finished in 6.8938ms 200 application/json
+2020-05-23 13:33:24.284 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:24.290 +02:00 [INF] Request finished in 6.1715ms 200 application/json
+2020-05-23 13:33:25.872 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 193
+2020-05-23 13:33:43.336 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:43.343 +02:00 [INF] Request finished in 6.2351ms 200 application/json
+2020-05-23 13:33:43.344 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: User not authenticated\n   at myMicroservice.GraphQLApi.Schema.GraphQLMutation.CheckAuthentication(ResolveFieldContext`1 context, IUserAuthenticationService authenticationService) in /Users/daniel/Projects/myMicroservice/GraphQLApi/Schema/GraphQLMutation.cs:line 43\n   at myMicroservice.GraphQLApi.Schema.GraphQLMutation.<>c__DisplayClass0_0.<.ctor>b__0(ResolveFieldContext`1 context) in /Users/daniel/Projects/myMicroservice/GraphQLApi/Schema/GraphQLMutation.cs:line 23\n   at GraphQL.Resolvers.AsyncFieldResolver`2.Resolve(ResolveFieldContext context)\n   at GraphQL.Resolvers.AsyncFieldResolver`2.GraphQL.Resolvers.IFieldResolver.Resolve(ResolveFieldContext context)\n   at GraphQL.Instrumentation.MiddlewareResolver.Resolve(ResolveFieldContext context)\n   at GraphQL.Execution.ExecutionStrategy.ExecuteNodeAsync(ExecutionContext context, ExecutionNode node)"]
+2020-05-23 13:33:43.362 +02:00 [INF] Request finished in 17490.1898ms 200 application/json
+2020-05-23 13:33:59.154 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:33:59.160 +02:00 [INF] Request finished in 5.9967ms 200 application/json
+2020-05-23 13:34:01.181 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:34:01.188 +02:00 [INF] Request finished in 6.4734ms 200 application/json
+2020-05-23 13:34:03.209 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:34:03.215 +02:00 [INF] Request finished in 6.0853ms 200 application/json
+2020-05-23 13:34:05.238 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:34:05.245 +02:00 [INF] Request finished in 6.4575ms 200 application/json
+2020-05-23 13:34:07.265 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:34:07.272 +02:00 [INF] Request finished in 7.3481ms 200 application/json
+2020-05-23 13:34:10.170 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:34:10.178 +02:00 [INF] Request finished in 7.9271ms 200 application/json
+2020-05-23 13:35:07.215 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:35:07.233 +02:00 [INF] Request finished in 42.9963ms 200 application/json
+2020-05-23 13:35:17.267 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:35:17.274 +02:00 [INF] Request finished in 6.905ms 200 application/json
+2020-05-23 13:35:20.711 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 194
+2020-05-23 13:35:20.817 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:35:20.845 +02:00 [INF] Request finished in 134.0103ms 200 application/json
+2020-05-23 13:37:34.224 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 13:37:35.544 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 13:37:35.545 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 13:37:35.545 +02:00 [INF] Hosting environment: Development
+2020-05-23 13:37:35.545 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 13:37:41.382 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 194
+2020-05-23 13:37:41.645 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:37:42.044 +02:00 [INF] Request finished in 665.0517ms 200 application/json
+2020-05-23 13:44:00.761 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 13:44:02.085 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 13:44:02.085 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 13:44:02.085 +02:00 [INF] Hosting environment: Development
+2020-05-23 13:44:02.085 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 13:44:18.498 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ui/playground  
+2020-05-23 13:44:18.670 +02:00 [INF] Request finished in 174.436ms 200 text/html
+2020-05-23 13:44:19.699 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:20.163 +02:00 [INF] Request finished in 464.2505ms 200 application/json
+2020-05-23 13:44:20.284 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:20.302 +02:00 [INF] Request finished in 17.5568ms 200 application/json
+2020-05-23 13:44:21.133 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:21.166 +02:00 [INF] Request finished in 33.2378ms 200 application/json
+2020-05-23 13:44:23.199 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:23.210 +02:00 [INF] Request finished in 12.0088ms 200 application/json
+2020-05-23 13:44:25.237 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:25.250 +02:00 [INF] Request finished in 12.5631ms 200 application/json
+2020-05-23 13:44:27.289 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:27.313 +02:00 [INF] Request finished in 23.8527ms 200 application/json
+2020-05-23 13:44:29.349 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:29.358 +02:00 [INF] Request finished in 9.0507ms 200 application/json
+2020-05-23 13:44:31.385 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:31.394 +02:00 [INF] Request finished in 8.9969ms 200 application/json
+2020-05-23 13:44:33.417 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:33.425 +02:00 [INF] Request finished in 8.5178ms 200 application/json
+2020-05-23 13:44:35.450 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:35.458 +02:00 [INF] Request finished in 8.5473ms 200 application/json
+2020-05-23 13:44:37.482 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:37.491 +02:00 [INF] Request finished in 8.4474ms 200 application/json
+2020-05-23 13:44:39.515 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:39.523 +02:00 [INF] Request finished in 8.3444ms 200 application/json
+2020-05-23 13:44:41.545 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:41.553 +02:00 [INF] Request finished in 7.8096ms 200 application/json
+2020-05-23 13:44:43.574 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:43.583 +02:00 [INF] Request finished in 8.8403ms 200 application/json
+2020-05-23 13:44:45.606 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:45.613 +02:00 [INF] Request finished in 7.5845ms 200 application/json
+2020-05-23 13:44:47.636 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:47.644 +02:00 [INF] Request finished in 7.8293ms 200 application/json
+2020-05-23 13:44:49.664 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:49.677 +02:00 [INF] Request finished in 13.2727ms 200 application/json
+2020-05-23 13:44:52.385 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:52.393 +02:00 [INF] Request finished in 7.5389ms 200 application/json
+2020-05-23 13:44:54.413 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:54.422 +02:00 [INF] Request finished in 9.1481ms 200 application/json
+2020-05-23 13:44:56.441 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:44:56.449 +02:00 [INF] Request finished in 8.1525ms 200 application/json
+2020-05-23 13:45:35.576 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 13:45:36.972 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 13:45:36.973 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 13:45:36.973 +02:00 [INF] Hosting environment: Development
+2020-05-23 13:45:36.973 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 13:45:38.029 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ui/playground  
+2020-05-23 13:45:38.192 +02:00 [INF] Request finished in 165.5437ms 200 text/html
+2020-05-23 13:45:39.212 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:45:39.698 +02:00 [INF] Request finished in 485.8933ms 200 application/json
+2020-05-23 13:45:39.775 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:45:39.794 +02:00 [INF] Request finished in 18.9261ms 200 application/json
+2020-05-23 13:45:41.756 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:45:41.794 +02:00 [INF] Request finished in 38.4294ms 200 application/json
+2020-05-23 13:45:43.828 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:45:43.840 +02:00 [INF] Request finished in 12.1428ms 200 application/json
+2020-05-23 13:45:45.866 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:45:45.883 +02:00 [INF] Request finished in 16.4357ms 200 application/json
+2020-05-23 13:47:04.835 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-23 13:47:06.217 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-23 13:47:06.217 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-23 13:47:06.217 +02:00 [INF] Hosting environment: Development
+2020-05-23 13:47:06.217 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-23 13:47:50.133 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ui/playground  
+2020-05-23 13:47:50.301 +02:00 [INF] Request finished in 170.9145ms 200 text/html
+2020-05-23 13:47:51.274 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:47:51.794 +02:00 [INF] Request finished in 519.984ms 200 application/json
+2020-05-23 13:47:51.895 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:47:51.912 +02:00 [INF] Request finished in 17.0537ms 200 application/json
+2020-05-23 13:47:52.715 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:47:52.747 +02:00 [INF] Request finished in 32.4455ms 200 application/json
+2020-05-23 13:47:54.777 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:47:54.789 +02:00 [INF] Request finished in 11.1402ms 200 application/json
+2020-05-23 13:47:56.827 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:47:56.850 +02:00 [INF] Request finished in 23.8766ms 200 application/json
+2020-05-23 13:47:58.882 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:47:58.893 +02:00 [INF] Request finished in 11.1399ms 200 application/json
+2020-05-23 13:48:00.924 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:00.932 +02:00 [INF] Request finished in 8.7371ms 200 application/json
+2020-05-23 13:48:02.958 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:02.968 +02:00 [INF] Request finished in 9.597ms 200 application/json
+2020-05-23 13:48:04.995 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:05.006 +02:00 [INF] Request finished in 10.8921ms 200 application/json
+2020-05-23 13:48:07.029 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:07.038 +02:00 [INF] Request finished in 8.509ms 200 application/json
+2020-05-23 13:48:09.060 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:09.069 +02:00 [INF] Request finished in 8.1796ms 200 application/json
+2020-05-23 13:48:11.090 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:11.098 +02:00 [INF] Request finished in 8.179ms 200 application/json
+2020-05-23 13:48:13.122 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:13.130 +02:00 [INF] Request finished in 7.8652ms 200 application/json
+2020-05-23 13:48:15.149 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:15.158 +02:00 [INF] Request finished in 8.7835ms 200 application/json
+2020-05-23 13:48:17.182 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:17.190 +02:00 [INF] Request finished in 7.643ms 200 application/json
+2020-05-23 13:48:19.215 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:48:19.223 +02:00 [INF] Request finished in 8.1055ms 200 application/json
+2020-05-23 13:48:31.794 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 153
+2020-05-23 13:48:31.869 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:48:33.365 +02:00 [INF] Request finished in 1571.0682ms 200 application/json
+2020-05-23 13:48:53.224 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 194
+2020-05-23 13:48:53.225 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:48:53.243 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.Validation.ValidationError: Field devices of type [Device] must have a sub selection"]
+2020-05-23 13:48:53.263 +02:00 [INF] Request finished in 39.257ms 200 application/json
+2020-05-23 13:49:04.167 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 215
+2020-05-23 13:49:04.168 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:49:04.285 +02:00 [INF] Request finished in 118.2476ms 200 application/json
+2020-05-23 13:49:10.278 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 216
+2020-05-23 13:49:10.279 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:49:10.317 +02:00 [INF] Request finished in 39.0576ms 200 application/json
+2020-05-23 13:49:32.752 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:32.764 +02:00 [INF] Request finished in 12.1718ms 200 application/json
+2020-05-23 13:49:34.803 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:34.812 +02:00 [INF] Request finished in 9.1696ms 200 application/json
+2020-05-23 13:49:36.840 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:36.848 +02:00 [INF] Request finished in 8.0757ms 200 application/json
+2020-05-23 13:49:38.883 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:38.891 +02:00 [INF] Request finished in 8.0345ms 200 application/json
+2020-05-23 13:49:40.950 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:40.957 +02:00 [INF] Request finished in 7.5236ms 200 application/json
+2020-05-23 13:49:42.985 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:42.997 +02:00 [INF] Request finished in 11.3595ms 200 application/json
+2020-05-23 13:49:45.029 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:49:45.037 +02:00 [INF] Request finished in 8.1904ms 200 application/json
+2020-05-23 13:50:54.670 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 216
+2020-05-23 13:50:54.671 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:50:54.693 +02:00 [INF] Request finished in 22.4491ms 200 application/json
+2020-05-23 13:51:15.846 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 216
+2020-05-23 13:51:15.847 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:51:15.869 +02:00 [INF] Request finished in 23.5287ms 200 application/json
+2020-05-23 13:53:44.652 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 162
+2020-05-23 13:53:44.654 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:53:44.705 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: Variable '$user' is invalid. Received a null input for a non-null field.\n ---> GraphQL.Execution.InvalidValueException: Variable '$user' is invalid. Received a null input for a non-null field.\n   at GraphQL.Execution.ExecutionHelper.AssertValidValue(ISchema schema, IGraphType type, Object input, String fieldName)\n   at GraphQL.Execution.ExecutionHelper.GetVariableValue(Document document, ISchema schema, VariableDefinition variable, Object input)\n   at GraphQL.Execution.ExecutionHelper.GetVariableValues(Document document, ISchema schema, VariableDefinitions variableDefinitions, Inputs inputs)\n   at GraphQL.DocumentExecuter.BuildExecutionContext(ISchema schema, Object root, Document document, Operation operation, Inputs inputs, Object userContext, CancellationToken cancellationToken, Metrics metrics, IEnumerable`1 listeners, Boolean throwOnUnhandledException)\n   at GraphQL.DocumentExecuter.ExecuteAsync(ExecutionOptions options)\n   --- End of inner exception stack trace ---"]
+2020-05-23 13:53:44.706 +02:00 [INF] Request finished in 53.9641ms 200 application/json
+2020-05-23 13:54:06.470 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:54:06.479 +02:00 [INF] Request finished in 8.5729ms 200 application/json
+2020-05-23 13:54:51.871 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 217
+2020-05-23 13:54:51.873 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:54:51.905 +02:00 [INF] Request finished in 34.1921ms 200 application/json
+2020-05-23 13:54:59.294 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 151
+2020-05-23 13:54:59.295 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:54:59.321 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: Syntax Error GraphQL (4:3) Expected Name, found }\n3:     \n4:   }\n     ^\n5: }\n\n ---> GraphQLParser.Exceptions.GraphQLSyntaxErrorException: Syntax Error GraphQL (4:3) Expected Name, found }\n3:     \n4:   }\n     ^\n5: }\n\n   at GraphQLParser.ParserContext.Expect(TokenKind kind)\n   at GraphQLParser.ParserContext.ParseName()\n   at GraphQLParser.ParserContext.ParseFieldSelection()\n   at GraphQLParser.ParserContext.Many[T](TokenKind open, Func`1 next, TokenKind close)\n   at GraphQLParser.ParserContext.ParseSelectionSet()\n   at GraphQLParser.ParserContext.CreateFieldSelection(Int32 start, GraphQLName name, GraphQLName alias)\n   at GraphQLParser.ParserContext.Many[T](TokenKind open, Func`1 next, TokenKind close)\n   at GraphQLParser.ParserContext.ParseSelectionSet()\n   at GraphQLParser.ParserContext.CreateOperationDefinition(Int32 start, OperationType operation, GraphQLName name)\n   at GraphQLParser.ParserContext.ParseDefinition()\n   at GraphQLParser.ParserContext.ParseDefinitionsIfNotEOF()+MoveNext()\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at GraphQLParser.ParserContext.ParseDocument()\n   at GraphQLParser.Parser.Parse(ISource source)\n   at GraphQL.Execution.GraphQLDocumentBuilder.Build(String body)\n   at GraphQL.DocumentExecuter.ExecuteAsync(ExecutionOptions options)\n   --- End of inner exception stack trace ---"]
+2020-05-23 13:54:59.323 +02:00 [INF] Request finished in 28.7999ms 200 application/json
+2020-05-23 13:55:16.571 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 157
+2020-05-23 13:55:16.571 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:55:16.582 +02:00 [INF] Request finished in 10.9256ms 200 application/json
+2020-05-23 13:57:31.952 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql text/plain 165
+2020-05-23 13:57:31.953 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:57:31.954 +02:00 [INF] Request finished in 55.7705ms 400 application/json
+2020-05-23 13:57:42.246 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 166
+2020-05-23 13:57:42.246 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:57:42.248 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: A query is required.\n ---> GraphQL.ExecutionError: A query is required.\n   at GraphQL.DocumentExecuter.ValidateOptions(ExecutionOptions options)\n   at GraphQL.DocumentExecuter.ExecuteAsync(ExecutionOptions options)\n   --- End of inner exception stack trace ---"]
+2020-05-23 13:57:42.250 +02:00 [INF] Request finished in 4.0361ms 200 application/json
+2020-05-23 13:57:47.950 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 163
+2020-05-23 13:57:47.951 +02:00 [INF] Successfully validated the token.
+2020-05-23 13:57:47.965 +02:00 [INF] Request finished in 15.0421ms 200 application/json
+2020-05-23 13:59:18.363 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 1468
+2020-05-23 13:59:18.372 +02:00 [INF] Request finished in 12.0179ms 200 application/json
+2020-05-23 14:00:03.184 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 55
+2020-05-23 14:00:03.219 +02:00 [INF] Successfully validated the token.
+2020-05-23 14:00:03.228 +02:00 [INF] Request finished in 43.4628ms 200 application/json
+2020-05-23 14:00:24.220 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/graphql application/json 61
+2020-05-23 14:00:24.221 +02:00 [INF] Successfully validated the token.
+2020-05-23 14:00:24.229 +02:00 [INF] Request finished in 9.1363ms 200 application/json

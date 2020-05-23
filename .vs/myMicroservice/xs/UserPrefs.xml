@@ -1,11 +1,17 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/ErrorHandlingMiddleware.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V1/Controllers/UserController.cs">
     <Files>
-      <File FileName="Startup.cs" Line="124" Column="46" />
-      <File FileName="GraphQL/Schemas/UserSchema.cs" Line="2" Column="21" />
-      <File FileName="GraphQL/Queries/UserQuery.cs" Line="29" Column="95" />
+      <File FileName="Startup.cs" Line="14" Column="48" />
+      <File FileName="GraphQL/Schemas/UserSchema.cs" Line="1" Column="15" />
+      <File FileName="GraphQL/Queries/UserQuery.cs" Line="6" Column="31" />
       <File FileName="Helpers/UserAuthenticationService.cs" Line="15" Column="9" />
       <File FileName="Helpers/ErrorHandlingMiddleware.cs" Line="54" Column="13" />
+      <File FileName="GraphQL/GraphQLMutation.cs" Line="48" Column="22" />
+      <File FileName="GraphQL/Types/UserType.cs" Line="10" Column="22" />
+      <File FileName="GraphQL/Types/DeviceType.cs" Line="11" Column="22" />
+      <File FileName="GraphQL/Types/UserInputType.cs" Line="9" Column="30" />
+      <File FileName="GraphQLApi/Types/UserInputDto.cs" Line="8" Column="43" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="123" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,13 +20,16 @@
             <Node name="myMicroservice" expanded="True">
               <Node name="Api" expanded="True">
                 <Node name="V1" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
-              <Node name="GraphQL" expanded="True" />
-              <Node name="Helpers" expanded="True">
-                <Node name="ErrorHandlingMiddleware.cs" selected="True" />
+              <Node name="GraphQLApi" expanded="True">
+                <Node name="Schema" expanded="True" />
+                <Node name="Types" expanded="True" />
               </Node>
+              <Node name="Helpers" expanded="True" />
             </Node>
           </Node>
         </State>
