@@ -15915,3 +15915,672 @@ System.NotSupportedException: Conflicting method/path combination "GET odata/Use
 2020-05-24 12:20:55.879 +02:00 [INF] Request finished in 516.1392ms 200 application/json;charset=utf-8
 2020-05-24 12:21:07.124 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Devices/{id}?id=1&api-version=1.0-odata  
 2020-05-24 12:21:07.200 +02:00 [INF] Request finished in 76.4444ms 404 
+2020-05-24 13:46:25.492 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:46:28.196 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:46:28.197 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:46:28.197 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:46:28.198 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:46:40.605 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:46:40.625 +02:00 [ERR] Connection id "0HLVVR0FQT5RF", Request id "0HLVVR0FQT5RF:00000001": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:46:40.687 +02:00 [INF] Request finished in 83.2924ms 500 
+2020-05-24 13:46:51.506 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:46:51.509 +02:00 [ERR] Connection id "0HLVVR0FQT5RF", Request id "0HLVVR0FQT5RF:00000002": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:46:51.510 +02:00 [INF] Request finished in 3.6924ms 500 
+2020-05-24 13:48:05.603 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:48:07.041 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:48:07.041 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:48:07.041 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:48:07.041 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:48:20.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:48:20.709 +02:00 [ERR] Connection id "0HLVVR1DLFNNN", Request id "0HLVVR1DLFNNN:00000001": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:48:20.758 +02:00 [INF] Request finished in 63.2448ms 500 
+2020-05-24 13:48:50.161 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:48:50.163 +02:00 [ERR] Connection id "0HLVVR1DLFNNN", Request id "0HLVVR1DLFNNN:00000002": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:48:50.165 +02:00 [INF] Request finished in 3.5669ms 500 
+2020-05-24 13:48:55.173 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-24 13:48:55.180 +02:00 [ERR] Connection id "0HLVVR1DLFNNN", Request id "0HLVVR1DLFNNN:00000003": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:48:55.187 +02:00 [INF] Request finished in 10.6234ms 500 
+2020-05-24 13:49:06.130 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-24 13:49:06.132 +02:00 [ERR] Connection id "0HLVVR1DLFNNN", Request id "0HLVVR1DLFNNN:00000004": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:49:06.134 +02:00 [INF] Request finished in 3.6383ms 500 
+2020-05-24 13:50:07.284 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:50:08.760 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:50:08.761 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:50:08.761 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:50:08.761 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:50:12.756 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1-ODATA  
+2020-05-24 13:50:12.768 +02:00 [ERR] Connection id "0HLVVR2F26147", Request id "0HLVVR2F26147:00000001": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:50:12.817 +02:00 [INF] Request finished in 62.9986ms 500 
+2020-05-24 13:50:15.836 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:50:15.838 +02:00 [ERR] Connection id "0HLVVR2F26147", Request id "0HLVVR2F26147:00000002": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:50:15.840 +02:00 [INF] Request finished in 3.3499ms 500 
+2020-05-24 13:50:40.155 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/odata/Devices?api-version=1.0-odata  
+2020-05-24 13:50:40.158 +02:00 [ERR] Connection id "0HLVVR2F26149", Request id "0HLVVR2F26149:00000001": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:50:40.161 +02:00 [INF] Request finished in 6.6479ms 500 
+2020-05-24 13:54:10.428 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:54:11.860 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:54:11.860 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:54:11.860 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:54:11.860 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:54:50.186 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:54:50.199 +02:00 [ERR] Connection id "0HLVVR51NUOHH", Request id "0HLVVR51NUOHH:00000001": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:54:50.255 +02:00 [INF] Request finished in 70.3178ms 500 
+2020-05-24 13:55:25.560 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:55:27.266 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:55:27.266 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:55:27.266 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:55:27.266 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:55:31.823 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:55:31.834 +02:00 [ERR] Connection id "0HLVVR5E50CDF", Request id "0HLVVR5E50CDF:00000001": An unhandled exception was thrown by the application.
+Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'version' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-05-24 13:55:31.889 +02:00 [INF] Request finished in 67.4506ms 500 
+2020-05-24 13:56:24.691 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:56:26.114 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:56:26.115 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:56:26.115 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:56:26.115 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:56:28.199 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-24 13:56:28.406 +02:00 [INF] Request finished in 210.3747ms 200 text/html;charset=utf-8
+2020-05-24 13:56:28.541 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-24 13:56:28.615 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-24 13:56:28.615 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-24 13:56:28.640 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-24 13:56:28.640 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-24 13:56:28.640 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-24 13:56:28.641 +02:00 [INF] Request finished in 25.642ms 304 text/css
+2020-05-24 13:56:28.664 +02:00 [INF] Request finished in 50.6804ms 304 application/javascript
+2020-05-24 13:56:28.664 +02:00 [INF] Request finished in 100.6255ms 304 application/javascript
+2020-05-24 13:56:28.805 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1-odata/swagger.json  
+2020-05-24 13:56:29.387 +02:00 [INF] Request finished in 582.507ms 200 application/json;charset=utf-8
+2020-05-24 13:56:39.269 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-24 13:56:39.815 +02:00 [INF] Request finished in 545.8232ms 200 application/json;charset=utf-8
+2020-05-24 13:57:58.480 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 13:58:00.151 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 13:58:00.152 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 13:58:00.152 +02:00 [INF] Hosting environment: Development
+2020-05-24 13:58:00.152 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 13:58:18.019 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-24 13:58:18.209 +02:00 [INF] Request finished in 191.8983ms 200 text/html;charset=utf-8
+2020-05-24 13:58:18.374 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-24 13:58:18.374 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-24 13:58:18.377 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-24 13:58:18.395 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-24 13:58:18.395 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-24 13:58:18.395 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-24 13:58:18.396 +02:00 [INF] Request finished in 21.7647ms 304 application/javascript
+2020-05-24 13:58:18.396 +02:00 [INF] Request finished in 18.7061ms 304 text/css
+2020-05-24 13:58:18.396 +02:00 [INF] Request finished in 21.7599ms 304 application/javascript
+2020-05-24 13:58:18.566 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-24 13:58:19.327 +02:00 [INF] Request finished in 761.2228ms 200 application/json;charset=utf-8
+2020-05-24 13:58:26.316 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/all?limit=10  
+2020-05-24 13:58:26.356 +02:00 [INF] Authorization failed.
+2020-05-24 13:58:26.360 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-24 13:58:26.360 +02:00 [INF] Request finished in 44.6007ms 401 
+2020-05-24 13:58:36.722 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/all?limit=10  
+2020-05-24 13:58:36.890 +02:00 [INF] Successfully validated the token.
+2020-05-24 13:58:36.893 +02:00 [INF] Authorization was successful.
+2020-05-24 13:58:36.944 +02:00 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.UserDto]]] GetAll(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-24 13:58:38.746 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.UserDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 13:58:38.761 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetAll (myMicroservice) in 1812.5136ms
+2020-05-24 13:58:38.766 +02:00 [INF] Request finished in 2044.2524ms 200 application/json; charset=utf-8
+2020-05-24 13:58:41.772 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-24 13:58:41.942 +02:00 [INF] Request finished in 169.7924ms 200 application/json;charset=utf-8
+2020-05-24 13:58:54.079 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/all?limit=2  
+2020-05-24 13:58:54.081 +02:00 [INF] Successfully validated the token.
+2020-05-24 13:58:54.083 +02:00 [INF] Authorization was successful.
+2020-05-24 13:58:54.091 +02:00 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V2.Models.UserDto]]] GetAll(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 13:58:54.181 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V2.Models.UserDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 13:58:54.265 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetAll (myMicroservice) in 173.2006ms
+2020-05-24 13:58:54.265 +02:00 [INF] Request finished in 186.5041ms 200 application/x-protobuf
+2020-05-24 13:59:56.286 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 13:59:56.289 +02:00 [INF] Successfully validated the token.
+2020-05-24 13:59:56.291 +02:00 [INF] Authorization was successful.
+2020-05-24 13:59:56.307 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 13:59:56.461 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 13:59:56.462 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 155.2091ms
+2020-05-24 13:59:56.463 +02:00 [INF] Request finished in 177.0336ms 200 application/x-protobuf
+2020-05-24 14:00:20.387 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1/devices  
+2020-05-24 14:00:20.393 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:00:20.394 +02:00 [INF] Authorization was successful.
+2020-05-24 14:00:20.400 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V2.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:00:20.478 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V2.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 14:00:20.481 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetDevices (myMicroservice) in 80.8255ms
+2020-05-24 14:00:20.482 +02:00 [INF] Request finished in 95.1627ms 200 application/x-protobuf
+2020-05-24 14:00:34.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Device/1  
+2020-05-24 14:00:34.120 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:00:34.122 +02:00 [INF] Authorization was successful.
+2020-05-24 14:00:34.137 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.DeviceController (myMicroservice).
+2020-05-24 14:00:34.168 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.DeviceDto'.
+2020-05-24 14:00:34.168 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.DeviceController.GetById (myMicroservice) in 30.5813ms
+2020-05-24 14:00:34.169 +02:00 [INF] Request finished in 51.258ms 200 application/x-protobuf
+2020-05-24 14:00:39.701 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Device/2  
+2020-05-24 14:00:39.704 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:00:39.705 +02:00 [INF] Authorization was successful.
+2020-05-24 14:00:39.706 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.DeviceController (myMicroservice).
+2020-05-24 14:00:39.722 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.DeviceDto'.
+2020-05-24 14:00:39.724 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.DeviceController.GetById (myMicroservice) in 17.7068ms
+2020-05-24 14:00:39.724 +02:00 [INF] Request finished in 23.3753ms 200 application/x-protobuf
+2020-05-24 14:03:42.755 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 14:03:44.256 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 14:03:44.256 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 14:03:44.256 +02:00 [INF] Hosting environment: Development
+2020-05-24 14:03:44.256 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 14:04:01.180 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:04:01.432 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:04:01.439 +02:00 [INF] Authorization was successful.
+2020-05-24 14:04:01.514 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:04:02.883 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:04:02.960 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 1440.5971ms
+2020-05-24 14:04:02.966 +02:00 [INF] Request finished in 1790.7278ms 200 application/x-protobuf
+2020-05-24 14:19:43.609 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:19:43.674 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-24 14:19:43.754 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-05-24 14:19:43.756 +02:00 [INF] Authorization failed.
+2020-05-24 14:19:43.769 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-24 14:19:43.770 +02:00 [INF] Request finished in 163.0028ms 401 
+2020-05-24 14:19:55.770 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:19:55.775 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-24 14:19:55.777 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-05-24 14:19:55.778 +02:00 [INF] Authorization failed.
+2020-05-24 14:19:55.779 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-24 14:19:55.781 +02:00 [INF] Request finished in 10.8646ms 401 
+2020-05-24 14:20:01.874 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-24 14:20:02.920 +02:00 [INF] Request finished in 1046.6062ms 200 application/json;charset=utf-8
+2020-05-24 14:20:12.399 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/register application/merge-patch+json 104
+2020-05-24 14:20:12.400 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-24 14:20:12.401 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-05-24 14:20:12.453 +02:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Register(myMicroservice.Api.V1.Models.RegistrationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-24 14:20:12.471 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-05-24 14:20:12.475 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Register (myMicroservice) in 22.6782ms
+2020-05-24 14:20:12.476 +02:00 [INF] Request finished in 77.1181ms 400 application/json; charset=utf-8
+2020-05-24 14:21:10.908 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/register application/merge-patch+json 110
+2020-05-24 14:21:10.911 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-05-24 14:21:10.912 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-05-24 14:21:10.915 +02:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Register(myMicroservice.Api.V1.Models.RegistrationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-24 14:21:10.919 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-05-24 14:21:10.920 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Register (myMicroservice) in 5.0002ms
+2020-05-24 14:21:10.920 +02:00 [INF] Request finished in 12.0912ms 400 application/json; charset=utf-8
+2020-05-24 14:21:52.337 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 14:21:53.948 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 14:21:53.949 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 14:21:53.949 +02:00 [INF] Hosting environment: Development
+2020-05-24 14:21:53.949 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 14:22:00.610 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-24 14:22:00.794 +02:00 [INF] Request finished in 187.0681ms 200 text/html;charset=utf-8
+2020-05-24 14:22:00.924 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-24 14:22:00.924 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-24 14:22:00.925 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-24 14:22:00.946 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-24 14:22:00.946 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-24 14:22:00.946 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-24 14:22:00.947 +02:00 [INF] Request finished in 21.4977ms 304 text/css
+2020-05-24 14:22:00.947 +02:00 [INF] Request finished in 23.0502ms 304 application/javascript
+2020-05-24 14:22:00.947 +02:00 [INF] Request finished in 23.0493ms 304 application/javascript
+2020-05-24 14:22:01.120 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-24 14:22:01.896 +02:00 [INF] Request finished in 776.8289ms 200 application/json;charset=utf-8
+2020-05-24 14:22:09.509 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/authenticate application/json 39
+2020-05-24 14:22:09.572 +02:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.AuthenticationOutput] Authenticate(myMicroservice.Api.V1.Models.AuthenticationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-24 14:22:11.403 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-24 14:22:11.418 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Authenticate (myMicroservice) in 1841.7448ms
+2020-05-24 14:22:11.423 +02:00 [INF] Request finished in 1915.9266ms 404 application/json; charset=utf-8
+2020-05-24 14:22:30.965 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/register application/json 104
+2020-05-24 14:22:31.010 +02:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Register(myMicroservice.Api.V1.Models.RegistrationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-24 14:22:31.476 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-24 14:22:31.483 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Register (myMicroservice) in 472.4309ms
+2020-05-24 14:22:31.483 +02:00 [INF] Request finished in 518.1459ms 201 application/json; charset=utf-8
+2020-05-24 14:22:49.115 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/register application/json 105
+2020-05-24 14:22:49.118 +02:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto] Register(myMicroservice.Api.V1.Models.RegistrationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-24 14:22:49.156 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-24 14:22:49.157 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Register (myMicroservice) in 38.4338ms
+2020-05-24 14:22:49.157 +02:00 [INF] Request finished in 42.5737ms 201 application/json; charset=utf-8
+2020-05-24 14:22:58.024 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/authenticate application/json 40
+2020-05-24 14:22:58.028 +02:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.AuthenticationOutput] Authenticate(myMicroservice.Api.V1.Models.AuthenticationModel) on controller myMicroservice.Api.V1.Controllers.AuthenticationController (myMicroservice).
+2020-05-24 14:22:58.163 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.AuthenticationOutput'.
+2020-05-24 14:22:58.167 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.AuthenticationController.Authenticate (myMicroservice) in 139.018ms
+2020-05-24 14:22:58.168 +02:00 [INF] Request finished in 143.7229ms 200 application/json; charset=utf-8
+2020-05-24 14:23:06.178 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:23:06.273 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:23:06.280 +02:00 [INF] Authorization was successful.
+2020-05-24 14:23:06.292 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:23:06.358 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:23:06.438 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 145.74ms
+2020-05-24 14:23:06.438 +02:00 [INF] Request finished in 260.3706ms 200 application/x-protobuf
+2020-05-24 14:23:28.362 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/1  
+2020-05-24 14:23:28.365 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:23:28.366 +02:00 [INF] Authorization was successful.
+2020-05-24 14:23:28.377 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-24 14:23:28.441 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.UserDto'.
+2020-05-24 14:23:28.442 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetById (myMicroservice) in 65.1541ms
+2020-05-24 14:23:28.443 +02:00 [INF] Request finished in 80.7313ms 200 application/json; charset=utf-8
+2020-05-24 14:23:40.969 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:23:40.971 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:23:40.971 +02:00 [INF] Authorization was successful.
+2020-05-24 14:23:40.972 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:23:40.979 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:23:40.980 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 7.3946ms
+2020-05-24 14:23:40.980 +02:00 [INF] Request finished in 10.8137ms 200 application/x-protobuf
+2020-05-24 14:27:17.191 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:27:17.194 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:27:17.195 +02:00 [INF] Authorization was successful.
+2020-05-24 14:27:17.196 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:27:17.205 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:27:17.207 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 10.7286ms
+2020-05-24 14:27:17.207 +02:00 [INF] Request finished in 16.128ms 200 application/x-protobuf
+2020-05-24 14:28:11.796 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:28:11.798 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:28:11.798 +02:00 [INF] Authorization was successful.
+2020-05-24 14:28:11.799 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:28:11.805 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:28:11.806 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 7.5367ms
+2020-05-24 14:28:11.810 +02:00 [INF] Request finished in 14.3807ms 200 application/x-protobuf
+2020-05-24 14:28:31.646 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:28:31.647 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:28:31.648 +02:00 [INF] Authorization was successful.
+2020-05-24 14:28:31.648 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:28:31.655 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:28:31.655 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 6.7251ms
+2020-05-24 14:28:31.656 +02:00 [INF] Request finished in 9.7037ms 200 application/x-protobuf
+2020-05-24 14:35:04.514 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/1  
+2020-05-24 14:35:04.516 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:35:04.517 +02:00 [INF] Authorization was successful.
+2020-05-24 14:35:04.530 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-24 14:35:04.559 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-24 14:35:04.567 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 37.6536ms
+2020-05-24 14:35:04.568 +02:00 [INF] Request finished in 54.4603ms 200 application/json; charset=utf-8
+2020-05-24 14:35:09.923 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-24 14:35:09.984 +02:00 [INF] Request finished in 61.1085ms 200 application/json;charset=utf-8
+2020-05-24 14:35:22.088 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/Device/1  
+2020-05-24 14:35:22.089 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:35:22.090 +02:00 [INF] Authorization was successful.
+2020-05-24 14:35:22.096 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.DeviceController (myMicroservice).
+2020-05-24 14:35:22.114 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.DeviceDto'.
+2020-05-24 14:35:22.117 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.DeviceController.GetById (myMicroservice) in 20.5113ms
+2020-05-24 14:35:22.117 +02:00 [INF] Request finished in 29.4977ms 200 application/x-protobuf
+2020-05-24 14:40:02.464 +02:00 [INF] User profile is available. Using '/Users/daniel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-05-24 14:40:04.092 +02:00 [INF] Now listening on: http://localhost:5000
+2020-05-24 14:40:04.092 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-24 14:40:04.092 +02:00 [INF] Hosting environment: Development
+2020-05-24 14:40:04.092 +02:00 [INF] Content root path: /Users/daniel/Projects/myMicroservice
+2020-05-24 14:40:04.821 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html?urls.primaryName=V1  
+2020-05-24 14:40:05.015 +02:00 [INF] Request finished in 196.8891ms 200 text/html;charset=utf-8
+2020-05-24 14:40:05.204 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-05-24 14:40:05.204 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-05-24 14:40:05.205 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-05-24 14:40:05.233 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-24 14:40:05.233 +02:00 [INF] The file /swagger-ui.css was not modified
+2020-05-24 14:40:05.233 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-24 14:40:05.233 +02:00 [INF] Request finished in 29.0892ms 304 application/javascript
+2020-05-24 14:40:05.234 +02:00 [INF] Request finished in 28.6038ms 304 text/css
+2020-05-24 14:40:05.234 +02:00 [INF] Request finished in 29.0865ms 304 application/javascript
+2020-05-24 14:40:05.428 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-24 14:40:06.345 +02:00 [INF] Request finished in 917.1872ms 200 application/json;charset=utf-8
+2020-05-24 14:40:10.945 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/2  
+2020-05-24 14:40:10.965 +02:00 [INF] Authorization failed.
+2020-05-24 14:40:10.972 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-05-24 14:40:10.972 +02:00 [INF] Request finished in 27.014ms 401 
+2020-05-24 14:40:34.859 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/Device/2  
+2020-05-24 14:40:35.108 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:40:35.120 +02:00 [INF] Authorization was successful.
+2020-05-24 14:40:35.240 +02:00 [INF] Route matched with {action = "GetById", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V1.Models.DeviceDto]] GetById(Int32) on controller myMicroservice.Api.V1.Controllers.DeviceController (myMicroservice).
+2020-05-24 14:40:36.899 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V1.Models.DeviceDto'.
+2020-05-24 14:40:36.917 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.DeviceController.GetById (myMicroservice) in 1670.1248ms
+2020-05-24 14:40:36.921 +02:00 [INF] Request finished in 2062.7421ms 200 application/json; charset=utf-8
+2020-05-24 14:40:54.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2/devices  
+2020-05-24 14:40:54.258 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:40:54.260 +02:00 [INF] Authorization was successful.
+2020-05-24 14:40:54.282 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-24 14:40:54.392 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 14:40:54.394 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 111.5073ms
+2020-05-24 14:40:54.395 +02:00 [INF] Request finished in 140.9803ms 200 application/json; charset=utf-8
+2020-05-24 14:45:39.446 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v2/User/2/devices application/x-www-form-urlencoded 17
+2020-05-24 14:45:39.449 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:45:39.456 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V2.Models.NewDeviceDto) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:45:39.457 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-24 14:45:39.459 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.AddDevice (myMicroservice) in 2.7097ms
+2020-05-24 14:45:39.459 +02:00 [INF] Request finished in 12.7416ms 415 application/problem+json; charset=utf-8
+2020-05-24 14:46:30.620 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/1  
+2020-05-24 14:46:30.622 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:46:30.623 +02:00 [INF] Authorization was successful.
+2020-05-24 14:46:30.628 +02:00 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.UserDto]] GetById(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:46:30.666 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.UserDto'.
+2020-05-24 14:46:30.737 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetById (myMicroservice) in 108.055ms
+2020-05-24 14:46:30.737 +02:00 [INF] Request finished in 117.2007ms 200 application/x-protobuf
+2020-05-24 14:46:45.870 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2/devices  
+2020-05-24 14:46:45.872 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:46:45.872 +02:00 [INF] Authorization was successful.
+2020-05-24 14:46:45.873 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-24 14:46:45.881 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 14:46:45.882 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 8.8609ms
+2020-05-24 14:46:45.883 +02:00 [INF] Request finished in 12.4509ms 200 application/json; charset=utf-8
+2020-05-24 14:47:44.918 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v2/User/2/devices application/x-www-form-urlencoded 17
+2020-05-24 14:47:44.919 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:47:44.920 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V2.Models.NewDeviceDto) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:47:44.921 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-24 14:47:44.922 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.AddDevice (myMicroservice) in 0.9785ms
+2020-05-24 14:47:44.922 +02:00 [INF] Request finished in 4.1682ms 415 application/problem+json; charset=utf-8
+2020-05-24 14:47:57.216 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2/devices  
+2020-05-24 14:47:57.217 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:47:57.218 +02:00 [INF] Authorization was successful.
+2020-05-24 14:47:57.219 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-24 14:47:57.226 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 14:47:57.227 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 8.5645ms
+2020-05-24 14:47:57.228 +02:00 [INF] Request finished in 11.9321ms 200 application/json; charset=utf-8
+2020-05-24 14:48:02.126 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v2/swagger.json  
+2020-05-24 14:48:02.163 +02:00 [INF] Request finished in 36.8104ms 200 application/json;charset=utf-8
+2020-05-24 14:48:07.307 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v2/User/2/devices  
+2020-05-24 14:48:07.309 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:48:07.310 +02:00 [INF] Authorization was successful.
+2020-05-24 14:48:07.317 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V2.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:48:07.334 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V2.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 14:48:07.344 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.GetDevices (myMicroservice) in 27.1981ms
+2020-05-24 14:48:07.345 +02:00 [INF] Request finished in 37.3831ms 200 application/x-protobuf
+2020-05-24 14:50:57.351 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v2/User/2/devices application/x-www-form-urlencoded 17
+2020-05-24 14:50:57.352 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:50:57.353 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V2.Models.NewDeviceDto) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:50:57.353 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-05-24 14:50:57.354 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.AddDevice (myMicroservice) in 0.6419ms
+2020-05-24 14:50:57.354 +02:00 [INF] Request finished in 2.8597ms 415 application/problem+json; charset=utf-8
+2020-05-24 14:51:57.182 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v2/User/1/devices application/x-protobuf 0
+2020-05-24 14:51:57.183 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:51:57.184 +02:00 [INF] Authorization was successful.
+2020-05-24 14:51:57.185 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V2.Models.NewDeviceDto) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:51:57.190 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-05-24 14:51:57.197 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.AddDevice (myMicroservice) in 11.3474ms
+2020-05-24 14:51:57.462 +02:00 [ERR] 0HLVVRUAOM49L:00000001
+System.InvalidOperationException: Type is not expected, and no contract can be inferred: Microsoft.AspNetCore.Mvc.ValidationProblemDetails
+   at ProtoBuf.Meta.TypeModel.ThrowUnexpectedType(Type type) in C:\Code\protobuf-net\src\protobuf-net\Meta\TypeModel.cs:line 1472
+   at ProtoBuf.Meta.TypeModel.SerializeCore(ProtoWriter writer, Object value) in C:\Code\protobuf-net\src\protobuf-net\Meta\TypeModel.cs:line 198
+   at ProtoBuf.Meta.TypeModel.Serialize(Stream dest, Object value, SerializationContext context) in C:\Code\protobuf-net\src\protobuf-net\Meta\TypeModel.cs:line 222
+   at ProtoBuf.Meta.TypeModel.Serialize(Stream dest, Object value) in C:\Code\protobuf-net\src\protobuf-net\Meta\TypeModel.cs:line 208
+   at WebApiContrib.Core.Formatter.Protobuf.ProtobufOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-24 14:51:57.623 +02:00 [INF] Request finished in 440.8822ms 500 application/json
+2020-05-24 14:52:52.453 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v2/User/2/devices application/x-protobuf 17
+2020-05-24 14:52:52.454 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:52:52.454 +02:00 [INF] Authorization was successful.
+2020-05-24 14:52:52.454 +02:00 [INF] Route matched with {action = "AddDevice", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[myMicroservice.Api.V2.Models.DeviceDto]] AddDevice(Int32, myMicroservice.Api.V2.Models.NewDeviceDto) on controller myMicroservice.Api.V2.Controllers.UserController (myMicroservice).
+2020-05-24 14:52:52.688 +02:00 [INF] Executing ObjectResult, writing value of type 'myMicroservice.Api.V2.Models.DeviceDto'.
+2020-05-24 14:52:52.689 +02:00 [INF] Executed action myMicroservice.Api.V2.Controllers.UserController.AddDevice (myMicroservice) in 234.5518ms
+2020-05-24 14:52:52.690 +02:00 [INF] Request finished in 236.9407ms 201 application/x-protobuf
+2020-05-24 14:53:08.656 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-24 14:53:08.971 +02:00 [INF] Request finished in 314.4723ms 200 application/json;charset=utf-8
+2020-05-24 14:53:15.059 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/User/2/devices  
+2020-05-24 14:53:15.060 +02:00 [INF] Successfully validated the token.
+2020-05-24 14:53:15.060 +02:00 [INF] Authorization was successful.
+2020-05-24 14:53:15.061 +02:00 [INF] Route matched with {action = "GetDevices", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[myMicroservice.Api.V1.Models.DeviceDto]]] GetDevices(Int32) on controller myMicroservice.Api.V1.Controllers.UserController (myMicroservice).
+2020-05-24 14:53:15.078 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myMicroservice.Api.V1.Models.DeviceDto, myMicroservice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-24 14:53:15.079 +02:00 [INF] Executed action myMicroservice.Api.V1.Controllers.UserController.GetDevices (myMicroservice) in 18.3069ms
+2020-05-24 14:53:15.079 +02:00 [INF] Request finished in 20.4319ms 200 application/json; charset=utf-8

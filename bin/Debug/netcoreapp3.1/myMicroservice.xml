@@ -126,6 +126,69 @@
             <returns>Created person or an error</returns>
             <remarks>This may fail due to ... bla bla</remarks>
         </member>
+        <member name="P:myMicroservice.Api.V2.Models.AuthenticationModel.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.AuthenticationModel.Password">
+            <example>ultra-secure-pass</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.DeviceDto.Name">
+            <example>iOS</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.DeviceDto.Version">
+            <example>13.4.1</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.NewDeviceDto.Name">
+            <example>iOS</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.NewDeviceDto.Version">
+            <example>13.4.1</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UpdatedDeviceDto.Name">
+            <example>iOS</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UpdatedDeviceDto.Version">
+            <example>13.4.1</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.RegistrationModel.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.RegistrationModel.Password">
+            <example>ultra-secure-pass</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.RegistrationModel.Name">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.RegistrationModel.Surname">
+            <example>Illescas</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.RegistrationModel.Email">
+            <example>example@gmail.com</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UpdatedUserDto.Name">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UpdatedUserDto.Surname">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UpdatedUserDto.Email">
+            <example>example@email.com</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UserDto.Id">
+            <example>2</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UserDto.Username">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UserDto.Name">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UserDto.Surname">
+            <example>Daniel</example>
+        </member>
+        <member name="P:myMicroservice.Api.V2.Models.UserDto.Email">
+            <example>example@email.com</example>
+        </member>
         <member name="P:myMicroservice.Database.Entities.Device.DeviceId">
             <example>1</example>
         </member>

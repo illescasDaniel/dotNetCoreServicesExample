@@ -4,7 +4,6 @@ using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Authorization;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using myMicroservice.Database.Entities;
@@ -15,6 +14,9 @@ using myMicroservice.Helpers;
 
 namespace myMicroservice.Database.Odata
 {
+
+    // FIXME: doesn't seem to work except for Get method
+
     [ApiVersion("1.0-odata")]
     [ODataRoutePrefix("Users")]
     // [Authorize(Policy = "ODataServiceApiPolicy", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

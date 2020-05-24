@@ -7,19 +7,16 @@ using myMicroservice.Helpers;
 using myMicroservice.Database;
 using myMicroservice.Database.Entities;
 using Microsoft.EntityFrameworkCore;
-using myMicroservice.Api.V1.Models;
+using myMicroservice.Api.V2.Models;
 using System.Collections.Generic;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Morcatko.AspNetCore.JsonMergePatch;
 using System.Threading.Tasks;
-using System;
 
-namespace myMicroservice.Api.V1.Controllers
+namespace myMicroservice.Api.V2.Controllers
 {
     [ApiController]
     [Authorize]
-    //[ApiVersionNeutral]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class UserController : ControllerBase
     {
@@ -48,7 +45,7 @@ namespace myMicroservice.Api.V1.Controllers
         #region Actions
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpGet("all")]
         public async Task<ActionResult<IReadOnlyCollection<UserDto>>> GetAll(
             [FromQuery] int limit = 10
@@ -66,7 +63,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<UserDto>> GetById([FromRoute] int id)
         {
@@ -81,7 +78,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpGet("{username}")]
         public async Task<ActionResult<UserDto>> GetByUsername(
             [FromRoute] string username
@@ -105,7 +102,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         public async Task<ActionResult<object?>> GetByPropertyName(
            [FromRoute] int id,
            [FromRoute] string propertyName
@@ -124,65 +121,8 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Consumes(JsonMergePatchDocument.ContentType)]
-        [Produces("application/json")]        
-        [HttpPatch("{id:int}")]
-        public async Task<ActionResult<UserDto>> PatchById(
-            [FromRoute] int id,
-            [FromBody] JsonMergePatchDocument<UpdatedUserDto> updatedUserPatch
-        )
-        {
-            var hasChanges = false;
-            User? user = await _dbContext.Users.FindAsync(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            if (updatedUserPatch.Operations.Count() == 0)
-            {
-                var userDto = _mapper.Map<UserDto>(user);
-                return Ok(userDto);
-            }
-
-            var updatedUserDto = _mapper.Map<UpdatedUserDto>(user);
-            updatedUserPatch.ApplyTo(updatedUserDto);
-
-            if (user.Name != updatedUserDto.Name)
-            {
-                user.Name = updatedUserDto.Name;
-                hasChanges = true;
-            }
-            if (user.Surname != updatedUserDto.Surname)
-            {
-                user.Surname = updatedUserDto.Surname;
-                hasChanges = true;
-            }
-            if (user.Email != updatedUserDto.Email)
-            {
-                user.Email = updatedUserDto.Email;
-                hasChanges = true;
-            }
-
-            if (!hasChanges)
-            {
-                var userDto = _mapper.Map<UserDto>(user);
-                return Ok(userDto);
-            }
-
-            var userDtoAfterChanges = _mapper.Map<UserDto>(user);
-
-            await _dbContext.SaveChangesAsync();
-
-            return Ok(userDtoAfterChanges);
-        }
-
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Consumes("application/json")]
-        [Produces("application/json")]
+        [Consumes("application/x-protobuf")]
+        [Produces("application/x-protobuf")]
         [HttpPut]
         public async Task<ActionResult<UserDto>> Update(
             [FromBody] UserDto updatedUserDto
@@ -230,7 +170,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteById([FromRoute] int id)
         {
@@ -252,8 +192,8 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Consumes("application/json")]
-        [Produces("application/json")]
+        [Consumes("application/x-protobuf")]
+        [Produces("application/x-protobuf")]
         [HttpPost("{ownerUserId:int}/devices")]
         public async Task<ActionResult<DeviceDto>> AddDevice(
             [FromRoute] int ownerUserId,
@@ -282,7 +222,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpGet("{ownerUserId:int}/devices")]
         public async Task<ActionResult<IReadOnlyCollection<DeviceDto>>> GetDevices([FromRoute] int ownerUserId)
         {

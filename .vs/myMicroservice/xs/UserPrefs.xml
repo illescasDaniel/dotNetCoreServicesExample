@@ -1,28 +1,49 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Odata/DeviceController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V2/Models/Device/DeviceDto.cs">
     <Files>
-      <File FileName="Odata/DeviceController.cs" Line="30" Column="9" />
-      <File FileName="Odata/Configurations/UserModelConfiguration.cs" />
-      <File FileName="Startup.cs" />
-      <File FileName="Odata/UsersController.cs" />
-      <File FileName="Database/Entities/Device.cs" />
-      <File FileName="Database/Entities/User.cs" />
-      <File FileName="Odata/Configurations/DeviceModelConfiguration.cs" />
-      <File FileName="server-errors.log" />
-      <File FileName="server.log" />
+      <File FileName="Startup.cs" Line="223" Column="19" />
+      <File FileName="server-errors.log" Line="2497" Column="1" />
+      <File FileName="Api/V1Proto/Controllers/UserController.cs" Line="31" Column="31" />
+      <File FileName="Api/V1Proto/Controllers/DeviceController.cs" Line="36" Column="37" />
+      <File FileName="Api/V1Proto/Controllers/AuthenticationController.cs" Line="29" Column="45" />
+      <File FileName="Api/V1/Controllers/AuthenticationController.cs" Line="26" Column="1" />
+      <File FileName="Api/V2/Controllers/PersonController.cs" Line="3" Column="36" />
+      <File FileName="Api/V1/Controllers/PersonController.cs" Line="1" Column="1" />
+      <File FileName="Api/V2/Models/RegistrationModel.cs" Line="4" Column="30" />
+      <File FileName="Api/V2/Models/AuthenticationOutput.cs" Line="3" Column="32" />
+      <File FileName="Api/V2/Models/AuthenticationModel.cs" Line="3" Column="32" />
+      <File FileName="Api/V2/Models/User/UpdatedUserDto.cs" Line="1" Column="45" />
+      <File FileName="Api/V2/Models/User/UserDto.cs" Line="4" Column="39" />
+      <File FileName="Api/V2/Models/Device/DeviceDto.cs" Line="1" Column="1" />
+      <File FileName="Api/V2/Models/Device/NewDeviceDto.cs" Line="5" Column="32" />
+      <File FileName="Api/V2/Models/Device/UpdatedDeviceDto.cs" Line="4" Column="32" />
+      <File FileName="Api/V2/Models/AutoMapperProfiles/DeviceProfile.cs" Line="4" Column="32" />
+      <File FileName="Api/V2/Models/AutoMapperProfiles/UserProfile.cs" Line="4" Column="32" />
+      <File FileName="server.log" Line="16233" Column="1" />
+      <File FileName="Api/V1/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="Api/V1/Controllers/DeviceController.cs" Line="37" Column="37" />
+      <File FileName="Api/V1/Models/Device/DeviceDto.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
-              <Node name="Database" expanded="True">
-                <Node name="Entities" expanded="True" />
-              </Node>
-              <Node name="Helpers" expanded="True" />
-              <Node name="Odata" expanded="True">
-                <Node name="Configurations" expanded="True" />
-                <Node name="DeviceController.cs" selected="True" />
+              <Node name="Api" expanded="True">
+                <Node name="V1" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True">
+                    <Node name="Device" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="V2" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True">
+                    <Node name="Device" expanded="True">
+                      <Node name="DeviceDto.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -39,6 +39,7 @@ using GraphQL.Server;
 using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using myMicroservice.GraphQLApi.Schema;
+using WebApiContrib.Core.Formatter.Protobuf;
 
 namespace myMicroservice
 {
@@ -149,6 +150,12 @@ namespace myMicroservice
             services.AddMvcCore(options =>
             {
                 options.EnableEndpointRouting = false;
+
+                // Protobuf
+                var protobufOptions = new ProtobufFormatterOptions();
+                options.InputFormatters.Add(new ProtobufInputFormatter(protobufOptions));
+                options.OutputFormatters.Add(new ProtobufOutputFormatter(protobufOptions));
+                options.FormatterMappings.SetMediaTypeMappingForFormat("protobuf", MediaTypeHeaderValue.Parse("aplication/x-protobuf"));
 
                 // enable other extensions
                 foreach (var outputFormatter in options.OutputFormatters.OfType<ODataOutputFormatter>().Where(_ => _.SupportedMediaTypes.Count == 0))

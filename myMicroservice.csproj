@@ -38,6 +38,8 @@
     <PackageReference Include="GraphQL.Server.Ui.Playground" Version="3.4.0" />
     <PackageReference Include="GraphQL" Version="2.4.0" />
     <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="WebApiContrib.Core.Formatter.Protobuf" Version="2.1.3" />
+    <PackageReference Include="protobuf-net" Version="2.4.6" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
@@ -47,7 +49,6 @@
     <Folder Include="Api\" />
     <Folder Include="Api\V2\" />
     <Folder Include="Api\V2\Controllers\" />
-    <Folder Include="Api\V2\Models\" />
     <Folder Include="Odata\" />
     <Folder Include="Api\V1\Models\AutoMapperProfiles\" />
     <Folder Include="Api\Other\" />
@@ -56,6 +57,9 @@
     <Folder Include="GraphQLApi\" />
     <Folder Include="GraphQLApi\Types\" />
     <Folder Include="GraphQLApi\Schema\" />
+    <Folder Include="Api\V1-proto\" />
+    <Folder Include="Api\V1-proto\Controllers\" />
+    <Folder Include="Api\V1-proto\Models\" />
   </ItemGroup>    
   <ItemGroup>
     <Compile Remove="Entities\UserEntity.cs" />

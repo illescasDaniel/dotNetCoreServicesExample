@@ -8,13 +8,12 @@ using Microsoft.AspNetCore.Identity;
 using myMicroservice.Database;
 using myMicroservice.Database.Entities;
 using Microsoft.EntityFrameworkCore;
-using myMicroservice.Api.V1.Models;
+using myMicroservice.Api.V2.Models;
 using AutoMapper;
 
-namespace myMicroservice.Api.V1.Controllers
+namespace myMicroservice.Api.V2.Controllers
 {
     [ApiController]
-    //[ApiVersionNeutral]
     [Authorize]
     public class AuthenticationController : ControllerBase
     {
@@ -43,8 +42,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
-        [Consumes("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpPost]
         [Route("api/v{version:apiVersion}/authenticate")]
         public ActionResult<AuthenticationOutput> Authenticate(AuthenticationModel model)
@@ -86,8 +84,7 @@ namespace myMicroservice.Api.V1.Controllers
         [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Produces("application/json")]
-        [Consumes("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpPost]
         [Route("api/v{version:apiVersion}/register")]
         public ActionResult<UserDto> Register(RegistrationModel model)

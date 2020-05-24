@@ -72,6 +72,7 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Morcatko.AspNetCore.JsonMergePatch.SystemTextJson.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/protobuf-net.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Serilog.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Serilog.Extensions.Logging.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/Serilog.Sinks.File.dll
@@ -93,7 +94,10 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/System.Reactive.Core.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/System.Reactive.Interfaces.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/System.Reactive.Linq.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/System.ServiceModel.Primitives.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/System.ServiceModel.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/WebApiContrib.Core.Formatter.Protobuf.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
@@ -158,6 +162,8 @@
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netstandard2.0/System.Private.ServiceModel.dll
+/Users/daniel/Projects/myMicroservice/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Private.ServiceModel.dll
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.dll.config
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.AssemblyInfoInputs.cache
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.AssemblyInfo.cs
@@ -172,4 +178,3 @@
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.xml
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.pdb
 /Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.genruntimeconfig.cache
-/Users/daniel/Projects/myMicroservice/obj/Debug/netcoreapp3.1/myMicroservice.csprojAssemblyReference.cache

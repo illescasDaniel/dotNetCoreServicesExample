@@ -5,20 +5,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using myMicroservice.Helpers;
 using myMicroservice.Database;
-using myMicroservice.Api.V1.Models;
+using myMicroservice.Api.V2.Models;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using myMicroservice.Database.Entities;
-using Morcatko.AspNetCore.JsonMergePatch;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace myMicroservice.Api.V1.Controllers
+namespace myMicroservice.Api.V2.Controllers
 {
     [ApiController]
     [Authorize]
-    //[ApiVersionNeutral]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class DeviceController : ControllerBase
     {
@@ -49,7 +47,7 @@ namespace myMicroservice.Api.V1.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpGet("all")]
         public async Task<ActionResult<IReadOnlyCollection<DeviceDto>>> GetAll(
             [FromQuery] int limit = 10
@@ -67,7 +65,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<DeviceDto>> GetById([FromRoute] int id)
         {
@@ -82,60 +80,8 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [Consumes(JsonMergePatchDocument.ContentType)]
-        [Produces("application/json")]        
-        [HttpPatch("{id:int}")]
-        public async Task<ActionResult<DeviceDto>> PatchById(
-            [FromRoute]int id,
-            [FromBody] JsonMergePatchDocument<UpdatedDeviceDto> updatedDevicePatch
-        )
-        {
-            var hasChanges = false;
-            Device? device = await _dbContext.Devices.FindAsync(id);
-            if (device == null)
-            {
-                return NotFound();
-            }
-
-            var deviceDto = _mapper.Map<DeviceDto>(device);
-
-            if (updatedDevicePatch.Operations.Count() == 0)
-            {
-                return Ok(deviceDto);
-            }
-
-            var updatedDeviceDto = _mapper.Map<UpdatedDeviceDto>(device);
-            updatedDevicePatch.ApplyTo(updatedDeviceDto);
-
-            if (device.Name != updatedDeviceDto.Name)
-            {
-                device.Name = updatedDeviceDto.Name;
-                hasChanges = true;
-            }
-            if (device.Version != updatedDeviceDto.Version)
-            {
-                device.Version = updatedDeviceDto.Version;
-                hasChanges = true;
-            }
-
-            if (!hasChanges)
-            {
-                return Ok(deviceDto);
-            }
-
-            var deviceDtoAfterChanges = _mapper.Map<DeviceDto>(device);
-
-            await _dbContext.SaveChangesAsync();
-            
-            return Ok(deviceDtoAfterChanges);
-        }
-
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Consumes("application/json")]
-        [Produces("application/json")]
+        [Consumes("application/x-protobuf")]
+        [Produces("application/x-protobuf")]
         [HttpPut]
         public async Task<ActionResult<DeviceDto>> Update([FromBody] DeviceDto updatedDeviceDto)
         {
@@ -184,7 +130,7 @@ namespace myMicroservice.Api.V1.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Produces("application/json")]
+        [Produces("application/x-protobuf")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteById(int id)
         {
