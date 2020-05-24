@@ -2209,3 +2209,40 @@ System.InvalidOperationException: Unable to resolve service for type 'myMicroser
 2020-05-23 13:53:44.705 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: Variable '$user' is invalid. Received a null input for a non-null field.\n ---> GraphQL.Execution.InvalidValueException: Variable '$user' is invalid. Received a null input for a non-null field.\n   at GraphQL.Execution.ExecutionHelper.AssertValidValue(ISchema schema, IGraphType type, Object input, String fieldName)\n   at GraphQL.Execution.ExecutionHelper.GetVariableValue(Document document, ISchema schema, VariableDefinition variable, Object input)\n   at GraphQL.Execution.ExecutionHelper.GetVariableValues(Document document, ISchema schema, VariableDefinitions variableDefinitions, Inputs inputs)\n   at GraphQL.DocumentExecuter.BuildExecutionContext(ISchema schema, Object root, Document document, Operation operation, Inputs inputs, Object userContext, CancellationToken cancellationToken, Metrics metrics, IEnumerable`1 listeners, Boolean throwOnUnhandledException)\n   at GraphQL.DocumentExecuter.ExecuteAsync(ExecutionOptions options)\n   --- End of inner exception stack trace ---"]
 2020-05-23 13:54:59.321 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: Syntax Error GraphQL (4:3) Expected Name, found }\n3:     \n4:   }\n     ^\n5: }\n\n ---> GraphQLParser.Exceptions.GraphQLSyntaxErrorException: Syntax Error GraphQL (4:3) Expected Name, found }\n3:     \n4:   }\n     ^\n5: }\n\n   at GraphQLParser.ParserContext.Expect(TokenKind kind)\n   at GraphQLParser.ParserContext.ParseName()\n   at GraphQLParser.ParserContext.ParseFieldSelection()\n   at GraphQLParser.ParserContext.Many[T](TokenKind open, Func`1 next, TokenKind close)\n   at GraphQLParser.ParserContext.ParseSelectionSet()\n   at GraphQLParser.ParserContext.CreateFieldSelection(Int32 start, GraphQLName name, GraphQLName alias)\n   at GraphQLParser.ParserContext.Many[T](TokenKind open, Func`1 next, TokenKind close)\n   at GraphQLParser.ParserContext.ParseSelectionSet()\n   at GraphQLParser.ParserContext.CreateOperationDefinition(Int32 start, OperationType operation, GraphQLName name)\n   at GraphQLParser.ParserContext.ParseDefinition()\n   at GraphQLParser.ParserContext.ParseDefinitionsIfNotEOF()+MoveNext()\n   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\n   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\n   at GraphQLParser.ParserContext.ParseDocument()\n   at GraphQLParser.Parser.Parse(ISource source)\n   at GraphQL.Execution.GraphQLDocumentBuilder.Build(String body)\n   at GraphQL.DocumentExecuter.ExecuteAsync(ExecutionOptions options)\n   --- End of inner exception stack trace ---"]
 2020-05-23 13:57:42.248 +02:00 [ERR] GraphQL execution error(s): ["GraphQL.ExecutionError: A query is required.\n ---> GraphQL.ExecutionError: A query is required.\n   at GraphQL.DocumentExecuter.ValidateOptions(ExecutionOptions options)\n   at GraphQL.DocumentExecuter.ExecuteAsync(ExecutionOptions options)\n   --- End of inner exception stack trace ---"]
+2020-05-24 11:44:28.959 +02:00 [ERR] 0HLVVOOTEJE80:0000000A
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'near "(": syntax error'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.AspNet.OData.EnableQueryAttribute.SingleOrDefault(IQueryable queryable, IWebApiActionDescriptor actionDescriptor)
+   at Microsoft.AspNet.OData.EnableQueryAttribute.ExecuteQuery(Object responseValue, IQueryable singleResultCollection, IWebApiActionDescriptor actionDescriptor, Func`2 modelFunction, IWebApiRequestMessage request, Func`2 createQueryOptionFunction)
+   at Microsoft.AspNet.OData.EnableQueryAttribute.OnActionExecuted(Object responseValue, IQueryable singleResultCollection, IWebApiActionDescriptor actionDescriptor, IWebApiRequestMessage request, Func`2 modelFunction, Func`2 createQueryOptionFunction, Action`1 createResponseAction, Action`3 createErrorAction)
+   at Microsoft.AspNet.OData.EnableQueryAttribute.OnActionExecuted(ActionExecutedContext actionExecutedContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34
+2020-05-24 11:53:01.976 +02:00 [ERR] 0HLVVP0V9PR4C:00000002
+System.NotSupportedException: Conflicting method/path combination "GET odata/Users" for actions - myMicroservice.Database.Odata.DeviceController.Get (myMicroservice),myMicroservice.Database.Odata.UsersController.Get (myMicroservice). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNet.OData.Batch.ODataBatchMiddleware.Invoke(HttpContext context)
+   at myMicroservice.Helpers.ErrorHandlingMiddleware.Invoke(HttpContext context) in /Users/daniel/Projects/myMicroservice/Helpers/ErrorHandlingMiddleware.cs:line 34

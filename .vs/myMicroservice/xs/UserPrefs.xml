@@ -1,19 +1,29 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/ErrorHandlingMiddleware.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Odata/DeviceController.cs">
     <Files>
-      <File FileName="Helpers/OdataControllerExtensions.cs" Line="7" Column="81" />
-      <File FileName="Odata/UsersController.cs" Line="155" Column="14" />
-      <File FileName="Helpers/ErrorHandlingMiddleware.cs" Line="48" Column="13" />
+      <File FileName="Odata/DeviceController.cs" Line="30" Column="9" />
+      <File FileName="Odata/Configurations/UserModelConfiguration.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="Odata/UsersController.cs" />
+      <File FileName="Database/Entities/Device.cs" />
+      <File FileName="Database/Entities/User.cs" />
+      <File FileName="Odata/Configurations/DeviceModelConfiguration.cs" />
+      <File FileName="server-errors.log" />
+      <File FileName="server.log" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
-              <Node name="Helpers" expanded="True">
-                <Node name="ErrorHandlingMiddleware.cs" selected="True" />
+              <Node name="Database" expanded="True">
+                <Node name="Entities" expanded="True" />
               </Node>
-              <Node name="Odata" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Odata" expanded="True">
+                <Node name="Configurations" expanded="True" />
+                <Node name="DeviceController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

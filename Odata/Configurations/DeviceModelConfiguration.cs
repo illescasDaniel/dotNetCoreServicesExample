@@ -4,7 +4,7 @@ using myMicroservice.Database.Entities;
 
 namespace myMicroservice.Database.Odata.Configurations
 {
-    public class UserModelConfiguration : IModelConfiguration
+    public class DeviceModelConfiguration : IModelConfiguration
     {
         /// <summary>
         /// Applies model configurations using the provided builder for the specified API version.
@@ -19,11 +19,12 @@ namespace myMicroservice.Database.Odata.Configurations
             //userCompleConfig.ComplexProperty(user => c.P2);
             //userCompleConfig.ComplexProperty(user => c.P2);
 
-            var userEntityConfig = builder.EntitySet<User>("Users").EntityType;
-            userEntityConfig.HasKey(u => u.UserId)
-                            .HasMany(user => user.Devices);
+            var deviceEntityConfig = builder.EntitySet<Device>("Devices").EntityType;
+            deviceEntityConfig.HasKey(d => d.DeviceId);
+            deviceEntityConfig.HasRequired(d => d.Owner);
+
             // selectType: Microsoft.AspNet.OData.Query.SelectExpandType.Allowed ?
-            userEntityConfig.Select().Expand().Count().Filter().OrderBy().Page();
+            deviceEntityConfig.Select().Expand().Count().Filter().OrderBy().Page();
 
             //person.HasKey(p => p.Id);
             //person.Select().OrderBy("firstName", "lastName");
