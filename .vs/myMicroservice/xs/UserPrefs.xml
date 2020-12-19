@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{C99988BF-658D-4BF8-B3CE-439B6C9BA788}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V2/Models/Device/DeviceDto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/V2/Controllers/UserController.cs">
     <Files>
       <File FileName="Startup.cs" Line="223" Column="19" />
-      <File FileName="server-errors.log" Line="2497" Column="1" />
-      <File FileName="Api/V1Proto/Controllers/UserController.cs" Line="31" Column="31" />
-      <File FileName="Api/V1Proto/Controllers/DeviceController.cs" Line="36" Column="37" />
+      <File FileName="server-errors.log" Line="2518" Column="1" />
+      <File FileName="Api/V1Proto/Controllers/UserController.cs" Line="202" Column="10" />
+      <File FileName="Api/V1Proto/Controllers/DeviceController.cs" Line="11" Column="40" />
       <File FileName="Api/V1Proto/Controllers/AuthenticationController.cs" Line="29" Column="45" />
-      <File FileName="Api/V1/Controllers/AuthenticationController.cs" Line="26" Column="1" />
+      <File FileName="Api/V1/Controllers/AuthenticationController.cs" Line="90" Column="39" />
       <File FileName="Api/V2/Controllers/PersonController.cs" Line="3" Column="36" />
       <File FileName="Api/V1/Controllers/PersonController.cs" Line="1" Column="1" />
       <File FileName="Api/V2/Models/RegistrationModel.cs" Line="4" Column="30" />
       <File FileName="Api/V2/Models/AuthenticationOutput.cs" Line="3" Column="32" />
       <File FileName="Api/V2/Models/AuthenticationModel.cs" Line="3" Column="32" />
       <File FileName="Api/V2/Models/User/UpdatedUserDto.cs" Line="1" Column="45" />
-      <File FileName="Api/V2/Models/User/UserDto.cs" Line="4" Column="39" />
-      <File FileName="Api/V2/Models/Device/DeviceDto.cs" Line="1" Column="1" />
-      <File FileName="Api/V2/Models/Device/NewDeviceDto.cs" Line="5" Column="32" />
+      <File FileName="Api/V2/Models/User/UserDto.cs" Line="6" Column="19" />
+      <File FileName="Api/V2/Models/Device/DeviceDto.cs" Line="7" Column="28" />
+      <File FileName="Api/V2/Models/Device/NewDeviceDto.cs" Line="8" Column="31" />
       <File FileName="Api/V2/Models/Device/UpdatedDeviceDto.cs" Line="4" Column="32" />
       <File FileName="Api/V2/Models/AutoMapperProfiles/DeviceProfile.cs" Line="4" Column="32" />
       <File FileName="Api/V2/Models/AutoMapperProfiles/UserProfile.cs" Line="4" Column="32" />
-      <File FileName="server.log" Line="16233" Column="1" />
+      <File FileName="server.log" Line="16298" Column="94" />
       <File FileName="Api/V1/Controllers/UserController.cs" Line="1" Column="1" />
       <File FileName="Api/V1/Controllers/DeviceController.cs" Line="37" Column="37" />
       <File FileName="Api/V1/Models/Device/DeviceDto.cs" Line="1" Column="1" />
@@ -30,18 +30,13 @@
           <Node name="myMicroservice" expanded="True">
             <Node name="myMicroservice" expanded="True">
               <Node name="Api" expanded="True">
-                <Node name="V1" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                <Node name="V2" expanded="True">
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
                   <Node name="Models" expanded="True">
                     <Node name="Device" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="V2" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Models" expanded="True">
-                    <Node name="Device" expanded="True">
-                      <Node name="DeviceDto.cs" selected="True" />
-                    </Node>
+                    <Node name="User" expanded="True" />
                   </Node>
                 </Node>
               </Node>
